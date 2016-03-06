@@ -1,0 +1,100 @@
+LEXICAL,SURFACE,DESCRIPTION,EXAMPLES
+{ao},"a o","stem final a~o","k a i r {ao}:a
+k a i r {ao}:o {ij}:j {aä}:a"
+{aoe},"a o e","kaivoi - kaivetaan","k a i v {aoe}:a n
+k a i v {aoe}:o {i}:i n
+k a i v {aoe}:e {dlnrtØ}:t {C}:Ø {aä}:a {V}:a n"
+{aoØe},"a o Ø e","haastan - haastoin - haastin - haastetaan","h a a s t {aoØe}:a n
+h a a s t {aoØe}:o {i}:i n
+h a a s t {aoØe}:Ø {i}:i n
+h a a s t {aoØe}:e {dlnrtØ}:t {C}:Ø {aä}:a {V}:a n"
+{aä},"a ä","harmonizing a~ä","t a l o s s {aä}:a
+r i s t {ie}:i s s {aä}:ä"
+{aØ},"a Ø","stem final a~Ø","k o i r {aØ}:a n
+k o i r {aØ}:Ø {ij}:i {aä}:a"
+{aØe},"a Ø e","stem final a-Ø-e","m u i s t {aØe}:a n
+m u i s t {aØe}:e {dlnrtØ}:t {C}:Ø {aä}:a {V}:a n"
+{C},Ø,"imaginary consonant","h a k {kØ}:Ø e {C}:Ø"
+{dlnrtØ},"d l n r t Ø","1st infinitive , pres passive, 2nd inf act ine","p u n o {dlnrtØ}:Ø {aä}:a
+k u o l {eØ}:Ø {dlnrtØ}:l {aä}:a
+m e n {eØ}:Ø {dlnrtØ}:n {aä}:ä
+p u r {eØ}:Ø {dlnrtØ}:r {aä}:a
+j u o s {dlnrtØ}:t {aä}:a
+p u n o {dlnrtØ}:t {C}:Ø {aä}:a {V}:a n
+s a {VØ}:a {dlnrtØ}:d {C}:Ø {aä}:a {V}:a n
+s a n o {dlnrtØ}:t {C}:Ø {aä}:a {V}:a n
+n ä h {dlnrtØ}:d {C}:Ø {aä}:ä {V}:ä n
+s a l a t {dlnrtØ}:Ø {C}:Ø {aä}:a {V}:a n"
+{eiØ},"e i Ø","stem final e","l o v {eiØ}:i
+l u m {eiØ}:e t
+r i i h {eiØ}:Ø t {aä}:ä"
+{eØ},"e Ø","puren - purin","k a n n a k s {eiØ}:Ø {ij}:i s s {aä}:a
+p u r {eØ}:Ø {i}:i n"
+{ie},"i e","stem final i","r i s t {ie}:i
+r i s t {ie}:e {ij}:i s s {aä}:ä"
+{i},i,"past tense i",
+{ij},"i j","plural i~j","t a l o {ij}:i s s {aä}:a
+l o v {eiØ}:Ø {ij}:i s s {aä}:a
+l o v {eiØ}:Ø {ij}:i {aä}:a
+v a l o {ij}:j {aä}:a"
+{iØ},"i Ø","vien - vein, sallin","v {iØ}:i e n
+v {iØ}:Ø e {i}:i n
+s a l l {iØ}:i n
+s a l i {iØ}:Ø i s i n"
+{kg},"k g","G gradating stop k~g","k a n {kg}:g a s
+r a n {kg}:k a"
+{kj},"k j","L gradating stop k~j","a r {kj}:j {eiØ}:e n"
+{kv},"k v","M gradating stop k~v","s u {kv}:v u n"
+{kØ},"k Ø",,"t a k {kØ}:Ø {ie}:i n
+h a k {kØ}:Ø e {C}:Ø
+h a k {kØ}:k e {VØ}:e n
+a i {kØ}:k e {VØ}:e n"
+{kØ'},"k Ø '","A,D gradating stop k~Ø or k~Ø~'","v a a {kØ'}:' {ao}:a n
+v a a {kØ'}:Ø {ao}:o {ij}:i s s {aä}:a
+v a a {kØ'}:k {ao}:a"
+{nlrs},"n l r s","potential n","p u n o {nlrs}:n e n
+n u o l {eiØ}:Ø {nlrs}:l e t
+p u r {eiØ}:Ø {nlrs}:r e m m e
+j u o s {nlrs}:s e n"
+{nt},"n t","in v3",
+{oö},"ö o","harmonizing o~ö","v a l o t {tØ}:Ø {oö}:o n
+p ä {VØ}:ä t {tØ}:t {oö}:ö m {aä}:ä n
+r e i {kØ}:Ø {äØ}:ä t {tØ}:Ø {oö}:ö n"
+{pm},"p m","H gradating stop p~m","l u m {pm}:m e {C}:Ø
+k a m {pm}:p {ao}:a"
+{pv},"p v","E gradating stop p~v","s o {pv}:v u n"
+{pØ},"p Ø","B gradating stop p~Ø","k a a p {pØ}:Ø {ie}:i n
+o p {pØ}:p a {VØ}:a n"
+{td},"t d","F gradating stop t~d","s a {td}:d u n"
+{tds},"t d s","kaadan - kaasin","k a a {tds}:t {aØe}:a {VØ}:a
+k a a {tds}:d {aØe}:a n
+k a a {tds}:s {aØe}:Ø {i}:i n"
+{tl},"t l","I gradating stop t~l","i l {tl}:l {ao}:a n"
+{tls},"t l s","puoltaa - puolsin","p u o l {tls}:t {aØe}:a {VØ}:a
+p u o l {tls}:l {aØe}:a n
+p u o l {tls}:s {aØe}:Ø {i}:i n"
+{tn},"t n","J gradating stop t~n","h e n {tn}:n o n"
+{tns},"t n s","myöntää - myönsi","m y ö n {tns}:t {äØe}:ä v {aä}:ä t
+m y ö n {tns}:n {äØe}:ä n
+m y ö n {tns}:s {äØe}:Ø {i}:i n"
+{tr},"t r","K gradating stop t~r","k a a r {tr}:r o n"
+{trs},"t r s","murtaa -mursin","m u r {trs}:t {aØe}:a v {aä}:a t
+m u r {trs}:r {aØe}:a n
+m u r {trs}:s {aØe}:Ø {i}:i n"
+{tØ},"t Ø","C gradating stop t~Ø","t y t {tØ}:Ø ö n"
+{uy},"y u","harmonizing u~y","s a {VØ}:a {td}:t {uy}:u
+m y {VØ}:y {td}:d {uy}:y n"
+{uØ},"u Ø","juon - join","j {uØ}:u o n
+j {uØ}:Ø o {i}:i n"
+{V},"a e i o u y ä ö","lengthening of the preceding vowel","m a {VØ}:a h {V}:a n "
+{VØ},"a e i o u y ä ö Ø","lengthening of the preceding vowel","m a {VØ}:a 
+p y {VØ}:y 
+m a {VØ}:Ø {ij}:i s s {aä}:a
+s a {VØ}:Ø i s i"
+{yØ},"y Ø","lyön - löin","l {yØ}:y ö n
+l {yØ}:Ø ö {i}:i n"
+{äØ},"ä Ø","stem final ä~Ø","m ä ä r {äØ}:ä
+m ä ä r {äØ}:Ø {ij}:i {aä}:ä"
+{äØe},"ä Ø e","stem final ä-Ø-e","k y l v {äØe}:ä n
+k y l {pv}:v {äØe}:e {dlnrtØ}:t {C}:Ø {aä}:ä {V}:ä n"
+{Øt},Ø t,"passive",
