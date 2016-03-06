@@ -1,5 +1,9 @@
 # ofitwol
-Open Finnish Two-Level morphological analyzer based on the HFST finite-state transducer tools, see https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstHome for more information on the HFST tools. Ofitwol is related to OMORFI, an open Finnish morphological analyzer based on the HFST tools, see https://github.com/flammie/omorfi for more information on OMORFI.
+Open Finnish Two-Level morphological analyzer based on the HFST finite-state transducer tools.
+
+See https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstHome for more information on the HFST Helsinki Finite-State Transducer tools such as hfst-twolc, hfst-lexc, etc. 
+
+Ofitwol is related to OMORFI (by Tommi Pirinen et al.) an open Finnish morphological analyzer based on the HFST tools, see https://github.com/flammie/omorfi for more information on OMORFI.
 
 In my oppinion, OFITWOL appears to differ from OMORFI in some respects:
 
@@ -11,4 +15,4 @@ In my oppinion, OFITWOL appears to differ from OMORFI in some respects:
 
 (4) In generation mode, OMORFI is prepared to produce the most preferred inflectional form (which is essential for using it as a part of machine translation into Finnish). OFITWOL has no such capabilities.
 
-OFITWOL is in the development stages and it is capable of handling Finnish verbal and nominal inflection. Scripts exist for converting entries from "Nykysuomen sanalista" and "Suomen kielen käänteissanakirja" exist at this point, March 6th, 2016.
+OFITWOL is in the development stages and it is capable of handling Finnish verbal and nominal inflection. Python scripts for converting entries from "Nykysuomen sanalista" and "Suomen kielen käänteissanakirja" to OFITWOL exist at this point, March 6th, 2016.
