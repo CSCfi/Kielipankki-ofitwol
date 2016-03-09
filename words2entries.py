@@ -1,3 +1,9 @@
+"""Produces entries out of words by identifying the type and direction
+of the consonant gradation and replacing the gradating consonant by 
+an appropriate morphophoneme.
+Copyright 2016 Kimmo Koskenniemi
+Free software under GPL 3 License, see <http://www.gnu.org/licenses/>"""
+
 import sys, csv, re
 
 weaken = {
