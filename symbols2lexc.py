@@ -1,3 +1,11 @@
+"""Reads a table which defines the symbols that are used in a two-level morphological analyser.
+The table is in CSV form, and this script produces (1) a snippet for the LEXC file which contains 
+the morphophonemes that will be used in the entries of the lexicon, and (2) a file which contains 
+the morphophonemes and their realisations as pairs quoted with % signs as the TWOLC requires.
+
+Copyright (C) 2016 Kimmo Koskenniemi
+This is free software according to GPL 3, see <http://www.gnu.org/licenses/>"""
+
 import sys, csv, re
 
 rdr = csv.DictReader(sys.stdin, delimiter=',')
