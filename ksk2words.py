@@ -94,5 +94,5 @@ for entry in rdr:
     (stem, cont) = markGradation(base, infl, astev)
     #if stem == "***":
     #    continue
-    wtr.writerow([base, stem, cont, '', ''])
+    wtr.writerow([base, stem, cont, '', '',''])
 
