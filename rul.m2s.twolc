@@ -170,7 +170,7 @@ Rules
 "ma<>issa" 
 %{VØ%}:Ø <=> _ [%{ij%}: | %{i%}: | i s i] ;
              [%{i%}: | i s i | %{VØ%}: | :u :o | :y :ö |
-              :i :e | :a :i | :o :i | :ö :i] _ ;
+              :i :e | :a :i | :o :i | :ö :i | :ä :y] _ ;
              
 
 "talo<j>a"

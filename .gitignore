@@ -2,3 +2,8 @@
 *.fst
 __*__
 *.gnumeric
+*.lexc
+alpha.twolc
+*.bak.*
+test.result
+
