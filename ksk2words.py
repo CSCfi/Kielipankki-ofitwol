@@ -21,7 +21,7 @@ dd = {
     'V10':[(r"taa$", r"t>{aoØe}", '/v')],  # haastaa, laittaa
     'V11':[(r"taa$", r"t>{aoØe}", '/v')],  # paistaa, taittaa
     'V12':[(r"taa$", r"{trs}{aoØe}", '/v')],  # saartaa
-    'V13':[(r"kea$", r"k>{eiØ}", '/v')],  # laskea
+    'V13':[(r"e[aä]$", r">{eiØ}", '/v')],  # laskea, kutea, kylpeä
     'V14':[(r"tea$", r"{tns}>{eiØ}", '/v')],  # tuntea
     'V15':[(r"tea$", r"{tds}{eiØ}", '/v')],  # potea
     'V16':[(r"lähteä$", r"lä", 'lä-hte/v')],  # lähteä
@@ -52,7 +52,7 @@ dd = {
     'V38':[(r"([oöuy])t[aä]$", r"<\1", 'koho-A/v')],  # kohota, seota, ryöpytä
     'V39':[(r"([uy])t[aä]$", r"<\1", 'halu-A/v')], # haluta, öljytä
     'V40':[(r"([aä])t[aä]$", r"<\1", 'pala-V/v')],  # palata, kaivata, hylätä, 
-    'V41':[(r"^([^äyöe]*)ist[aä]$", r"\1", 'kih-ise/v'),  # kihistä, kohista
+    'V41':[(r"^([^äyöe]*)ist[aä]$", r"\1", 'kih-ise/v'),  # kihistä, kihajaa, kohista
            (r"istä$", r"", 'öl-ise/v')], # ähistä, ölistä
     'V42':[(r"nt[aä][aä]$", r"", 'rake-ntA/v'),  # rankentaa
            (r"t[aä]$", r"", 'rake-ntA/v')], # käätä, parata
