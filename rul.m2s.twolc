@@ -182,9 +182,13 @@ Rules
 !               p u n o {dlnrtØ}:Ø {aä}:a k s e n i
 !               p u n o {dlnrtØ}:Ø {aä}:a
 !               p u n o {dlnrtØ}:Ø e s {aä}:a
+!               h i o  {dlnrtØ}:Ø {aä}:a
 
 "tuo<d>a näh<d>ä"
-%{dlnrtØ%}:d <=> :Vowel [:Vowel | h] _ ;
+!%{dlnrtØ%}:d <=> :Vowel [:Vowel | h] _ ;
+%{dlnrtØ%}:d <=> :Vowel h _ ;
+                  [[:a|:o|:u|:ö] :i | :a :a | :ä :ä |
+		  :u :o | :y :ö | :i :e | :ä :y] _ ;
 
 "nuol<l>a men<n>ä pur<r>a"
 %{dlnrtØ%}:XX <=> :XX (%{eØ%}:Ø) _ ; where XX in (l n r) ;
