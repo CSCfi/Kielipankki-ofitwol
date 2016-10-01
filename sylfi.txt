@@ -1,0 +1,33 @@
+Testing the syllable counting
+=============================
+
+Load it:
+
+    >>> from sylfi import syllables
+
+    >>> syllables("tms")
+    0
+
+Monosyllabic words:
+
+    >>> syllables("ja")
+    1
+    >>> syllables("työ")
+    1
+    >>> syllables("juo")
+    1
+    >>> syllables("spriin")
+    1
+
+
+Bisyllabic words:
+
+    >>> syllables("paloi")
+    2
+    >>> syllables("raittein")
+    2
+    >>> syllables("aie")
+    2
+    >>> syllables("ien")
+    2
+
