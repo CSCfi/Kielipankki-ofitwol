@@ -4,22 +4,21 @@ morph_set = {}
 with open("ksk-paradigms.csv") as csvfile:
     reader = csv.DictReader(csvfile, delimiter=';')
     for row in reader:
-        for column_label in row:
-            morphs = row[column_label]
-            if column_label in {'ID', 'KSK'} or morphs == '': continue
+        for column_label in row: # process each cell of the row
+            words = row[column_label] # space separated string of words
+            if column_label in {'ID', 'KSK'} or words == '': continue
             morpheme_id_list = column_label.split('.')
             if morpheme_id_list[0] == 'STM':
                 morpheme_id_list[0] = row['ID']
-            morphs_clean = re.sub(r'[][()]', '', morphs)
-            morphs_list = re.split(r"\s+", morphs_clean.strip())
-            for morphs in morphs_list:
+            words_clean = re.sub(r'[][()]', '', words)
+            word_list = re.split(r"\s+", words_clean.strip())
+            # each word as a . separated string of morphs
+            for morphs in word_list:
                 if morphs[0] == '*':
                     continue
                 morph_list = morphs.split('.')
                 if len(morph_list) != len(morpheme_id_list):
                     print(morph_list, "and", morpheme_id_list, "incompatible")
-                #feat = morpheme_id_list[0]
-                #morph = morph_list[0]
                 for feat, morph in zip(morpheme_id_list, morph_list):
                     if feat not in morph_set:
                         morph_set[feat] = OrderedSet()

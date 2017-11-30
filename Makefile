@@ -3,6 +3,15 @@ all: ksk.samp.m2s.wpairs s2b.fst
 accept:
 	mv ksk.samp.m2s.wpairs  ksk.samp.m2s.bak.wpairs
 
+ksk-examples.strings: ksk-zerofilledparad.csv idalmphon2examples.py
+	python3.6 idalmphon2examples.py > $@
+
+ksk-zerofilledparad.csv: ksk-paradigms.csv alignments.py parad2idalignmphon.py
+	python3.6 parad2idalignmphon.py
+
+alignments.py: ksk-paradigms.csv parad2alignedmorphs.py
+	python3.6 parad2alignedmorphs.py
+
 ksk.samp.m2s.wpairs: lex.b2m.fst rul.m2s.fst
 	hfst-project -i lex.b2m.fst -p output | hfst-compose-intersect -2 rul.m2s.fst | hfst-fst2strings -X obey-flags | sort > ksk.samp.m2s.wpairs
 

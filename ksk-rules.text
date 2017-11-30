@@ -1,0 +1,100 @@
+Co = [PI .o. [b|d|h|k|l|m|n|p|r|s|t|v]] | j ;
+CC = [[Co].u .o. PI] ;
+CØ = [[[Co].u .o. PI] - Co] ;
+Vo = PI .o. [a | e | i | o | u | y | ä | ö] ;
+VØ = [[Vo].u .o. PI] - Vo ;
+VoØ = [Vo|VØ] ;
+VbV = [:e :a|:e :ä|:i :a|:i :o|:i :ö|:o :a|:u :a|:u (:Ø) :e|:y (:Ø) :e] ;
+Sy = [Vo+ [Co|CØ]+] ;
+CLOSED = VoØ ({ij}:i) CC (VØ) [CC | END] ;
+!a {V}:a <=> :a :Ø* ({Øh}:) _ ; ! maah<a>n
+!a {V}:e <=> :e :Ø* ({Øh}:) _ ; ! nalle<e>n
+!a {V}:i <=> :i :Ø* ({Øh}:) _ ; ! risti<i>n
+!a {V}:o <=> :o :Ø* ({Øh}:) _ ; ! valo<o>n
+!a {V}:u <=> :u :Ø* ({Øh}:) _ ; ! parru<u>n
+!a {V}:y <=> :y :Ø* ({Øh}:) _ ; ! kyky<y>n
+!a {V}:ä <=> :ä :Ø* ({Øh}:) _ ; ! pääh<ä>n
+!a {V}:ö <=> :ö :Ø* ({Øh}:) _ ; ! yöh<ö>n
+
+!a {aØ}:Ø <=> _ [{ij}: | t] ; ! ma<a>~ma<>issa, koir<>ia, jumal<>ten
+!a {ao}:o <=> _ {ij}: ; ! kair<a>~kair<o>ja 
+!a {aØo}:o => _ [{ij}:j | {ij}:i :Ø* Co] ; ! perun<o>ita
+!a {aØo}:Ø => _ {ij}:i ; ! perun<>ia ** toghether with GEN & PTV 
+!a {aØo}:a /<= _ {ij}: ; ! perun<a>
+
+!a {aä}:a <=> [:a|:o|:u] :* _ ; ! maass<a>, piiss<ä>
+
+!a {ØeØeØ}:e /<= _ [:t | {ij}: | END] ; ! hevon<e>n
+!a {ØeØeØ}:Ø => _ [({nØØ}:) :t|({nØØ}:) {ij}:|END] , Vo (CØ) [:s|:n] _ ({nØØ}:) {nrs}: ;
+         ! ahven<> ahven<e>n ahven<>ta ahven<e>na ahven<>na
+	 ! hevos<>ten, hevos<>ien, hevos<>na
+!a {eØ}:Ø <=> _ {ij}: , :h (:Ø) Vo s e _ ;
+         ! leve<e>~leve<>itä kaunihise<>n
+         ! vaatteese<e>n vaattehese<>n vaattehisi<>n 
+
+!a {Øh}:Ø => Co Vo ({nØØ}:Ø) _ , VbV _ , Co VØ ({nØØ}:Ø) {ij}:i _ ;
+         ! talo<>on valtio<>on hevose<>en hevosi<>in
+
+!a {iØ}:Ø <=> _ (e) {ij}: , :h Vo s e _ , :h (:Ø) VØ {ij}:i s i _ ; 
+         ! t<i>e~t<>eitä, kame<e>~kame<>ita vapaisi<i>in vapahisi<>n
+
+!a {ij}:i => Co :Ø* _ , _ :Ø* Co ; ! talo<i>ssa
+!a {ij}:Ø <=> :i _ e n ; ! paperi<>en
+!a {ij}:j => Vo _ :Ø* Vo ; ! talo<j>a ** together with above
+
+!+ {iiiiiee}:e => _ {sØhØhhØ}: {ØiiØØØØ}: {ij}: ; ! kaun<e>iden
+! {iieØ}:Ø <=> _ {ij}: e {nØ}: ;
+! {iieØ}:e <=> _ [{ij}: \e | {i}: {nØ}:] ;
+! {iieØ}:i elsewhere
+
+!a {ieee}:i <=> _ END ; ! tupp<i>
+!a {ieee}:Ø <=> {ij}: ! tupp<>ia
+
+!a {ieØe}:i => _ END ; ! niem<i> käs<i>
+!a {ieØe}:Ø <=> _ [{ij}: | :t] ; ! nien<>tä niem<>iä kät<>tä käs<>iä
+
+!a {ieØØ}:i => _ END ; ! pien<i> laps<i>
+!a {ieØØ}:Ø => _ [{ij}: | :t] , Vo (CØ) [:s|:n] _ {nrs}: ;
+!       pien<>tä pien<>nä pien<>iä las<>ta las<>na
+!a {ieØØ}:e /<= _ [{ij}: | :t] ; ! pien<>tä pien<>nä pien<>iä las<>ta las<>na
+
+! ILL
+!++ {Øh}:h => VoØ ({nØØ}:Ø|{nØØØ}:Ø) ({ij}:) _ ; 
+!++ {Øh}:Ø => [Co Vo | VbV] ({nØØ}:Ø | {nØØØ}:Ø) _ , Co :Ø* {ij}: _ ;
+
+!a {khhhk}:k <=> _ :s ; ! ka<k>si ka<h>den ka<h>ta
+!a {kkØ}:Ø <=> _ s VØ :t ; ! su<k>si su<k>sea su<>sta u<k>si u<>sta
+
+!a {kØØ}:Ø => _ CLOSED , _ [:o|:ö] {ij}:i [:t|:h] ;
+!       harak<>an harak<>oissa harak<>oita harak<>oihin
+!a {kØØ}:k /<= _ CLOSED , _ [:o|:ö] {ij}:i :t ;
+!       harak<k>oihin harak<k>oja harak<>oita *harak<k>oita
+
+!a {mn}:m <=> _ :Ø* [Vo | :m | :p] ;
+!a {nØØ}:n <=> _ END ; ! hevone<n> hevose<>ssa seitsemä<n> seitsemä<>ssä
+!a {nss}:n <=> _ :e :n ; ! hevo<n>en hevo<s>en hevo<s>ta hevo<s>ia
+
+!a {nrs}:r => :r VØ _ ; ! nuor<r>a
+!a {nrs}:s => :s VØ ({nØØ}:Ø) _ ; ! las<s>sa
+
+!a {oØ}:Ø <=> _ {ij}: ; ! tieno<o> tieno<o>ta tieno<>ita aino<o>
+
+!a {ppØ}:p <=> _ s :Ø* Vo ; ! la<p>si la<p>sen la<>sta la<p>sia
+!a {pØ}:Ø <=> _ CLOSED ; ! tup<p>i tup<>en
+
+!a {pm}:m <=> _ CLOSED ; ! läm<m>in läm<p>imän läm<m>intä
+
+!a {Øt}:Ø => Co Vo ({nØØ}:Ø|{ij}:j) _ , Co VØ ({nØØ}:Ø) {ij}: _  , VbV _ ;
+!       valo<>a valoj<>a , lovi<>a hevosi<>a, (autio<>a) herttua<>a 
+!a {Øt}:t => Vo :Ø* {ij}:i _, Co (CØ) VØ ({nØØ}:Ø) _, Vo (CØ) Vo _, Sy Vo+ Co+ [:a|:ä] ({nØØ}:Ø) _;
+!       arvelui<t>a loh<t>a autio<t>a, hevos<t>a sisar<t>a,
+!       autio<t>a leveä<t>ä, kulkija<t>a seitsemä<t>ä
+!a {dt}:t <=> _ :t ; ! mai<d>en mai<t>ten 
+
+!a {td}:d <=> _ CLOSED ; ! va<t>i va<d>in
+!a {tds}:s <=> _ (Vo)* [:i | END] ; ! kä<s>i kä<s>iä
+{tds}:d <=> _ :e CC (VØ) [CC|END] ; ! kä<d>en kä<d>essä
+
+!a {uØ}:Ø <=> _ (o) {ij}: ; ! s<u>o~s<>oita, tenkkapo<o> tenkkapo<>ita 
+
+! {yØ}:Ø <=> _ (ö) {ij}: ; ! <y>ö~<>öitä
