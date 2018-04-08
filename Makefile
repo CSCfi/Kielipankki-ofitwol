@@ -3,6 +3,9 @@ all: ksk.samp.m2s.wpairs s2b.fst
 accept:
 	mv ksk.samp.m2s.wpairs  ksk.samp.m2s.bak.wpairs
 
+ksk-examples.fst: ksk-examples.strings
+	cd ../pytwolc ; python3.6 ex2fst.py  -e ../ofitwol/ksk-examples.strings -o ../ofitwol/ksk-examples.fst
+
 ksk-examples.strings: ksk-zerofilledparad.csv idalmphon2examples.py
 	python3.6 idalmphon2examples.py > $@
 

@@ -1,12 +1,16 @@
 import csv, re, sys
 from orderedset import OrderedSet
 morph_set = {}
-with open("ksk-paradigms.csv") as csvfile:
+with open("ksk-paradigms.csv", "r") as csvfile:
     reader = csv.DictReader(csvfile, delimiter=';')
     for row in reader:
-        for column_label in row: # process each cell of the row
-            words = row[column_label] # space separated string of words
-            if column_label in {'ID', 'KSK'} or words == '': continue
+        for column_label, words in row.items(): # process each cell of the row
+            #words = row[column_label] # space separated string of words
+            #print(column_label, words)###
+            if words == '':
+                continue
+            if column_label in {"ID", "KSK"}:
+                continue
             morpheme_id_list = column_label.split('.')
             if morpheme_id_list[0] == 'STM':
                 morpheme_id_list[0] = row['ID']
@@ -24,10 +28,11 @@ with open("ksk-paradigms.csv") as csvfile:
                         morph_set[feat] = OrderedSet()
                     morph_set[feat].add(morph)
 
-sys.path.insert(0, "/Users/koskenni/github/alignment/")
+##sys.path.insert(0, "/Users/koskenni/github/alignment/")
+sys.path.insert(0, "/Users/koskenni/github/smntwol/")
 from multialign import aligner
 
-fil = open("alignments.py", 'w')
+#fil = open("alignments.py", 'w')
 alignments = {}
 morphs = {}
 vowels = 'aeiouyäö'
@@ -44,14 +49,13 @@ for morpheme_id in sorted(morph_set.keys()):
                                     max_weight_allowed=10000.0)
     alignments[morpheme_id] = aligned_sym_seq
 
-print("aligned_morphs =", alignments, "\n", file=fil)
+import pprint
+al_fil = open("alignments.py", "w")
+pp = pprint.PrettyPrinter(stream = al_fil, width=80)
+print("alignments =\\", file = al_fil)
+pp.pprint(alignments)
+#print("\naligned_morphs =\\", file = al_fil)
+#pp.pprint(aligned_morphs)
 
-print("morphs =", morphs, file=fil)
-
-        
-            
-        
-
-
-
-    
+#print("aligned_morphs =", alignments, "\n", file=fil)
+#print("morphs =", morphs, file=fil)

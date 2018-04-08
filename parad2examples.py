@@ -28,15 +28,24 @@ for morpheme_id, aligned_sym_seq in aligned_morphs.items():
 #print(morphophonemes) ##
 
 mphon_name = {
-    '{aaoo}': '{ao}', '{aaØØ}': '{aØ}',
-    '{aaää}': '{aä}',
-    '{aeiouyäöaeiouyäö}': '{V}',
-    '{aäaaä}': '{aä}',
+    '{aaoo}': '{ao}', # kal<a>~kal<o>ja
+    '{aaØØ}': '{aØ}', # koir<a>~koir<>ia
+    '{aaää}': '{aä}', # vowel harmony
+    '{aeiouyäöaeiouyäö}': '{V}', # maah<a>n, valo<o>n
+    '{aäaaä}': '{aä}', # vowel harmony
+    '{aØo}': '{aoØ}', # perun<a>~perun<o>ita~perun<>ia
+    '{dt}': '{td}', # pa<t>o~pa<d>on, mai<d>en~mait<t>en
     '{dttt}': '{td}',
+    '{eeØØ}': '{eØ}', # korke<e>, leve<e>, kame<e>
+    '{ieeØØ}': '{ieeØ}', # tupp<e>na, tupp<>ia
+    '{ieei}': '{ei}', # s<e><e>n~s<i><i>n
+    '{ijØ}': '{ij}',
     '{mpp}': '{pm}',
     '{pØpØp}': '{pØ}',
-    '{tddtt}': '{td}', '{tØØtt}': '{tØ}',
-    '{ØØØØØØØØhhhhhhhh}': '{Øh}',
+    '{sØhØh}': '{sØh}',
+    '{tddtt}': '{td}',
+    '{tØØtt}': '{tØ}',
+    '{ØØØØØØØØhhhhhhhh}': '{Øh}', # maa<h>an, valo<>on
     }
 
 with open("ksk-paradigms.csv") as csvfile:
