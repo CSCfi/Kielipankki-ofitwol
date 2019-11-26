@@ -1,0 +1,298 @@
+CSC – Tieteen tietotekniikan keskus (1998). Suomen kielen tekstikokoelman ladattava versio [tekstikorpus]. Kielipankki. Saatavilla http://urn.fi/urn:nbn:fi:lb-2016050206
+
+---
+
+Kansalliskirjasto (2014). Kansalliskirjaston sanoma- ja aikakauslehtikokoelman suomenkieliset n-grammit 1820-2000 [tekstikorpus]. Kielipankki. Saatavilla http://urn.fi/urn:nbn:fi:lb-2014073038
+
+National Library of Finland (2014). The Finnish N-grams 1820-2000 of the Newspaper and Periodical Corpus of the National Library of Finland [text corpus]. Kielipankki. Retrieved from http://urn.fi/urn:nbn:fi:lb-2014073038
+
+@misc{FNC1_en,
+ author={{National Library of Finland}},
+ year={2014},
+ title={{The Finnish N-grams 1820-2000 of the Newspaper and Periodical Corpus of the National Library of Finland}},
+ publisher={Kielipankki},
+ type={text corpus},
+ url={http://urn.fi/urn:nbn:fi:lb-2014073038},
+}
+
+$ wc -l klk_fi_1grams_all 
+243398561 klk_fi_1grams_all
+
+$ head klk_fi_1grams_all 
+422452011 .
+340867225 ,
+120227143 »
+112444255 ja
+63679849 on
+46689568 –
+43291302 «
+31464145 !
+29903235 :
+28877583 )
+
+$ egrep "^ *[0-9]+ [a-zåäöšž][-a-zåäöšž']+[a-zåäöšž]$" klk_fi_1grams_all > klk-fi-1grams-lc.frq
+
+$ head klk-fi-1grams-lc.frq 
+27929541 että
+19856987 oli
+11281928 niin
+11256470 joka
+10719400 hän
+9717249 sen
+8390739 ole
+7924469 sekä
+7838070 kuin
+7048384 mutta
+
+$ tr -d ' 0-9' klk-fi-1grams-lc.frq | sort > klk-fi-1grams-lc.words
+
+$ head klk-fi-1grams-lc.words
+a-a
+a--a
+a---a
+a---------a
+a--'a
+a-'a
+a'a
+a'-a
+a'-'a
+a''a
+
+$ wc -l klk-fi-1grams-lc.words 
+122170884 klk-fi-1grams-lc.words
+
+---
+
+$ cat ~/temp/klk-fi-1grams-lc.words  | hfst-lookup ofi-n.ofst 2>/dev/null | egrep "\+N\+" > klk-n-analysed.words
+
+$ wc -l klk-n-analysed.words 
+443154 klk-n-analysed.words
+
+$ head klk-n-analysed.words 
+aakkonen	aakko{ns}{eeØØ}{nØØØ}+N+SG+NOM	0,000000
+aakkoseen	aakko{ns}{eeØØ}{nØØØ}+N+SG+ILL	0,000000
+aakkoseksi	aakko{ns}{eeØØ}{nØØØ}+N+SG+TRA	0,000000
+aakkosella	aakko{ns}{eeØØ}{nØØØ}+N+SG+ADE	0,000000
+aakkoselle	aakko{ns}{eeØØ}{nØØØ}+N+SG+ALL	0,000000
+aakkoselta	aakko{ns}{eeØØ}{nØØØ}+N+SG+ABL	0,000000
+aakkosen	aakko{ns}{eeØØ}{nØØØ}+N+SG+GEN	0,000000
+aakkosena	aakko{ns}{eeØØ}{nØØØ}+N+SG+ESS	0,000000
+aakkoseni	aakko{ns}{eeØØ}{nØØØ}+N+SG+GEN+SG1	0,000000
+aakkosessa	aakko{ns}{eeØØ}{nØØØ}+N+SG+INE	0,000000
+
+---
+
+$ egrep ' S[0-9]' ksk-n.dic | wc -l
+34673
+
+$ python3 analy2formsofentry.py < klk-n-analysed.words > klk-formsofentries-n.csv
+
+$ head klk-formsofentries-n.csv 
+aakkosto,aakkosto aakkostoa aakkostoja aakkoston aakkostoon aakkostossa aakkostot
+aakkostu{ØkØkk}s{ØeØeØ},aakkostukseen aakkostuksen aakkostuksiin aakkostus aakkostusta
+aakko{ns}{eeØØ}{nØØØ},aakkonen aakkoseen aakkoseksi aakkosella aakkoselle aakkoselta aakkosen aakkosena aakkoseni aakkosessa aakkosesta aakkoset aakkosetta aakkosia aakkosien aakkosiin aakkosiksi aakkosilla aakkosille aakkosilta aakkosin aakkosina aakkosissa aakkosista aakkositta aakkossa aakkosta aakkosten
+aallokkoisuu{ØØØØk}{tds}{ØeØeØ},aallokkoisuudesta aallokkoisuuteen
+aallokkuu{ØØØØk}{tds}{ØeØeØ},aallokkuuden aallokkuus
+aallok{kØ}o,aallokko aallokkoa aallokkohon aallokkoihin aallokkoina aallokkoja aallokkojen aallokkona aallokkoon aallokoiden aallokoiksi aallokoilla aallokoille aallokoilta aallokoin aallokoissa aallokoista aallokoksi aallokolla aallokolle aallokolta aallokon aallokossa aallokosta aallokot aallokotta
+aallop{pØ}{iieØ},aallopilla aallopille aallopin aallopissa aallopista aalloppeihin aalloppeita aalloppi aalloppia aalloppiin
+aallotu{ØkØkk}s{ØeØeØ},aallotukseen aallotuksella aallotuksen aallotuksessa aallotus aallotusta
+aallot{tØ}ar{ØeØeØ},aallotar aallotarta aallotarten aallottarein aallottareksi aallottarelle aallottaren aallottaresta aallottaria aallottarien aallottariin aallottarilta aallottarista
+aaltoilu,aaltoilu aaltoilua aaltoiluhun aaltoiluiden aaltoiluihin aaltoiluin aaltoiluin aaltoiluina aaltoiluissa aaltoiluista aaltoiluja aaltoilujen aaltoiluksi aaltoilulla aaltoilulle aaltoilulta aaltoilun aaltoiluna aaltoilussa aaltoilusta aaltoilut aaltoilutta aaltoiluun
+
+$ wc -l klk-formsofentries-n.csv 
+29368 klk-formsofentries-n.csv
+
+klk-formsofentries.csv lines 47325 (11.5.2019 S+V)
+
+$ egrep 'S' ksk-n.dic | wc -l
+35014
+$ wc -l ksk-v.dic 
+16629 ksk-v.dic
+yhteensä 51643
+
+
+---
+
+Kaikki sanamuodot sisältävä tekstimuotoinen taajuuslista: vns_frek.zip (pakattu):
+http://kaino.kotus.fi/sanat/taajuuslista/vns_frek.zip
+
+http://kaino.kotus.fi/sanat/taajuuslista/vns.php
+   Taajuuslistaan sisältyvät Kotuksen varhaisnykysuomen tekstikorpuksessa esiintyvät sananmuodot taajuustietoineen. Listasta on jätetty pois seuraavat sanalistat ja -kirjat: Ahlmanin sanakirja, Heleniuksen sanakirja, Lönnrotin sanastoja, Renvallin sanakirja, Sanaluettelot ja Suomalainen Puhuttelija - Finsk Parlör.
+   Teksti on käsitelty ennen sananmuotojen laskemista siten, että isot kirjaimet on muutettu pieniksi ja tekstistä on poistettu kaikki ne merkkijonot, jotka eivät sisällä yhtäkään numeroa tai kirjainta, mm. välimerkit. Lista on järjestetty siten, että yleisin sananmuoto on siinä ensimmäisenä.
+   Taajuuslistassa jokaiseen sananmuotoon liittyy sen taajuudenmukainen järjestysluku, sen esiintymien lukumäärä aineistossa ja sananmuodon esiintymien suhteellinen osuus prosentteina aineiston kaikista saneista. Saneita listaa varten käsitellyssä korpuksessa on yhteensä 4 862 190. 
+
+Varhaisnykysuomen tekstikorpuksen kaikki sananmuodot sisältävä taajuuslista [sanalista]. - Helsinki : Kotimaisten kielten keskus [viitattu ja ladattu 8.4.2019].  Saatavissa: http://kaino.kotus.fi/sanat/taajuuslista/vns_frek.zip
+
+$ unzip vns_frek.zip
+Archive:  vns_frek.zip
+  inflating: vns_frek.txt
+
+$ wc -l vns_frek.txt 
+530715 vns_frek.txt
+
+$ head vns_frek.txt 
+1 190254 ja (3.9129 %)
+2 89041 on (1.8312 %)
+3 39284 ei (0.8079 %)
+4 38486 ett� (0.7915 %)
+5 37615 niin (0.7736 %)
+6 33120 kuin (0.6811 %)
+7 30283 se (0.6228 %)
+8 26258 h�n (0.5400 %)
+9 25486 joka (0.5241 %)
+10 25318 mutta (0.5207 %)
+
+$ tail vns_frek.txt 
+206987 1 4433621 (2.0566e-05 %)
+206987 1 -rautakyanihtuma (2.0566e-05 %)
+206987 1 domarn�sin (2.0566e-05 %)
+206987 1 p��tyv�n (2.0566e-05 %)
+206987 1 ensiksimainitussa (2.0566e-05 %)
+206987 1 kalkanta (2.0566e-05 %)
+206987 1 tekij�oikeus (2.0566e-05 %)
+206987 1 kuorenvaihos (2.0566e-05 %)
+206987 1 laatimilla (2.0566e-05 %)
+206987 1 horisontillisella (2.0566e-05 %)
+
+$ iconv -f latin1 -t utf8 vns_frek.txt > vns-freq.text
+
+$ tail vns-freq.text 
+206987 1 4433621 (2.0566e-05 %)
+206987 1 -rautakyanihtuma (2.0566e-05 %)
+206987 1 domarnäsin (2.0566e-05 %)
+206987 1 päätyvän (2.0566e-05 %)
+206987 1 ensiksimainitussa (2.0566e-05 %)
+206987 1 kalkanta (2.0566e-05 %)
+206987 1 tekijäoikeus (2.0566e-05 %)
+206987 1 kuorenvaihos (2.0566e-05 %)
+206987 1 laatimilla (2.0566e-05 %)
+206987 1 horisontillisella (2.0566e-05 %)
+
+$ cat vns-freq.text | cut -d ' ' -f 3 | egrep "^[a-zåäöšž][-a-zåäöšž']+[a-zåäöšž]$" | sort > vns-words.text
+
+$ wc -l vns-words.text 
+506243 vns-words.text
+
+$ tail vns-words.text 
+öylätti
+öylättiä
+öyläätejä
+öylöin
+ö-äänihin
+öön
+ö'ön
+öör
+öösel
+ööseli
+
+----
+
+diff --suppress-common-lines -y -W 200 ofi-n-guesses-BAK.csv ofi-n-guesses.csv | less
+
+----
+
+$ cat ~/Dropbox/lang/fin/sktp-2plus.words | hfst-lookup -i ofi-n.ofst 2> /dev/null | egrep 'N\+SG\+NOM' | cut -f 1 > sktp-n-sgnom.words
+
+$ cat ~/Dropbox/lang/fin/sktp-2plus.words | hfst-lookup -i ofi-n.ofst 2> /dev/null | egrep 'N\+SG\+GEN' | cut -f 1 > sktp-n-sggen.words
+
+$ cat sktp-n-sgnom.words | python3 analys2lexc.py > ofi-pref-nom.lexc
+
+$ hfst-lookup -i ofi-n.ofst 2>/dev/null < ~/Dropbox/lang/fin/sktp-2plus.words | egrep 'CMPD' | less
+
+----
+
+$ cat ofi-guess-nv.fst | hfst-minimize | hfst-fst2fst -w -o ofi-guess-nv.ofst 
+
+----
+
+$ cat ../../alastalonsalissa/*.text | tr ' ' '\n' | egrep '^[-a-zA-ZåäöÅÄÖšž]+$' | tr 'A-ZÅÄÖ' 'a-zÅÄÖ' | sort | uniq > alastalo.words
+
+$ hfst-strings2fst -j -i alastalo.words | hfst-minimize -o ala.fst
+
+$ hfst-disjunct -1 ofi-guess-v.fst -2 ofi-guess-n.fst | hfst-minimize -o ofi-guess-nv.fst
+
+$ hfst-compose -1 ala.fst -2 ofi-guess-nv.fst | hfst-minimize | hfst-invert | hfst-fst2strings -w | sort > ala-word-guesses.text
+
+----
+
+$ python3 ../guessfromforms.py -r 4 ofi-guess-v.ofst klk-formsofentries-v.csv > klk-forms-guesses-v.csv
+
+$ egrep -v '[|]' klk-forms-guesses-v.csv | cut -f2 -d',' > ofi-lexic-v.text
+
+$ wc -l klk-formsofentries-v.csv
+14681 klk-formsofentries-v.csv
+
+$ wc -l ofi-lexic-v.text 
+13825 ofi-lexic-v.text
+
+----
+
+$ hfst-lookup -p -i ksk-analy.ofst -I ~/Dropbox/lang/fin/sktp-2plus.words | egrep '/a;' | cut -f 2 | cut -d ';' -f 1 | sort | uniq | python3 entries2lexc.py Adjectives > ofi-lexic-a.lexc
+
+Multichar_Symbols
+{aoeØ} {ao} {aØeØ} {aØo} {aØoØ} {aØ} {eeØØ} {ieØeØ} {ieØeØØ} {iieØ} {iiiie} {kg} {kØ} {kØØ} {mn} {nm} {ns} {nØØØ} {pm} {pv} {pØ} {sØh} {tds} {td} {tl} {tn} {tr} {tØthn} {tØ} {tØØ} {ue} {ye} {ØaØØØ} {ØeØeØ} {ØeØØØ} {ØiØiØ} {ØkØkk} {ØpmØ} {Øth} {ØØh} {ØØthn} {ØäØØØ} {äØeØ} {äØ} {äØö} {äØöØ} {äö}
+LEXICON Adjectives
+aakkoselli{ns}{eeØØ}{nØØØ} /a ;
+aaltomai{ns}{eeØØ}{nØØØ} /a ;
+aamui{ns}{eeØØ}{nØØØ} /a ;
+aamulli{ns}{eeØØ}{nØØØ} /a ;
+aasialai{ns}{eeØØ}{nØØØ} /a ;
+aateli{ns}{eeØØ}{nØØØ} /a ;
+aatelit{tØ}o{nm}{ØaØØØ} /a ;
+
+$ hfst-lookup -p -i ksk-analy.ofst -I ~/Dropbox/lang/fin/sktp-2plus.words | egrep '/p[a-z]*;' | cut -f 2 | cut -d ';' -f 1 | sort | uniq | python3 entries2lexc.py Particles > ofi-lexic-p.lexc
+
+LEXICON Particles
+aah /p ;
+aalloittain /pc ;
+aaltomaisesti /pc ;
+aamen /pc ;
+aamuisin /pc ;
+aamusella /pc ;
+aamutuimaan /pc ;
+
+$ hfst-lookup -p -i ofi-analy.ofst -I ~/Dropbox/lang/fin/sktp-2plus.words | egrep 'inf' | cut -f 1 > sktp-2plus.rejected
+
+aaker
+aakke
+aakko
+aakkos
+aakkosjärjestykseen
+aakkosjärjestyksen
+aakkosjärjestyksessä
+aakkosjärjestys
+
+----
+
+$ hfst-lookup -p -i ofi-analy.ofst -I ~/Dropbox/lang/fin/sktp-2plus.words | egrep '§' | cut -f 2 | sort | uniq > sktp-analy-compo.text
+
+aallon{§}harj{ao} /s;+N+PL+NOM
+aallon{§}harj{ao} /s;+N+SG+ABL
+aallon{§}harj{ao} /s;+N+SG+ADE
+aallon{§}harj{ao} /s;+N+SG+ALL
+aallon{§}harj{ao} /s;+N+SG+NOM
+aallon{§}harj{ao} /s;+N+SG+PTV
+aallon{§}huip{pØ}u /s;+N+SG+GEN
+aallon{§}huip{pØ}u /s;+N+SG+PTV
+aallon{§}korkeu{ØØØØk}{stds}{ØeØeØ} /s;+N+SG+GEN
+aallon{§}korkeu{ØØØØk}{stds}{ØeØeØ} /s;+N+SG+NOM
+aallon{§}loiske{Øth}{ØeØeØ} /s;+N+SG+GEN
+aallon{§}muodostu{ØkØkk}s{ØeØeØ} /s;+N+SG+PTV
+
+$ python3 analywords2lexc.py < sktp-analy-compo.text > sktp-lexic-compo.lexc
+
+$ head sktp-lexic-compo.lexc 
+Multichar_Symbols
+{ao} {aØo} {aØ} {eeØ} {eeØØ} {ieeeØ} {ieeØeØ} {ieØeØ} {ieØeØØ} {iieØ} {iØ} {k'} {kg} {kj} {kv} {kØk} {kØ} {kØØ} {mn} {nm} {ns} {nØØØ} {oØ} {pm} {pv} {pØp} {pØ} {shs} {stds} {sØh} {tds} {td} {tl} {tns} {tn} {trs} {tr} {tØthn} {tØt} {tØ} {tØØ} {ue} {uØ} {yØ} {§} {ØaØØØ} {ØeØeØ} {ØeØØØ} {ØieØ} {ØiØiØ} {ØkØkk} {ØoØoØ} {ØpmØ} {Øth} {ØØh} {ØØthn} {ØØØØk} {ØäØØØ} {äØ} {äØö} {äö}
+LEXICON Compounds
+aallon{§}harj{ao} /s "weight: 1.667" ;
+aallon{§}murtaj{aØo} /s "weight: 0.714" ;
+aallon{§}pituu{ØØØØk}{stds}{ØeØeØ} /s "weight: 1.429" ;
+aallon{§}pohja{ns}{eeØØ}{nØØØ} /s "weight: 3.333" ;
+aallon{§}pohj{aØ} /s "weight: 0.588" ;
+aallon{§}t{iØ}e /s "weight: 3.333" ;
+aalto{§}järv{ieeeØ} /s "weight: 3.333" ;
+
+----
+
+$ cat sktp-n-sgnom.words sktp-n-sgnom.words | python3 analys2lexc.py > ofi-lexic-firstpart.lexc

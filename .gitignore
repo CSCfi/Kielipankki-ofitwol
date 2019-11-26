@@ -1,10 +1,14 @@
 *~
 *.fst
+*.ofst
+*.BAK
 __*__
 *.gnumeric
 *.lexc
 alpha.twolc
 *.bak.*
 oldstuff/*
+ksk/ksk-lex*
+ksk/ofi-*
 test.result
 

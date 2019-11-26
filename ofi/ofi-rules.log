@@ -1,0 +1,1261 @@
+*** example contains an invalid pair symbol
+l a i h {aoeØ}:o {ij}:i n {aä}:
+
+
+CoS = [:b|:c|:d|:f|:g|:h|:k|:l|:m|:n|:p|:q|:r|:s|:š|:t| :v|:w|:x|:z|:ž|:j] - {ij}: ;
+
+
+CoM = CoS.m|{C}: ;
+
+
+CoØ = [CoM - CoS] ;
+
+
+VoS = :a | :e | :i | :o | :u | :y | :ä | :ö ;
+
+
+Vok = [VoS - {ij}:] ;
+
+
+VoM = Vok.m ;
+
+
+VoØ = [VoM - VoS] ;
+
+
+MeSØ = :e.m & :Ø ;
+
+
+Z = [:Ø* |:'] ;
+
+
+VzV = [:a Z :a|:e Z :e|:i Z :i|:o Z :o|:u Z :u| :y Z :y|:ä Z :ä|:ö Z :ö] ;
+
+
+VV = [:a :a|:e :e|:i :i|:o :o|:u :u| :y :y|:ä :ä|:ö :ö] ;
+
+
+VVØ = [:a :Ø* [:a.m & :Ø]] | [:e :Ø* [:e.m & :Ø]] | [:i  :Ø* [:i.m & :Ø]] | [:o  :Ø* [:o.m & :Ø]] | [:u :Ø* [:u.m & :Ø]] | [:y :Ø* [:y.m & :Ø]] | [:ä :Ø* [:ä.m & :Ø]] | [:ö :Ø* [:ö.m & :Ø]] ;
+
+
+VVo = VV | VoS :i | :a :u | :e :u | :e :y | :i :e | :u :o | :y :ö | :ä ({ØvØvØØ}:Ø) :y ;
+
+
+VbV = [:e :a|:e :ä|:i :a|:i :o|:i :ö|:o :a|:u :a|:u (:Ø) :e|:y (:Ø) :e] ;
+
+
+EOW = .#. | {`}:Ø  ;
+
+
+BOW = .#. | {§}:Ø ;
+
+
+CLOSED = VoM ([:i - {ii}:] | VoØ) CoM (VoØ) [CoM|EOW|{PS}:] ;
+
+
+OPEN = VoM [(CoM) [VoS|(VoØ) :i] | EOW | {PS}:] ;
+
+
+{kkkØØ}:k <=> _ s :Ø* VoS ;
+All positive examples accepted
+All negative examples rejected
+
+
+{kØ}:Ø | {k'}:' <=> _ CLOSED ;
+All positive examples accepted
+All negative examples rejected
+
+
+{kg}:g <=> _ CLOSED ;
+All positive examples accepted
+All negative examples rejected
+
+
+{kj}:j <=> _ CLOSED ;
+All positive examples accepted
+All negative examples rejected
+
+
+{kv}:v <=> _ CLOSED ;
+All positive examples accepted
+All negative examples rejected
+
+
+{k'}:' => VoS :a _ :a , VoS :e _ :e , VoS :i _ :i , VoS :o _ :o , VoS :u _ :u , VoS :y _ :y , VoS :ä _ :ä , VoS :ö _ :ö ;
+All positive examples accepted
+** Some negative examples accepted:
+l i u {k'}:' u
+v a a {k'}:' a {ØsnØtt}:s {aØØØØ}:Ø {i}:i
+
+
+{kØ}:Ø /<= VoS :a _ :a , VoS :e _ :e , VoS :i _ :i , VoS :o _ :o , VoS :u _ :u , VoS :y _ :y , VoS :ä _ :ä , VoS :ö _ :ö ;
+All positive examples accepted
+
+
+{kØØ}:Ø | {tØØ}:Ø => _ CLOSED , _ [:e|:o|:u|:y|:ö] {ij}:i [:t|:h] ;
+All positive examples accepted
+** Some negative examples accepted:
+i l m e t {tØØ}:Ø y {ij}:i {Øh}:h {V}:i n
+
+
+{kØØ}:k | {tØØ}:t /<= _ CLOSED , _ [:e|:o|:u|:y|:ö] {ij}:i :t ;
+All positive examples accepted
+
+
+{kØk}:Ø <=> _ s VoØ [{Øt}:t | t e] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{Økhkhh}:Ø => _ CLOSED ;
+All positive examples accepted
+** Some negative examples accepted:
+n ä {Økhkhh}:Ø {eØØØØ}:Ø {dlnrtØ}:d {C}:Ø {aä}:ä {aä}:ä n
+n ä {Økhkhh}:Ø {eØØØØ}:Ø {tttØ}:Ø t i i n
+n ä {Økhkhh}:Ø {eØØØØ}:Ø {tttØ}:Ø {dlnrtØ}:d {uy}:y t
+n ä {Økhkhh}:Ø {eØØØØ}:Ø {tttØ}:Ø {dlnrtØ}:t {uy}:y
+
+
+{Økhkhh}:k => _ OPEN ;
+All positive examples accepted
+** Some negative examples accepted:
+n ä {Økhkhh}:k {eØØØØ}:Ø k {oö}:ö {oö}:ö n
+n ä {Økhkhh}:k {eØØØØ}:Ø {dlnrtØ}:d {aä}:ä k s e n i
+n ä {Økhkhh}:k {eØØØØ}:Ø {nlrs}:n e {VØ}:e
+n ä {Økhkhh}:k {eØØØØ}:Ø {nlrs}:n {uy}:y t
+
+
+{Økhkhh}:h <=> _ VoØ [{nlrs}:|k|{dlnrtØ}:|{tttØ}:] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{pØ}:Ø|{pm}:m | {pv}:v <=> _ CLOSED ;
+All positive examples accepted
+All negative examples rejected
+
+
+{pØp}:Ø <=> _ s VoØ [{nrs}: | :t {aä}: | :t e] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ØpmØ}:Ø <=> _ (VoØ) [:t | {nrs}: | EOW] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ØpmØ}:m <=> _ CLOSED ;
+All positive examples accepted
+All negative examples rejected
+
+
+{tØ}:Ø | {td}:d | {tn}:n | {tl}:l | {tr}:r <=> _ CLOSED ;
+All positive examples accepted
+All negative examples rejected
+
+
+{kh}:k <=> _ :s ;
+All positive examples accepted
+All negative examples rejected
+
+
+{tds}:d|{tls}:l|{trs}:r|{tns}:n| {tdst}:d|{tlst}:l|{trst}:r|{tnst}:n => _ CLOSED ;
+All positive examples accepted
+** Some negative examples accepted:
+h i r {trs}:r {ieØeØ}:Ø {ij}:i s s {aä}:ä
+j ä l {tls}:l {ieØeØ}:Ø {ij}:i s s {aä}:ä
+k a n {tns}:n {ieØeØ}:Ø {ij}:i s s {aä}:a
+k ä {tds}:d {ieØeØ}:Ø {ij}:i s s {aä}:ä
+t o {tds}:d {ieØeØ}:Ø {ij}:i s s {aä}:a
+u u {tds}:d {ieØeØ}:Ø i {nm}:m {ØpmØ}:p {aäØ}:Ø {ij}:i e n
+u u {tds}:d {ieØeØ}:Ø i {nm}:n {ØpmØ}:Ø {aäØ}:Ø
+u u {tds}:d {ieØeØ}:Ø i {nm}:n {ØpmØ}:Ø {aäØ}:Ø {Øt}:t {aä}:a
+
+
+{tds}:t|{tls}:t|{trs}:t|{tns}:t| {tdst}:t|{tlst}:t|{trst}:t|{tnst}:t => _ OPEN ;
+All positive examples accepted
+** Some negative examples accepted:
+h i r {trs}:t {ieØeØ}:i
+h i r {trs}:t {ieØeØ}:Ø {ij}:i e n
+h i r {trs}:t {ieØeØ}:Ø {ij}:i s s {aä}:ä
+h i r {trs}:t {ieØeØ}:Ø {ij}:i {Øh}:h {V}:i n
+h i r {trs}:t {ieØeØ}:Ø {ij}:i {Øh}:Ø {V}:i n
+h i r {trs}:t {ieØeØ}:Ø {ij}:i {Øt}:Ø {aä}:ä
+j ä l {tls}:t {ieØeØ}:i
+j ä l {tls}:t {ieØeØ}:Ø {ij}:i e n
+j ä l {tls}:t {ieØeØ}:Ø {ij}:i s s {aä}:ä
+j ä l {tls}:t {ieØeØ}:Ø {ij}:i {Øh}:h {V}:i n
+j ä l {tls}:t {ieØeØ}:Ø {ij}:i {Øh}:Ø {V}:i n
+j ä l {tls}:t {ieØeØ}:Ø {ij}:i {Øt}:Ø {aä}:ä
+k a n {tns}:t {ieØeØ}:i
+k a n {tns}:t {ieØeØ}:Ø {ij}:i e n
+k a n {tns}:t {ieØeØ}:Ø {ij}:i s s {aä}:a
+k a n {tns}:t {ieØeØ}:Ø {ij}:i {Øh}:h {V}:i n
+k a n {tns}:t {ieØeØ}:Ø {ij}:i {Øh}:Ø {V}:i n
+k a n {tns}:t {ieØeØ}:Ø {ij}:i {Øt}:Ø {aä}:a
+k ä {tds}:t {ieØeØ}:i
+k ä {tds}:t {ieØeØ}:Ø {ij}:i e n
+
+
+{tds}:s|{tls}:s|{trs}:s|{tns}:s <=> _ [VoØ {ij}: | VoØ i {nm}: | :i EOW | VoØ {i}:] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{tlst}:s|{trst}:s|{tnst}:s => _ VoØ {i}: ;
+All positive examples accepted
+All negative examples rejected
+
+
+{tdst}:s => _ VoØ {i}: , :k _ VoØ i s i ;
+All positive examples accepted
+** Some negative examples accepted:
+l ä {kh}:h {tdst}:s {eØØeei}:Ø {i}:i {VØ}:Ø
+
+
+{tdsØ}:t|{stds}:t => _ OPEN ;
+All positive examples accepted
+** Some negative examples accepted:
+k a l l e u {ØØØØk}:k {stds}:t {ØeØeØ}:Ø {ij}:i e n
+k a l l e u {ØØØØk}:k {stds}:t {ØeØeØ}:Ø {ij}:i s s {aä}:a
+k a l l e u {ØØØØk}:k {stds}:t {ØeØeØ}:Ø {ij}:i {Øh}:h {V}:i n
+k a l l e u {ØØØØk}:k {stds}:t {ØeØeØ}:Ø {ij}:i {Øh}:Ø {V}:i n
+k a l l e u {ØØØØk}:k {stds}:t {ØeØeØ}:Ø {ij}:i {Øt}:Ø {aä}:a
+k a l l e u {ØØØØk}:Ø {stds}:t {ØeØeØ}:Ø
+k a {kh}:h {tdsØ}:t {ieØeØ}:Ø {Øt}:t {aä}:a
+k a {kh}:k {tdsØ}:t {ieØeØ}:i
+k a {kh}:k {tdsØ}:t {ieØeØ}:Ø {ij}:i e n
+k a {kh}:k {tdsØ}:t {ieØeØ}:Ø {ij}:i s s {aä}:a
+k a {kh}:k {tdsØ}:t {ieØeØ}:Ø {ij}:i {Øh}:h {V}:i n
+k a {kh}:k {tdsØ}:t {ieØeØ}:Ø {ij}:i {Øh}:Ø {V}:i n
+k a {kh}:k {tdsØ}:t {ieØeØ}:Ø {ij}:i {Øt}:Ø {aä}:a
+p i e n u u {ØØØØk}:Ø {stds}:t {ØeØeØ}:Ø
+
+
+{tdsØ}:d|{stds}:d => _ CLOSED ;
+All positive examples accepted
+** Some negative examples accepted:
+k a l l e u {ØØØØk}:k {stds}:d {ØeØeØ}:Ø {ij}:i s s {aä}:a
+k a {kh}:k {tdsØ}:d {ieØeØ}:Ø {ij}:i s s {aä}:a
+
+
+{tdsØ}:Ø <=> _ VoØ [:t {aä}: | :t e] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{tdsØ}:s <=> _ (VoØ) :i ;
+All positive examples accepted
+All negative examples rejected
+
+
+{stds}:s <=> _ VoØ [EOW | {ij}:] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ttns}:t => _ OPEN , _ VoØ EOW , _ VoØ {Øt}:t ;
+All positive examples accepted
+** Some negative examples accepted:
+t u h a {ØnØnn}:n {ttns}:t {ØeØeØ}:Ø {ij}:i e n
+t u h a {ØnØnn}:n {ttns}:t {ØeØeØ}:Ø {ij}:i s s {aä}:a
+t u h a {ØnØnn}:n {ttns}:t {ØeØeØ}:Ø {ij}:i {Øh}:h {V}:i n
+t u h a {ØnØnn}:n {ttns}:t {ØeØeØ}:Ø {ij}:i {Øh}:Ø {V}:i n
+t u h a {ØnØnn}:n {ttns}:t {ØeØeØ}:Ø {ij}:i {Øt}:Ø {aä}:a
+t u h a {ØnØnn}:Ø {ttns}:t {ØeØeØ}:Ø t e n
+
+
+{ttns}:n => _ CLOSED , _ VoØ t e ;
+All positive examples accepted
+** Some negative examples accepted:
+t u h a {ØnØnn}:n {ttns}:n {ØeØeØ}:Ø {ij}:i s s {aä}:a
+
+
+{ttns}:s <=> _ VoØ :i ;
+All positive examples accepted
+All negative examples rejected
+
+
+{V}:a <=> :a :Ø* ({Øh}:) _ ;
+All positive examples accepted
+All negative examples rejected
+
+
+{V}:e <=> :e :Ø* ({Øh}:) _ ;
+All positive examples accepted
+All negative examples rejected
+
+
+{V}:i <=> :i :Ø* ({Øh}:) _ ;
+All positive examples accepted
+All negative examples rejected
+
+
+{V}:o <=> :o :Ø* ({Øh}:) _ ;
+All positive examples accepted
+All negative examples rejected
+
+
+{V}:u <=> :u :Ø* ({Øh}:) _ ;
+All positive examples accepted
+All negative examples rejected
+
+
+{V}:y <=> :y :Ø* ({Øh}:) _ ;
+All positive examples accepted
+All negative examples rejected
+
+
+{V}:ä <=> :ä :Ø* ({Øh}:) _ ;
+All positive examples accepted
+All negative examples rejected
+
+
+{V}:ö <=> :ö :Ø* ({Øh}:) _ ;
+All positive examples accepted
+All negative examples rejected
+
+
+{VØ}:Ø <=> [{i}: | i s i] _ , VVo _  ;
+All positive examples accepted
+All negative examples rejected
+
+
+{VØ}:a => :a _ ;
+All positive examples accepted
+** Some negative examples accepted:
+s a {aØØaa}:a {VØ}:a
+
+
+{VØ}:e => :e _ ;
+All positive examples accepted
+All negative examples rejected
+
+
+{VØ}:i => :i _ ;
+All positive examples accepted
+** Some negative examples accepted:
+a i {td}:t a {ØsnØtt}:s {aØØØØ}:Ø {i}:i {VØ}:i
+a i {td}:t a {ØsnØtt}:Ø {aØØØØ}:Ø i s i {VØ}:i
+a l e {nt}:n {eØØØeØØ}:e i s i {VØ}:i
+a l e {nt}:n {eØØØeØØ}:Ø i s i {VØ}:i
+a l e {nt}:n {eØØØeØØ}:Ø {i}:i {VØ}:i
+a n t a u {td}:t u i s i {VØ}:i
+a n t a u {td}:t u {i}:i {VØ}:i
+a n t a u {ØsØØØØ}:s {i}:i {VØ}:i
+a n t a u {ØsØØØØ}:Ø i s i {VØ}:i
+a r v a {iiiieii}:e l {eØØØeØØ}:e i s i {VØ}:i
+a r v a {iiiieii}:i l {eØØØeØØ}:Ø i s i {VØ}:i
+a r v a {iiiieii}:i l {eØØØeØØ}:Ø {i}:i {VØ}:i
+h a a s t {aoØaae}:a i s i {VØ}:i
+h a a s t {aoØaae}:o {i}:i {VØ}:i
+h a a s t {aoØaae}:Ø {i}:i {VØ}:i
+h a l u {ØsnØtt}:s {aØaØØ}:Ø {i}:i {VØ}:i
+h a l u {ØsnØtt}:Ø {aØaØØ}:a i s i {VØ}:i
+h a r a v o i {tnt}:t {ssØsØØ}:s {eØØØØ}:Ø i s i {VØ}:i
+h a r a v o i {tnt}:t {ssØsØØ}:s {eØØØØ}:Ø {i}:i {VØ}:i
+h a r a v o {iØiØii}:Ø i s i {VØ}:i
+
+
+{VØ}:o => :o _ ;
+All positive examples accepted
+All negative examples rejected
+
+
+{VØ}:u => :u _ ;
+All positive examples accepted
+All negative examples rejected
+
+
+{VØ}:y => :y _ ;
+All positive examples accepted
+All negative examples rejected
+
+
+{VØ}:ä => :ä _ ;
+All positive examples accepted
+All negative examples rejected
+
+
+{VØ}:ö => :ö _ ;
+All positive examples accepted
+All negative examples rejected
+
+
+{eeØ}:Ø <=> _ [{ij}:] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{iØ}:Ø <=> _ (e) [{ij}:|{i}:|i s i] , :h VoS s e _ , :h (:Ø) VoØ {ij}:i s i _ ;
+All positive examples accepted
+All negative examples rejected
+
+
+{oØ}:Ø <=> _ {ij}: ;
+All positive examples accepted
+All negative examples rejected
+
+
+{uØ}:Ø <=> _ (:o) :i ;
+All positive examples accepted
+All negative examples rejected
+
+
+{yØ}:Ø <=> _ (:ö) :i ;
+All positive examples accepted
+All negative examples rejected
+
+
+{öØ}:Ø <=> _ :i ;
+All positive examples accepted
+All negative examples rejected
+
+
+{aä}:a|{oö}:o|{uy}:u <=> [:a|:o|:u] [\{§}:]* _ ;
+All positive examples accepted
+All negative examples rejected
+
+
+{nlrs}:l <=> :l VoØ _ ;
+All positive examples accepted
+All negative examples rejected
+
+
+{nlrs}:r <=> :r VoØ _ ;
+All positive examples accepted
+All negative examples rejected
+
+
+{nlrs}:s => :s VoØ _ ;
+All positive examples accepted
+All negative examples rejected
+
+
+{nlrs}:n => VoS _ , [:n|:h] :Ø* _ , VVo :Ø* (:s) (VoØ) _ ;
+All positive examples accepted
+** Some negative examples accepted:
+j u o {kkkØØ}:Ø s {eØØØØ}:Ø {nlrs}:n e {VØ}:e
+n u o l a i s {eØØØØ}:Ø {nlrs}:n e {VØ}:e
+n u o l a i s {eØØØØ}:Ø {nlrs}:n {uy}:u t
+
+
+{dlnrtØ}:d <=> VVo ({tttØ}:Ø) _ [{aä}: | {C}: | CLOSED] , VoS :h :Ø* _ [{aä}: | {C}: | CLOSED] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{dlnrtØ}:l <=> :l :Ø* _ [{aä}: | {C}: | CLOSED] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{dlnrtØ}:n <=> :n :Ø* _ [{aä}: | {C}: | CLOSED] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{dlnrtØ}:r <=> :r :Ø* _ [{aä}: | {C}: | CLOSED] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{dlnrtØ}:Ø <=> :t :Ø* _ [{aä}: | {C}: | CLOSED | {uy}: {ij}: {Øt}:t] , [CoS VoS|VbV] _ [{aä}: | e] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{tttØ}:Ø <=> CoS :Ø* _ , VVo _ ;
+All positive examples accepted
+All negative examples rejected
+
+
+{aoaae}:o <=> _ {i}: ;
+All positive examples accepted
+All negative examples rejected
+
+
+{aoØaae}:o|{aoØaae}:Ø <=> _ {i}: ;
+All positive examples accepted
+** Some negative examples accepted:
+s a a r {trst}:s {aoØaae}:o {i}:i {VØ}:Ø
+
+
+{aoaae}:e|{aoØaae}:e <=> _ [{dlnrtØ}:t | {tttØ}:t] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{aØaae}:Ø|{äØääe}:Ø <=> _ {i}: ;
+All positive examples accepted
+All negative examples rejected
+
+
+{aØaae}:e|{äØääe}:e <=> _ [{dlnrtØ}: [{tØ}:|{C}:]|{tttØ}:] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{aØØaa}:Ø|{äØØää}:Ø <=> _ :i ;
+All positive examples accepted
+All negative examples rejected
+
+
+{aØaØØ}:Ø <=> _ {i}: | {nlrs}: | k | {dlnrtØ}: | {tttØ}: ;
+All positive examples accepted
+All negative examples rejected
+
+
+{aØØØØ}:Ø <=> _ {i}: | i s i | {nlrs}: | k | {dlnrtØ}: | {tttØ}: ;
+All positive examples accepted
+All negative examples rejected
+
+
+{eØØeei}:Ø <=> _ {i}: | i s i ;
+All positive examples accepted
+All negative examples rejected
+
+
+{eØØeei}:i <=> _ [{dlnrtØ}: e s s | {dlnrtØ}: e n] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{eØØØØ}:Ø <=> _ {i}: | i s i | {nlrs}: | k | {dlnrtØ}: | {tttØ}: ;
+All positive examples accepted
+All negative examples rejected
+
+
+{eØØØeØØ}:Ø => _ {i}: | i s i | {nlrs}: | k | {dlnrtØ}: | {tttØ}: ;
+All positive examples accepted
+** Some negative examples accepted:
+a r v a {iiiieii}:e l {eØØØeØØ}:Ø i s i {VØ}:Ø
+
+
+{eØØØeØØ}:e /<= _ {i}: | {nlrs}: | k | {dlnrtØ}: | {tttØ}: ;
+All positive examples accepted
+
+
+{iiiieii}:e <=> _ l :e i s i ;
+All positive examples accepted
+All negative examples rejected
+
+
+{iØiØii}:Ø <=> _ (e) [{i}: | i s i] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{äØØØØ}:Ø <=> _ {i}: | i s i | {nlrs}: | k | {dlnrtØ}: | {tttØ}: ;
+All positive examples accepted
+All negative examples rejected
+
+
+{äØäØØ}:Ø <=>  _ {i}: | {nlrs}: | k | {dlnrtØ}: | {tttØ}: ;
+All positive examples accepted
+All negative examples rejected
+
+
+{nt}:t <=> _ (VoØ) [k | {dlnrtØ}: | {tttØ}:] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{sØ}:Ø <=> _ VoØ [{nlrs}: | k | {dlnrtØ}: | {tttØ}:] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ssØsØØ}:s <=> _ :e | (VoØ) :i ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ØsØØØØ}:s <=> _ {i}: ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ØsnØtt}:s <=> _ (VoØ) {i}: ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ØsnØtt}:n <=> _ (VoØ) {nlrs}:n ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ØsnØtt}:t <=> _ (VoØ) [k | {dlnrtØ}: | {tttØ}:] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{tnt}:n <=> _ :Ø VoØ {nlrs}: ;
+All positive examples accepted
+All negative examples rejected
+
+
+{dsnttt}:s <=> _ VoØ {i}: ;
+All positive examples accepted
+All negative examples rejected
+
+
+{dsnttt}:n <=> _ VoØ {nlrs}: ;
+All positive examples accepted
+All negative examples rejected
+
+
+{dsnttt}:t => _ OPEN , _ VoØ [k | {dlnrtØ}: | {tttØ}:] ;
+All positive examples accepted
+** Some negative examples accepted:
+k a a {dsnttt}:t {aØaØØ}:Ø {i}:i {VØ}:Ø
+k a a {dsnttt}:t {aØaØØ}:Ø {nlrs}:n e {VØ}:e
+k a a {dsnttt}:t {aØaØØ}:Ø {nlrs}:n {uy}:u t
+
+
+{dsnttt}:d => _ CLOSED;
+All positive examples accepted
+** Some negative examples accepted:
+k a a {dsnttt}:d {aØaØØ}:Ø {dlnrtØ}:Ø {C}:Ø {aä}:a {aä}:a n
+k a a {dsnttt}:d {aØaØØ}:Ø {tttØ}:Ø t i i n
+k a a {dsnttt}:d {aØaØØ}:Ø {tttØ}:Ø {dlnrtØ}:t {uy}:u
+
+
+{dsnttt}:d /<= _ VoØ [k | {dlnrtØ}: | {tttØ}:] ;
+All positive examples accepted
+
+
+{ØvØvØØ}:v <=> _ VoØ :i ;
+All positive examples accepted
+All negative examples rejected
+
+
+{Øh}:Ø => CoS VoS ({nØØØ}:Ø) _ , VbV _ , CoS VoØ ({nØØØ}:Ø) {ij}:i _ ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ij}:i => CoS :Ø* _ , _ :Ø* CoS ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ij}:j => VoS _ :Ø* VoS ;
+All positive examples accepted
+All negative examples rejected
+
+
+{Øt}:t => Vok CoØ* VoØ {ij}:i _ , Vok CoØ* Vok ({ij}:i) _ , VoØ CoØ* Vok {ij}:i _ , VoØ CoØ* _ , {dt}:t _ , BOW CoM* [Vok+ CoM+]+ Vok+ CoM+ [:a|:ä] (CoØ) _ , BOW CoM* [Vok+ CoM+]+ Vok+ CoM+ Vok {ij}:i _ ;
+All positive examples accepted
+All negative examples rejected
+
+
+{Øt}:Ø => CoS VoS (CoØ) ({ij}:j) _ , CoS (CoØ) VoØ (CoØ) {ij}:i _ , :e :a | :e :ä | :i :a |:i :ä | :i :o | :i :ö | :o :a | :u :a _ , {dt}:d _ ;
+All positive examples accepted
+All negative examples rejected
+
+
+{Øt}:Ø /<= [VV |VVØ {ij}:| VoS VoS {ij}:] _ ;
+All positive examples accepted
+
+
+{Øt}:Ø /<= [{uØ}: o|{iØ}: e] ({ij}:) _ ;
+All positive examples accepted
+
+
+{Øt}:t /<= CoS [:o|:u|:y|:ö|{iieØ}:|{ØieØ}:|{iieØ}:|:e] _ ;
+All positive examples accepted
+
+
+{Øt}:t /<= BOW CoS* VoS+ [CoS|CoØ]+ [{aØ}:a|{ao}:a] _ ;
+All positive examples accepted
+
+
+{Øt}:t /<= BOW CoS* VoS+ [CoS|CoØ]+ [VoS|VoØ] {ij}: _ ;
+All positive examples accepted
+
+
+{Øt}:t /<= CoS VoØ ({nØØØ}:Ø) {ij}: _ ;
+All positive examples accepted
+
+
+{ij}: e n /<= VVØ _ ;
+All positive examples accepted
+
+
+{ij}: e n /<= VoS :Ø* VoØ _ ;
+All positive examples accepted
+
+
+{ij}: {dt}: /<= [CoS - :h] :Ø* _ ;
+All positive examples accepted
+
+
+{ij}: {dt}: /<= BOW CoS* VoS+ [CoS|CoØ]+ VoS _ ;
+All positive examples accepted
+
+
+{dt}:t <=> _ [:t {aä}: | :t e] ;
+All positive examples accepted
+All negative examples rejected
+
+
+t e n | t e {PS}: /<= VoS :Ø* _ :Ø* EOW ;
+All positive examples accepted
+
+
+i n | i n {PS}: /<= [VV] _ :Ø* EOW ;
+All positive examples accepted
+
+
+{Øe}:Ø <=> :h (:Ø) VoS s e _ ;
+All positive examples accepted
+All negative examples rejected
+
+
+s e {Øe}:e => VzV _ [n :Ø* EOW | {PS}:] ;
+All positive examples accepted
+All negative examples rejected
+
+
+s e {Øe}:Ø => [:a :h (:Ø) :a|:e :h (:Ø) :e|:i :h (:Ø) :i|:o :h (:Ø) :o| :u :h (:Ø) :u|:y :h (:Ø) :y|:ä :h (:Ø) :ä|:ö :h (:Ø) :ö] _ [n :Ø* EOW | {PS}:] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ij}:i s i {iØ}:i => [VoS (:Ø) (:Ø) VoØ] _ n | {PS}: ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ij}:i s i {iØ}:Ø => [VoS :h (:Ø) VoØ] _ n | {PS}: ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ØØh}:h => o _ [:o [:n|:s]|VoØ {ij}: [:s|:t|VoS CoS|{Øt}:Ø :a]] , a _ [:a [:n|:s]|VoØ {ij}: [:s|:t|VoS CoS|{Øt}:Ø :a]] , e _ [:e [:n|:s]|VoØ {ij}: [:s|:t|VoS CoS|{Øt}:Ø :a]] , a _ CoØ [:a [:n|:s]|VoØ {ij}: [:s|:t|VoS CoS|{Øt}:Ø :a]] ;
+All positive examples accepted
+** Some negative examples accepted:
+l e v e {ØØh}:h {eeØ}:e s e {Øe}:e n
+l e v e {ØØh}:h {eeØ}:e {nrs}:n {aä}:ä
+l e v e {ØØh}:h {eeØ}:Ø {ij}:i s i {iØ}:i n
+l e v e {ØØh}:h {eeØ}:Ø {ij}:i s s {aä}:ä
+l e v e {ØØh}:h {eeØ}:Ø {ij}:i {Øt}:t {aä}:ä
+t i e n o {ØØh}:h {oØ}:o s e {Øe}:e n
+t i e n o {ØØh}:h {oØ}:Ø {ij}:i s i {iØ}:i n
+t i e n o {ØØh}:h {oØ}:Ø {ij}:i {Øt}:t {aä}:a
+v a p a {ØØh}:h {aØ}:a s e {Øe}:e n
+v a p a {ØØh}:h {aØ}:Ø {ij}:i s i {iØ}:i n
+v a p a {ØØh}:h {aØ}:Ø {ij}:i {Øt}:t {aä}:a
+
+
+{Øth}:h => _ [:e|:i|:u] [:n|:s|:l|:k], _ [:e|:i|:u] {PS}: [:m|:n|:s] , _ VoØ {ij}:i [e|s|:l|:k|:t|{Øt}: {aä}:] ;
+All positive examples accepted
+** Some negative examples accepted:
+a a r {tr}:t e {Øth}:h {ØeØeØ}:e {PS}:Ø n i
+a h n e {Øth}:h {ØeØeØ}:e n
+a i n e {Øth}:h {ØeØeØ}:e s e {Øe}:e n
+a i n e {Øth}:h {ØeØeØ}:e s e {Øe}:e {PS}:Ø s i
+a i n e {Øth}:h {ØeØeØ}:Ø {ij}:i s i {iØ}:i n
+a i n e {Øth}:h {ØeØeØ}:Ø {ij}:i s i {iØ}:i {PS}:Ø s i
+k i i r u {Øth}:h {ØuØuØ}:u s e {Øe}:e n
+k i i r u {Øth}:h {ØuØuØ}:Ø {ij}:i s i {iØ}:i n
+k i i r u {Øth}:h {ØuØuØ}:Ø {ij}:i {Øt}:t {aä}:a
+o r i {Øth}:h {ØiØiØ}:i s e {Øe}:e n
+o r i {Øth}:h {ØiØiØ}:Ø {ij}:i s i {iØ}:i n
+o r i {Øth}:h {ØiØiØ}:Ø {ij}:i {Øt}:t {aä}:a
+v a a t {tØ}:t e {Øth}:h {ØeØeØ}:e s e {Øe}:e n
+v a a t {tØ}:t e {Øth}:h {ØeØeØ}:Ø {ij}:i s i {iØ}:i n
+v a a t {tØ}:t e {Øth}:h {ØeØeØ}:Ø {ij}:i {dt}:t {Øt}:t e n
+v a a t {tØ}:t e {Øth}:h {ØeØeØ}:Ø {ij}:i {Øt}:t {aä}:a
+
+
+{Øth}:t <=> _ VoØ [{Øt}:|:t] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ØhØtØØ}:h => _ {ØeØeØ}:e :n EOW ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ØhØtØØ}:t => _ {ØeØeØ}:Ø {Øt}:t {aä}: ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ØiØ}:i => _ :n VoØ [{nrs}: | :t | EOW] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{nrs}:r => :r VoØ _ ;
+All positive examples accepted
+All negative examples rejected
+
+
+{nrs}:s => :s VoØ ({nØØØ}:Ø) _ ;
+All positive examples accepted
+All negative examples rejected
+
+
+{aØ}:Ø | {äØ}:Ø <=> _ {ij}: | i {nm}: ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ao}:o | {äö}:ö <=> _ {ij}: | i {nm}: ;
+All positive examples accepted
+All negative examples rejected
+
+
+{aØo}:o => _ [{ij}:j | {ij}:i :Ø* CoS] ;
+All positive examples accepted
+** Some negative examples accepted:
+k o r k e {aØo}:o {ij}:i s i {iØ}:i n
+
+
+{aØo}:Ø => _ {ij}:i \[{dt}:|{Øt}:t] , _ i {nm}: , VoS _ {ij}:i ;
+All positive examples accepted
+All negative examples rejected
+
+
+{aØo}:a /<= _ {ij}: ;
+All positive examples accepted
+
+
+{äØö}:Ø|{äØö}:ö <=> _ {ij}: ;
+All positive examples accepted
+** Some negative examples accepted:
+l e v e {äØö}:ö {ij}:i s i {iØ}:i n
+
+
+{aØeØ}:Ø | {äØeØ}:Ø <=> _ {ij}: | i {nm}: ;
+All positive examples accepted
+All negative examples rejected
+
+
+{aØeØ}:e | {äØeØ}:e <=> _ m {pm}: ;
+All positive examples accepted
+All negative examples rejected
+
+
+{aoeØ}:o <=> _ {ij}: ;
+All positive examples accepted
+All negative examples rejected
+
+
+{aoeØ}:Ø <=> _ i {nm}: ;
+All positive examples accepted
+All negative examples rejected
+
+
+{aoeØ}:e <=> _ m {pm}: ;
+All positive examples accepted
+All negative examples rejected
+
+
+{aØoØ}:Ø | {äØöØ}:Ø => _ i {nm}: | {ij}:i ;
+All positive examples accepted
+** Some negative examples accepted:
+i h a n {aØoØ}:Ø {ij}:i s s {aä}:a
+
+
+{aØoØ}:o | {äØöØ}:ö => _ i {nm}: | {ij}: ;
+All positive examples accepted
+** Some negative examples accepted:
+h ä m ä r {äØöØ}:ö i {nm}:n {ØpmØ}:Ø {aäØ}:Ø {Øt}:t {aä}:ä
+i h a n {aØoØ}:o i {nm}:m {ØpmØ}:m {aäØ}:a n
+i h a n {aØoØ}:o i {nm}:m {ØpmØ}:p {aäØ}:Ø {ij}:i e n
+i h a n {aØoØ}:o i {nm}:n {ØpmØ}:Ø {aäØ}:Ø {Øt}:t {aä}:a
+i h a n {aØoØ}:o {ij}:i {Øt}:Ø {aä}:a
+
+
+{aØoØ}:a | {äØöØ}:ä /<= _ i {nm}: | {ij}: ;
+All positive examples accepted
+
+
+{ØaØØØ}:Ø|{ØäØØØ}:Ø => _ (CoØ) [{ij}: | i {nm}: | {Øt}:t | t e | {nrs}: | EOW] ;
+All positive examples accepted
+** Some negative examples accepted:
+k e v ä {tØthn}:h {ØäØØØ}:Ø {nrs}:n {aä}:ä
+k e v ä {tØthn}:Ø {ØäØØØ}:Ø {nrs}:n {aä}:ä
+k o i r a {sØh}:h {ØaØØØ}:Ø {nrs}:n {aä}:a
+k o i r a {sØh}:Ø {ØaØØØ}:Ø {nrs}:n {aä}:a
+l ä m {pm}:p i {mn}:m {ØäØØØ}:Ø {nrs}:n {aä}:ä
+l ä m {pm}:p i {mn}:m {ØäØØØ}:Ø {Øt}:t {aä}:ä
+m u u {Ødt}:t a {nmt}:m {ØaØØØ}:Ø {nrs}:n {aä}:a
+m u u {Ødt}:t a {nmt}:m {ØaØØØ}:Ø {Øt}:t {aä}:a
+o n n e t {tØ}:t o {ØiØ}:Ø {mn}:m {ØaØØØ}:Ø {nrs}:n {aä}:a
+p a h i {nm}:m {ØpmØ}:p {ØaØØØ}:Ø {nrs}:n {aä}:a
+p a h i {nm}:m {ØpmØ}:p {ØaØØØ}:Ø {Øt}:t {aä}:a
+s a a p {pØ}:p a {sØh}:h {ØaØØØ}:Ø {nrs}:n {aä}:a
+s a a p {pØ}:p a {sØh}:Ø {ØaØØØ}:Ø {nrs}:n {aä}:a
+s e i t s e {nm}:m {ØäØØØ}:Ø {nØØØ}:Ø {nrs}:n {aä}:ä
+s e i t s e {nm}:m {ØäØØØ}:Ø {nØØØ}:Ø {Øt}:t {aä}:ä
+v a s e {nm}:m {ØpmØ}:p {ØaØØØ}:Ø {nrs}:n {aä}:a
+v a s e {nm}:m {ØpmØ}:p {ØaØØØ}:Ø {Øt}:t {aä}:a
+v i e r a {sØh}:h {ØaØØØ}:Ø {nrs}:n {aä}:a
+v i e r a {sØh}:Ø {ØaØØØ}:Ø {nrs}:n {aä}:a
+
+
+{ØaØØØ}:a|{ØäØØØ}:ä /<= :n (:p)  _  , _ :Ø* [EOW | {ij}: | i {nm}:] ;
+All positive examples accepted
+
+
+{ØeØØØ}:e /<= _ :Ø* [:t e | {Øt}: | {ij}: | i {nm}: | .#.|{§}:|{`}:] ;
+All positive examples accepted
+
+
+{ØeØØØ}:Ø =>  _ [:t e | {Øt}: | {ij}: | i {nm}: | .#.|{§}:|{`}:] , VoS (CoØ) [:s|:n] _ {nrs}: ;
+All positive examples accepted
+All negative examples rejected
+
+
+{aäØ}:a => [:a|:o|:u] [\{§}:]* _ ;
+All positive examples accepted
+** Some negative examples accepted:
+a h n e {Øth}:Ø {ØeØeØ}:Ø i {nm}:m {ØpmØ}:m {aäØ}:a {ij}:i s s {aä}:a
+a h n e {Øth}:Ø {ØeØeØ}:Ø i {nm}:n {ØpmØ}:Ø {aäØ}:a
+a h {td}:t a {sØh}:Ø {ØaØØØ}:Ø i {nm}:m {ØpmØ}:p {aäØ}:a {ij}:i e n
+a h {td}:t a {sØh}:Ø {ØaØØØ}:Ø i {nm}:n {ØpmØ}:Ø {aäØ}:a
+a h {td}:t a {sØh}:Ø {ØaØØØ}:Ø i {nm}:n {ØpmØ}:Ø {aäØ}:a {Øt}:t {aä}:a
+a l i {nm}:n {ØpmØ}:Ø {aäØ}:a
+i h a n {aØoØ}:o i {nm}:m {ØpmØ}:m {aäØ}:a {ij}:i s s {aä}:a
+i h a n {aØoØ}:Ø i {nm}:m {ØpmØ}:m {aäØ}:a {ij}:i s s {aä}:a
+i h a n {aØoØ}:Ø i {nm}:m {ØpmØ}:p {aäØ}:a {ij}:i e n
+i h a n {aØoØ}:Ø i {nm}:n {ØpmØ}:Ø {aäØ}:a {Øt}:t {aä}:a
+j u r o i {nm}:n {ØpmØ}:Ø {aäØ}:a {Øt}:t {aä}:a
+k a l l {iiiie}:e {sØh}:Ø {ØiØiØ}:Ø i {nm}:m {ØpmØ}:p {aäØ}:a {ij}:i e n
+k a l l {iiiie}:e {sØh}:Ø {ØiØiØ}:Ø i {nm}:n {ØpmØ}:Ø {aäØ}:a
+k a l l {iiiie}:e {sØh}:Ø {ØiØiØ}:Ø i {nm}:n {ØpmØ}:Ø {aäØ}:a {Øt}:t {aä}:a
+k i h a r {aØo}:Ø i {nm}:n {ØpmØ}:Ø {aäØ}:a
+l a i h {aoeØ}:Ø i {nm}:n {ØpmØ}:Ø {aäØ}:a {Øt}:t {aä}:a
+r u m {aØe}:e m {pm}:m {aäØ}:a s s {aä}:a
+r u m {aØe}:Ø i {nm}:n {ØpmØ}:Ø {aäØ}:a
+u u {tds}:s {ieØeØ}:Ø i {nm}:m {ØpmØ}:p {aäØ}:a {ij}:i e n
+u u {tds}:s {ieØeØ}:Ø i {nm}:n {ØpmØ}:Ø {aäØ}:a
+
+
+{aäØ}:ä /<= [:a|:o|:u] [\{§}:]* _ ;
+All positive examples accepted
+
+
+{aäØ}:Ø <=> _ EOW | {ij}: | {Øt}:t ;
+All positive examples accepted
+All negative examples rejected
+
+
+{eeØØ}:Ø => _ {nØØØ}:Ø [{ij}: | i {nm}: | :t e | {Øt}: | {nrs}:] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{eeØØ}:e /<= _ {nØØØ}:Ø [{ij}: | :t e | {Øt}:] ;
+All positive examples accepted
+
+
+{ØeØeØ}:Ø <=> _ :Ø* [.#. | {§}: | {`}: | {ij}: | i {nm}: | t e | {Øt}:t] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{iieØ}:Ø <=> _ {ij}: e ;
+All positive examples accepted
+All negative examples rejected
+
+
+{iieØ}:e => _ {ij}: | :i ;
+All positive examples accepted
+** Some negative examples accepted:
+b a n a a l {iieØ}:e {ij}:i e n
+p a p e r {iieØ}:e {ij}:i e n
+p a t {tØ}:t {iieØ}:e {ij}:i e n
+s a n k a r {iieØ}:e {ij}:i e n
+v a {td}:t {iieØ}:e {ij}:i e n
+
+
+{iieØ}:i /<= _ {ij}: | :i ;
+All positive examples accepted
+
+
+{ØieØ}:Ø <=> _ :Ø* EOW , _ {ij}: e ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ØieØ}:i /<= _ {ij}: | {ii}: ;
+All positive examples accepted
+
+
+{ØieØ}:e => _ {ij}: | {ii}: ;
+All positive examples accepted
+** Some negative examples accepted:
+k a l s i u m {ØieØ}:e {ij}:i e n
+
+
+{ieeeØ}:i <=> _ :Ø* EOW ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ieeeØ}:Ø <=> _ {ij}: ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ieeØeØ}:i <=> _ :Ø* EOW ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ieeØeØ}:Ø <=> _ {ij}: | :t e | {Øt}:t ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ieØeØ}:i <=> _ :Ø* EOW ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ieØeØ}:Ø <=> _ [{ij}: | i {nm}: | :t e | {Øt}:] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ieØeØØ}:i <=> _ EOW ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ieØeØØ}:Ø => _ [{ij}: | :t e | {Øt}: | i {nm}:] , VoS (CoØ) [:s|:r|:n] _ {nrs}: ;
+All positive examples accepted
+** Some negative examples accepted:
+h a {pØp}:p s {ieØeØØ}:Ø {Øt}:Ø {aä}:a
+
+
+{ieØeØØ}:e /<= _ [{ij}:|:t e|{Øt}:t] , VoS (CoØ) CoS _ {Øt}:t ;
+All positive examples accepted
+
+
+{ØiØiØ}:Ø =>  _ [{ij}: | i {nm}: | :t e | {Øt}: | EOW] , :s _ {nrs}: ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ØiØiØ}:i /<=  _ [{ij}: | :t e | {Øt}: | EOW] ;
+All positive examples accepted
+
+
+{iiiie}:e <=> _ :Ø* i {nm}: ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ue}:u <=> _ [:t|:n] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ØuØuØ}:Ø | {ØoØoØ}:Ø <=> _ :Ø* [:t e|{Øt}:|{ij}:|EOW] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{Øj}:j <=> _ [:e | VoØ {ij}:i] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ØØØØk}:k <=> _ :s VoØ {ij}: ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ØkØkk}:Ø <=> _ s VoØ [:t e | {Øt}: | {nrs}: | EOW];
+All positive examples accepted
+All negative examples rejected
+
+
+{mn}:n <=> _ VoØ [:t e | {Øt}:t | {nrs}: | EOW] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{nm}:n <=> _ :Ø* [EOW | {Øt}:t | t e | {nrs}:] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ns}:n <=> _ :e :n ;
+All positive examples accepted
+All negative examples rejected
+
+
+{nØØØ}:n <=> _ .#.|{§}:|{`}: ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ØnØnn}:Ø <=> _ [{ttns}:|{snt}:] VoØ [EOW | {Øt}:t | t e | {nrs}:] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{shs}:s => _ VoØ [{nrs}:|{Øt}:|:t e|EOW] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{shs}:h /<= _ VoØ [{Øt}:|:t e|EOW] ;
+All positive examples accepted
+
+
+{snt}:s <=> _ VoØ [{ij}: | EOW] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{snt}:n => _ CLOSED , _ VoØ {nrs}: ;
+All positive examples accepted
+** Some negative examples accepted:
+k a h d e k s a {ØnØnn}:n {snt}:n {ØeØØØ}:Ø {ij}:i s s {aä}:a
+
+
+{snt}:t => _ OPEN | VoØ [:t e| {Øt}:] ;
+All positive examples accepted
+** Some negative examples accepted:
+k a h d e k s a {ØnØnn}:n {snt}:t {ØeØØØ}:Ø {ij}:i e n
+k a h d e k s a {ØnØnn}:n {snt}:t {ØeØØØ}:Ø {ij}:i s s {aä}:a
+k a h d e k s a {ØnØnn}:n {snt}:t {ØeØØØ}:Ø {ij}:i {Øh}:h {V}:i n
+k a h d e k s a {ØnØnn}:n {snt}:t {ØeØØØ}:Ø {ij}:i {Øh}:Ø {V}:i n
+k a h d e k s a {ØnØnn}:n {snt}:t {ØeØØØ}:Ø {ij}:i {Øt}:Ø {aä}:a
+k a h d e k s a {ØnØnn}:Ø {snt}:t {ØeØØØ}:Ø
+k a h d e k s a {ØnØnn}:Ø {snt}:t {ØeØØØ}:Ø {nrs}:n {aä}:a
+
+
+{sØh}:s <=> _ VoØ [:t e | {Øt}:t | {nrs}: | EOW] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{sØh}:h|{sØh}:Ø <=> _ Vok | VoØ {ij}:i | VoØ i {nm}: ;
+All positive examples accepted
+** Some negative examples accepted:
+a h {td}:t a {sØh}:h {ØaØØØ}:a m {pm}:p i
+a h {td}:t a {sØh}:h {ØaØØØ}:Ø i {nm}:m {ØpmØ}:p {aäØ}:Ø {ij}:i e n
+a h {td}:t a {sØh}:h {ØaØØØ}:Ø i {nm}:n {ØpmØ}:Ø {aäØ}:Ø
+a h {td}:t a {sØh}:h {ØaØØØ}:Ø i {nm}:n {ØpmØ}:Ø {aäØ}:Ø {Øt}:t {aä}:a
+k a l l {iiiie}:e {sØh}:h {ØiØiØ}:Ø i {nm}:m {ØpmØ}:p {aäØ}:Ø {ij}:i e n
+k a l l {iiiie}:e {sØh}:h {ØiØiØ}:Ø i {nm}:n {ØpmØ}:Ø {aäØ}:Ø
+k a l l {iiiie}:e {sØh}:h {ØiØiØ}:Ø i {nm}:n {ØpmØ}:Ø {aäØ}:Ø {Øt}:t {aä}:a
+k a l l {iiiie}:i {sØh}:h {ØiØiØ}:i m {pm}:p i
+k a l l {iiiie}:i {sØh}:h {ØiØiØ}:i n
+k a u n e {sØh}:h {ØiØiØ}:Ø {ij}:i s i {iØ}:i n
+k a u n e {sØh}:h {ØiØiØ}:Ø {ij}:i {dt}:d {Øt}:Ø e n
+k a u n e {sØh}:h {ØiØiØ}:Ø {ij}:i {dt}:t {Øt}:t e n
+k a u n e {sØh}:h {ØiØiØ}:Ø {ij}:i {Øh}:h {V}:i n
+k a u n e {sØh}:h {ØiØiØ}:Ø {ij}:i {Øt}:t {aä}:a
+k a u n e {sØh}:Ø {ØiØiØ}:Ø {ij}:i e n
+k a u n e {sØh}:Ø {ØiØiØ}:Ø {ij}:i s i {iØ}:Ø n
+k a u n e {sØh}:Ø {ØiØiØ}:Ø {ij}:i {Øt}:Ø {aä}:a
+k a u n i {sØh}:h {ØiØiØ}:i s e {Øe}:e n
+k a u n i {sØh}:h {ØiØiØ}:Ø {ij}:i s i {iØ}:i n
+k a u n i {sØh}:h {ØiØiØ}:Ø {ij}:i {dt}:d {Øt}:Ø e n
+
+
+{ØØthn}:h => e _ :e | VoØ {ij}:i [e n|:t :t|l|s|{Øt}:Ø {aä}:];
+All positive examples accepted
+** Some negative examples accepted:
+t e r v e {ØØthn}:h {ØeØØØ}:e m {pm}:p i
+t e r v e {ØØthn}:h {ØeØØØ}:e m {pm}:p {aäØ}:Ø {ij}:i e n
+t e r v e {ØØthn}:h {ØeØØØ}:e m {pm}:p {aäØ}:ä {V}:ä n
+t e r v e {ØØthn}:h {ØeØØØ}:e s e {Øe}:e n
+t e r v e {ØØthn}:h {ØeØØØ}:Ø {ij}:i s i {iØ}:i n
+
+
+{ØØthn}:t <=> _ VoØ :t ;
+All positive examples accepted
+All negative examples rejected
+
+
+{ØØthn}:n => _ VoØ {nrs}: ;
+All positive examples accepted
+All negative examples rejected
+
+
+{tØthn}:t <=> _ VoØ [:t | EOW] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{tØthn}:n => _ VoØ {nrs}: ;
+All positive examples accepted
+All negative examples rejected
+
+
+{tØthn}:h => _ VoØ {ij}:i [e n|:t :t|l|s|{Øt}:Ø {aä}:] , :e _ :e , :ä _ :ä ;
+All positive examples accepted
+** Some negative examples accepted:
+a i r u {tØthn}:h {ØeØØØ}:Ø {ij}:i s i {iØ}:i n
+k e v ä {tØthn}:h {ØäØØØ}:Ø {ij}:i s i {iØ}:i n
+k e v ä {tØthn}:h {ØäØØØ}:ä s e {Øe}:e n
+k u o l l {ue}:e {tØthn}:h {ØeØØØ}:e s e {Øe}:e n
+k u o l l {ue}:e {tØthn}:h {ØeØØØ}:Ø {ij}:i s i {iØ}:i n
+ä i {td}:t y {tØthn}:h {ØeØØØ}:Ø {ij}:i s i {iØ}:i n
+
+
+{tØthn}:Ø => _ [:e|:ä] , _ VoØ [{ij}:i | i {nm}:] ;
+All positive examples accepted
+** Some negative examples accepted:
+a i r u {tØthn}:Ø {ØeØØØ}:Ø {ij}:i e n
+a i r u {tØthn}:Ø {ØeØØØ}:Ø {ij}:i s i {iØ}:Ø n
+a i r u {tØthn}:Ø {ØeØØØ}:Ø {ij}:i {Øt}:Ø {aä}:a
+k e v ä {tØthn}:Ø {ØäØØØ}:Ø {ij}:i e n
+k e v ä {tØthn}:Ø {ØäØØØ}:Ø {ij}:i s i {iØ}:Ø n
+k e v ä {tØthn}:Ø {ØäØØØ}:Ø {ij}:i {Øt}:Ø {aä}:ä
+k e v ä {tØthn}:Ø {ØäØØØ}:ä s e {Øe}:Ø n
+k u o l l {ue}:e {tØthn}:Ø {ØeØØØ}:e s e {Øe}:Ø n
+k u o l l {ue}:e {tØthn}:Ø {ØeØØØ}:Ø {ij}:i e n
+k u o l l {ue}:e {tØthn}:Ø {ØeØØØ}:Ø {ij}:i s i {iØ}:Ø n
+k u o l l {ue}:e {tØthn}:Ø {ØeØØØ}:Ø {ij}:i {Øt}:Ø {aä}:a
+ä i {td}:t y {tØthn}:Ø {ØeØØØ}:Ø {ij}:i e n
+ä i {td}:t y {tØthn}:Ø {ØeØØØ}:Ø {ij}:i s i {iØ}:Ø n
+ä i {td}:t y {tØthn}:Ø {ØeØØØ}:Ø {ij}:i {Øt}:Ø {aä}:ä
+
+
+{tØt}:Ø <=> _ s VoØ [:t | {Øt}:] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{nmt}:n => _ VoØ [EOW | {nrs}:] ;
+All positive examples accepted
+All negative examples rejected
+
+
+{nmt}:t => _ VoØ {Øt}:t ;
+All positive examples accepted
+All negative examples rejected
+
+
+{nmt}:m /<= _ VoØ [EOW | {Øt}:t | :n] ;
+All positive examples accepted
+
+
+{Ødt}:Ø|{Ødt}:d => _  a [{nmt}:n|{nmt}:t] VoØ EOW , _  a [{nmt}:n|{nmt}:t] VoØ [{Øt}:t|{nrs}:];
+All positive examples accepted
+All negative examples rejected
+
+
+{Ødt}:t => _ a {nmt}:m ;
+All positive examples accepted
+All negative examples rejected
+2421 arcs in RESU
+wrote lost examples to ofi-lost.fst
+wrote wrongly accepted examples to ofi-wrong.fst
+wrote 200 rule transducers to ofi-rules.fst

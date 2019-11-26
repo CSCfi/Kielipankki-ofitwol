@@ -1,0 +1,15 @@
+Definitions
+  Co = [b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|š|t|v|w|x|z|ž] ;
+  Cocl = [Co+|'] ;
+  Vo = [a|e|i|o|u|y|ä|ö] ;
+  V1V1 = [a a|e e|i i|o o|u u|y y|ä ä|ö ö] ; ! Long vowel
+  Vi = [Vo i] ;
+  V1V2 = [a u|e u|i e|e u|e y|i e|i u|i y|o u|u o|y ö|ä y|ö y] ;
+  Syl = [Vo+ [[Co+|']]] ; ! Counts as one syllable
+  VV = [V1V1|Vi|V1V2] ; ! Long vowel or diphthong
+  VbV = [[Vo Vo+] - VV] ; ! Vowel sequence in two separate syllables
+  SylVo = [VbV|VV Vo|Vo VV|Syl Vo+] ; ! Counts as two syllables
+
+LEXICON NounPrefNom
+<Co* Syl* SylVo (l|r|s|t)> Compounds ;
+<Co* Syl* SylVo n> Compounds ;
