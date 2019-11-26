@@ -1,4 +1,4 @@
-LEX=ofi-lexic-n.lexc ofi-lexic-v.lexc ofi-lexic-a.lexc ofi-lexic-p.lexc  ofi-lexic-firstpart.lexc sktp-lexic-compo.lexc
+LEX=ofi-lexic-n.lexc ofi-lexic-v.lexc ofi-lexic-a.lexc ofi-lexic-p.lexc  ofi-lexic-firstpart.lexc ofi-lexic-compo.lexc
 
 WORDS=~/Dropbox/lang/fin/sktp-2plus.words
 
@@ -20,7 +20,7 @@ ofi-lexic-n.lexc: ofi-lexic-n.text
 ofi-lexic-v.lexc: ofi-lexic-v.text
 	python3 entries2lexc.py Verbs < ofi-lexic-v.text > ofi-lexic-v.lexc
 
-ofi-lexic-firstpart.lexc : cat ofi-n-sgnom.words ofi-n-sgnom.words
+ofi-lexic-firstpart.lexc : ofi-n-sgnom.words ofi-n-sgnom.words
 	cat ofi-n-sgnom.words ofi-n-sgnom.words | python3 analys2lexc.py > $@
 
 ofi-guess-n.ofst: ofi-guess-lex-n.fst ofi-rules.fst Makefile
