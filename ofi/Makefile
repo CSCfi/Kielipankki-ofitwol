@@ -1,29 +1,71 @@
-LEX=ofi-lexic-n.lexc ofi-lexic-v.lexc ofi-lexic-a.lexc ofi-lexic-p.lexc  ofi-lexic-firstpart.lexc ofi-lexic-compo.lexc
+.SUFFIXES :
+.INTERMEDIATE :
 
+LEX=$(ID)lexic-n.lexc $(ID)lexic-v.lexc $(ID)lexic-a.lexc $(ID)lexic-p.lexc  $(ID)lexic-firstpart.lexc
+##$(ID)lexic-compo.lexc
+
+ID=sktp/
+ANALYZER=../ksk/ksk-analy.ofst
 WORDS=~/Dropbox/lang/fin/sktp-2plus.words
+ANALYSES=$(ID)corpus.analyses
 
-all: ofi-analy.ofst ofi-guess-n.ofst ofi-guess-v.ofst $(LEX) ofi-pref-gen.lexc ofi-pref-nom.lexc
+analy : $(ID)analy.ofst $(LEX)
 
-ofi-analy.ofst: ofi-lexic.fst ofi-rules.fst delete.fst Makefile
+analyses : $(ANALYSES)
+
+guess : ofi-guess-n.ofst ofi-guess-v.ofst
+
+$(ID)analy.ofst: $(ID)lexic.fst ofi-rules.fst delete.fst Makefile
 	hfst-compose-intersect -a -1 $< -2 ofi-rules.fst |\
 	hfst-compose -2 delete.fst |\
 	hfst-invert |\
-	hfst-minimize -o ofi-analy.fst
-	hfst-fst2fst -w -i ofi-analy.fst -o $@
+	hfst-minimize -o $(ID)analy.fst
+	hfst-fst2fst -w -i $(ID)analy.fst -o $@
 
-ofi-lexic.fst: ofi-analy-aff.lexc $(LEX) Makefile
+$(ID)lexic.fst: ofi-analy-aff.lexc $(LEX) Makefile
 	hfst-lexc -E -f openfst-tropical -o $@ ofi-analy-aff.lexc $(LEX)
 
-ofi-lexic-n.lexc: ofi-lexic-n.text
-	python3 entries2lexc.py Nouns < ofi-lexic-n.text > ofi-lexic-n.lexc
+$(ANALYSES) : $(WORDS) $(ANALYZER)
+	hfst-lookup -p -i $(ANALYZER) -I $(WORDS) -o $@
 
-ofi-lexic-v.lexc: ofi-lexic-v.text
-	python3 entries2lexc.py Verbs < ofi-lexic-v.text > ofi-lexic-v.lexc
+$(ID)lexic-n.entries : $(ANALYSES)
+	egrep '/s;' $< | \
+	cut -f 2 | cut -d ';' -f 1 | sort | uniq > $@
 
-ofi-lexic-firstpart.lexc : ofi-n-sgnom.words ofi-n-sgnom.words
-	cat ofi-n-sgnom.words ofi-n-sgnom.words | python3 analys2lexc.py > $@
+$(ID)lexic-n.lexc: $(ID)lexic-n.entries
+	python3 entries2lexc.py Nouns < $< > $@
 
-ofi-guess-n.ofst: ofi-guess-lex-n.fst ofi-rules.fst Makefile
+$(ID)lexic-a.entries : $(ANALYSES)
+	egrep '/a;' $< | \
+	cut -f 2 | cut -d ';' -f 1 | sort | uniq > $@
+
+$(ID)lexic-a.lexc : $(ID)lexic-a.entries
+	python3 entries2lexc.py Adjectives < $< > $@
+
+$(ID)lexic-p.entries : $(ANALYSES)
+	egrep '/p[a-z]*;' $< | \
+	cut -f 2 | cut -d ';' -f 1 | sort | uniq > $@
+
+$(ID)lexic-p.lexc : $(ID)lexic-p.entries
+	python3 entries2lexc.py Particles < $< > $@
+
+$(ID)lexic-v.entries : $(ANALYSES)
+	egrep '/v;' $< | \
+	cut -f 2 | cut -d ';' -f 1 | sort | uniq > $@
+
+$(ID)lexic-v.lexc : $(ID)lexic-v.entries
+	python3 entries2lexc.py Verbs < $< > $@
+
+$(ID)n-sgnom.words :$(ANALYSES)
+	egrep '/s;\+N\+SG\+NOM\s' $< | cut -f 1 | sort | uniq > $@
+
+$(ID)n-sggen.words : $(ANALYSES)
+	egrep '/s;\+N\+SG\+GEN\s' $< | cut -f 1 | sort | uniq > $@
+
+$(ID)lexic-firstpart.lexc : $(ID)n-sgnom.words $(ID)n-sggen.words
+	cat $(ID)n-sgnom.words $(ID)n-sggen.words | python3 firstpart2lexc.py > $@
+
+$(ID)guess-n.ofst: ofi-guess-lex-n.fst ofi-rules.fst Makefile
 	hfst-compose-intersect -e -a -1 $< -2 ofi-rules.fst |\
 	hfst-compose -2 delete.fst |\
 	hfst-invert |\
@@ -43,14 +85,8 @@ ofi-guess-lex-n.fst: ofi-guess-lex-n.lexc ofi-guess-aff.lexc
 ofi-guess-lex-v.fst: ofi-guess-lex-v.lexc ofi-guess-aff.lexc
 	hfst-lexc -E -f openfst-tropical -o $@ ofi-guess-aff.lexc $<
 
-ofi-guess-lex-n.lexc : ofi-guespat-n.text
+ofi-guess-lex-n.lexc : ofi-guespat-n.entries
 	python3 guespat2lexc.py < $< > $@
-
-ofi-lexic-p.lexc : ksk-analy.ofst
-	hfst-lookup -p -i ksk-analy.ofst -I $(WORDS) |
-	egrep '/p[a-z]*;' | \
-	cut -f 2 | cut -d ';' -f 1 | sort | uniq | \
-	python3 entries2lexc.py Particles > ofi-lexic-p.lexc
 
 #ofi-guess-lex-n.lexc : ofi-pat-n.csv pat-proc.py
 #	python3 pat-proc.py -m g -n Verbs $< > $@
@@ -71,9 +107,11 @@ delete.fst:
 	echo "Ø -> 0" | hfst-regexp2fst -o $@
 
 clean:
-	rm -f ofi-*.fst ofi-*.ofst
-	rm -f ofi-lexic-*.lexc
-	rm -f ofi-guess*.lexc
+	rm -f $(ID)*.fst
+	rm -f $(ID)*.ofst
+	rm -f $(ID)*.lexc
+	rm -f $(ID)*.entries
+	rm -f $(ID)n-*.words
 
 
 features: ksk-zerofilled.csv
