@@ -1,0 +1,4 @@
+*.fst
+*.ofst
+*.lexc
+.gitignore
