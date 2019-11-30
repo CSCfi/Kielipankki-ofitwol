@@ -65,33 +65,37 @@ $(ID)n-sggen.words : $(ANALYSES)
 $(ID)lexic-firstpart.lexc : $(ID)n-sgnom.words $(ID)n-sggen.words
 	cat $(ID)n-sgnom.words $(ID)n-sggen.words | python3 firstpart2lexc.py > $@
 
-$(ID)guess-n.ofst: ofi-guess-lex-n.fst ofi-rules.fst Makefile
+guess.ofst : guess-n.fst guess-v.fst
+	hfst-disjunct -1 guess-n.fst -2 guess-v.fst -o guess.fst
+	hfst-fst2fst -i guess.fst -o $@ -w
+
+guess-n.ofst: guess-lex-n.fst ofi-rules.fst Makefile
 	hfst-compose-intersect -e -a -1 $< -2 ofi-rules.fst |\
 	hfst-compose -2 delete.fst |\
 	hfst-invert |\
-	hfst-minimize -o ofi-guess-n.fst
-	hfst-fst2fst -w -i ofi-guess-n.fst -o $@
+	hfst-minimize -o guess-n.fst
+	hfst-fst2fst -w -i guess-n.fst -o $@
 
-ofi-guess-v.ofst: ofi-guess-lex-v.fst ofi-rules.fst Makefile
+guess-v.ofst: guess-lex-v.fst ofi-rules.fst Makefile
 	hfst-compose-intersect -e -a -1 $< -2 ofi-rules.fst |\
 	hfst-compose -2 delete.fst |\
 	hfst-invert |\
-	hfst-minimize -o ofi-guess-v.fst
-	hfst-fst2fst -w -i ofi-guess-v.fst -o $@
+	hfst-minimize -o guess-v.fst
+	hfst-fst2fst -w -i guess-v.fst -o $@
 
-ofi-guess-lex-n.fst: ofi-guess-lex-n.lexc ofi-guess-aff.lexc
+guess-lex-n.fst: guess-lex-n.lexc ofi-guess-aff.lexc
 	hfst-lexc -E -f openfst-tropical -o $@ ofi-guess-aff.lexc $<
 
-ofi-guess-lex-v.fst: ofi-guess-lex-v.lexc ofi-guess-aff.lexc
-	hfst-lexc -E -f openfst-tropical -o $@ ofi-guess-aff.lexc $<
+guess-lex-v.fst: guess-lex-v.lexc guess-aff.lexc
+	hfst-lexc -E -f openfst-tropical -o $@ guess-aff.lexc $<
 
-ofi-guess-lex-n.lexc : ofi-guespat-n.entries
+guess-lex-n.lexc : ofi-guespat-n.entries
 	python3 guespat2lexc.py < $< > $@
 
 #ofi-guess-lex-n.lexc : ofi-pat-n.csv pat-proc.py
 #	python3 pat-proc.py -m g -n Verbs $< > $@
 
-ofi-guess-lex-v.lexc : ofi-pat-v.csv pat-proc.py
+guess-lex-v.lexc : ofi-pat-v.csv pat-proc.py
 	python3 pat-proc.py -m g -n Verbs $< > $@
 
 ofi-guess-aff.lexc: ofi-affixes.csv affixes2guessing.py
@@ -105,6 +109,12 @@ ofi-rules.fst: ofi-rules.twol ofi-examples.pstr
 
 delete.fst:
 	echo "Ø -> 0" | hfst-regexp2fst -o $@
+
+klk/sktp-rejected.fst : klk/sktp.rejected
+	hfst-strings2fst -j -i $< | hfst-minimize -o $@
+
+$(ID)words.fst : $(WORDS)
+	hfst-strings2fst -j -i $< | hfst-minimize -o $@
 
 clean:
 	rm -f $(ID)*.fst
