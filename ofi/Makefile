@@ -65,31 +65,45 @@ $(ID)n-sggen.words : $(ANALYSES)
 $(ID)lexic-firstpart.lexc : $(ID)n-sgnom.words $(ID)n-sggen.words
 	cat $(ID)n-sgnom.words $(ID)n-sggen.words | python3 firstpart2lexc.py > $@
 
-guess.ofst : guess-n.fst guess-v.fst
-	hfst-disjunct -1 guess-n.fst -2 guess-v.fst -o guess.fst
+guess.ofst : guess-n.ofst guess-a.ofst guess-v.ofst Makefile
+	hfst-disjunct -1 guess-n.fst -2 guess-a.fst |\
+	hfst-disjunct -2 guess-v.fst -o guess.fst
 	hfst-fst2fst -i guess.fst -o $@ -w
 
-guess-n.ofst: guess-lex-n.fst ofi-rules.fst Makefile
+guess-n.ofst: guespat-lex-n.fst ofi-rules.fst Makefile
 	hfst-compose-intersect -e -a -1 $< -2 ofi-rules.fst |\
 	hfst-compose -2 delete.fst |\
 	hfst-invert |\
 	hfst-minimize -o guess-n.fst
 	hfst-fst2fst -w -i guess-n.fst -o $@
 
-guess-v.ofst: guess-lex-v.fst ofi-rules.fst Makefile
+guess-a.ofst: guespat-lex-a.fst ofi-rules.fst Makefile
+	hfst-compose-intersect -e -a -1 $< -2 ofi-rules.fst |\
+	hfst-compose -2 delete.fst |\
+	hfst-invert |\
+	hfst-minimize -o guess-a.fst
+	hfst-fst2fst -w -i guess-a.fst -o $@
+
+guess-v.ofst: guespat-lex-v.fst ofi-rules.fst Makefile
 	hfst-compose-intersect -e -a -1 $< -2 ofi-rules.fst |\
 	hfst-compose -2 delete.fst |\
 	hfst-invert |\
 	hfst-minimize -o guess-v.fst
 	hfst-fst2fst -w -i guess-v.fst -o $@
 
-guess-lex-n.fst: guess-lex-n.lexc ofi-guess-aff.lexc
-	hfst-lexc -E -f openfst-tropical -o $@ ofi-guess-aff.lexc $<
-
-guess-lex-v.fst: guess-lex-v.lexc guess-aff.lexc
+guespat-lex-n.fst: guespat-n.lexc guess-aff.lexc
 	hfst-lexc -E -f openfst-tropical -o $@ guess-aff.lexc $<
 
-guess-lex-n.lexc : ofi-guespat-n.entries
+guespat-lex-a.fst: guespat-a.lexc guess-aff.lexc
+	hfst-lexc -E -f openfst-tropical -o $@ guess-aff.lexc $<
+
+guespat-lex-v.fst: guess-lex-v.lexc guess-aff.lexc
+	hfst-lexc -E -f openfst-tropical -o $@ guess-aff.lexc $<
+
+guespat-a.lexc : guespat-a.entries guespat2lexc.py
+	python3 guespat2lexc.py < $< > $@
+
+guespat-n.lexc : guespat-n.entries guespat2lexc.py
 	python3 guespat2lexc.py < $< > $@
 
 #ofi-guess-lex-n.lexc : ofi-pat-n.csv pat-proc.py
@@ -98,7 +112,10 @@ guess-lex-n.lexc : ofi-guespat-n.entries
 guess-lex-v.lexc : ofi-pat-v.csv pat-proc.py
 	python3 pat-proc.py -m g -n Verbs $< > $@
 
-ofi-guess-aff.lexc: ofi-affixes.csv affixes2guessing.py
+guess-lex-na.lexc : ofi-pat-na.csv pat-proc.py Makefile
+	python3 pat-proc.py -m g -n Adjectives $< > $@
+
+guess-aff.lexc: ofi-affixes.csv affixes2guessing.py
 	python3 affixes2guessing.py $< $@
 
 ofi-analy-aff.lexc: ofi-affixes.csv affixes2analysis.py Makefile

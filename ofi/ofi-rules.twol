@@ -31,7 +31,8 @@ BOW = .#. | {§}:Ø ;
     ! beginning of stem (first parts of compounds may precede)
 
 !!CLOSED = VoM ({ij}:i|{ØiØ}:|{i}:) CoM (VoØ) [CoM|EOW|{PS}:] ;
-CLOSED = VoM ([:i - {ii}:] | VoØ) CoM (VoØ) [CoM|EOW|{PS}:] ;
+!!CLOSED = VoM ([:i - {ii}:] | VoØ) CoM (VoØ) [CoM|EOW|{PS}:] ;
+CLOSED = VoM ([:i - {ii}:] | VoØ) [CoM - {Øt}:Ø] (VoØ) [CoM|EOW|{PS}:] ;
 !!!OPEN = VoM (CoM) [VoS|:i] ;
 OPEN = VoM [(CoM) [VoS|(VoØ) :i] | EOW | {PS}:] ;
 
@@ -43,25 +44,25 @@ OPEN = VoM [(CoM) [VoS|(VoØ) :i] | EOW | {PS}:] ;
 {kkkØØ}:k <=> _ s :Ø* VoS ;
     ! juo<k>sen juo<k>sisi juo<>ssee juo<>staan
 
-{kØ}:Ø | {k'}:' <=> _ CLOSED ;
+{kØ}:Ø | {k'}:' | {k'Ø}:' | {k'Ø}:Ø <=> _ CLOSED ;
     ! ark<k>u ark<>un ark<>ussa ra<k>o ra<>ossa riu<k>u riu<'>un
     ! vaa<'>ata vaa<k>aat
+    ! raa<k>a raa<'>an raa<>oissa raa<>in
 
-{kg}:g <=> _ CLOSED ;
-
-{kj}:j <=> _ CLOSED ;
-
-{kv}:v <=> _ CLOSED ;
+{kg}:g | {kj}:j | {kv}:v <=> _ CLOSED ;
+    ! lan<g>an ar<j>en
     ! lu<k>u lu<v>un ky<k>y ky<v>yn
 
-{k'}:' => VoS :a _ :a , VoS :e _ :e , VoS :i _ :i ,
-          VoS :o _ :o , VoS :u _ :u , VoS :y _ :y ,
-          VoS :ä _ :ä , VoS :ö _ :ö ;
-{kØ}:Ø /<= VoS :a _ :a , VoS :e _ :e , VoS :i _ :i ,
-           VoS :o _ :o , VoS :u _ :u , VoS :y _ :y ,
-           VoS :ä _ :ä , VoS :ö _ :ö ;
-    ! ruo<k>o ruo<'>on liu<k>u liu<'>un
+{k'}:' | {k'Ø}:' =>
+       	VoS :a _ :a , VoS :e _ :e , VoS :i _ :i ,
+        VoS :o _ :o , VoS :u _ :u , VoS :y _ :y ,
+        VoS :ä _ :ä , VoS :ö _ :ö ;
     ! vaa<'>ata rei<'>ittää
+{kØ}:Ø | {k'Ø}:Ø /<=
+       	VoS :a _ :a , VoS :e _ :e , VoS :i _ :i ,
+        VoS :o _ :o , VoS :u _ :u , VoS :y _ :y ,
+        VoS :ä _ :ä , VoS :ö _ :ö ;
+    ! ruo<k>o ruo<'>on liu<k>u liu<'>un
 
 {kØØ}:Ø | {tØØ}:Ø => _ CLOSED ,
                      _ [:e|:o|:u|:y|:ö] {ij}:i [:t|:h] ;
