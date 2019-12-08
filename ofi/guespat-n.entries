@@ -311,9 +311,10 @@ vihan{tn}{aØo} /s ; !
 < Co* Syl+ [a+|o (a|i|o)|u (a|u)] [j|v] {aØo} 0::5 > /s ; ! S16: KANTAJA JALAVA - 3+syll
 < Co* Syl+ [ä+|y] j {äØö} 0::5 > /s ; ! VENYJÄ PETÄJÄ HYPPÄÄJÄ VÄÄRENTÄJÄ - 3+syll
 < Co* Syl Vo+ [l|m|n|r] [{aØo}|{äØö}] 0::10 > /s ; ! PERUNA - trisyll
-< [Co|Vo]+ [{aØo}|{äØö}] 0::50 > /s ; ! **conversion only**
+!!!< [Co|Vo]+ [{aØo}|{äØö}] 0::50 > /s ; ! **conversion only**
 < Co* Syl Vo+ [n|r] [{aØo}|{äØö}] > /s ; ! PASUUNA KIHARA NYSTYRÄ - trisyll
 < (Co) Syl e [{aØo}|{äØö}] 0::10 > /s ; ! KORKEA HOPEA HÄPEÄ - trisyll
+!
 < Co* Syl a {ØØh} {aØ} > /s ; ! VAPAA SUKLAA - bisyll
 < Co* Syl [o {ØØh} {oØ}|ö {ØØh} {öØ}] > /s ; ! TIENOO EHTOO MILJÖÖ - bisyll
 < Co* Syl [u {uØ}|y {yØ}] > /s ; ! LEIKKUU SAHUU PALUU VASTUU LYKKYY -  bisyll
@@ -328,6 +329,12 @@ vihan{tn}{aØo} /s ; !
 < (Co) {yØ} ö > /s ; ! TYÖ - monosyll
 < Co ö {öØ} > /s ; ! KÖÖ - monosyll
 < Co* Syl+ Vo+ {§} Co o {oØ} 0::5 > /s ; ! TENKKAPOO
+!
+le{eeØ} /s  ; ! LEE
+te{eeØ} /s  ; ! TEE
+triko{oØ} /s  ; ! TRIKOO
+revy{yØ} /s  ; ! REVYY
+!
 < (Co) [VV|u|y] [h|l|n|r] {ieØeØ} 0::2 > /s ; ! TUOHI - bisyll
 < Co* Syl+ Vo+ t {tØ} [a r|ä r] {ØeØeØ} > /s ; ! KAUNOTAR MYYJÄTÄR - 3+syll
 < [Co|Vo]* {mn} {ØeØeØ} 0::50 > /s ; ! **conversion only**
@@ -338,14 +345,18 @@ vihan{tn}{aØo} /s ; !
 < Co* Syl* Vo+ Co* (a|ä|o|ö|u|y) i {mn} {ØeØeØ} > /s ; ! KUOLAIMET
 < Co* Syl* Vo+ [Gw|Gwj] i {mn} {ØeØeØ} > /s ; ! POLJIN - 2+syll
 < Co* Syl* Vo+ [Gs|Gsj] i {mn} {ØeØeØ} > /s ; ! HOHTIMET
+!
 < Co* Syl* SylVo {ns} {eeØØ} {nØØØ} > /s ; ! HEVONEN - 3+syll
 < Co* Syl* SylVo {ns} {eeØØ} {nØØØ} > /s ; ! KILPASILLA
 < Co* Syl* SylVo {ns} {eeØØ} {nØØØ} > /s ; ! AVAJAISET
+!
 < Co* Syl+ Vo+ {ØkØkk} s {ØeØeØ} > /s ; ! VASTAUS KANNAS OHJAUS - 2+syll
 < Co* [VbV|i u|ä y] {ØkØkk} s {ØeØeØ} > /s ; ! JAOS SEOS - bisyll
 < Co* Syl+ Vo+ {ØkØkk} s {ØeØeØ} > /s ; ! TULUKSET
+!
 < Co* Syl+ [a|e|i|o|u] u {ØØØØk} {stds} {ØeØeØ} > /s ; ! KALLEUS - 3+syll
 < Co* Syl+ [e|i|o|y|ä|ö] y {ØØØØk} {stds} {ØeØeØ} > /s ; ! SITKEYS - 3+syll
+!
 < Co* Syl+ (i) a {sØh} {ØaØØØ} > /s ; ! VIERAS KUNNAS RAHVAS - 2+syll
 < Co* Syl+ (i) a {sØh} {ØaØØØ} > /s ; ! VALJAAT - 2+syll
 < Co* Syl+ (i) ä {sØh} {ØäØØØ} > /s ; ! KÖRILÄS - 2+syll
@@ -363,10 +374,6 @@ vihan{tn}{aØo} /s ; !
 < Co* Syl* Vo+ [CCns|h j|h k|v] e {Øth} {ØeØeØ} > /s ; ! OHJE PURJE SUIHKE AMME TOIVE - 2+syll
 < Co* Syl* Vo+ [Gw|Gwj] e {Øth} {ØeØeØ} > /s ; ! VAATE - 2+syll
 !
-le{eeØ} /s  ; ! 
-te{eeØ} /s  ; ! 
-triko{oØ} /s  ; ! 
-revy{yØ} /s  ; ! 
 mer{ieØeØ} /s  ; ! 
 ver{ieØeØ} /s  ; ! 
 kus{ieØeØ} /s  ; ! 
