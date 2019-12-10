@@ -192,9 +192,10 @@ OPEN = VoM [(CoM) [VoS|(VoØ) :i] | EOW | {PS}:] ;
 
 !!! lisää muut vokaalit, kun niitä tulee esimerkkeihin !!!
 
-{eeØ}:Ø <=> _ [{ij}:] ;
+{eeØ}:Ø | {oØ}:Ø | {öØ}:Ø <=> _ {ij}: ;
     ! leve<e> leve<e>tä leve<>itä
     ! kame<e> kame<e>ta kame<>ita
+    ! tieno<o> tieno<o>ta tieno<>ita aino<o>
 
 {iØ}:Ø <=> _ (e) [{ij}:|{i}:|i s i] ,
         :h VoS s e _ ,
@@ -203,9 +204,6 @@ OPEN = VoM [(CoM) [VoS|(VoØ) :i] | EOW | {PS}:] ;
     ! vapaisi<i>in vapahisi<>n
     ! v<i>en v<>eivät v<>eisi v<i>enyt
 
-{oØ}:Ø <=> _ {ij}: ;
-    ! tieno<o> tieno<o>ta tieno<>ita aino<o>
-
 {uØ}:Ø <=> _ (:o) :i ;
     ! s<u>o s<>oita tenkkapo<o> tenkkapo<>ita
     ! j<u>on j<>oi j<u>onee j<>oisi j<u>onut
@@ -213,9 +211,6 @@ OPEN = VoM [(CoM) [VoS|(VoØ) :i] | EOW | {PS}:] ;
 {yØ}:Ø <=> _ (:ö) :i ;
     ! s<y>ön s<>öi s<y>onee s<>öisi s<y>ököön
     ! <y>ö <>öitä
-
-{öØ}:Ø <=> _ :i ;
-    ! k<ö>ön k<>öitä
 
 {aä}:a|{oö}:o|{uy}:u <=> [:a|:o|:u] [\{§}:]* _ ;
     ! maass<a> piiss<ä> juot<u> syöt<y> tulk<o><o>n syök<ö><ö>n

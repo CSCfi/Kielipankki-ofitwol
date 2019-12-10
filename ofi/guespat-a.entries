@@ -1,7 +1,7 @@
 Definitions
   Co = b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|š|t|v|w|x|z|ž ;
   Gk = (l|r|n) k {kØ} | (h|l|r) {kØ} | n {kg} ;
-  Gk2 = (l|r|n) k {kØ}| [h] {kØ} | n {kg} ; ! excluding {kØ} between vowels
+  Gk2 = (l|r|n) k {kØ}| [h] {kØ} | n {kg} ; ! excluding Vo (r|l) {kØ} Vo
   Gj = [h|l|r] {kj} ;
   Gp = m {pm} | (l|r) {pv} | (l|r|m) p {pØ} ;
   Gt = (h) {td} | l {tl} | n {tn} | r {tr} | (l|r|n) t {tØ} ;
