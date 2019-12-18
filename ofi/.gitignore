@@ -1,4 +1,6 @@
 *.fst
+*.hfst
 *.ofst
 *.lexc
+*.log
 .gitignore

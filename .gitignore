@@ -1,6 +1,8 @@
 *~
+#*
 *.fst
 *.ofst
+*.hfst
 *.BAK
 __*__
 *.gnumeric
@@ -11,4 +13,5 @@ oldstuff/*
 ksk/ksk-lex*
 ksk/ofi-*
 test.result
-
+ofi/*.analyses
+ofi/ksk-*.words

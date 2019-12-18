@@ -50,7 +50,7 @@ EOW = .#. | {`}:Ø  ;
 BOW = .#. | {§}:Ø ;
 
 
-CLOSED = VoM ([:i - {ii}:] | VoØ) CoM (VoØ) [CoM|EOW|{PS}:] ;
+CLOSED = VoM ([:i - {ii}:] | VoØ) [CoM - {Øt}:Ø] (VoØ) [CoM|EOW|{PS}:] ;
 
 
 OPEN = VoM [(CoM) [VoS|(VoØ) :i] | EOW | {PS}:] ;
@@ -61,34 +61,27 @@ All positive examples accepted
 All negative examples rejected
 
 
-{kØ}:Ø | {k'}:' <=> _ CLOSED ;
+{kØ}:Ø | {k'}:' | {k'Ø}:' | {k'Ø}:Ø <=> _ CLOSED ;
+All positive examples accepted
+** Some negative examples accepted:
+r a a {k'Ø}:' {aoeØ}:o {ij}:i l l e
+r a a {k'Ø}:Ø {aoeØ}:a n
+
+
+{kg}:g | {kj}:j | {kv}:v <=> _ CLOSED ;
 All positive examples accepted
 All negative examples rejected
 
 
-{kg}:g <=> _ CLOSED ;
-All positive examples accepted
-All negative examples rejected
-
-
-{kj}:j <=> _ CLOSED ;
-All positive examples accepted
-All negative examples rejected
-
-
-{kv}:v <=> _ CLOSED ;
-All positive examples accepted
-All negative examples rejected
-
-
-{k'}:' => VoS :a _ :a , VoS :e _ :e , VoS :i _ :i , VoS :o _ :o , VoS :u _ :u , VoS :y _ :y , VoS :ä _ :ä , VoS :ö _ :ö ;
+{k'}:' | {k'Ø}:' => VoS :a _ :a , VoS :e _ :e , VoS :i _ :i , VoS :o _ :o , VoS :u _ :u , VoS :y _ :y , VoS :ä _ :ä , VoS :ö _ :ö ;
 All positive examples accepted
 ** Some negative examples accepted:
 l i u {k'}:' u
+r a a {k'Ø}:' {aoeØ}:a
 v a a {k'}:' a {ØsnØtt}:s {aØØØØ}:Ø {i}:i
 
 
-{kØ}:Ø /<= VoS :a _ :a , VoS :e _ :e , VoS :i _ :i , VoS :o _ :o , VoS :u _ :u , VoS :y _ :y , VoS :ä _ :ä , VoS :ö _ :ö ;
+{kØ}:Ø | {k'Ø}:Ø /<= VoS :a _ :a , VoS :e _ :e , VoS :i _ :i , VoS :o _ :o , VoS :u _ :u , VoS :y _ :y , VoS :ä _ :ä , VoS :ö _ :ö ;
 All positive examples accepted
 
 
@@ -383,17 +376,12 @@ All positive examples accepted
 All negative examples rejected
 
 
-{eeØ}:Ø <=> _ [{ij}:] ;
+{eeØ}:Ø | {oØ}:Ø | {öØ}:Ø <=> _ {ij}: ;
 All positive examples accepted
 All negative examples rejected
 
 
 {iØ}:Ø <=> _ (e) [{ij}:|{i}:|i s i] , :h VoS s e _ , :h (:Ø) VoØ {ij}:i s i _ ;
-All positive examples accepted
-All negative examples rejected
-
-
-{oØ}:Ø <=> _ {ij}: ;
 All positive examples accepted
 All negative examples rejected
 
@@ -404,11 +392,6 @@ All negative examples rejected
 
 
 {yØ}:Ø <=> _ (:ö) :i ;
-All positive examples accepted
-All negative examples rejected
-
-
-{öØ}:Ø <=> _ :i ;
 All positive examples accepted
 All negative examples rejected
 
@@ -1255,7 +1238,7 @@ All negative examples rejected
 {Ødt}:t => _ a {nmt}:m ;
 All positive examples accepted
 All negative examples rejected
-2421 arcs in RESU
+2441 arcs in RESU
 wrote lost examples to ofi-lost.fst
 wrote wrongly accepted examples to ofi-wrong.fst
-wrote 200 rule transducers to ofi-rules.fst
+wrote 196 rule transducers to ofi-rules.fst
