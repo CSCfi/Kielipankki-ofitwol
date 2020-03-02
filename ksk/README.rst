@@ -53,4 +53,22 @@ of the ksk-*-dict file in steps:
 7. The rule file is compiled into a FST.
 
 8. The compiled LEXC file is compose-intersected with the rule FST
-   file, inverted and optimized for lookup.
+   file, inverted and optimized file ``ksk-analy.ofst`` for lookup.
+
+The analyzer produces following kinds of results (the second column)
+from input word forms (as the first column)::
+
+  katossa    kat{tØ}o /s;+N+SG+INE                 0,000000
+  katosta    kato{ØkØkk}s{ØeØeØ} /s;+N+SG+PTV      0,000000
+  katosta    kat{tØ}o /s;+N+SG+ELA                 0,000000
+  katostaan  kato{ØkØkk}s{ØeØeØ} /s;+N+SG+PTV+SG3  0,000000
+  katostaan  kat{tØ}o /s;+N+SG+ELA+SG3             0,000000
+  katosten   kato{ØkØkk}s{ØeØeØ} /s;+N+PL+GEN      0,000000
+  katot      kat{tØ}o /s;+N+PL+NOM                 0,000000
+
+The net result of the lookup is an entry for the underlying headword
+followed by a semicolon and a set of inflectional tags which
+determines the grammatical form of the word form.  The entry contains
+information for determining a reasonably correct human readable
+headword if one appends the appropriate base form ending and uses the
+two-level rules in reverse direction.

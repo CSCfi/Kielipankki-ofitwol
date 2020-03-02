@@ -5,8 +5,8 @@ LEX=ksk-lex-n.lexc ksk-lex-v.lexc ksk-lex-p.lexc
 
 all : ksk-analy.ofst
 
-ksk-analy.ofst: ksk-lex.fst ../ofi/ofi-rules.fst ../ofi/ofi-examples.pstr delete.fst Makefile
-	hfst-compose-intersect -a -1 $< -2 ../ofi/ofi-rules.fst |\
+ksk-analy.ofst: ksk-lex.fst ofi-rules.fst ../ofitwol/ofi-examples.pstr delete.fst Makefile
+	hfst-compose-intersect -a -1 $< -2 ofi-rules.fst |\
 	hfst-compose -2 delete.fst |\
 	hfst-invert |\
 	hfst-minimize -o ksk-analy.fst
@@ -15,8 +15,8 @@ ksk-analy.ofst: ksk-lex.fst ../ofi/ofi-rules.fst ../ofi/ofi-examples.pstr delete
 ksk-lex.fst: ofi-analy-aff.lexc $(LEX) Makefile
 	hfst-lexc -f openfst-tropical -o $@ ofi-analy-aff.lexc $(LEX)
 
-ofi-analy-aff.lexc: ofi-affixes.csv ../src/affixes2analysis.py Makefile
-	python3 ../src/affixes2analysis.py -e $< $@
+ofi-analy-aff.lexc: ofi-affixes.csv ../ofitwol/affixes2analysis.py Makefile
+	python3 ../ofitwol/affixes2analysis.py -e $< $@
 
 ksk-lex-n.lexc: ksk-conv-n.fst classes-n.txt Makefile
 	python3 ksk2lexc.py --codes=classes-n.txt ~/Dropbox/lang/fin/ksk/ksk-n.dic $< Nouns $@ > ksk-lex-n.log
