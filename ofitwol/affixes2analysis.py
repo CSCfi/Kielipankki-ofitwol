@@ -73,16 +73,25 @@ for r in rdr:
             features.add("+" + feat)
     else:
         feat_str = ''
+    weight = r["WEIGHT"].strip()
+    if weight:
+        weight = '"weight: {}"'.format(weight)
     if "/" in ide and args.entry_mode:
         feat_str = "% " + ide + "%;" + feat_str
         features.add("% " + ide + "%;")
     for next in re.split(" +", r["NEXT"]):
         if next:
             if r['BASEF'] + feat_str == r['MPHON']:
-                out_lst.append("{}{} {};".format(r['BASEF'], feat_str, next))
+                out_lst.append("{}{} {} {};".format(r['BASEF'],
+                                                    feat_str,
+                                                    next,
+                                                    weight))
             else:
-                out_lst.append("{}{}:{} {};".format(r['BASEF'], feat_str, r['MPHON'], next))
-
+                out_lst.append("{}{}:{} {} {};".format(r['BASEF'],
+                                                       feat_str,
+                                                       r['MPHON'],
+                                                       next,
+                                                       weight))
 outfile = open(args.outfile, "w")
 print("Multichar_Symbols", file=outfile)
 multichar_lst = sorted(list(multichars))
