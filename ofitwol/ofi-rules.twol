@@ -38,6 +38,15 @@ OPEN = VoM [(CoM) [VoS|(VoØ) :i] | EOW | {PS}:] ;
 
 ! STOP
 
+! HYPHEN IN COMPOUNDS
+! ===================
+
+{§}: - {§}:Ø <=>
+       	:a _ :a , :e _ :e , :i _ :i ,
+        :o _ :o , :u _ :u , :y _ :y ,
+        :ä _ :ä , :ö _ :ö ;
+    ! kuorma<->auto henkilö<>auto
+
 ! GENERAL CONSONANT ALTERNATIONS
 ! ==============================
 
