@@ -1,7 +1,8 @@
 # converting KSK into a (perhaps proprietary) lexicon using patterns
 #
 
-LEX=ksk-lex-n.lexc ksk-lex-v.lexc ksk-lex-p.lexc
+LEX=ksk-lex-na.lexc ksk-lex-v.lexc ksk-lex-p.lexc
+KSKDIC=~/Dropbox/lang/fin/ksk
 
 all : ksk-analy.ofst
 
@@ -18,32 +19,33 @@ ksk-lex.fst: ofi-analy-aff.lexc $(LEX) Makefile
 ofi-analy-aff.lexc: ofi-affixes.csv ../ofitwol/affixes2analysis.py Makefile
 	python3 ../ofitwol/affixes2analysis.py -e $< $@
 
-ksk-lex-n.lexc: ksk-conv-n.fst classes-n.txt Makefile
-	python3 ksk2lexc.py --codes=classes-n.txt ~/Dropbox/lang/fin/ksk/ksk-n.dic $< Nouns $@ > ksk-lex-n.log
+ksk-lex-na.lexc: ksk-conv-na.fst classes-na.txt $(KSKDIC)/ksk-n.dic Makefile
+	python3 ksk2lexc.py --codes=classes-na.txt \
+		$(KSKDIC)/ksk-n.dic $< Nouns $@ > ksk-lex-na.log
 
 ksk-lex-v.lexc: ksk-conv-v.fst classes-v.txt
-	python3 ksk2lexc.py --codes=classes-v.txt ~/Dropbox/lang/fin/ksk/ksk-v.dic $< Verbs $@ > ksk-lex-v.log
+	python3 ksk2lexc.py --codes=classes-v.txt $(KSKDIC)/ksk-v.dic $< Verbs $@ > ksk-lex-v.log
 
 ksk-lex-p.lexc : kskp2lexc.py
-	cat ~/Dropbox/lang/fin/ksk/ksk-p.dic | python3 kskp2lexc.py > $@
+	cat $(KSKDIC)/ksk-p.dic | python3 kskp2lexc.py > $@
 
-ksk-conv-n.fst: ksk-conv-n.lexc
+ksk-conv-na.fst: ksk-conv-na.lexc
 	hfst-lexc -f openfst-tropical -o $@ $<
 
 ksk-conv-v.fst: ksk-conv-v.lexc
 	hfst-lexc -f openfst-tropical -o $@ $<
 
-ksk-conv-n.lexc classes-n.txt: ksk-pat-na.csv pat-proc.py
-	python3 pat-proc.py -c classes-n.txt --mode c -n Root $< > $@
+ksk-conv-na.lexc classes-na.txt: ksk-pat-na.csv pat-proc.py
+	python3 pat-proc.py -c classes-na.txt --mode c -n Root $< > $@
 
 ksk-conv-v.lexc classes-v.txt: ksk-pat-v.csv pat-proc.py
 	python3 pat-proc.py -c classes-v.txt --mode c -n Root $< > $@
 
-ofi-rules.fst: ofi-rules.twol ksk-renamed.pstr
+ofi-rules.fst: ofi-rules.twol ofi-examples.pstr
 	twol-comp -o $@ --thorough 2 \
 	  --wrong ofi-rules-wrong.fst \
 	  --lost ofi-rules-lost.fst \
-	  ksk-renamed.pstr $< > ofi-rules.log
+	  ofi-examples.pstr $< > ofi-rules.log
 
 delete.fst:
 	echo "Ø -> 0" | hfst-regexp2fst -o $@
