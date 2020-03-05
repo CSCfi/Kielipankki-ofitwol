@@ -27,30 +27,23 @@ def dict_rule(rule_fst):
 
 def init(rule_file_name):
     istream = hfst.HfstInputStream(rule_file_name)
-    #rule_dict_lst = []
-    #finality_dict_lst = []
     while not (istream.is_eof()):
         fst = istream.read()
         rule_d, final_states = dict_rule(fst)
         rule_dict_lst.append(rule_d)
         finality_dict_lst.append(final_states)
     istream.close()
-    #print("rule_dict_lst:", rule_dict_lst) ###########################
-    #print("finality_dict_lst:", finality_dict_lst) ###################
     return
 
 result_lst = []
 
 def search(state_lst, insym_lst, outsym_lst):
     global result_lst
-    #print("search with:", state_lst, insym_lst, outsym_lst) ###############
     if not insym_lst:
         for state, finality in zip(state_lst, finality_dict_lst):
-            #print(state, "in final states of rule fst", finality) #################
             if state not in finality:
                 return
         res = "".join(outsym_lst)
-        #print("pushing result:", res) #######################
         result_lst.append(res)
         return
     insym = insym_lst[0]
@@ -73,19 +66,18 @@ def search(state_lst, insym_lst, outsym_lst):
 
 def generate(word):
     global result_lst, rule_dict_lst
-    #print("in generate: word:", word) ###########################
     result_lst = []
     insym_lst = re.findall(r"{[^{}]+}|[^{}]", word)
     start_state_lst = [0 for r in rule_dict_lst]
-    #print("insym_lst:", insym_lst) #######################
     search(start_state_lst, insym_lst, [])
     return result_lst
 
 if __name__ == "__main__":
     import sys, re
+    init("ofi-rules.fst")
     for line_nl in sys.stdin:
         line = line_nl.strip()
         res = generate(line)
-        print("results:", res)
+        print("  -> ", res)
         print()
     

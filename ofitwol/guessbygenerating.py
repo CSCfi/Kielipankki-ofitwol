@@ -37,9 +37,6 @@ args = argparser.parse_args()
 guesser_fil = hfst.HfstInputStream(args.guesser)
 guesser_fst = guesser_fil.read()
 guesser_fil.close()
-#guesser_fst.invert()
-#guesser_fst.minimize()
-#guesser_fst.lookup_optimize()
 
 import sys, re
 import generate
@@ -61,6 +58,7 @@ for line_nl in sys.stdin:
         print("lookup res_str =", res_str)
     res_lst = res_str.split("\n")
     stem_cont_weight_lst = []
+    entry_set = set()
     for res in res_lst:
         if not res.strip():
             continue
@@ -68,6 +66,10 @@ for line_nl in sys.stdin:
             print("res =", res)
         entry_feat, weight_str = res.split("\t")
         entry, semicolon, feat = entry_feat.partition(";")
+        if entry in entry_set:
+            continue
+        else:
+            entry_set.add(entry)
         stem, space, cont = entry.partition(" ")
         weight = float(weight_str.strip())
         stem_cont_weight_lst.append((stem.strip(), cont.strip(), weight))
