@@ -123,6 +123,7 @@ Define,Coida,"[b|d|n d|f|f f|g|h|j|k|l|l l|m|n|n n|p|r|s|š|t|t t|v]","For -oida
 /s,S08*,elki:el{kj}{ieeeØ},
 /s,S08*,telki:tel{kj}{ieeeØ},
 /s,S08*,olki:ol{kj}{ieeeØ},
+/s,S08*,kylki:kyl{kj}{ieeeØ},
 /s,S08*,solki:sol{kj}{ieeeØ},
 /s,S08*,sylki:syl{kj}{ieeeØ},
 /s,S08*,jälki:jäl{kj}{ieeeØ},
@@ -441,7 +442,7 @@ s01,S29,tiu:tiu,
 /s,S56,syän:syä{mn}{ØeØeØ},
 /s,S56*,"<Co* Syl* Vo+ [Gw|Gwj] i n:{mn} 0:{ØeØeØ}>","POLJIN - 2+syll"
 /s,S56*,"<Co* Syl* Vo+ [Gs|Gsj] i m:{mn} e:{ØeØeØ} t:0>",HOHTIMET
-/a,A56*,hapan:ha{pØ}a{mn}{ØeØeØ},
+/a,A56*,hapan:hap{pØ}a{mn}{ØeØeØ},
 /a,A56,irtain:irtai{mn}{ØeØeØ},
 /a,A56,rikkein:rikkei{mn}{ØeØeØ},
 /a,A56,hulttioin:hulttioi{mn}{ØeØeØ},
@@ -584,7 +585,7 @@ s01,S29,tiu:tiu,
 /s,S71,uros:uro{sØh}{ØoØoØ},
 /s,S71,uros:uro{ØkØkk}s{ØeØeØ},
 /s,S71,kollos:kollo{sØh}{ØoØoØ},
-/s,S72,mies:mie{shs}{ØeØØØ},
+/s,S72,"mies: mie{shs}{ØeØØØ}",
 /s,S73,"<Co* Vo+ CCns [u|y] t:{tØthn} 0:{ØeØØØ}> 10","AIRUT OLUT TIEHYT - bisyll"
 /s,S73*,"<Co* Vo+ Gw [u|y] t:{tØthn} 0:{ØeØØØ}> 10","POIUT ÄIDYT IMMYT - bisyll"
 /s,S73,hanhut:hanhu{tØthn}{ØeØØØ},

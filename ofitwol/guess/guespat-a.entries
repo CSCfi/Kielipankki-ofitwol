@@ -303,7 +303,8 @@ ylvä{sØh}{ØäØØØ} /a ; ! YLVÄS
 !
 !         === ut-ee-t | yt-ee-t ===
 !
-< Co* [Vo+ Co+]+ [{ue}|{ye}] {tØthn} {ØeØØØ} > /a ; ! KUOLLUT KOKENUT MENNYT - 2+syll
+< Co* [VoB+ Co+]+ {ue} {tØthn} {ØeØØØ} > /a ; ! KUOLLUT KOKENUT - 2+syll
+< Co* [VoF+ Co+]+ {ye} {tØthn} {ØeØØØ} > /a ; ! MENNYT IKÄÄNTYNYT - 2+syll
 !
 !         === e-ee-et ===
 !

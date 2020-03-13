@@ -16,7 +16,7 @@ ksk-analy.ofst: ksk-lex.fst ofi-rules.fst ../ofitwol/ofi-examples.pstr delete.fs
 ksk-lex.fst: ofi-analy-aff.lexc $(LEX) Makefile
 	hfst-lexc -f openfst-tropical -o $@ ofi-analy-aff.lexc $(LEX)
 
-ofi-analy-aff.lexc: ofi-affixes.csv ../ofitwol/affixes2analysis.py Makefile
+ofi-analy-aff.lexc: ../ofitwol/ofi-affixes.csv ../ofitwol/affixes2analysis.py
 	python3 ../ofitwol/affixes2analysis.py -e $< $@
 
 ksk-lex-na.lexc: ksk-conv-na.fst classes-na.txt $(KSKDIC)/ksk-n.dic Makefile
