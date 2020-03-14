@@ -1,6 +1,28 @@
 
 
+entries = {}                # entries[wrd] == {ent1, ..., entn}
+words = {}                  # words[entr] == {word1, ..., wordk}
+
+def delete_entry(entry):
+    global entries, words
+    for word in words[entry]:
+        entries[word].discard(entry)
+    del words[entry]
+    return
+
+def delete_all_words(entry, word_lst):
+    global entries, words
+    siz = len(words[entry])
+    for word in word_lst:
+        for entry in entries[word]:
+            if entry in words and siz > len(words[entry]):
+                words[entry].discard(word)
+        if not entries[word]:
+            del entries[word]
+    return
+
 def main():
+    global entries, words
     import argparse
     arpar = argparse.ArgumentParser("python3 guessfromwords.py")
     arpar.add_argument(
@@ -21,38 +43,19 @@ def main():
         type=int, default=0)
     args = arpar.parse_args()
 
-    entries = {}                # entries[wrd] == {ent1, ..., entn}
-    words = {}                  # words[entr] == {word1, ..., wordk}
-
-    def delete_entry(entry):
-        for word in words[entry]:
-            entries[word].discard(entry)
-        del words[entry]
-        return
-
-    def delete_all_words(entry, word_lst):
-        #print("deleting:", word_lst)###
-        siz = len(words[entry])
-        for word in word_lst:
-            for entry in entries[word]:
-                if entry in words and siz > len(words[entry]):
-                    words[entry].discard(word)
-            if not entries[word]:
-                del entries[word]
-        return
-
     if not args.analysed:
         import sys
         ana_fil = sys.stdin
     else:
         ana_fil = open(args.analysed, "r")
-    for line in ana_fil:
-        if not line.strip():
+    for line_nl in ana_fil:
+        line = line_nl.strip()
+        if not line:
             continue
         if line.count("\t") != 2:
             print("***", line)
-            exit()
-        [word, entry_and_feats, weight] = line.strip().split("\t")
+            continue
+        [word, entry_and_feats, weight] = line.split("\t")
         if weight == "inf":
             continue
         entry, semicol, feats = entry_and_feats.partition(";")
@@ -84,7 +87,7 @@ def main():
         for entry in words:
             #print(sz, entry, words[entry])###
             if entry in words and len(words[entry]) >= sz - delta:
-                print(entry, "--", " ".join(sorted(list(words[entry]))))
+                print(entry, "; ! ", " ".join(sorted(list(words[entry]))))
                 delete_all_words(entry, list(words[entry]))
                 del_ent_lst.append(entry)
         for ent in del_ent_lst:

@@ -246,7 +246,6 @@ aikalai{ns}{eeØØ}{nØØØ} /s
 ai{kj}e{Øth}{ØeØeØ} /s
 aikomu{ØkØkk}s{ØeØeØ} /s
 aikui{ns}{eeØØ}{nØØØ} /s
-ai{kØ}{ao} /s ***
 ai{kØ}e{Øth}{ØeØeØ} /s
 ailahtelu /s
 ailak{kØ}{iieØ} /s
@@ -846,7 +845,6 @@ appositio /s
 appretoin{tn}{iieØ} /s
 appretuur{iieØ} /s
 approbatur{ØieØ} /s
-ap{pØ}e{Øth}{ØeØeØ} /s
 ap{pØ}{ieeeØ} /s
 aprak{kØØ}{ao} /s
 aprikoin{tn}{iieØ} /s
@@ -2642,7 +2640,6 @@ etsaaj{aØo} /s
 etsau{ØkØkk}s{ØeØeØ} /s
 etsij{äö} /s
 etsik{kØØ}o /s
-etsi{mn}{ØeØeØ} /s
 etsin{tn}{äö} /s
 etsin{tn}ö /s
 etsiskely /s
@@ -3713,12 +3710,11 @@ harmistuneisuu{ØØØØk}{stds}{ØeØeØ} /s
 harmittelu /s
 harmittomuu{ØØØØk}{stds}{ØeØeØ} /s
 harmoni{ao} /s
-harmon{iieØ} /s
+! harmon{iieØ} /s
 harmoniik{kØØ}{ao} /s
 harmonik{kØØ}{ao} /s
 harmonistiik{kØ}{ao} /s
 harmonisuu{ØØØØk}{stds}{ØeØeØ} /s
-harmo /s
 harpik{kØØ}o /s
 harpist{iieØ} /s
 harppailu /s
@@ -6154,7 +6150,6 @@ italianno{ØkØkk}s{ØeØeØ} /s
 itali{ao} /s
 italiat{tØ}ar{ØeØeØ} /s
 itaruu{ØØØØk}{stds}{ØeØeØ} /s
-i{td}u /s
 i{td}{äØ} /s 50
 iteraatio /s
 itik{kØØ}{ao} /s
@@ -6179,7 +6174,6 @@ itämättömyy{ØØØØk}{stds}{ØeØeØ} /s
 itävyy{ØØØØk}{stds}{ØeØeØ} /s
 ivailij{ao} /s
 ivallisuu{ØØØØk}{stds}{ØeØeØ} /s
-iv{ao} /s
 iäkkyy{ØØØØk}{stds}{ØeØeØ} /s
 jaakar{iieØ} /s
 jaak{kØ}o /s
@@ -6891,7 +6885,6 @@ jäähdyt{tØ}e{Øth}{ØeØeØ} /s
 jäähdyt{tØ}i{mn}{ØeØeØ} /s
 jäähdyty{ØkØkk}s{ØeØeØ} /s
 jääkär{iieØ} /s
-jääm{iieØ} /s
 jäämistö /s
 jääm{äØ} /s
 jäännö{ØkØkk}s{ØeØeØ} /s
@@ -7244,7 +7237,6 @@ kalhu /s
 kaliber{iieØ} /s
 kalifaat{tØ}{iieØ} /s
 kalif{iieØ} /s
-kal{iieØ} /s
 kaliiper{iieØ} /s
 kaliis{iieØ} /s
 kalik{kØØ}{ao} /s
@@ -7284,7 +7276,6 @@ kalkut{tØ}i{mn}{ØeØeØ} /s
 kalkutu{ØkØkk}s{ØeØeØ} /s
 kalkyloin{tn}{iieØ} /s
 kalkyyl{iieØ} /s
-kall{ao} /s
 kalleu{ØØØØk}{stds}{ØeØeØ} /s
 kalligrafi{ao} /s
 kalligraf{iieØ} /s
@@ -8763,7 +8754,6 @@ kiiski{ns}{eeØØ}{nØØØ} /s
 kiisl{ao} /s
 kiissel{iieØ} /s
 kiistailu /s
-kiist{ao} /s
 kiistattomuu{ØØØØk}{stds}{ØeØeØ} /s
 kiistelij{äö} /s
 kiistely /s
@@ -8960,7 +8950,6 @@ kipsoniit{tØ}{iieØ} /s
 kipunai{ns}{eeØØ}{nØØØ} /s
 kipun{ao} /s
 kipunoin{tn}{iieØ} /s
-ki{pv}en{ØeØeØ} /s
 ki{pv}u /s
 kirahdu{ØkØkk}s{ØeØeØ} /s
 kirahtelu /s
@@ -9702,7 +9691,6 @@ kongressilai{ns}{eeØØ}{nØØØ} /s
 kongruenss{iieØ} /s
 kongruenttisuu{ØØØØk}{stds}{ØeØeØ} /s
 konidio /s
-kon{iieØ} /s
 konjakkar{iieØ} /s
 konjak{kØ}{iieØ} /s
 konjektuur{aØ} /s
@@ -15445,7 +15433,7 @@ muslim{ØieØ} /s
 mustalai{ns}{eeØØ}{nØØØ} /s
 mustang{iieØ} /s
 mustau{ØkØkk}s{ØeØeØ} /s
-must{aØ} /s
+must{aØ} /s 50
 mustelm{aØ} /s
 muste{Øth}{ØeØeØ} /s
 mustik{kØ}{iieØ} /s
@@ -17823,7 +17811,6 @@ palk{kØ}{ao} /s
 palk{kØ}{iieØ} /s
 palk{kØ}u /s
 palkolli{ns}{eeØØ}{nØØØ} /s
-pal{kØ}a{sØh}{ØaØØØ} /s
 pal{kØ}o /s
 palladium{ØieØ} /s
 palle{ao} /s
@@ -20697,7 +20684,6 @@ pyörey{ØØØØk}{stds}{ØeØeØ} /s
 pyöre{äØö} /s
 pyörij{äö} /s
 pyörin{tn}{äö} /s
-pyörin{äö} /s
 pyöriskely /s
 pyöristely /s
 pyöristy{ØkØkk}s{ØeØeØ} /s
@@ -23030,7 +23016,6 @@ saarelm{aØ} /s
 saaren{tn}e{Øth}{ØeØeØ} /s
 saaren{tn}o /s
 saarettomuu{ØØØØk}{stds}{ØeØeØ} /s
-saare{ØkØkk}s{ØeØeØ} /s
 saar{ieØeØ} /s
 saaristolai{ns}{eeØØ}{nØØØ} /s
 saaristo /s
@@ -24286,7 +24271,6 @@ sinologi{ao} /s
 sinolog{iieØ} /s
 sinooper{iieØ} /s
 sinsill{ao} /s
-sin{tn}u /s
 sintrau{ØkØkk}s{ØeØeØ} /s
 sints{iieØ} /s
 sintso /s
@@ -25054,7 +25038,6 @@ stipend{iieØ} /s
 stipulaatio /s
 stoalai{ns}{eeØØ}{nØØØ} /s
 stoalaisuu{ØØØØk}{stds}{ØeØeØ} /s
-sto{aØ} /s
 stok{iieØ} /s
 stol{aØ} /s
 stolon{iieØ} /s
@@ -26759,7 +26742,6 @@ tekstiil{iieØ} /s
 tekstuur{iieØ} /s
 tektiit{tØ}{iieØ} /s
 tektoniik{kØ}{ao} /s
-te{kØ}e{Øth}{ØeØeØ} /s
 te{kØ}i{mn}{ØeØeØ} /s
 te{kØ}o /s
 telak{kØØ}{ao} /s
@@ -27201,9 +27183,6 @@ tiokol{iieØ} /s
 tiol{iieØ} /s
 tipahdu{ØkØkk}s{ØeØeØ} /s
 tipahtelu /s
-tip{ao} /s
-tipl{ao} /s
-tipo /s
 tippa{ns}{eeØØ}{nØØØ} /s
 tippar{iieØ} /s
 tippau{ØkØkk}s{ØeØeØ} /s

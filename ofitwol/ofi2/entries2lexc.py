@@ -15,7 +15,8 @@ argparser.add_argument(
     help="Name of the lexicon to be made out of the input entries.")
 argparser.add_argument(
     "-c", "--continuation",
-    help="A default name of the continuation lexicon if the entry has none")
+    help="A default name of the continuation lexicon if the entry has none",
+    default="")
 args = argparser.parse_args()
 
 
@@ -24,12 +25,12 @@ line_lst = []
 
 for line_nl in sys.stdin:
     line, exclam, comment = line_nl.partition("!")
-    line = line_nl.strip()
+    line = line.strip(" \t\n;")
     if not line:
         continue
     line = re.sub(r" +", " ", line)
     line_lst.append(line)
-    mch_lst = re.findall(r"{[^}]+}|\+[A-Z0-9]+", line)
+    mch_lst =re.findall(r"\{[^}]+\}|\+[A-Z0-9]+", line)
     for mch in mch_lst:
         mch_set.add(mch)
 
@@ -51,9 +52,13 @@ for line in line_lst:
         weight = ""
     else:
         entry, sp, rest = line.partition(" ")
+        entry = entry.replace("_", "{§}")
         if rest:
             cont, sp, wght = rest.partition(" ")
             continuation = cont if cont else args.continuation
-            weight = ' "weight: ' + wght - '"' if wght else ""
-    print(entry, cont+weight, ";")
+            weight = ' "weight: ' + wght + '"' if wght else ""
+        else:
+            continuation = args.continuation
+            weight = ''
+    print(entry, continuation + weight, ";")
 

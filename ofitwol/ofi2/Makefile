@@ -2,18 +2,20 @@
 .INTERMEDIATE :
 .PHONY=build analyse
 
-ID=
-OLDANALYSER=../../ksk/ksk-analy.ofst
+ID=sktp
+ANALYSER=ofitwol.ofst
 RULEFST=ofi-rules.fst
 AFF=analy
 DATA=../../data
-LEX=$(ID)-lexic-s.lexc $(ID)-lexic-v.lexc $(ID)-lexic-a.lexc \
-    $(ID)-lexic-p.lexc $(ID)-lexic-firstpart.lexc
+LEX=lexic-s.lexc lexic-v.lexc lexic-a.lexc \
+    lexic-p.lexc lexic-firstpart.lexc \
+    lexic-edited.lexc lexic-noncomp-s.lexc
 ##$(ID)-lexic-compo.lexc
 ANALYSES=$(ID)-corpus.big.analyses
 
-analyse : $(ANALYSES)
 build : ofitwol.ofst $(LEX)
+
+analyse : $(ANALYSES)
 
 ofitwol.ofst : lexic.fst $(RULEFST) delete.fst Makefile
 	hfst-compose-intersect -a -1 $< -2 $(RULEFST) |\
@@ -25,26 +27,32 @@ ofitwol.ofst : lexic.fst $(RULEFST) delete.fst Makefile
 lexic.fst : lexic-aff.lexc $(LEX) Makefile
 	hfst-lexc -E -f openfst-tropical -o $@ $< $(LEX)
 
-lexic-aff.lexc : ../ofi-affixes.csv ../affixes2analysis.py
+lexic-aff.lexc : ofi-affixes.csv ../affixes2analysis.py
 	python3 ../affixes2analysis.py -e $< $@
 
-lexic-s.lexc : lexic-s.entries
-	python3 entries2lexc.py Nouns < $< > $@
+lexic-noncomp-s.lexc : lexic-noncomp-s.entries entries2lexc.py
+	python3 entries2lexc.py Compounds < $< > $@
 
-lexic-a.lexc : lexic-a.entries
+lexic-edited.lexc : lexic-edited.entries entries2lexc.py
+	python3 entries2lexc.py EditedEntries < $< > $@
+
+lexic-a.lexc : lexic-a.entries entries2lexc.py
 	python3 entries2lexc.py Adjectives < $< > $@
 
-lexic-p.lexc : lexic-p.entries
+lexic-p.lexc : lexic-p.entries entries2lexc.py
 	python3 entries2lexc.py Particles < $< > $@
 
-lexic-v.lexc : lexic-v.entries
+lexic-s.lexc : lexic-s.entries entries2lexc.py
+	python3 entries2lexc.py Nouns < $< > $@
+
+lexic-v.lexc : lexic-v.entries entries2lexc.py entries2lexc.py
 	python3 entries2lexc.py Verbs < $< > $@
 
 lexic-firstpart.lexc : lexic-sgnom.words lexic-sggen.words
-	cat $+ | python3 firstpart2lexc.py > $@
+	cat $+ | python3 entries2lexc.py -c SecondPart FirstPart > $@
 
-$(ANALYSES) : $(DATA)/$(ID)-corpus.words $(OLDANALYSER)
-	hfst-lookup -i $(OLDANALYSER) -I $< | \
+$(ANALYSES) : $(DATA)/$(ID)-corpus.words $(ANALYSER)
+	hfst-lookup -b 15 -i $(ANALYSER) -I $< | \
 		egrep '..' > $@
 
 $(RULEFST) : ../ofi-examples.pstr ../ofi-rules.twol
@@ -63,9 +71,9 @@ $(ID)-compo-by-secd.analyses : $(ANALYSES)
 	uniq -c > $@
 
 clean:
-	rm -f $(ID)-*.fst
-	rm -f $(ID)-*.ofst
-	rm -f $(ID)-*.lexc
+	rm -f *.fst
+	rm -f *.ofst
+	rm -f *.lexc
 
 distclean : clean 
 	rm -f $(ID)-corpus.big.analyses

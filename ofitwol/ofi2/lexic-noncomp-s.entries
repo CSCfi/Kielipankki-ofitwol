@@ -1,26 +1,64 @@
 ais{ØieØ} /s
+ap{pØ}e{Øth}{ØeØeØ} /s
+ape{§}ruokin{tn}{ao} /s
 as{ØieØ} /s
+etsi{mn}{ØeØeØ} /s
+harmo /s
 in{ao} /s
+i{td}u /s
+iv{ao} /s
 ja{aØ} /s
 jak{kØ}{iieØ} /s
 jen{ØieØ} /s
+jääm{iieØ} /s
+kal{iieØ} /s
+kali{§}suol{ao} /s
+kall{ao} /s
 kann{ao} /s
+kiist{ao} /s
+ki{pv}en{ØeØeØ} /s
+kon{iieØ} /s
 kylä{ns}{eeØØ}{nØØØ} /s 20
 lah{td}{iieØ} /s
 la{iieØ} /s
 laist{ao} /s
+le{eeØ} /s
 luv{aØ} /s
 määr{iieØ} /s
 onnik{kØ}{ao} /s
 paik{kØ}o /s
+! pal{kØ}a{sØh}{ØaØØØ} /s
 päivä{ns}{eeØØ}{nØØØ} /s
 päät{tØ}ö /s
+pyörin{äö} /s
+saare{ØkØkk}s{ØeØeØ} /s
 sak{iieØ} /s
 sen{ØieØ} /s
 sest{ao} /s
 sill{ao} /s
+! sin{tn}u /s
 sir{ØieØ} /s
+sto{aØ} /s
 ta{kØ}{ao} /s
+! te{kØ}e{Øth}{ØeØeØ} /s
+tela{§}kaivur{iieØ} /s
+tela{§}ketju /s
+tela{§}kone{Øth}{ØeØeØ} /s
+tela{§}kärr{iieØ} /s
+tela{§}mat{tØ}o /s
+tela{§}miin{ao} /s
+tela{§}muot{tØ}{iieØ} /s
+tela{§}palvelu /s
+tela{§}pyör{äØ} /s
+tela{§}ran{tn}{ao} /s
+tela{§}rik{kØ}o /s
+tela{§}t{iØ}e /s
+tela{§}traktor{iieØ} /s
+tela{§}tykistö /s
+tela{§}kiv{ieeeØ} /s
+tip{ao} /s
+tipl{ao} /s
+tipo /s
 toim{iieØ} /s
 tull{aØ} /s
 ä{kØ}{äØ} /s
@@ -374,6 +412,10 @@ amme{Øth}{ØeØeØ} /s
 istuma_amme{Øth}{ØeØeØ} /s
 kylpy_amme{Øth}{ØeØeØ} /s
 pore_amme{Øth}{ØeØeØ} /s
+
+harmon{iieØ} /s
+antiikki{§}harmon{iieØ} /s
+urku{§}harmon{iieØ} /s
 
 
 i{kØ}{äØ} /s
@@ -972,6 +1014,21 @@ reuna_last{ao} /s
 tasoitus_last{ao} /s
 teräs_last{ao} /s
 
+must{aØ} /s
+harmaan_must{aØ} /s ! 1
+hiilen_must{aØ} /s ! 3
+kelta_must{aØ} /s ! 5
+koko_must{aØ} /s ! 4
+korpin_must{aØ} /s ! 2
+mustan_must{aØ} /s ! 1
+noki_must{aØ} /s ! 2
+pata_must{aØ} /s ! 4
+puna_must{aØ} /s ! 13
+sini_must{aØ} /s ! 5
+sysi_must{aØ} /s ! 9
+yön_must{aØ} /s ! 4
+
+
 nak{kØ}{iieØ} /s
 prinssi_nak{kØ}{iieØ} /s
 raaka_nak{kØ}{iieØ} /s
@@ -1467,77 +1524,4 @@ hiki_vuor{iieØ} /s
 huopa_vuor{iieØ} /s
 kangas_vuor{iieØ} /s
 silkki_vuor{iieØ} /s
-väli 
-
-
----------------------
-ma{aØ} /s
-afrikkalais
-ahvenan
-alanko
-alppi
-alus
-antaja
-arabi
-aro
-asema
-autio
-auto
-autoilu
-auttaja
-baltti
-baski
-diktatuuri
-edustus
-eestin
-ehdokas
-emä
-etelä
-haka
-hakija
-halla
-hansa
-harju
-hautaus
-hautuu
-heinä
-hevos
-hiekka
-hiesu
-hieta
-hiiden
-hiihto
-hirvi
-honka
-hukka
-ihme
-isän
-isäntä
-itä
-jako
-joki
-juoksu
-juurikas
-järjestäjä
-jäsen
-kaali
-kaira
-kakkos
-kalastus
-kalkki
-kaski
-kasvi
-kasvu
-kilpailija
-kirkko
-kirkon
-koillis
-korpi
-koto
-kruunun
-kukka
-kumppanuus
-kuurin
-kyntö
-kytö
-laakso laatikko laatta laatu lahden lahe lahjoittaja lahjoitus laidun laipan laista laita laitos laitto laiva lako lammas lanka lapin lappa lari larin lato lehti lehto leiri lelu leppä lesken levon liesi lietso lieve liika liima liina liittolais liivin lika linna linnan lintu lipsu lipu liru lisä liuku lohi lohko loma lomailu loppu louhi louna lounais lounas luisu lukin luku luoko luola luonnon luovi luovuttaja lyijy lähettäjä lähteen lähtijä lähtö länsi maalais maali maaria maarian madonna mahti mainos maissi maito maja majan makaroni maksa malli mammutti maneeri manner mansikka mari marin marja markkina marmori marssi marto massa matka matkailu maya meno meri merja mestari metsä metsästys milla mineraali mitali mitta mono monoliitti moreeni moro mosaiikki moukka multa muovi muro murto musiikki mustikka muu muuri mylly myrkky myynti mäki mänty mökki naapuri nais nallin napa nappa nato nauha nauris neuvo neuvosto niemen niemi niini niitty nimen nisu noita nolla nousukas nuija nummen nuoli nurmi nuukuus nyrkkeily nälkä ohin ohje oinas oja oleskelu olut oma ompele ongelma onki ooppera opiskelu oppi oraakkeli oras orko orren osallistuja ostaja osto ottaja otto pahta paikka painajais paini pakana pako pala palatsi palautus palho palkka pallas panka panni paratiisi parku parsi partti paska pata paukku pehko peili peite peitto peli pelkuri pellava pellon pelto pensas perintö persikka pertun peru perun peruna perusta perustaja perä pesä peto peura piha pihlaja pila pinko pino pinta pirkan pirkka pirtti pohja pohjan pohjois pohjusta pohti poika poikkeus pojan pontikka porkkana poro porras prii provinssi puhku puisto puoli puolukka puras purjehdus pursu puu puuha puuro pyhä pykälä pyynti pyöräily pyörön pälvi pää pääsiäis pörssi raaka raakalais raakku rae rahka rahoittaja raiku raila raja rakennus raketti ralli rannikko ranskan ranta rata raudan rauha rauhan raukka rauta ravi reformi rekisteröinti rengas reuna reunusta riehu rieska riihi riista riita rikko rinne rinta riski robotti rokka romahdus routa ruoho ruoka ruokki ruoppaus ruoti ruotsalais ruotsin rusko rutiini ruusu ryssän rytö ryyti saaja saalistus saapas saaren saari saaste sadin saha sahra sairaala sako saksan saksi sala salmi salo salon samba sametti sammal sammas sankari santa sara satelliitti sato satu saukko savi savon seikkailu selkä seminaari sensaatio sepän seura sienestys siirappi siirto siivo sijainti sijoittaja sijoitus sika silla silmun sirkus sirpale sisusta sisä sivistys skandaali sointu somali somer sopimus sora sortaja sorva sose sosialisti sota sotku soutu spektaakkeli suisto suitsi suksi sukulais sula sulan sulfaatti suo suoja suojelu suomalais suomen suomi suon suora suosikki susi suti suunnistus suunta suuri sydän syntymä syrjä syvän syyni syän särö tahna tahto taikina taituri taka talas talous talven tammen tanhua tanskan tanssi tapa tarkkailija tasa teatteri tee teema teeri tehdas tekijä teli tennis teollisuus terhen terva teräs tiede tieto tihku tiili tikan tilaaja toimi toive toivo tonki tontti torkku toru tosikko touhu touko troikka tuho tuke tukki tuli tulo tulos tulppaani tuntu tunturi tuohi tuoja tuoksu tuonti tuotanto tuottaja tupakka turha turisti turjan turun turva turve tutkimus tuura tyranni työ työskentely tähkä täyte täyttö uinti ula unelma unioni urheilu usko uusinta vaahto vaali vaalin vaappu vaara vaaran vaha vahti vaihto vainio vaisto vaje vala valitsija valmistaja valo valta valtion valu vannas vanne vapa vapaa vara vares vari varjo varo vartio vasa vasta vastike veijari veijon veikan veljes velkoja vello venho venäjän verkko verkosto vero verotus verso verta vertailu vesa veto viejä vienti vierailu vieri vihannes vihollis viidakko viihde viila viini viiri viita viitta vilja viljan viljely viljelys vilkku vinku viro viron virtuoosi viuhu voi voimistelu voittaja voitto vuo vuokra vuoksen vuono vuoren vuori vuoristo vuota vähä väli ydin yhteisö ykkös yksityis yllättäjä ympäristö ympärys yrtti ystävä äidin äiti ääni ääri öljy
+väli_vuor{iieØ} /s
