@@ -1,0 +1,825 @@
+!
+! persoonapronominit
+! ==================
+minä+PRON:minä Clit
+minä+PRON:ma Clit
+minä+PRON:mä Clit ! arkik
+minä+PRON:mää Clit ! arkik
+minä+PRON:mie Clit ! murt
+minä+PRON:minut Clit
+minä+PRON:minun Clit
+minä+PRON:mun Clit ! arkik
+minä+PRON:minuna Clit
+minä+PRON:minuksi Clit
+minä+PRON:minua Clit
+minä+PRON:mua Clit ! arkik
+minä+PRON:milma Clit ! vanh
+minä+PRON:minussa Clit
+minä+PRON:mussa Clit ! arkik
+minä+PRON:minusta Clit
+minä+PRON:musta Clit ! arkik
+minä+PRON:minuun Clit
+minä+PRON:muhun Clit ! arkik
+minä+PRON:minulla Clit
+minä+PRON:mulla Clit ! arkik
+minä+PRON:minulta Clit
+minä+PRON:multa Clit ! arkik
+minä+PRON:minulle Clit
+minä+PRON:mulle Clit ! arkik
+minä+PRON:minutta Clit
+
+minä+PRON:miut Clit ! arkik
+minä+PRON:miun Clit ! arkik
+minä+PRON:miusta Clit ! arkik
+minä+PRON:miulla Clit ! arkik
+minä+PRON:miulle Clit ! arkik
+minä+PRON:miulta Clit ! arkik
+
+sinä+PRON:sinä Clit
+sinä+PRON:sa Clit ! runok
+sinä+PRON:sä Clit ! arkik
+sinä+PRON:sää Clit ! murt
+sinä+PRON:sie Clit ! murt
+sinä+PRON:sinut Clit
+sinä+PRON:sinun Clit
+sinä+PRON:sun Clit ! arkik
+sinä+PRON:sinuna Clit
+sinä+PRON:sinuksi Clit
+sinä+PRON:sinua Clit
+sinä+PRON:sua Clit ! arkik
+sinä+PRON:silma Clit ! vanh
+sinä+PRON:sinussa Clit
+sinä+PRON:sussa Clit ! arkik
+sinä+PRON:sinusta Clit
+sinä+PRON:susta Clit ! arkik
+sinä+PRON:sinuun Clit
+sinä+PRON:sinulla Clit
+sinä+PRON:sulla Clit ! arkik
+sinä+PRON:sinulta Clit
+sinä+PRON:sulta Clit ! arkik
+sinä+PRON:sinulle Clit
+sinä+PRON:sulle Clit ! arkik
+sinä+PRON:sinutta Clit
+
+hän+PRON:hän Clit
+hän+PRON:hänet Clit
+hän+PRON:hänen Clit
+hän+PRON:hännenä Clit
+hän+PRON:häneksi Clit
+hän+PRON:häntä Clit
+hän+PRON:hänessä Clit
+hän+PRON:hänestä Clit
+hän+PRON:häneen Clit
+hän+PRON:hänellä Clit
+hän+PRON:hällä Clit
+hän+PRON:häneltä Clit
+hän+PRON:hältä Clit
+hän+PRON:hänelle Clit
+hän+PRON:hälle Clit
+hän+PRON:hänettä Clit
+
+me+PRON:me Clit
+me+PRON:myö Clit ! murt
+me+PRON:meidät Clit
+me+PRON:meidän Clit
+me+PRON:meinä Clit
+me+PRON:meiksi Clit
+me+PRON:meitä Clit
+me+PRON:meissä Clit
+me+PRON:meistä Clit
+me+PRON:meihin Clit
+me+PRON:meillä Clit
+me+PRON:meiltä Clit
+me+PRON:meille Clit
+me+PRON:meittä Clit
+
+te+PRON:te Clit
+te+PRON:teidät Clit
+te+PRON:teidän Clit
+te+PRON:teinä Clit
+te+PRON:teiksi Clit
+te+PRON:teitä Clit
+te+PRON:teissä Clit
+te+PRON:teistä Clit
+te+PRON:teihin Clit
+te+PRON:teillä Clit
+te+PRON:teiltä Clit
+te+PRON:teille Clit
+te+PRON:teittä Clit
+
+he+PRON:he Clit
+he+PRON:hyö Clit ! murt
+he+PRON:heidät Clit
+he+PRON:heidän Clit
+he+PRON:heinä Clit
+he+PRON:heiksi Clit
+he+PRON:heitä Clit
+he+PRON:heissä Clit
+he+PRON:heistä Clit
+he+PRON:heihin Clit
+he+PRON:heillä Clit
+he+PRON:heiltä Clit
+he+PRON:heille Clit
+he+PRON:meittä Clit
+!
+! demonstratiivipronominit
+! ========================
+tämä+PRON:tämä Clit
+tämä+PRON:tää Clit ! runok ja arkik
+tämä+PRON:tämän Clit
+tämä+PRON:tän Clit ! runok ja arkik
+tämä+PRON:tänä Clit
+tämä+PRON:täksi Clit
+tämä+PRON:tätä Clit
+tämä+PRON:tässä Clit
+tämä+PRON:tästä Clit
+tämä+PRON:tähän Clit
+tämä+PRON:tällä Clit
+tämä+PRON:tältä Clit
+tämä+PRON:tälle Clit
+tämä+PRON:tättä Clit
+
+tuo+PRON:tuo
+tuo+PRON:toi ! arkik
+tuo+PRON:tuon
+tuo+PRON:ton ! arkik
+tuo+PRON:tuota
+tuo+PRON:tota ! arkik
+tuo+PRON:tuoksi
+tuo+PRON:toksi ! arkik
+tuo+PRON:tuossa
+tuo+PRON:tossa ! arkik
+tuo+PRON:tuosta
+tuo+PRON:tuohon ! arkik
+tuo+PRON:tohon
+tuo+PRON:tuolla ! arkik
+tuo+PRON:tolla
+tuo+PRON:tuolta ! arkik
+tuo+PRON:tolta
+tuo+PRON:tuolle ! arkik
+tuo+PRON:tolle
+
+
+se+PRON:se Clit
+se+PRON:sen Clit
+se+PRON:sinä Clit
+se+PRON:sitä Clit
+se+PRON:siksi Clit
+se+PRON:siinä Clit
+se+PRON:siitä Clit
+se+PRON:siihen Clit
+se+PRON:sillä Clit
+se+PRON:siltä Clit
+se+PRON:sille Clit
+se+PRON:sillen Clit
+se+PRON:siittä Clit
+
+nämä+PRON:nämä Clit
+nämä+PRON:nää Clit ! runok ja arkik
+nämä+PRON:näiden Clit
+nämä+PRON:näitten Clit
+nämä+PRON:näinä Clit
+nämä+PRON:näiksi Clit
+nämä+PRON:näitä Clit
+nämä+PRON:näissä Clit
+nämä+PRON:näistä Clit
+nämä+PRON:näihin Clit
+nämä+PRON:näillä Clit
+nämä+PRON:näiltä Clit
+nämä+PRON:näille Clit
+nämä+PRON:näine Clit
+nämä+PRON:näin Clit
+
+nuo+PRON:nuo Clit
+nuo+PRON:noi Clit ! arkik
+nuo+PRON:nuot Clit ! murt?
+nuo+PRON:noiden Clit
+nuo+PRON:noitten Clit
+nuo+PRON:noina Clit
+nuo+PRON:koiksi Clit
+nuo+PRON:noita Clit
+nuo+PRON:noissa Clit
+nuo+PRON:noista Clit
+nuo+PRON:noihin Clit
+nuo+PRON:noilla Clit
+nuo+PRON:noilta Clit
+nuo+PRON:noille Clit
+nuo+PRON:noine Clit
+nuo+PRON:noitta Clit
+nuo+PRON:noin Clit
+
+ne+PRON:ne Clit
+ne+PRON:niiden Clit
+ne+PRON:niitten Clit
+ne+PRON:niinä Clit
+ne+PRON:niitä Clit
+ne+PRON:niiksi Clit
+ne+PRON:niissä Clit
+ne+PRON:niistä Clit
+ne+PRON:niihin Clit
+ne+PRON:niillä Clit
+ne+PRON:niiltä Clit
+ne+PRON:niille Clit
+ne+PRON:niillen Clit
+ne+PRON:niittä Clit
+ne+PRON:niine Clit
+ne+PRON:niin Clit
+!
+! refleksiivipronominit
+! =====================
+itse+PRON:itse Poss
+!
+! indefiniittipronominit
+! ======================
+muu:mu{uØ} /r
+
+jompikumpi+PRON:jompikumpi
+jompikumpi+PRON:jommankumman
+jompikumpi+PRON:jompanakumpana
+jompikumpi+PRON:jompaakumpaa
+jompikumpi+PRON:jommaksikummaksi
+jompikumpi+PRON:jommassakummassa
+jompikumpi+PRON:jommastakummasta
+jompikumpi+PRON:jompaankumpaan
+jompikumpi+PRON:jommallakummalla
+jompikumpi+PRON:jommaltakummalta
+jompikumpi+PRON:jommallekummalle
+jompikumpi+PRON:jommattakummatta
+jompikumpi+PRON:jommatkummat
+jompikumpi+PRON:jompainkumpain
+jompikumpi+PRON:jompienkumpien
+jompikumpi+PRON:jompinakumpina
+jompikumpi+PRON:jompiakumpia
+jompikumpi+PRON:jommissakummissa
+jompikumpi+PRON:jommistakummista
+jompikumpi+PRON:jompiinkumpiin
+jompikumpi+PRON:jommillakummilla
+jompikumpi+PRON:jommiltakummilta
+jompikumpi+PRON:jommillekummille
+jompikumpi+PRON:jommittakummitta
+jompikumpi+PRON:jompinekumpine
+jompikumpi+PRON:jomminkummin
+
+kumpi:ku /rcomp
+
+kaikki:kaik{kØ}{ieeeØ} /r
+
+kukin+PRON:kukin
+kukin+PRON:kunkin
+kukin+PRON:kunakin
+kukin+PRON:kutakin
+kukin+PRON:kuksikin
+kukin+PRON:kussakin
+kukin+PRON:kustakin
+kukin+PRON:kuhunkin
+kukin+PRON:kullakin
+kukin+PRON:kultakin
+kukin+PRON:kullekin
+kukin+PRON:kutkin
+kukin+PRON:kuidenkin ! harv
+kukin+PRON:kuittenkin ! harv
+kukin+PRON:kuinakin
+kukin+PRON:kuitakin
+kukin+PRON:kuiksikin
+kukin+PRON:kuissakin
+kukin+PRON:kuistakin
+kukin+PRON:kuihinkin
+kukin+PRON:kuillakin
+kukin+PRON:kuiltakin
+kukin+PRON:kuillekin
+kukin+PRON:kuinkin
+
+kukaan+PRON:kukaan
+kukaan+PRON:kussaan
+kukaan+PRON:kustaan
+kukaan+PRON:kuhunkaan
+kukaan+PRON:kutkaan
+
+mikin+PRON:mikin
+mikin+PRON:minkin
+mikin+PRON:minäkin
+mikin+PRON:mitäkin
+mikin+PRON:miksikin
+mikin+PRON:missäkin
+mikin+PRON:mistäkin
+mikin+PRON:mihinkin
+mikin+PRON:milläkin
+mikin+PRON:miltäkin
+mikin+PRON:millekin
+mikin+PRON:mitkin
+mikin+PRON:minkin
+mikin+PRON:minäkin
+mikin+PRON:mitäkin
+mikin+PRON:miksikin
+mikin+PRON:missäkin
+mikin+PRON:mistäkin
+mikin+PRON:mihinkin
+mikin+PRON:milläkin
+mikin+PRON:miltäkin
+mikin+PRON:millekin
+mikin+PRON:minkin
+
+mikään+PRON:mikään
+mikään+PRON:minkään
+mikään+PRON:minäään
+mikään+PRON:minäkään ! vanh harv
+mikään+PRON:mitään
+mikään+PRON:mitäkään ! juhl harv
+mikään+PRON:miksikään
+mikään+PRON:missään
+mikään+PRON:missäkään ! vanh harv
+mikään+PRON:mistään
+mikään+PRON:mistäkään ! vanh harv
+mikään+PRON:mihinkään
+mikään+PRON:millään
+mikään+PRON:miltään
+mikään+PRON:millekään
+mikään+PRON:mitkään
+
+eräs:erä{sØh}{ØäØØØ} /r
+
+joku+PRON:joku
+joku+PRON:jonkun
+joku+PRON:jonakuna
+joku+PRON:jotakuta
+joku+PRON:joksikuksi
+joku+PRON:jossakussa
+joku+PRON:jostakusta
+joku+PRON:johonkuhun
+joku+PRON:jollakulla
+joku+PRON:joltakulta
+joku+PRON:jollekulle
+joku+PRON:jotakutta
+joku+PRON:jotkut
+joku+PRON:joidenkuiden
+joku+PRON:joidenkuitten
+joku+PRON:joinakuina
+joku+PRON:joitakuita
+joku+PRON:joiksikuiksi
+joku+PRON:joissakuissa
+joku+PRON:joistakuista
+joku+PRON:joihinkuihin
+joku+PRON:joillakuilla
+joku+PRON:joiltakuilta
+joku+PRON:joillekuille
+joku+PRON:joittakuitta
+joku+PRON:joinekuine
+
+jokin+PRON:jokin
+jokin+PRON:jonkin
+jokin+PRON:jonakin
+jokin+PRON:jonain
+jokin+PRON:jotakin
+jokin+PRON:jotain
+jokin+PRON:joksikin
+jokin+PRON:jossakin
+jokin+PRON:jossain
+jokin+PRON:jostakin
+jokin+PRON:jostain
+jokin+PRON:johonkin
+jokin+PRON:jollakin
+jokin+PRON:jollain
+jokin+PRON:joltakin
+jokin+PRON:joltain
+jokin+PRON:jollekin
+jokin+PRON:jotkin
+jokin+PRON:joidenkin
+jokin+PRON:joittenkin
+jokin+PRON:joinakin
+jokin+PRON:joinain
+jokin+PRON:joitakin
+jokin+PRON:joitain
+jokin+PRON:joiksikin
+jokin+PRON:joissakin
+jokin+PRON:joissain
+jokin+PRON:joistakin
+jokin+PRON:joistain
+jokin+PRON:joihinkin
+jokin+PRON:joillakin
+jokin+PRON:joillain
+jokin+PRON:joiltakin
+jokin+PRON:joiltain
+jokin+PRON:joillekin
+jokin+PRON:joittakin
+jokin+PRON:joitain
+jokin+PRON:joinekin
+jokin+PRON:joinkin
+
+moni:mon{ieØeØ} /r
+
+moni:mone{ØnØnn}{snt}{ØeØØØ} /r
+
+molemmat+PRON:molemmat
+molemmat+PRON:molem{pm}{aØ} s2
+
+usea:use{aØ} /r
+
+jokainen:jokai{ns}{eeØØ}{nØØØ} /r
+
+! toinen:toi{ns}{eeØØ}{nØØØ} /r
+toinen+PRON:toissa
+
+muutama:muutam{aØ} /r
+muutama+PRON:muudan
+muutama+PRON:muuan
+muutama+PRON:muuanna
+muutama+PRON:muudanna
+muutama+PRON:muuatta
+muutama+PRON:muudatta
+
+sama:sam{ao} /r
+! sam{ao} /r
+yksi:y{kh}s{ieeØeØ} /r
+
+!
+! interrogatiivipronominit
+! ========================
+kuka+PRON:kuka Clit
+kuka+PRON:ku ! runok harv
+kuka+PRON:kunka ! er harv
+kuka+PRON:kuna ! ylät
+kuka+PRON:kuta! ylät
+kuka+PRON:kuksi ! harv
+kuka+PRON:kussa ! ylät
+kuka+PRON:kusta
+kuka+PRON:kuhin
+kuka+PRON:kuhunka
+kuka+PRON:kulla
+kuka+PRON:kulta
+kuka+PRON:kulle
+kuka+PRON:kulleka
+kuka+PRON:kutka
+kuka+PRON:kut ! harv
+kuka+PRON:kuiden ! harv
+kuka+PRON:kuina ! harv
+kuka+PRON:kuita ! harv
+kuka+PRON:kuiksi ! harv
+kuka+PRON:kuissa ! harv
+kuka+PRON:kuihin ! harv
+kuka+PRON:kuilla ! harv
+kuka+PRON:kuilta ! harv
+kuka+PRON:kuille ! harv
+kuka+PRON:kuine ! harv
+kuka+PRON:kuitta ! harv
+kuka+PRON:kuin ! harv
+
+kuka+PRON:kuka
+kuka+PRON:ken ! runok
+kuka+PRON:kekä ! murt
+kuka+PRON:kunka ! tuskin esiintyvä
+kuka+PRON:kenen
+kuka+PRON:kenet
+kuka+PRON:kenä
+kuka+PRON:kenenä
+kuka+PRON:ketä
+kuka+PRON:keneksi
+kuka+PRON:keksi ! ani harv
+kuka+PRON:kuksi ! ani harv
+kuka+PRON:kenessä
+kuka+PRON:kessä ! etup ylät
+kuka+PRON:kussa ! etup ylät, erit merk
+kuka+PRON:kenestä
+kuka+PRON:kestä ! etup ylät
+kuka+PRON:kusta ! etup ylät, erit merk
+kuka+PRON:keneen
+kuka+PRON:kehen
+kuka+PRON:kuhun ! ylät
+kuka+PRON:kenellä
+kuka+PRON:kellä
+kuka+PRON:kulla ! harv
+kuka+PRON:keneltä
+kuka+PRON:keltä
+kuka+PRON:kulta ! harv
+kuka+PRON:kenelle
+kuka+PRON:kelle
+kuka+PRON:kulle ! harv
+kuka+PRON:kenettä
+kuka+PRON:kutka
+kuka+PRON:ketkä
+kuka+PRON:keiden
+kuka+PRON:keitten
+kuka+PRON:kuiden ! ani harv
+kuka+PRON:keinä
+kuka+PRON:kuina ! harv
+kuka+PRON:keitä
+kuka+PRON:kuita ! harv
+kuka+PRON:keiksi
+kuka+PRON:kuiksi ! harv
+kuka+PRON:keissä
+kuka+PRON:kuissa ! harv
+kuka+PRON:keistä
+kuka+PRON:kuista ! harv
+kuka+PRON:keihin
+kuka+PRON:kuihin ! harv
+kuka+PRON:keillä
+kuka+PRON:kuillä ! harv
+kuka+PRON:keiltä
+kuka+PRON:kuilta ! harv
+kuka+PRON:keille
+kuka+PRON:keille ! harv
+kuka+PRON:keittä
+kuka+PRON:keine
+kuka+PRON:kuin
+kuka+PRON:kein ! ani harv
+
+ken+PRON:ken Clit ! vanh
+ken+PRON:kenet Clit
+ken+PRON:kenen Clit
+ken+PRON:kenenä Clit
+ken+PRON:ketä Clit ! ()
+ken+PRON:kenessä Clit
+ken+PRON:kenestä Clit
+ken+PRON:keneen Clit
+ken+PRON:kenellä Clit
+ken+PRON:keneltä Clit
+ken+PRON:kenelle Clit
+ken+PRON:keneltä Clit
+
+kekä+PRON:kekä ! murt
+kekä+PRON:kenä Clit
+kekä+PRON:ketä Clit
+kekä+PRON:keksi ! harv
+kekä+PRON:kessä Clit
+kekä+PRON:kestä Clit
+kekä+PRON:kehen Clit
+kekä+PRON:kehenkä
+kekä+PRON:kellä Clit
+kekä+PRON:keltä Clit
+kekä+PRON:kelle Clit
+kekä+PRON:kellekä
+kekä+PRON:ketkä
+kekä+PRON:keiden Clit
+kekä+PRON:keitten Clit
+kekä+PRON:keidenkä
+kekä+PRON:keittenkä
+kekä+PRON:keinä Clit
+kekä+PRON:keitä Clit
+kekä+PRON:keiksi Clit
+kekä+PRON:keissä Clit
+kekä+PRON:keistä Clit
+kekä+PRON:keihin Clit
+kekä+PRON:keihinkä
+kekä+PRON:keillä Clit
+kekä+PRON:keiltä Clit
+kekä+PRON:keille Clit
+kekä+PRON:keillekä
+
+kenkin+PRON:kenkin ! harv
+kenkin+PRON:kenetkin
+kenkin+PRON:kenenkin
+kenkin+PRON:kenenäkin
+kenkin+PRON:keneksikin
+kenkin+PRON:kenessäkin
+kenkin+PRON:kenestäkin
+kenkin+PRON:keneenkin
+kenkin+PRON:kenelläkin
+kenkin+PRON:keneltäkin
+kenkin+PRON:kenellekin
+kenkin+PRON:kenettäkin
+
+kekään+PRON:kekään ! harv
+kekään+PRON:ketään
+kekään+PRON:ketäkään ! juhl harv
+kekään+PRON:kessään
+kekään+PRON:kestään
+kekään+PRON:kehenkään
+kekään+PRON:kellään
+kekään+PRON:keltäkään
+kekään+PRON:kellekään
+kekään+PRON:ketkään
+kekään+PRON:keidenkään
+kekään+PRON:keittenkään
+kekään+PRON:keinäkään
+kekään+PRON:keittenkään
+kekään+PRON:keinäkään
+kekään+PRON:keitäkään
+kekään+PRON:keiksikään
+kekään+PRON:keissään
+kekään+PRON:keissäkään
+kekään+PRON:keistään
+kekään+PRON:keistäkään
+kekään+PRON:keihinkään
+kekään+PRON:keillään
+kekään+PRON:keilläkään
+kekään+PRON:keiltään
+kekään+PRON:keiltäkään
+kekään+PRON:keillekään
+kekään+PRON:keittään
+kekään+PRON:keittäkään
+
+kenkään+PRON:kenkään
+kenkään+PRON:kenenkään
+kenkään+PRON:kenenäkään
+kenkään+PRON:keneksikään
+kenkään+PRON:kenessäkään
+kenkään+PRON:kenestäkään
+kenkään+PRON:keneenkään
+kenkään+PRON:kenelläkään
+kenkään+PRON:keneltäkään
+kenkään+PRON:kenellekään
+kenkään+PRON:kenettäkään
+
+! kumpainen	
+kumpainenkin+PRON:kumpainenkin
+kumpainenkin+PRON:kumpaisenkin
+kumpainenkin+PRON:kumpaisenakin
+kumpainenkin+PRON:kumpaistakin
+kumpainenkin+PRON:kumpaiseksikin
+kumpainenkin+PRON:kumpaisessakin
+kumpainenkin+PRON:kumpaisestakin
+kumpainenkin+PRON:kumpaiseenkin
+kumpainenkin+PRON:kumpaisellakin
+kumpainenkin+PRON:kumpaiseltakin
+kumpainenkin+PRON:kumpaisellekin
+kumpainenkin+PRON:kumaisettakin
+kumpainenkin+PRON:kumpaisetkin
+kumpainenkin+PRON:kumpaistenkin
+kumpainenkin+PRON:kumpaisienkin
+kumpainenkin+PRON:kumpaisinakin
+kumpainenkin+PRON:kumpaisiakin
+kumpainenkin+PRON:kumpaisiksikin
+kumpainenkin+PRON:kumpaisissakin
+kumpainenkin+PRON:kumpaisistakin
+kumpainenkin+PRON:kumpaisiinkin
+kumpainenkin+PRON:kumpaisillakin
+kumpainenkin+PRON:kumpaisiltakin
+kumpainenkin+PRON:kumpaisillekin
+kumpainenkin+PRON:kumpaisittakin
+kumpainenkin+PRON:kumpaisine
+kumpainenkin+PRON:kumpaisinkin
+
+kumpainenkaan+PRON:kumpainenkaan
+kumpainenkaan+PRON:kumpaisenkaan
+kumpainenkaan+PRON:kumpaisenakaan
+kumpainenkaan+PRON:kumpaistakaan
+kumpainenkaan+PRON:kumpaiseksikaan
+kumpainenkaan+PRON:kumpaisessakaan
+kumpainenkaan+PRON:kumpaisestakaan
+kumpainenkaan+PRON:kumpaiseenkaan
+kumpainenkaan+PRON:kumpaisellakaan
+kumpainenkaan+PRON:kumpaiseltakaan
+kumpainenkaan+PRON:kumpaisellekaan
+kumpainenkaan+PRON:kumaisettakaan
+kumpainenkaan+PRON:kumpaisetkaan
+kumpainenkaan+PRON:kumpaistenkaan
+kumpainenkaan+PRON:kumpaisienkaan
+kumpainenkaan+PRON:kumpaisinakaan
+kumpainenkaan+PRON:kumpaisiakaan
+kumpainenkaan+PRON:kumpaisiksikaan
+kumpainenkaan+PRON:kumpaisissakaan
+kumpainenkaan+PRON:kumpaisistakaan
+kumpainenkaan+PRON:kumpaisiinkaan
+kumpainenkaan+PRON:kumpaisillakaan
+kumpainenkaan+PRON:kumpaisiltakaan
+kumpainenkaan+PRON:kumpaisillekaan
+kumpainenkaan+PRON:kumpaisittakaan
+kumpainenkaan+PRON:kumpaisine
+kumpainenkaan+PRON:kumpaisinkaan
+
+! kumpi
+kumpikin+PRON:kumpikin
+kumpikin+PRON:kummankin
+kumpikin+PRON:kumpanakin
+kumpikin+PRON:kumpaakin
+kumpikin+PRON:kummaksikin
+kumpikin+PRON:kummassakin
+kumpikin+PRON:kummastakin
+kumpikin+PRON:kummallakin
+kumpikin+PRON:kummaltakin
+kumpikin+PRON:kummallekin
+kumpikin+PRON:kummattakin
+kumpikin+PRON:kummatkin
+kumpikin+PRON:kumpainkin
+kumpikin+PRON:kumpienkin
+kumpikin+PRON:kumpinakin
+kumpikin+PRON:kumpiakin
+kumpikin+PRON:kummiksikin
+kumpikin+PRON:kummissakin
+kumpikin+PRON:kummistakin
+kumpikin+PRON:kumpiinkin
+kumpikin+PRON:kummillakin
+kumpikin+PRON:kummiltakin
+kumpikin+PRON:kummillekin
+kumpikin+PRON:kummittakin
+kumpikin+PRON:kummpinekin
+kumpikin+PRON:kumminkin
+
+kumpikaan+PRON:kumpikaan
+kumpikaan+PRON:kummankaan
+kumpikaan+PRON:kumpanakaan
+kumpikaan+PRON:kumpaakaan
+kumpikaan+PRON:kummaksikaan
+kumpikaan+PRON:kummassakaan
+kumpikaan+PRON:kummastakaan
+kumpikaan+PRON:kummallakaan
+kumpikaan+PRON:kummaltakaan
+kumpikaan+PRON:kummallekaan
+kumpikaan+PRON:kummattakaan
+kumpikaan+PRON:kummatkaan
+kumpikaan+PRON:kumpainkaan
+kumpikaan+PRON:kumpienkaan
+kumpikaan+PRON:kumpinakaan
+kumpikaan+PRON:kumpiakaan
+kumpikaan+PRON:kummiksikaan
+kumpikaan+PRON:kummissakaan
+kumpikaan+PRON:kummistakaan
+kumpikaan+PRON:kumpiinkaan
+kumpikaan+PRON:kummillakaan
+kumpikaan+PRON:kummiltakaan
+kumpikaan+PRON:kummillekaan
+kumpikaan+PRON:kummittakaan
+kumpikaan+PRON:kummpinekaan
+kumpikaan+PRON:kumminkaan
+!
+! resiprookkipronominit
+! =====================
+toinen:toi{ns}{eeØØ}{nØØØ} /r ! toinen toisensa
+!
+! relatiivipronominit
+! ===================
+joka+PRON:joka
+joka+PRON:jonka
+joka+PRON:jona Clit
+joka+PRON:jota Clit
+joka+PRON:jossa Clit
+joka+PRON:josta Clit
+joka+PRON:johon Clit
+joka+PRON:jolta Clit
+joka+PRON:jolle Clit
+joka+PRON:jolleka
+joka+PRON:jotka
+joka+PRON:joiden Clit
+joka+PRON:joitten Clit
+joka+PRON:joidenka
+joka+PRON:joittenka
+joka+PRON:joina Clit
+joka+PRON:joita Clit
+joka+PRON:joiksi Clit
+joka+PRON:joiksika
+joka+PRON:joissa Clit
+joka+PRON:joista Clit
+joka+PRON:joihin Clit
+joka+PRON:joihinka
+joka+PRON:joilla Clit
+joka+PRON:joilta Clit
+joka+PRON:joille Clit
+joka+PRON:joilleka
+joka+PRON:joine
+joka+PRON:joitta
+joka+PRON:join
+
+mikä+PRON:mikä Clit
+mikä+PRON:mi Clit ! runok
+mikä+PRON:minkä Clit
+mikä+PRON:min ! runok
+mikä+PRON:minä Clit
+mikä+PRON:mitä Clit
+mikä+PRON:mitäh ! arkik
+mikä+PRON:miksi Clit
+mikä+PRON:missä Clit
+mikä+PRON:mistä Clit
+mikä+PRON:mihin Clit
+mikä+PRON:mihinkä
+mikä+PRON:millä Clit
+mikä+PRON:miltä Clit
+mikä+PRON:mille Clit
+mikä+PRON:millekä
+mikä+PRON:mitkä
+!mikä+PRON:minkä ! monikon muodot samat kuin yksikössä
+!mikä+PRON:minä Clit
+!mikä+PRON:mitä
+!mikä+PRON:miksi
+!mikä+PRON:miksikä
+!mikä+PRON:missä
+!mikä+PRON:mistä
+!mikä+PRON:mihin
+!mikä+PRON:mihinkä
+!mikä+PRON:mine
+!mikä+PRON:min
+
+!
+! sekalaisia
+! ==========
+harva:harv{ao} /r
+
+jollai{ns}{eeØØ}{nØØØ} /r
+
+kumpai{ns}{eeØØ}{nØØØ} /r
+millai{ns}{eeØØ}{nØØØ} /r
+mole /rcomp ! molemmat
+mone{ØnØnn}{snt}{ØeØØØ} /r
+moni_ah[td}{ao} /r
+moni_kah{td}{ao} /r
+monia{sØh}{ØaØØØ} /r
+monitui{ns}{eeØØ}{nØØØ} /r
+mon{ieØeØØ} /r
+muutamai{ns}{eeØØ}{nØØØ} /r
+
+sellai{ns}{eeØØ}{nØØØ} /r
+! taa2 R88
+tuollai{ns}{eeØØ}{nØØØ} /r
+tällai{ns}{eeØØ}{nØØØ} /r
+useahko /r
+
+mones+PRON:monesko
+!semä R88

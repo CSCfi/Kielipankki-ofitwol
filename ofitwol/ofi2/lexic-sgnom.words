@@ -247,7 +247,7 @@ airo
 airokas
 airue
 airut
-ais
+! ais
 aisa
 aisti
 aistikkuus
@@ -744,7 +744,7 @@ apara
 aparaatti
 apatia
 apatiitti
-! ape
+ape ! apekaukalo, -kaura, ...
 apea
 apeksi
 apellatiivi
@@ -1555,7 +1555,7 @@ cembalo
 centime
 centurio
 cerium
-ces
+! ces
 champagne
 championi
 charmi
@@ -1569,7 +1569,7 @@ chinchilla
 chippendale
 cicero
 cirrus
-cis
+! cis
 city
 civis
 clearing
@@ -1697,7 +1697,7 @@ depressio
 deputaatio
 derivaatta
 derivointi
-des
+! des
 desantti
 desendentti
 desentralisaatio
@@ -1819,7 +1819,7 @@ dipodia
 dipoli
 direktori
 direktorio
-dis
+! dis
 disharmonia
 disharmonisuus
 disipliini
@@ -2045,7 +2045,7 @@ eideetikko
 eilis ! -nen
 eine
 eines
-eis
+! eis
 ejakulaatio
 ejektori
 eklektikko
@@ -2669,7 +2669,7 @@ ferrikloridi
 ferrokloridi
 ferrokromi
 fertiliteetti
-fes
+! fes
 festivaali
 fetsi
 fiaali
@@ -2723,8 +2723,8 @@ finessi
 finni
 firma
 firmamentti
-firn
-fis
+! firn
+! fis
 fiskaali
 fiskus
 fissio
@@ -2995,7 +2995,7 @@ germanistiikka
 gerontologia
 gerundi
 gerundiivi
-ges
+! ges
 geysir
 ghetto
 gibberelliini
@@ -4018,7 +4018,7 @@ hetula
 heven
 hevos ! -nen
 hevosettomuus
-hia
+! hia
 hiaisin
 hiatus
 hickory
@@ -4031,7 +4031,7 @@ hidastus
 hidastuvaisuus
 hidastuvuus
 hide
-hie
+! hie
 hiedoitus
 hieho
 hiekka
@@ -4789,7 +4789,7 @@ hutkaus
 hutkina
 hutsu
 huttu
-huu
+! huu
 huudahdus
 huudahtelu
 huudanta
@@ -4988,7 +4988,7 @@ hyväkäs
 hyvästelijä
 hyvästely
 hyvästi
-hyy
+! hyy
 hyyde
 hyydyke
 hyydytys
@@ -5510,7 +5510,7 @@ imu
 imuke
 imuri
 imutus
-ina
+! ina
 inahdus
 indeksi
 independentti
@@ -5837,7 +5837,7 @@ iva
 ivailija
 ivallisuus
 iäkkyys
-jaa
+! jaa
 jaakari
 jaakko
 jaala
@@ -11042,7 +11042,7 @@ köysitys
 köyte
 köytyri
 köytös
-köö
+! köö
 kööki
 köökki
 kööpeli
@@ -11115,7 +11115,7 @@ ladollis ! -nen
 ladonta
 lados
 lady
-lae
+! lae
 laes
 laestadiolais ! -nen
 laestadiolaisuus
@@ -11154,7 +11154,7 @@ lahti
 lahto
 lahtos ! -nen
 lahvi
-lai
+! lai
 laicus
 laidas
 laide
@@ -11608,7 +11608,7 @@ laviini
 lavitsa
 lavo
 lavoaari
-lee
+! lee
 leegio
 leesio
 leeviläis ! -nen
@@ -12882,7 +12882,7 @@ luvanta
 luvattomuus
 luvusto
 luvuttomuus
-lux
+! lux
 lyddiitti
 lyhde
 lyhemmyys
@@ -14621,7 +14621,7 @@ mutteri
 mutu
 mutualismi
 mutustelu
-muu
+! muu
 muukalais ! -nen
 muukalaisuus
 muuli
@@ -14742,7 +14742,7 @@ mytty
 myttys ! -nen
 myttyrä
 mytyllis ! -nen
-myy
+! myy
 myyjä
 myyjäis ! -nen
 myyjätär
@@ -15956,7 +15956,7 @@ nöyrtymättömyys
 nöyryys
 nöyryytys
 oaasi
-oas
+! oas
 obduktio
 obeliski
 objekti
@@ -16403,7 +16403,7 @@ orneeraus
 ornitologi
 ornitologia
 ornitoosi
-oro
+! oro
 orografia
 oros ! -nen
 orpana
@@ -16487,7 +16487,7 @@ osuma
 osuus
 osuvuus
 osviitta
-ota
+! ota
 otaksuma
 otaksunta
 otanta
@@ -18041,7 +18041,7 @@ pintaaja
 pintaus
 pinteli
 pintta
-pio
+!pio
 pioneeri
 pioni
 pipana
@@ -20790,7 +20790,7 @@ rintamus
 rintaus
 rintavuus
 rintuus
-rio
+! rio
 ripa
 ripaska
 ripe
@@ -22465,7 +22465,7 @@ seminaristi
 semipelagiolais ! -nen
 semipelagiolaisuus
 semstvo
-sen
+! sen
 senaari
 senaatti
 senaattori
@@ -23980,10 +23980,8 @@ suovero
 supattelu
 supatus
 super
-superheterodyne
-superkargööri
 superlatiivi
-superlatiivisuus
+! superlatiivisuus
 supernova
 supi
 supiini
@@ -24005,10 +24003,9 @@ suppilo
 supplementti
 suppo
 supportti
-suppositorio
+! suppositorio
 suppu
-suprareniini
-suprematia
+! suprematia
 supsutus
 supukka
 surahdus
@@ -24054,9 +24051,9 @@ survonta
 survos
 susi
 susimaisuus
-suslikki
+! suslikki
 suspensio
-suspensoidi
+! suspensoidi
 sussu
 sutaisu
 sutari
@@ -24071,9 +24068,9 @@ suttu
 suttura
 suu
 suuda
-suude
+! suude
 suudelma
-suudin
+! suudin
 suuhis ! -nen
 suukko
 suukkos ! -nen
@@ -24092,7 +24089,7 @@ suunnistus
 suunnitelma
 suunnitelmallisuus
 suunnitelmattomuus
-suunnittelemattomuus
+! suunnittelemattomuus
 suunnittelija
 suunnittelu
 suunnitus
@@ -24107,7 +24104,7 @@ suuntima
 suuntimis ! -nen
 suuntimo
 suunturi
-suura
+! suura
 suure
 suurellis ! -nen
 suurellisuus
@@ -24118,7 +24115,7 @@ suurennos
 suurennus
 suurentaja
 suurentamo
-suurentelevaisuus
+! suurentelevaisuus
 suurentelija
 suurentelu
 suurentuma
@@ -24156,7 +24153,7 @@ suvi
 suvikas
 suvullisuus
 suvuttomuus
-svaboda
+! svaboda
 svarabhakti
 svealais ! -nen
 sveesi
@@ -24174,7 +24171,7 @@ syanaatti
 syanidi
 syaniitti
 syankalium
-syannatrium
+! syannatrium
 syanoosi
 sybariitti
 sydvesti
@@ -24184,7 +24181,7 @@ sydämettömyys
 sydämikkö
 sydämys
 sydän
-syeniitti
+! syeniitti
 syfiliittis ! -nen
 syfilis
 syhelmä
@@ -24231,7 +24228,7 @@ syllabisuus
 syllogismi
 syltti
 syltty
-syltä
+! syltä
 sylviini
 sylviniitti
 sylyksellis ! -nen
@@ -24253,7 +24250,7 @@ sympaattisuus
 sympatia
 symposion
 symposiumi
-symptomatologia
+! symptomatologia
 symptomi
 synagooga
 syndetikon
@@ -25800,7 +25797,7 @@ todistelu
 todistettavuus
 todistin
 todistus
-toe
+! toe
 toffee
 toga
 tohahdus
@@ -27254,7 +27251,7 @@ ulvahtelu
 ulvona
 ulvonta
 umbra
-ume
+! ume
 ummehtuneisuus
 ummetus
 ummikas
@@ -27315,7 +27312,7 @@ untuvais ! -nen
 untuvikko
 uoma
 uopaja
-upa
+! upa
 upeilu
 upeus
 upokas
@@ -27359,7 +27356,7 @@ urkkija
 urkko
 urku
 urkuri
-uro
+! uro
 urologi
 urologia
 uros
@@ -27465,7 +27462,7 @@ uutukaisuus
 uutuus
 uuvana
 uuvutus
-uve
+! uve
 uvertyyri
 vaade
 vaadin
@@ -29464,7 +29461,7 @@ wiikiitti
 winchester
 yardi
 ydin
-yen
+! yen
 yerba
 yhdeksikkö
 yhdeksäis ! -nen
@@ -29590,7 +29587,7 @@ ympäröinti
 yninä
 ynnäke
 ynseys
-yny
+! yny
 ynähdys
 ynähtely
 yoga
@@ -29619,7 +29616,7 @@ yrmeys
 yrmyily
 yrtti
 yrähdys
-yrö
+! yrö
 yskintä
 yskinä
 yskä
@@ -29840,7 +29837,7 @@ zymaasi
 öitsijä
 öitsintä
 ökinä
-ökä
+! ökä
 ölinä
 öljy
 öljyisyys

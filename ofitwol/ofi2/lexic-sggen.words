@@ -198,7 +198,7 @@ ahvan
 ahvenan
 ahvenen
 ahväärin
-aian
+! aian
 aidakkeen
 aidaksen
 aidan
@@ -292,7 +292,7 @@ ajokkaan
 ajoksen
 ajon
 ajueen
-ajun
+! ajun
 ajurin
 ajutantin
 akaasian
@@ -958,7 +958,7 @@ asiallisuuden
 asian
 asiattomuuden
 asidoosin
-asin
+! asin
 asioimiston
 asioinnin
 asioitsijan
@@ -1363,7 +1363,7 @@ blokkauksen
 blondiinin
 bluffauksen
 bluffin
-boan
+! boan
 bobbauksen
 bobrikovilaisen
 boforin
@@ -3756,7 +3756,7 @@ hevon
 hevosen
 hevosettomuuden
 hiaisimen
-hian
+! hian
 hiatuksen
 hickoryn
 hidalgon
@@ -4201,7 +4201,7 @@ houkuttelijan
 houkuttelun
 houkuttimen
 houkutuksen
-houn
+! houn
 hounan
 hourailijan
 hourailun
@@ -4657,7 +4657,7 @@ hyydykkeen
 hyydön
 hyyfin
 hyyhmän
-hyyn
+! hyyn
 hyypiän
 hyypiön
 hyypän
@@ -4885,7 +4885,7 @@ höystön
 höyteen
 höytyväisen
 höytyvän
-höän
+! höän
 iberin
 ibiksen
 ideaalin
@@ -4995,7 +4995,7 @@ ikävöinnin
 ilahduksen
 ilakan
 ilakoinnin
-ilan
+! ilan
 iljamen
 iljangon
 iljanteen
@@ -5144,7 +5144,7 @@ imukkeen
 imun
 imurin
 inahduksen
-inan
+! inan
 indeksin
 indeterminismin
 indeterministin
@@ -5446,7 +5446,7 @@ iän
 jaakarin
 jaakon
 jaalan
-jaan
+!jaan
 jaaran
 jaardin
 jaarittelijan
@@ -10336,7 +10336,7 @@ köysityksen
 köytyrin
 köytöksen
 köökin
-köön
+! köön
 kööpelin
 köörin
 laadinnan
@@ -10632,7 +10632,7 @@ lanterniinin
 lantin
 lantion
 lanton
-laon
+! laon
 lapakon
 lapan
 laparotomian
@@ -10870,7 +10870,7 @@ lavin
 lavitsan
 lavoaarin
 lavon
-lean
+! lean
 leegion
 leen
 leesion
@@ -12101,7 +12101,7 @@ lyydialaisen
 lyydiläisen
 lyydin
 lyylin
-lyyn
+! lyyn
 lyypekkiläisen
 lyyran
 lyyrikon
@@ -12627,7 +12627,7 @@ manufaktuurin
 manuskriptin
 manuun
 manööverin
-maon
+! maon
 maorin
 mapin
 mapituksen
@@ -13795,7 +13795,7 @@ myyjäisen
 myyjän
 myyjättären
 myymälän
-myyn
+! myyn
 myynin
 myynnin
 myyrin
@@ -13957,7 +13957,7 @@ möyrinnän
 möyrinän
 möyryn
 möyrynnän
-möän
+! möän
 mööpelin
 naakan
 naakelin
@@ -14885,7 +14885,7 @@ nöyrtymättömyyden
 nöyryyden
 nöyryytyksen
 oaasin
-oan
+! oan
 obduktion
 obeliskin
 objektiivin
@@ -14906,7 +14906,7 @@ obstetrikon
 obstruktion
 obturaattorin
 odaliskin
-odan
+! odan
 odelman
 odelmikon
 odontologian
@@ -14927,7 +14927,7 @@ ohdakkeen
 ohdakkehen
 ohdakkeisuuden
 ohdon
-ohen
+! ohen
 ohennuksen
 ohentajan
 ohenteen
@@ -16839,7 +16839,7 @@ pintauksen
 pinteen
 pintehen
 pintelin
-pion
+! pion
 pioneerin
 pionin
 pipanan
@@ -17017,7 +17017,7 @@ plörön
 pneumatiikan
 pneumokokin
 pneumonian
-poan
+! poan
 podestin
 podsolin
 poesian
@@ -18345,7 +18345,7 @@ pöystin
 pöytyeen
 pöytyrin
 pööbelin
-pöön
+! pöön
 pöönän
 quadriviumin
 quebrachon
@@ -19827,7 +19827,7 @@ ryhmän
 ryhtyjän
 ryhän
 ryijyn
-ryin
+! ryin
 ryinnän
 ryityksen
 rykelmän
@@ -22850,7 +22850,7 @@ taalan
 taalarin
 taaleen
 taalerin
-taan
+! taan
 taannehtivuuden
 taannoisen
 taantuman
@@ -25233,7 +25233,7 @@ ukulelen
 ukulin
 ulaanin
 ulahduksen
-ulan
+! ulan
 ulapan
 ulinan
 uljailun
@@ -25267,7 +25267,7 @@ ultiman
 ultimon
 ultimuksen
 ultramariinin
-ulun
+! ulun
 ulvahduksen
 ulvahtelun
 ulvonan
@@ -25377,7 +25377,7 @@ urohon
 uroksen
 urologian
 urologin
-uron
+! uron
 uroon
 urotropiinin
 urpiaisen
@@ -25475,7 +25475,7 @@ uutun
 uutuuden
 uuvanan
 uuvutuksen
-uvan
+! uvan
 uvertyyrin
 vaadinnan
 vaahden
@@ -26142,7 +26142,7 @@ vauhkouden
 vaulan
 vaulon
 vaulun
-vaun
+! vaun
 vaunullisen
 vaunun
 vaunuston
@@ -27303,7 +27303,7 @@ vätystelyn
 vävyn
 väylän
 vääjäämättömyyden
-vään
+! vään
 väännännän
 väännöksen
 väännön
@@ -27459,7 +27459,7 @@ ympäröinnin
 yninän
 ynnäkkeen
 ynseyden
-ynyn
+! ynyn
 ynähdyksen
 yogan
 yogin
@@ -27483,8 +27483,8 @@ yrjen
 yrjön
 yrmeyden
 yrtin
-yrän
-yrön
+! yrän
+! yrön
 yskinnän
 yskähdyksen
 yskähtelyn
@@ -27589,7 +27589,7 @@ zymaasin
 älyämättömyyden
 älähdyksen
 äläkän
-älän
+! älän
 ämmin
 ämmämäisyyden
 ämmän
@@ -27657,7 +27657,7 @@ zymaasin
 äytärin
 ääliömäisyyden
 ääliön
-ään
+! ään
 äänekkyyden
 äänelen
 äänen
@@ -27712,4 +27712,4 @@ zymaasin
 öykkärimäisyyden
 öykkärin
 öylätin
-öän
+! öän

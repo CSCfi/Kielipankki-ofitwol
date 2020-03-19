@@ -60,5 +60,6 @@ for line in line_lst:
         else:
             continuation = args.continuation
             weight = ''
+    entry = entry.replace("+", "%;+", 1)
     print(entry, continuation + weight, ";")
 

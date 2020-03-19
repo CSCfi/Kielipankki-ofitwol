@@ -1,10 +1,13 @@
+u{kØk}s{ieeØeØ} /s
+ul{aØ} /s
+**
 ais{ØieØ} /s
-ap{pØ}e{Øth}{ØeØeØ} /s
 ape{§}ruokin{tn}{ao} /s
 as{ØieØ} /s
 etsi{mn}{ØeØeØ} /s
 harmo /s
 in{ao} /s
+inar{iieØ} /s
 i{td}u /s
 iv{ao} /s
 ja{aØ} /s
@@ -15,17 +18,23 @@ kal{iieØ} /s
 kali{§}suol{ao} /s
 kall{ao} /s
 kann{ao} /s
-kiist{ao} /s
 ki{pv}en{ØeØeØ} /s
+komm{aØ} /s
 kon{iieØ} /s
 kylä{ns}{eeØØ}{nØØØ} /s 20
 lah{td}{iieØ} /s
 la{iieØ} /s
 laist{ao} /s
 le{eeØ} /s
+laon{§}alttiu{ØØØØk}{stds}{ØeØeØ} /s
+laon{§}arkuu{ØØØØk}{stds}{ØeØeØ} /s
+laon{§}kestävyy{ØØØØk}{stds}{ØeØeØ} /s
 luv{aØ} /s
 määr{iieØ} /s
 onnik{kØ}{ao} /s
+ota{§}kaar{ieØeØ} /s
+ota{§}lah{td}{ieeeØ} /s
+ota{§}nie{mn}{ieØeØ} /s
 paik{kØ}o /s
 ! pal{kØ}a{sØh}{ØaØØØ} /s
 päivä{ns}{eeØØ}{nØØØ} /s
@@ -34,6 +43,19 @@ pyörin{äö} /s
 saare{ØkØkk}s{ØeØeØ} /s
 sak{iieØ} /s
 sen{ØieØ} /s
+sen_aikui{ns}{eeØØ}{nØØØ} /a
+senap{pØ}{ieeeØ} /s
+sen_arvoi{ns}{eeØØ}{nØØØ} /a
+sen_astei{ns}{eeØØ}{nØØØ} /a
+sen_hetki{ns}{eeØØ}{nØØØ} /a
+sen_ikäi{ns}{eeØØ}{nØØØ} /a
+sen_iltai{ns}{eeØØ}{nØØØ} /a
+sen_jälkei{ns}{eeØØ}{nØØØ} /a
+sen_mukaisuu{ØØØØk}{stds}{ØeØeØ} /s
+sen_puoli{ns}{eeØØ}{nØØØ} /a
+sen_tapai{ns}{eeØØ}{nØØØ} /a
+sen_uskolai{ns}{eeØØ}{nØØØ} /s
+sen_vastai{ns}{eeØØ}{nØØØ} /a
 sest{ao} /s
 sill{ao} /s
 ! sin{tn}u /s
@@ -61,6 +83,9 @@ tipl{ao} /s
 tipo /s
 toim{iieØ} /s
 tull{aØ} /s
+
+uro_te{kØ}o /s
+uro_t{yØ}ö /s
 ä{kØ}{äØ} /s
 
 ans{ao} /s
@@ -413,10 +438,18 @@ istuma_amme{Øth}{ØeØeØ} /s
 kylpy_amme{Øth}{ØeØeØ} /s
 pore_amme{Øth}{ØeØeØ} /s
 
-harmon{iieØ} /s
-antiikki{§}harmon{iieØ} /s
-urku{§}harmon{iieØ} /s
+ap{pØ}e{Øth}{ØeØeØ} /s
+aamu_ap{pØ}e{Øth}{ØeØeØ} /s
+heinä_ap{pØ}e{Øth}{ØeØeØ} /s
+mieli_ap{pØ}e{Øth}{ØeØeØ} /s
+ruis_ap{pØ}e{Øth}{ØeØeØ} /s
 
+harmon{iieØ} /s
+antiikki_harmon{iieØ} /s
+käsi_harmon{iieØ} /s
+urku_harmon{iieØ} /s
+urku_harmoon{iieØ} /s
+soitto_harmon{iieØ} /s
 
 i{kØ}{äØ} /s
 aikuis_i{kØ}{äØ} /s
@@ -548,6 +581,10 @@ kaali_ko{iØ} /s
 niini_ko{iØ} /s
 norkko_ko{iØ} /s
 vaate_ko{iØ} /s
+
+kyyti_kon{iieØ} /s
+mustalais_kon{iieØ} /s
+työ_kon{iieØ} /s
 
 ko{td}{aØ} /s
 grilli_ko{td}{aØ} /s

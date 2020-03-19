@@ -7,7 +7,7 @@ ANALYSER=ofitwol.ofst
 RULEFST=ofi-rules.fst
 AFF=analy
 DATA=../../data
-LEX=lexic-s.lexc lexic-v.lexc lexic-a.lexc \
+LEX=lexic-s.lexc lexic-v.lexc lexic-a.lexc lexic-r.lexc \
     lexic-p.lexc lexic-firstpart.lexc \
     lexic-edited.lexc lexic-noncomp-s.lexc
 ##$(ID)-lexic-compo.lexc
@@ -38,6 +38,9 @@ lexic-edited.lexc : lexic-edited.entries entries2lexc.py
 
 lexic-a.lexc : lexic-a.entries entries2lexc.py
 	python3 entries2lexc.py Adjectives < $< > $@
+
+lexic-r.lexc : lexic-r.entries entries2lexc.py
+	python3 entries2lexc.py -c End Pronouns < $< > $@
 
 lexic-p.lexc : lexic-p.entries entries2lexc.py
 	python3 entries2lexc.py Particles < $< > $@
