@@ -1,4 +1,4 @@
-Definitions
+!Definitions
   Co = [b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|š|t|v|w|x|z|ž] ;
   Gk = (l|r|n) k {kØ} | (l|r) {kØ} | n {kg} ;
   Gk2 = [(l|r|n) k {kØ}|[l|r] {kØ}|n {kg}] ; ! excluding {kØ} between vowels
@@ -11,7 +11,7 @@ Definitions
         m p | (l|r) p | (l|r|m) p p |
 	(h) t | l t | n t | r t | (l|r|n) t t ;
   GwU = (l|r|n) k | n g |
-        m m | (l|r) v | (l|r|m) p  |
+        m m | (l|r) v | (l|r|m) p |
 	(h) d | l l | n n | r r | (l|r|n) t ;
   NonGs = [[Co+] - GsU] | h k ; ! non-gradating consonant clusters
   NonGw = [[Co+] - GwU] | h ; ! non-gradating consonant clusters
@@ -55,7 +55,7 @@ Definitions
   FiSylB = VoPB FiCoSeq ;
   FiSylF = VoPF FiCoSeq ;
 
-LEXICON Nouns
+!LEXICON Nouns
 !
 !         === o |u | y | ö ===
 !
@@ -253,7 +253,7 @@ vih{kØ}{iieØ} /s ; ! VIHKI
 !         === Ø-i-e ===
 !
 < Co* Syl* Vo+ Co+ {ØieØ} 0::20 > /s ; ! S07: KALSIUM - 2+syll
-< Co* Syl* (i) u m {ØieØ} 0::10 > /s ; ! KALSIUM - 2+syll
+< Co* SylF* (i) u m {ØieØ} 0::10 > /s ; ! KALSIUM - 2+syll
 !
 !         === i-e-Ø ===
 !
@@ -309,24 +309,23 @@ vaah{td}{ieeeØ} /s ; ! VAAHTI
 vyh{td}{ieeeØ} /s ; ! VYYHTI
 vyyh{td}{ieeeØ} /s ; ! VYYHTI
 !
-!
 !        === e ===
 !
 < Co* Syl e 0::10 > /s ; ! S09: NALLE - bisyll
-< Co* Syl+ (i|o) e 0::10 > /s ; ! MANGROVE OBOE - 2+syll
+< Co* Syl (i|o) e 0::20 > /s ; ! MANGROVE OBOE - 2+syll
 !
 !         === a-o | ä-ö ===
 !
 < Co* [a|e|i] (VoB) NonGs {ao} 0::10 > /s ; ! S10: KALA - bisyll
 < Co* [a|e|i] (VoB) Grad {ao} 0::10 > /s ; ! S10: KITA - bisyll
 !
-lusk{ao} / ; ! LUSKA
-mokš{ao} / ; ! MOKŠA
-puol{ao} / ; ! PUOLA (puolukka)
-!!rou{td}{ao} / ; ! ROUTA
-sudr{ao} / ; ! SUDRA
-suol{ao} / ; ! SUOLA
-!!tundr{ao} / ; ! TUNDRA
+lusk{ao} /s ; ! LUSKA
+mokš{ao} /s ; ! MOKŠA
+puol{ao} /s ; ! PUOLA (puolukka)
+!!rou{td}{ao} /s ; ! ROUTA
+sudr{ao} /s ; ! SUDRA
+suol{ao} /s ; ! SUOLA
+!!tundr{ao} /s ; ! TUNDRA
 !
 ! S14: KULKIJA, S15: KARAHKA -- 3+syll
 !

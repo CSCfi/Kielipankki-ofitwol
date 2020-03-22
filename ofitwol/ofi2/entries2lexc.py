@@ -21,38 +21,56 @@ args = argparser.parse_args()
 
 
 mch_set = set()
-line_lst = []
+definition_lst = []
+entry_lst = []
 
+line_lst = []
 for line_nl in sys.stdin:
     line, exclam, comment = line_nl.partition("!")
-    line = line.strip(" \t\n;")
-    if not line:
-        continue
-    line = re.sub(r" +", " ", line)
-    line_lst.append(line)
+    line = re.sub(r"\s+", " ", line)
+    line = line.strip()
     mch_lst =re.findall(r"\{[^}]+\}|\+[A-Z0-9]+", line)
     for mch in mch_lst:
         mch_set.add(mch)
+    #print("line:", line) ###
+    if "=" in line or line_lst:
+        line_lst.append(line)
+        #print("line_lst:", line_lst) ###
+        if line.endswith(";"):
+            line_str = " ".join(line_lst)
+            line_str = line_str.strip(r" \t\n;")
+            definition_lst.append(line_str)
+            line_lst = []
+        continue
+    else:
+        line = line.strip(" \t\n;")
+        if not line:
+            continue
+        entry_lst.append(line)
 
 if mch_set:
     print("Multichar_Symbols")
     mch_lst = sorted(list(mch_set))
     print(" ".join(mch_lst))
 
-print("LEXICON", args.lexname)
+if definition_lst:
+    print("Definitions")
+for line in definition_lst:
+    definition = re.sub(r"([{}])", r"%\1", line)
+    print(definition, ";")
 
-for line in line_lst:
-    if not line:
-        continue
+print("LEXICON", args.lexname)
+for line in entry_lst:
     if line.startswith("<"):
         line = re.sub(r"([{}])", r"%\1", line)
         ent, rb, cont = line.rpartition(">")
         entry = ent + rb
         continuation = cont.strip() if cont else args.continuation
-        weight = ""
+        print(entry, continuation, ";")
     else:
         entry, sp, rest = line.partition(" ")
         entry = entry.replace("_", "{§}")
+        entry = entry.replace("+", "%;+", 1)
         if rest:
             cont, sp, wght = rest.partition(" ")
             continuation = cont if cont else args.continuation
@@ -60,6 +78,5 @@ for line in line_lst:
         else:
             continuation = args.continuation
             weight = ''
-    entry = entry.replace("+", "%;+", 1)
-    print(entry, continuation + weight, ";")
+        print(entry, continuation + weight, ";")
 

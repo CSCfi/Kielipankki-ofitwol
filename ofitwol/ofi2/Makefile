@@ -11,9 +11,15 @@ LEX=lexic-s.lexc lexic-v.lexc lexic-a.lexc lexic-r.lexc \
     lexic-p.lexc lexic-firstpart.lexc \
     lexic-edited.lexc lexic-noncomp-s.lexc
 ##$(ID)-lexic-compo.lexc
+LEXG= \
+    lexic-firstpart.lexc \
+    lexic-s.lexc \
+    lexic-sguess.lexc lexic-aguess.lexc
 ANALYSES=$(ID)-corpus.big.analyses
 
 build : ofitwol.ofst $(LEX)
+
+guesser : ofiguess.ofst
 
 analyse : $(ANALYSES)
 
@@ -21,14 +27,33 @@ ofitwol.ofst : lexic.fst $(RULEFST) delete.fst Makefile
 	hfst-compose-intersect -a -1 $< -2 $(RULEFST) |\
 	hfst-compose -2 delete.fst |\
 	hfst-invert |\
-	hfst-minimize -o $(ID)-analy.fst
-	hfst-fst2fst -w -i $(ID)-analy.fst -o $@
+	hfst-minimize -o ofitwol.fst
+	hfst-fst2fst -w -i ofitwol.fst -o $@
+
+ofiguess.ofst : lexic-guess.fst $(RULEFST) delete.fst Makefile
+	hfst-compose-intersect -a -1 $< -2 $(RULEFST) |\
+	hfst-compose -2 delete.fst |\
+	hfst-invert |\
+	hfst-minimize |\
+	hfst-fst2fst -w -o $@
 
 lexic.fst : lexic-aff.lexc $(LEX) Makefile
 	hfst-lexc -E -f openfst-tropical -o $@ $< $(LEX)
 
+lexic-guess.fst : lexic-aff.lexc $(LEXG) Makefile
+	hfst-lexc -E -f openfst-tropical -o $@ $< $(LEXG)
+
 lexic-aff.lexc : ofi-affixes.csv ../affixes2analysis.py
 	python3 ../affixes2analysis.py -e $< $@
+
+lexic-sguess.lexc : lexic-sguess.entries entries2lexc.py
+	python3 entries2lexc.py NounGuess < $< > $@
+
+lexic-aguess.lexc : lexic-aguess.entries entries2lexc.py
+	python3 entries2lexc.py AdjGuess < $< > $@
+
+lexic-vguess.lexc : lexic-vguess.entries entries2lexc.py
+	python3 entries2lexc.py VerbGuess < $< > $@
 
 lexic-noncomp-s.lexc : lexic-noncomp-s.entries entries2lexc.py
 	python3 entries2lexc.py Compounds < $< > $@
@@ -51,8 +76,14 @@ lexic-s.lexc : lexic-s.entries entries2lexc.py
 lexic-v.lexc : lexic-v.entries entries2lexc.py entries2lexc.py
 	python3 entries2lexc.py Verbs < $< > $@
 
-lexic-firstpart.lexc : lexic-sgnom.words lexic-sggen.words
-	cat $+ | python3 entries2lexc.py -c SecondPart FirstPart > $@
+#lexic-firstpart.lexc : lexic-sgnom.words lexic-sggen.words
+#	cat $+ | python3 entries2lexc.py -c SecondPart FirstPart > $@
+
+lexic-firstpart.lexc : lexic-firstpart.words entries2lexc.py
+	python3 entries2lexc.py -c SecondPart FirstPart < $< > $@
+
+lexic-firstpart.words : lexic-s.entries
+	python3 ../generfirstparts.py < $< > $@
 
 $(ANALYSES) : $(DATA)/$(ID)-corpus.words $(ANALYSER)
 	hfst-lookup -b 15 -i $(ANALYSER) -I $< | \

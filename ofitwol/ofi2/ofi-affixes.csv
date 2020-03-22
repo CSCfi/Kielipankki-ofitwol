@@ -1,6 +1,6 @@
 ID,NEXT,MPHON,FEAT,BASEF,WEIGHT,FLAG,COMMENT
-Root,"Nouns Verbs Adjectives Pronouns Particles Compounds FirstPart EditedEntries",,,,,,"Nouns also as second components others not"
-SecondPart,Nouns,{§},,,20,,
+Root,"Nouns Verbs Adjectives Pronouns Particles Compounds FirstPart EditedEntries NounGuess AdjGuess VerbGuess",,,,,,"Nouns also as second components others not"
+SecondPart,"Nouns NounGuess",{§},,,20,,
 ,"! KSK S01 - S82",,,,,,
 /s,"s0 s1 s2 s3",,N,,,,
 /s12,"s1 s2",,N,,,,

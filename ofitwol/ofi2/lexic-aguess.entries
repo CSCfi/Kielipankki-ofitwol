@@ -1,4 +1,4 @@
-Definitions
+!Definitions
   Co = b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|š|t|v|w|x|z|ž ;
   Gk = (l|r|n) k {kØ} | (h|l|r) {kØ} | n {kg} ;
   Gk2 = (l|r|n) k {kØ}| [h] {kØ} | n {kg} ; ! excluding Vo (r|l) {kØ} Vo
@@ -34,21 +34,21 @@ Definitions
   Forl = [b|c|d|f|g|q|š|w|x|z|ž] ;
   Forb = [n j|k l|k r|k v|p r|p s|s m|s p|t l|t r] ;
   Forg = [$[Forl|Forb]] ;
-LEXICON Adjectives
+!LEXICON Adjectives
 !
 !         === o |u | y | ö ===
 !
-< Co* Vo+ NonG [o|ö|u|y] 0::10 > /a ; ! JURO - bisyll
+< Co* Vo+ NonG [o|ö|u|y] 0::20 > /a ; ! JURO - bisyll
 !!!< Co* Syl [o|ö|u|y] 0::20 > /a ; ! NUPO - bisyll
 < Co* Vo+ GradNZ [o|ö|u|y] 0::10 > /a ; ! RENTO HELPPO KOLKKO - bisyll
-< Co* Vo Gk2 [o|ö|u|y] 0::10 > /a ; ! LAKO - bisyll
-< Co Vo+ [Vo - u] {kØ} u 0::10 > /a ; ! RAIKU raiun - bisyll
+< Co* Vo Gk2 [o|ö|u|y] 0::20 > /a ; ! LAKO - bisyll
+< Co Vo+ [Vo - u] {kØ} u 0::20 > /a ; ! RAIKU raiun - bisyll
 
-< Co* (Syl) SylVo h k [o|ö] 0::10 > /a ; ! KOHELO KOVAHKO KORKEAHKO YLEVÄHKÖ - trisyll
+< Co* (Syl) SylVo h k [o|ö] 0::10 > /a ; ! KOVAHKO KORKEAHKO YLEVÄHKÖ - trisyll
 < Co* (Syl) SylVo NonG [o|ö|u|y] 0::10 > /a ; ! KOHELO KOVAHKO KORKEAHKO YLEVÄHKÖ - trisyll
 
-< Co* (Syl) SylVo [k {kØØ}|(n|r) t {tØØ}|n {tn}] [o|ö|u|y] 0::10 > /a ; ! UMMIKKO USKALLETTU - trisyll
-< Co* Syl Syl+ SylVo [k {kØØ}|(n|r) t {tØØ}|n {tn}] [o|ö|u|y] 0::20 > /a ; ! SAKRAMENSKATTU - 3+syl
+< Co* (Syl) SylVo [k {kØØ}|(n|r) t {tØØ}|n {tn}] [o|ö|u|y] 0::20 > /a ; ! UMMIKKO USKALLETTU - trisyll
+< Co* Syl Syl+ SylVo [k {kØØ}|(n|r) t {tØØ}|n {tn}] [o|ö|u|y] 0::30 > /a ; ! SAKRAMENSKATTU - 3+syl
 < Co* (Syl) SylVo [{td}|n {tn}|r {tr}|l {tl}] [u|y] 0::10 > /a ; ! IHAILTU JÄLJITELTY - trisyll
 < Co* Syl+ Syl SylVo [{td}|n {tn}|r {tr}|l {tl}] [u|y] 0::20 > /a ; ! PRIVILEGIOITU - tri+syll
 
@@ -66,9 +66,9 @@ valko /a ; ! VALKO
 !         === i-i-e ===
 !
 < Co* Vo+ NonG {iieØ} 0::10 > /a ; ! PIHI HÄRSKI - bisyll
-< Co* Syl* SylVo NonG {iieØ} 0::10 > /a ; ! MAKAABERI KOMMENSURAABELI - 3+syll
+< Co* Syl* SylVo NonG {iieØ} 0::20 > /a ; ! MAKAABERI KOMMENSURAABELI - 3+syll
 < Co* Vo+ Grad {iieØ} 0::10 > /a ; ! LUNKI REHTI - bisyll
-< Co* Syl* SylVo Grad {iieØ} 0::10 > /a ; ! RELEVANTTI DIVERGENTTI - other
+< Co* Syl* SylVo Grad {iieØ} 0::20 > /a ; ! RELEVANTTI DIVERGENTTI - other
 jämt{tØ}{iieØ} /a  ; ! JÄMTTI
 nut{iieØ} /a  ; ! NUTI
 piet{iieØ} /a  ; ! PIETI
@@ -286,7 +286,6 @@ antia{sØh}{ØaØØØ} /a ; ! ANTIAS
 aul{iiiie}{sØh}{ØiØiØ} /a  ; ! AULIS
 autua{sØh}{ØaØØØ} /a ; ! AUTUAS
 heta{sØh}{ØaØØØ} /a ; ! HETAS
-kall{iiiie}{sØh}{ØiØiØ} /a  ; ! KALLIS
 kalva{sØh}{ØaØØØ} /a ; ! KALVAS
 kaun{iiiie}{sØh}{ØiØiØ} /a  ; ! KAUNIS
 laupia{sØh}{ØaØØØ} /a ; ! LAUPIAS

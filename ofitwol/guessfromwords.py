@@ -78,6 +78,8 @@ def main():
                 continue # the middle loop
             break # the middle loop
 
+    if not words:
+        return
     sz = max([len(word_set) for entry, word_set in words.items()])
     #print("largest set of words", sz)
 

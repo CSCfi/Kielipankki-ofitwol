@@ -1,0 +1,298 @@
+!Definitions
+  Co = [b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|š|t|v|w|x|z|ž] ;
+  Gwk = [(l|r|n) k {kØ}|(l|r) {kØ}|n {kg}|{k'}] ; ! h{kØ} only in pyyhkiä and vihkiä
+  Gwp = [m {pm} | (l|r) {pv} | (l|r|m) p {pØ}] ;
+  Gwt = [(h) {td}|l {tl}|n {tn}|r {tr}|(l|r|n) t {tØ}] ;
+  Gw = [Gwk|Gwp|Gwt] ;
+  Gwj = [(h|l|r) {kj}] ;
+  Gsk = [(l|r|n) k {kØ}|(h|l|r) {kØ}|n {kg}] ;
+  Gsp = [m {pm}|(l|r) {pv}|(l|r|m) p {pØ}] ;
+  Gst = [(h) {td}|l {tl}|n {tn}|r {tr}|(l|r|n) t {tØ}] ;
+  Gs = [Gsk|Gsp|Gst] ;
+  GsU = (l|r|n) k k | (h|l|r) k | n k | m p |
+        (l|r) p | (l|r|m) p p |
+	(h) t | l t | n t | r t| (l|r|n) t t ;
+  CCns = [[[Co+] - GsU]|h k] ; ! non-gradating consonant clusters
+  Gsj = [[h|l|r] {kj}] ;
+  Gtds = [l {tls}|n {tns}|r {trs}] ;
+  Cocl = [Co+|'] ;
+  Vo = [a|e|i|o|u|y|ä|ö] ;
+  Vaou = [a|o|u] ; ! Back vowel
+  Väöy = [ä|ö|y] ; ! Front vowel
+  Vei = [e|i] ; ! Neutral vowel
+  VoB = Vaou|Vei ; ! Back harmony compatible vowel
+  VoF = Väöy|Vei ; ! Front harmony compatible vowel
+  V1V1 = [a a|e e|i i|o o|u u|y y|ä ä|ö ö] ;
+  Vi = [Vo i] ;
+  V1V2 = [a u|e u|i e|e u|e y|i e|i u|i y|o u|u o|y ö|ä y|ö y] ;
+  VV = [V1V1|Vi|V1V2] ;
+  VbV = [Vo Vo+] - VV ; ! Vowel sequence in two separate syllables
+  VV1 = VV | Vo ; ! One or two vowels in the same syllable
+  Syl = Vo+ Cocl ;
+  SylF = VoF+ Cocl ; ! Front harmony compat syllable
+  SylB = VoB+ Cocl ; ! Back harmony compat syllable
+  SylVo = [VbV|VV Vo|Vo VV|Syl Vo+] ; ! Counts as two syllables
+  SylVoF = SylVo - $[Vaou] ; ! Counts as two front harmony syllables
+  SylVoB = SylVo & $[Vaou] ; ! Counts as two back harmony syllables
+  Forl = [b|c|d|f|g|q|š|w|x|z|ž] ;
+  Forb = [n j|k l|k r|k v|p r|p s|s m|s p|t l|t r] ;
+  Forg = [$[Forl|Forb]] ;
+  Coida = [b|d|n d|f|f f|g|h|j|k|l|l l|m|n|n n|p|r|s|š|t|t t|v] ;
+!LEXICON Verbs
+!
+!        === o | u | ö | ä === PUNOA ===
+!
+< Co* SylB* VoB+ CCns [o|u] > /v ; ! PUNO-
+< Co* SylF* VoF+ CCns [ö|y] > /v ; ! NÄÄNTY-
+< Co* SylB* VoB+ Gs [o|u] > /v ; ! KUTO-
+< Co* SylF* VoF+ Gs [ö|y] > /v ; ! ESIINTY-
+< Co* VV1 CCns [o|u|ö|y] > /v ; ! PUJO-
+< Co* VV1 Gs [o|u|ö|y] > /v ; ! AIKO-
+!
+hio /v  ; ! HIOA
+loh{kØ}o /v ; ! LOHKOA
+nah{kØ}o /v ; ! NAHKOA
+nio /v  ; ! NIOA
+tutu /v  ; ! TUTUA (*tudu-n)
+!
+!        === a-Ø-a-a-e | ä-Ø-ä-ä-e === MUISTAA ===
+!
+< Co* [i u|o|o i|o u|u|u i|u o] CCns {aØaae} > /v ; ! MUISTA-
+< Co* [e|e y|i e|i|i i|y|y i|y y|ä|ä i|ä y|ä ä|ö|ö y] CCns {äØääe} > /v ; ! ELÄ-
+
+< (Co) [i u|o|o i|o u|u|u i|u o] Gs {aØaae} > /v ; ! JOHTA-
+< (Co) [e|e y|i e|i|i i|y|y i|y y|ä|ä i|ä y|ä ä|ö|ö y] Gs {äØääe} > /v ; ! PITÄ-
+
+< [Co* VoB+]+ Co* [a|e|o|o u|u|u o] h {td} {aØaae} > /v ; ! TUHAHTA-
+< [Co* VoF+]+ Co* [e|i i|y|ä|ö] h {td} {äØääe} > /v ; ! PÖLLÄHTÄ-
+
+< Co* VoB+ Co* [a|a i|e|i|o|u] s t {aØaae} > /v ; ! KAJASTAA AHDISTA-
+< Co* VoF+ Co* [e|e i|i|i i|y|ä|ä ä|ö] s t {äØääe} > /v ; ! VIRKISTÄ-
+
+< [Co* VoB+]+ (Cocl) (a|e|o|u) i s t {aØaae} > /v ; ! ASEISTA- KONEISTA-
+< [Co* VoF+]+ (Cocl) (ä|e|ö|y) i s t {äØääe} > /v ; ! SÄHKÖISTÄ-
+
+< [Co* VoB+]+ (Cocl) [a|a u|e|e u|i|o|o i|u|u i|u o] t {tØ} {aØaae} > /v ; ! JOHDATTA-
+< [Co* VoF+]+ (Cocl) [e|e i|i|y|y y|ä|ä y|ö|ö i] t {tØ} {äØääe} > /v ; ! YLETTÄ-
+
+kaa{tdst}{aØaae} /v  ; ! 
+huu{tdst}{aØaae} /v  ; ! 
+pyy{tdst}{äØääe} /v  ; ! 
+löy{tdst}{äØääe} /v  ; ! 
+hoi{tdst}{aØaae} /v  ; ! 
+vuo{tdst}{aØaae} /v  ; ! 
+jou{tdst}{aØaae} /v  ; ! 
+sou{tdst}{aØaae} /v  ; ! 
+kii{tdst}{äØääe} /v  ; ! 
+lii{tdst}{äØääe} /v  ; ! 
+hyy{tdst}{äØääe} /v  ; ! 
+hää{tdst}{äØääe} /v  ; ! 
+sää{tdst}{äØääe} /v  ; ! 
+hyö{tdst}{äØääe} /v  ; ! 
+en{tnst}{äØääe} /v  ; ! 
+len{tnst}{äØääe} /v  ; ! 
+kyn{tnst}{äØääe} /v  ; ! 
+mitätön{tn}{äØääe} /v  ; ! 
+!
+!        === ta-si-taisi-tanut-dettu === 
+!
+< Co VV {tds} [{aØaae} |{äØääe} ] > /v ; ! HUUTAA
+< (Co) [Vo|VV] ((Co (Co)) Vo) l {tlst} [{aØaae} |{äØääe} ] > /v ; ! PUOLTAA
+< Co* [Vo|VV] (Co (Co) Vo) r {trst} [{aØaae} |{äØääe} ] > /v ; ! MURTAA
+< s o r {trst} {aØaae} > /v ; ! SORTAA -- [t:{trst}|t:{tr}]
+< Co* Vo+ Co* Vo+ Co* [(i) a|i] n {tnst} {aØaae} > /v ; ! ITALIANTAA
+< Co* Vo+ Co* [a|e|i|o|u] n {tnst} {aØaae} > /v ; ! PAHENTAA KUSTANTAA
+< Co* Vo+ Co* [e|i|y|ä|ö] n {tnst} {äØääe} > /v ; ! HÖYHENTÄÄ
+< [Co* Vo+]+ l l i s e n {tnst} {äØääe} > /v ; ! TÄYDELLISENTÄÄ
+
+aut{tØ}{aoØaae} /v  ; ! 
+haast{aoØaae} /v  ; ! HAASTAA
+haist{aoØaae} /v  ; ! 
+kaih{td}{aoØaae} /v  ; ! 
+kart{tØ}{aoØaae} /v  ; ! 
+kast{aoØaae} /v  ; ! 
+kilk{kØ}{aoØaae} /v  ; ! 
+laist{aoØaae} /v  ; ! 
+lait{tØ}{aoØaae} /v  ; ! 
+lips{aoØaae} /v  ; ! 
+maisk{aoØaae} /v  ; ! 
+maist{aoØaae} /v  ; ! 
+mait{tØ}{aoØaae} /v  ; ! 
+malt{tØ}{aoØaae} /v  ; ! 
+nait{tØ}{aoØaae} /v  ; ! 
+nausk{aoØaae} /v  ; ! 
+pauk{kØ}{aoØaae} /v  ; ! 
+raast{aoØaae} /v  ; ! 
+rausk{aoØaae} /v  ; ! 
+rips{aoØaae} /v  ; ! 
+tirsk{aoØaae} /v  ; ! 
+vilkk{aoØaae} /v  ; ! 
+virkk{aoØaae} /v  ; ! 
+paah{td}{aoØaae} /v  ; ! 
+paist{aoØaae} /v  ; ! PAISTAA
+raist{aoØaae} /v  ; ! 
+saat{tØ}{aoØaae} /v  ; ! 
+tait{tØ}{aoØaae} /v  ; ! 
+palt{tØ}{aoØaae} /v  ; ! 
+vart{tØ}{aoØaae} /v  ; !
+!
+!
+im{eØØeei} /v  ; ! lask{eØØee} -- lask<i>essa
+itk{eØØeei} /v  ; ! 
+isk{eØØeei} /v  ; ! 
+kaits{eØØeei} /v  ; ! 
+loits{eØØeei} /v  ; ! 
+suits{eØØeei} /v  ; ! 
+tun{tns}{eØØeei} /v  ; ! TUNTEA
+po{tdst}{eØØeei} /v  ; ! POTEA
+lä{kh}{tdst}{eØØeei} /v  ; ! LÄHTEÄ
+!
+vaa{k'}a{ØsnØtt}{aØØØØ} /v  ; ! 
+kuti{ØsnØtt}{aØaØØ} /v  ; ! 
+ava{ØsnØtt}{aØØØØ} /v  ; ! AVATA-AVAJAN pala-V/v V40*
+avaj{aØaØØ} /v02  ; ! 
+helä{ØsnØtt}{äØØØØ} /v  ; ! 
+heläj{äØäØØ} /v02  ; ! 
+herä{ØsnØtt}{äØØØØ} /v  ; ! 
+heräj{äØäØØ} /v02  ; ! 
+hyl{kj}ä{ØsnØtt}{äØØØØ} /v  ; ! 
+hyl{kØ}ä{ØsnØtt}{äØØØØ} /v  ; ! 
+hyl{kØ}äj{äØäØØ} /v02  ; ! 
+jyrä{ØsnØtt}{äØØØØ} /v  ; ! 
+jyräj{äØØØØ} /v02  ; ! 
+pala{ØsnØtt}{aØØØØ} /v  ; ! 
+palaj{aØaØØ} /v02  ; ! 
+hala{ØsnØtt}{aØØØØ} /v  ; ! 
+halaj{aØaØØ} /v02  ; ! 
+kai{pv}a{ØsnØtt}{aØØØØ} /v  ; ! 
+kai{pv}aj{aØaØØ} /v02  ; ! 
+konk{kØ}a{ØsnØtt}{aØØØØ} /v  ; ! 
+konk{kØ}aj{aØaØØ} /v02  ; ! 
+kääp{pØ}ä{ØsnØtt}{äØØØØ} /v  ; ! 
+kääp{pØ}äj{äØäØØ} /v02  ; ! 
+le{pv}ä{ØsnØtt}{äØØØØ} /v  ; ! 
+le{pv}äj{äØäØØ} /v02  ; ! 
+palaa{ØsnØtt}{aØØØØ} /v  ; ! 
+palaj{aØaØØ} /v02  ; ! 
+pauha{ØsnØtt}{aØØØØ} /v  ; ! 
+pauhaj{aØaØØ} /v02  ; ! 
+vara{ØsnØtt}{aØØØØ} /v  ; ! 
+varaj{aØaØØ} /v02  ; ! 
+!
+paran{tnst}{aØaae} /v  ; ! 
+para{nt} /v3  ; ! 
+ojen{tnst}{aØaae} /v  ; ! 
+oje{nt} /v3  ; ! 
+raken{tnst}{aØaae} /v  ; ! 
+rake{nt} /v3  ; ! 
+lyhen{tnst}{äØääe} /v  ; ! 
+lyhe{nt} /v3  ; ! 
+rien{tnst}{äØääe} /v  ; ! 
+rie{nt} /v3  ; ! 
+kään{tnst}{äØääe} /v  ; ! 
+kää{nt} /v3  ; ! 
+vään{tnst}{äØääe} /v  ; ! 
+vää{nt} /v3  ; ! 
+tai{tds}{aØaae} /v  ; ! TAITAA
+tie{tds}{äØääe} /v  ; ! TIETAA
+kaa{dsnttt}{aØaØØ} /v  ; ! KAATA-KAANNUT
+tai{dsnttt}{aØaØØ} /v  ; ! 
+tu{dsnttt}{aØaØØ} /v  ; ! 
+tie{dsnttt}{äØäØØ} /v  ; ! 
+löy{dsnttt}{äØäØØ} /v  ; ! 
+sää{dsnttt}{äØäØØ} /v  ; ! 
+pyy{dsnttt}{äØäØØ} /v  ; ! 
+
+< (Co) [a|a a|a i|a u] CCns {aoaae} > /v ; ! KAIVAA
+< (Co) [a|a a|a i|a u] Gs {aoaae} > /v ; ! KATTAA
+< (Co) [e i|i] CCns {aoaae} 0::5 > /v ; ! NIKSAA
+< [k|p|s|v] a a r {trs} {aoØaae} > /v ; ! SAARTAA
+< Co Vo CCns {eØØeei} > /v ; ! LASKEA KOSKEA PUSKEA POTKEA SOTKEA ...
+< Co Vo Gs {eØØeei} > /v ; ! KYLPEÄ
+< Co Vo Gsj {eØØeei} > /v ; ! SULKEA
+!
+!
+! saa-vat sa-i sa-isi saa-nee saa- saa-nut saa-daan
+!
+jä{äØØää} /v  ; ! JÄÄDÄ
+kä{ØvØvØØ}{yØ} /v  ; ! KÄYDÄ
+my{yØ} /v  ; ! MYYDÄ
+na{iØ} /v ; ! NAIDA
+pu{iØ} /v ; ! PUIDA
+pyyh{kØ}{iØ} /v ; ! PYYHKIÄ pyyhi-n
+sa{aØØaa} /v  ; ! SAADA
+so{iØ} /v ; ! SOIDA
+tut{iØ} /v ; ! TUTIA tuti-tte
+u{iØ} /v ; ! UIDA
+vih{kØ}{iØ} /v ; ! VIHKIÄ vihi-n
+vo{iØ} /v ; ! VOIDA
+v{iØ}e /v  ; ! VIEDÄ
+< Co* Vo+ CCns {iØ} > /v ; ! SALLIA *** {iØ} - {iØiØii}
+< Co* Vo+ Gs {iØ} > /v ; ! LEMPIÄ
+< Co* Syl* Vo+ [k s|p s] {iØ} > /v ; ! KÄVELEKSIÄ
+< Co* Syl*Vo+ [h {td}] {iØ} > /v ; ! PUIKKELEHTIA
+< Co* [Vo+ Cocl]* Vo+ (Co* Coida) (i) [o|ö] {iØ} > /v ; ! ABSORBOIDA EMALJOIDA SMIRGELÖIDÄ
+
+< Co [{uØ} o |{yØ} ö ] > /v ; ! JUODA SYÖDÄ
+
+< Co* [Vo|VV] Co* (a|ä) i s {eØØØØ} > /v ; ! NUOLAISTA
+< Co* [Vo|VV] (Cocl Vo+) Co* s {eØØØØ} > /v ; ! NOUSTA SEISTÄ
+< Co VV l {eØØØØ} > /v ; ! TUULLA NIELLÄ
+< Co [u|i e] r {eØØØØ} > /v ; ! PURRA PIERRÄ
+< Co* Syl* Vo+ Co+ [e|i e|e i] l [{eØØØeØØ}|{eØØØeØØ}] > /v ; ! KATSELLA HORJAHDELLA PARVEILLA
+< Co* Syl* Vo+ Gw e l [{eØØØeØØ}|{eØØØeØØ}] > /v ; ! HUUDELLA POKSAHDELLA
+< Co* Syl* Vo+ Co+ [a|ä|o|ö|u|y] i l [{eØØØeØØ}|{eØØØeØØ}] 0::5 > /v ; ! HERMOILLA
+< Co* Syl* Vo+ Co+ [a|ä|o|ö|u|y] i l [{eØØØeØØ}|{eØØØeØØ}] > /v ; ! ARVAILLA PAKOILLA KIUKKUILLA
+< Co* i i [a|ä|o|ö|u|y] i l [{eØØØeØØ}|{eØØØeØØ}] > /v ; ! NIIAILLA
+< Co* Syl* Vo* (j|(s) k|l|(l) m|(n) n|r|(s)t|v) [o|ö] {iØ} 0::5 > /v ; ! HARAVOIDA
+< Co* ((Syl) Syl) Vo+ Co* i {tnt} {sØ} [{eØØØeØØ} | {eØØØeØØ}] > /v ; ! VALITA
+< Co* (Syl) Vo+ Co+ [a|ä|o|ö|u|y|e] {nt} [{eØØØeØØ} | {eØØØeØØ}] > /v ; ! ALETA ale-ne/v
+< Co* (Syl) Vo+ Gw [a|ä|o|ö|u|y|e] {nt} [{eØØØeØØ} | {eØØØeØØ}] > /v ; ! KYETÄ ale-ne/v
+< Co* (Syl) Vo+ Gwj e {nt} [{eØØØeØØ}|{eØØØeØØ}] > /v ; ! KYETÄ ale-ne/v
+!
+pan{eØØØØ} /v ;
+men{eØØØØ} /v ;
+män{eØØØØ} /v ;
+juo{kkkØØ}s{eØØØØ} /v ;
+pie{kkkØØ}s{eØØØØ} /v ;
+syö{kkkØØ}s{eØØØØ} /v ;
+nä{Økhkhh}{eØØØØ} /v ;
+te{Økhkhh}{eØØØØ} /v ;
+rankais{eØØØØ} /v  ; ! 
+rangais{eØØØØ} /v3  ; ! 
+vilkais{eØØØØ} /v  ; ! 
+vilais{eØØØØ} /v3  ; ! 
+tempais{eØØØØ} /v  ; ! 
+temmais{eØØØØ} /v3  ; ! 
+sokais{eØØØØ} /v  ; ! 
+soais{eØØØØ} /v3  ; ! 
+laukais{eØØØØ} /v  ; ! 
+lauais{eØØØØ} /v3  ; ! 
+sipais{eØØØØ} /v  ; ! 
+sivais{eØØØØ} /v3  ; ! 
+rapis{eØØØØ} /v  ; ! 
+ravis{eØØØØ} /v3  ; ! 
+läpäis{eØØØØ} /v  ; ! 
+läväis{eØØØØ} /v3  ; ! 
+tul{eØØØØ} /v  ; ! 
+!
+< Co* Syl* Vo+ Co* [a|ä] {ØsnØtt} [{aØØØØ}|{äØØØØ}] > /v ; ! SALATA sala-V/v
+< Co* Syl* Vo+ Gw [a|ä] {ØsnØtt} [{aØØØØ}|{äØØØØ}] > /v ; ! AIDATA sala-V/v
+< Co* Syl* Vo+ Gwj ä {ØsnØtt} {äØØØØ} > /v ; ! PELJÄTÄ sala-V/v
+< Co* [Vo|VV] Co+ e {ØsnØtt} [{aØaØØ}|{äØäØØ}] > /v ; ! KATKETA katke-A/v
+< Co* [Vo|VV] [Gw|h {kj}|l {kj}|r {kj}] e {ØsnØtt} [{aØaØØ}|{äØäØØ}] > /v ; ! NOETA katke-A/v
+< Co* [Vo|VV] Co+ i {ØsnØtt} [{äØäØØ}|{aØaØØ}] > /v ; ! SELVITÄ selvi-A/v
+< Co [Vo|VV] Gw i {ØsnØtt} [{äØäØØ}|{aØaØØ}] > /v ; ! SIITÄ selvi-A/v
+
+< Co* [Vo|VV] Co+ [o {ØsnØtt} {aØaØØ} | ö {ØsnØtt} {äØäØØ}] > /v ; ! KOHOTA JYMYTÄ koho-A/v
+
+< Co* [Vo|VV] Gw [o {ØsnØtt} {aØaØØ} | ö {ØsnØtt} {äØäØØ}] > /v ; ! TAUOTA koho-A/v
+< Co* [Vo|VV] Co+ [u {ØsnØtt} {aØaØØ} | y {ØsnØtt} {äØäØØ}] > /v ; ! HALUTA halu-A/v
+< Co* [Vo|VV] Gw [u {ØsnØtt} {aØaØØ} | y {ØsnØtt} {äØäØØ}] > /v ; ! RYÖPYTÄ halu-A/v
+< Co* Vo Co+ i s {eØØØØ} 0::5 > /v ; ! KIHISTÄ-KIHISEN V41
+< Co* Vo Co+ [a j {aØaae} | ä j {äØääe}] 0::5 > /v012 ; ! KIHISTÄ-KIHAJAN
+< Co* Vo Gw i s {eØØØØ} 0::5 > /v ; ! RAVISTA-RAPAJAN
+< Co* Vo Gw a j {eØØØØ} 0::5 > /v012 ; ! 
+< Co* [Vo|Syl+] Vo u {td} u > /v ; ! ANTAUTUA HIOUTUA
+< Co* [Vo|Syl+] Vo y {td} y > /v ; ! KÄYTTÄYTYÄ
+< Co* [Vo|Syl+] Vo [u {ØsØØØ} |y {ØsØØØ} ] > /v ; ! PYSÄYTÄ-PYSÄYSIN
