@@ -55,7 +55,7 @@
   FiSylB = VoPB FiCoSeq ;
   FiSylF = VoPF FiCoSeq ;
 
-!LEXICON Nouns
+LEXICON NounGuess
 !
 !         === o |u | y | ö ===
 !

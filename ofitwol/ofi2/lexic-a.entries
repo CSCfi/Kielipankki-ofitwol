@@ -1,3 +1,4 @@
+LEXICON Adjectives
 aakkoselli{ns}{eeØØ}{nØØØ} /a
 aallokkoi{ns}{eeØØ}{nØØØ} /a
 aallok{kØ}a{sØh}{ØaØØØ} /a
@@ -80,6 +81,7 @@ aiheuttamat{tØ}o{nm}{ØaØØØ} /a
 aikailemat{tØ}o{nm}{ØaØØØ} /a
 aikai{ns}{eeØØ}{nØØØ} /a
 aikaisehko /a
+aika_kauti{ns}{eeØØ}{nØØØ} /a
 aikalai{ns}{eeØØ}{nØØØ} /a
 aikamoi{ns}{eeØØ}{nØØØ} /a
 aikav{aØ} /a
@@ -238,6 +240,7 @@ ankarahko /a
 ankaranlai{ns}{eeØØ}{nØØØ} /a
 ankar{aØoØ} /a
 anke{aØo} /a
+ankea:anke{eeØ} /a
 ankeriasmai{ns}{eeØØ}{nØØØ} /a
 an{kg}e{Øth}{ØeØeØ} /a
 ankkamai{ns}{eeØØ}{nØØØ} /a
@@ -279,6 +282,7 @@ anturat{tØ}o{nm}{ØaØØØ} /a
 apaatti{ns}{eeØØ}{nØØØ} /a
 apeahko /a
 ape{aØo} /a
+apea:ape{eeØ} /a
 aperiodi{ns}{eeØØ}{nØØØ} /a
 apikaali{ns}{eeØØ}{nØØØ} /a
 apilai{ns}{eeØØ}{nØØØ} /a
@@ -420,6 +424,7 @@ auh{td}o /a
 aukaisemat{tØ}o{nm}{ØaØØØ} /a
 aukeamat{tØ}o{nm}{ØaØØØ} /a
 auke{aØo} /a
+aukea:auke{eeØ} /a
 aukenemat{tØ}o{nm}{ØaØØØ} /a
 aukinai{ns}{eeØØ}{nØØØ} /a
 aukkoi{ns}{eeØØ}{nØØØ} /a
@@ -1010,6 +1015,7 @@ gynekologi{ns}{eeØØ}{nØØØ} /a
 haalak{kØØ}{ao} /a
 haaleahko /a
 haale{aØo} /a
+haalea:haale{eeØ} /a
 haalistumat{tØ}o{nm}{ØaØØØ} /a
 haame{aØo} /a
 haamilai{ns}{eeØØ}{nØØØ} /a
@@ -1044,9 +1050,11 @@ haihtumat{tØ}o{nm}{ØaØØØ} /a
 haihtuvai{ns}{eeØØ}{nØØØ} /a
 haikeahko /a
 haike{aØo} /a
+haikea:haike{eeØ} /a
 hailak{kØ}a{sØh}{ØaØØØ} /a
 hailak{kØØ}{ao} /a
 haile{aØo} /a
+hailea:haile{eeØ} /a
 hairahtumat{tØ}o{nm}{ØaØØØ} /a
 hairahtuvai{ns}{eeØØ}{nØØØ} /a
 haisemat{tØ}o{nm}{ØaØØØ} /a
@@ -1095,6 +1103,7 @@ hallitsemat{tØ}o{nm}{ØaØØØ} /a
 hallitsevai{ns}{eeØØ}{nØØØ} /a
 hallitsev{aØ} /a
 hallitsijat{tØ}o{nm}{ØaØØØ} /a
+hallitusten_väli{ns}{eeØØ}{nØØØ} /a
 halpai{ns}{eeØØ}{nØØØ} /a
 halpamai{ns}{eeØØ}{nØØØ} /a
 hal{pv}{aoeØ} /a
@@ -1155,7 +1164,7 @@ hapra{sØh}{ØaØØØ} /a
 hapsimai{ns}{eeØØ}{nØØØ} /a
 hapsi{ns}{eeØØ}{nØØØ} /a
 hapti{ns}{eeØØ}{nØØØ} /a
-ha{pØ}a{mn}{ØeØeØ} /a
+hap{pØ}a{mn}{ØeØeØ} /a
 haraamat{tØ}o{nm}{ØaØØØ} /a
 haravoimat{tØ}o{nm}{ØaØØØ} /a
 hare{aØo} /a
@@ -1339,6 +1348,7 @@ hengitykselli{ns}{eeØØ}{nØØØ} /a
 hengähtämät{tØ}ö{nm}{ØäØØØ} /a
 hengästyn{ye}{tØthn}{ØeØØØ} /a
 henkev{äØ} /a
+henkeä_salpaav{aØ} /a
 henkilölli{ns}{eeØØ}{nØØØ} /a
 henki{ns}{eeØØ}{nØØØ} /a
 hennohko /a
@@ -1619,6 +1629,7 @@ houru /a
 housulli{ns}{eeØØ}{nØØØ} /a
 housut{tØ}o{nm}{ØaØØØ} /a
 huike{aØo} /a
+huikea:huike{eeØ} /a
 huikentelevai{ns}{eeØØ}{nØØØ} /a
 huilumai{ns}{eeØØ}{nØØØ} /a
 huimaav{aØ} /a
@@ -1628,6 +1639,7 @@ huippumai{ns}{eeØØ}{nØØØ} /a
 huipulli{ns}{eeØØ}{nØØØ} /a
 huiput{tØ}o{nm}{ØaØØØ} /a
 huiske{aØo} /a
+huiskea:huiske{eeØ} /a
 huiskilomai{ns}{eeØØ}{nØØØ} /a
 huithapel{iieØ} /a
 huivit{tØ}o{nm}{ØaØØØ} /a
@@ -1653,6 +1665,7 @@ hunnulli{ns}{eeØØ}{nØØØ} /a
 hunnut{tØ}o{nm}{ØaØØØ} /a
 huntui{ns}{eeØØ}{nØØØ} /a
 huoke{aØo} /a
+huokea:huoke{eeØ} /a
 huokoi{ns}{eeØØ}{nØØØ} /a
 huokoselli{ns}{eeØØ}{nØØØ} /a
 huokoset{tØ}o{nm}{ØaØØØ} /a
@@ -2045,6 +2058,7 @@ internationaali{ns}{eeØØ}{nØØØ} /a
 interrogatiivi{ns}{eeØØ}{nØØØ} /a
 intialai{ns}{eeØØ}{nØØØ} /a
 intiim{iieØ} /a
+into_mieli{ns}{eeØØ}{nØØØ} /a
 intoi{ns}{eeØØ}{nØØØ} /a
 intois{aØ} /a
 intolerant{tØ}{iieØ} /a
@@ -2121,6 +2135,8 @@ itsei{ns}{eeØØ}{nØØØ} /a
 itsek{kØ}ä{sØh}{ØäØØØ} /a
 itselölli{ns}{eeØØ}{nØØØ} /a
 itsenäi{ns}{eeØØ}{nØØØ} /a
+itä_eurooppalai{ns}{eeØØ}{nØØØ} /a
+itä_puoli{ns}{eeØØ}{nØØØ} /a
 itäi{ns}{eeØØ}{nØØØ} /a
 itämät{tØ}ö{nm}{ØäØØØ} /a
 ivalli{ns}{eeØØ}{nØØØ} /a
@@ -2200,6 +2216,7 @@ jottamoi{ns}{eeØØ}{nØØØ} /a
 jotunilai{ns}{eeØØ}{nØØØ} /a
 jouduk{kØ}a{sØh}{ØaØØØ} /a
 jouhe{aØo} /a
+jouhea:jouhe{eeØ} /a
 jouhev{aØ} /a
 jouhimai{ns}{eeØØ}{nØØØ} /a
 jouhi{ns}{eeØØ}{nØØØ} /a
@@ -2233,6 +2250,7 @@ jukai{ns}{eeØØ}{nØØØ} /a
 juliaani{ns}{eeØØ}{nØØØ} /a
 julkaisemat{tØ}o{nm}{ØaØØØ} /a
 julke{aØo} /a
+julkea:julke{eeØ} /a
 julki{ns}{eeØØ}{nØØØ} /a
 julm{aØeØ} /a
 julmettun{ue}{tØthn}{ØeØØØ} /a
@@ -2242,6 +2260,7 @@ jumalalli{ns}{eeØØ}{nØØØ} /a
 jumalat{tØ}o{nm}{ØaØØØ} /a
 jumali{ns}{eeØØ}{nØØØ} /a
 juohe{aØo} /a
+juohea:juohe{eeØ} /a
 juohev{aØ} /a
 juoksemat{tØ}o{nm}{ØaØØØ} /a
 juoksev{aØ} /a
@@ -2312,6 +2331,7 @@ jähme{äØö} /a
 jäi{ns}{eeØØ}{nØØØ} /a
 jäkäläi{ns}{eeØØ}{nØØØ} /a
 jäkälämäi{ns}{eeØØ}{nØØØ} /a
+jäljellä_olev{aØ} /a
 jäljet{tØ}ö{nm}{ØäØØØ} /a
 jäljitel{tl}y /a
 jäljittelemät{tØ}ö{nm}{ØäØØØ} /a
@@ -2399,6 +2419,7 @@ kaakeli{ns}{eeØØ}{nØØØ} /a
 kaakkoi{ns}{eeØØ}{nØØØ} /a
 kaameahko /a
 kaame{aØo} /a
+kaamea:kaame{eeØ} /a
 kaaokselli{ns}{eeØØ}{nØØØ} /a
 kaaosmai{ns}{eeØØ}{nØØØ} /a
 kaapilli{ns}{eeØØ}{nØØØ} /a
@@ -2509,9 +2530,12 @@ kalori{ns}{eeØØ}{nØØØ} /a
 kalottimai{ns}{eeØØ}{nØØØ} /a
 kalpeahko /a
 kalpe{aØo} /a
+kalpea:kalpe{eeØ} /a
 kalseahko /a
 kalse{aØo} /a
+kalsea:kalsee{eeØ} /a
 kalske{aØo} /a
+kalskea:kalskee{eeØ} /a
 kalskei{ns}{eeØØ}{nØØØ} /a
 kalso /a
 kalsu /a
@@ -2525,6 +2549,7 @@ kalvak{kØ}a{sØh}{ØaØØØ} /a
 kalvak{kØØ}{ao} /a
 kalva{sØh}{ØaØØØ} /a
 kalve{aØo} /a
+kalvea:kalve{eeØ} /a
 kalvinilai{ns}{eeØØ}{nØØØ} /a
 kalvinisti{ns}{eeØØ}{nØØØ} /a
 kalvoi{ns}{eeØØ}{nØØØ} /a
@@ -2551,6 +2576,7 @@ kankai{ns}{eeØØ}{nØØØ} /a
 kankeahko /a
 kankeanlai{ns}{eeØØ}{nØØØ} /a
 kanke{aØo} /a
+kankea:kanke{eeØ} /a
 kankimai{ns}{eeØØ}{nØØØ} /a
 kannakselai{ns}{eeØØ}{nØØØ} /a
 kannalli{ns}{eeØØ}{nØØØ} /a
@@ -2578,6 +2604,7 @@ kapalli{ns}{eeØØ}{nØØØ} /a
 kapasitiivi{ns}{eeØØ}{nØØØ} /a
 kapeahko /a
 kape{aØo} /a
+kapea:kape{eeØ} /a
 kapeikkoi{ns}{eeØØ}{nØØØ} /a
 kaper{aØoØ} /a
 kapillaari{ns}{eeØØ}{nØØØ} /a
@@ -2597,6 +2624,7 @@ kardinaali{ns}{eeØØ}{nØØØ} /a
 karhak{kØØ}{ao} /a
 karheahko /a
 karhe{aØo} /a
+karhea:karhe{eeØ} /a
 karhumai{ns}{eeØØ}{nØØØ} /a
 karikkoi{ns}{eeØØ}{nØØØ} /a
 kari{ns}{eeØØ}{nØØØ} /a
@@ -2609,16 +2637,19 @@ karkaisemat{tØ}o{nm}{ØaØØØ} /a
 karkeahko /a
 karkeanlai{ns}{eeØØ}{nØØØ} /a
 karke{aØo} /a
+karkea:karke{eeØ} /a
 karkenemat{tØ}o{nm}{ØaØØØ} /a
 karmak{kØØ}{ao} /a
 karma{sØh}{ØaØØØ} /a
 karme{aØo} /a
+karmea:karme{eeØ} /a
 karmiv{aØ} /a
 karoliini{ns}{eeØØ}{nØØØ} /a
 karolingi{ns}{eeØØ}{nØØØ} /a
 karsa{sØh}{ØaØØØ} /a
 karsinalli{ns}{eeØØ}{nØØØ} /a
 karske{aØo} /a
+karskea:karske{eeØ} /a
 karsk{iieØ} /a
 karso /a
 karstai{ns}{eeØØ}{nØØØ} /a
@@ -2718,6 +2749,7 @@ kaualli{ns}{eeØØ}{nØØØ} /a
 kauhamai{ns}{eeØØ}{nØØØ} /a
 kauhavalai{ns}{eeØØ}{nØØØ} /a
 kauhe{aØo} /a
+kauhea:kauhe{eeØ} /a
 kauhi{ao} /a
 kauhistuttav{aØ} /a
 kauhtumat{tØ}o{nm}{ØaØØØ} /a
@@ -2749,6 +2781,7 @@ kausaali{ns}{eeØØ}{nØØØ} /a
 kausatiivi{ns}{eeØØ}{nØØØ} /a
 kausittai{ns}{eeØØ}{nØØØ} /a
 kausti{ns}{eeØØ}{nØØØ} /a
+kauti{ns}{eeØØ}{nØØØ} /a
 kauttaaltai{ns}{eeØØ}{nØØØ} /a
 kaval{aØoØ} /a
 kaventamat{tØ}o{nm}{ØaØØØ} /a
@@ -2863,7 +2896,9 @@ kerroksittai{ns}{eeØØ}{nØØØ} /a
 kerrosmai{ns}{eeØØ}{nØØØ} /a
 kerrot{tØØ}u /a
 kerrotunlai{ns}{eeØØ}{nØØØ} /a
+kerta_käyttöi{ns}{eeØØ}{nØØØ} /a
 kertaamat{tØ}o{nm}{ØaØØØ} /a
+kerta_käyttöi{ns}{eeØØ}{nØØØ} /a
 kertomat{tØ}o{nm}{ØaØØØ} /a
 kertovai{ns}{eeØØ}{nØØØ} /a
 kerämäi{ns}{eeØØ}{nØØØ} /a
@@ -2903,10 +2938,11 @@ keulamai{ns}{eeØØ}{nØØØ} /a
 keulimmai{ns}{eeØØ}{nØØØ} /a
 kevel{äØöØ} /a
 keveähkö /a
-keve{äØö} /a
+keveä:keve{äØö} /a
+keveä:keve{eeØ} /a
 kevyehkö /a
 kevyi{ns}{eeØØ}{nØØØ} /a
-kevy{tØthn}{ØeØØØ} /a
+kevyt:kevy{tØthn}{ØeØØØ} /a
 keväi{ns}{eeØØ}{nØØØ} /a
 keväälli{ns}{eeØØ}{nØØØ} /a
 kidemäi{ns}{eeØØ}{nØØØ} /a
@@ -3018,7 +3054,8 @@ kinesteetti{ns}{eeØØ}{nØØØ} /a
 kinu /a
 kipak{kØØ}{ao} /a
 kiper{äØöØ} /a
-kipe{äØö} /a
+kipe{äØöØ} /a
+kipeä:kipe{eeØ} /a
 kipinät{tØ}ö{nm}{ØäØØØ} /a
 kipinöimät{tØ}ö{nm}{ØäØØØ} /a
 kipoi{ns}{eeØØ}{nØØØ} /a
@@ -3157,6 +3194,7 @@ kolak{kØØ}{ao} /a
 koleahko /a
 koleanlai{ns}{eeØØ}{nØØØ} /a
 kole{aØo} /a
+kolea:kole{eeØ} /a
 koleeri{ns}{eeØØ}{nØØØ} /a
 koleik{kØØ}o /a
 kolei{ns}{eeØØ}{nØØØ} /a
@@ -3187,6 +3225,7 @@ kolot{tØ}o{nm}{ØaØØØ} /a
 kolttalai{ns}{eeØØ}{nØØØ} /a
 kolui{ns}{eeØØ}{nØØØ} /a
 kome{aØo} /a
+komea:kome{eeØ} /a
 komentavai{ns}{eeØØ}{nØØØ} /a
 komeroi{ns}{eeØØ}{nØØØ} /a
 kommensuraabel{iieØ} /a
@@ -3259,6 +3298,7 @@ koomilli{ns}{eeØØ}{nØØØ} /a
 koomi{ns}{eeØØ}{nØØØ} /a
 kooperatiivi{ns}{eeØØ}{nØØØ} /a
 kope{aØo} /a
+kopea:kope{eeØ} /a
 kopelo /a
 kopernikaani{ns}{eeØØ}{nØØØ} /a
 kopioiv{aØ} /a
@@ -3272,6 +3312,7 @@ korallimai{ns}{eeØØ}{nØØØ} /a
 koralli{ns}{eeØØ}{nØØØ} /a
 korealai{ns}{eeØØ}{nØØØ} /a
 kore{aØo} /a
+korea:kore{eeØ} /a
 koreilemat{tØ}o{nm}{ØaØØØ} /a
 koreografi{ns}{eeØØ}{nØØØ} /a
 korilli{ns}{eeØØ}{nØØØ} /a
@@ -3288,6 +3329,7 @@ korj{aØeØ} /a
 korkeahko /a
 korkeanlai{ns}{eeØØ}{nØØØ} /a
 korke{aØo} /a
+korkea:korke{eeØ} /a
 korkeui{ns}{eeØØ}{nØØØ} /a
 korkkimai{ns}{eeØØ}{nØØØ} /a
 korkki{ns}{eeØØ}{nØØØ} /a
@@ -3305,6 +3347,7 @@ korrekt{iieØ} /a
 korsikalai{ns}{eeØØ}{nØØØ} /a
 korsk{aØeØ} /a
 korske{aØo} /a
+korskea:korske{eeØ} /a
 kortev{aØ} /a
 kortilli{ns}{eeØØ}{nØØØ} /a
 korti{ns}{eeØØ}{nØØØ} /a
@@ -3333,6 +3376,7 @@ kosmopoliitti{ns}{eeØØ}{nØØØ} /a
 kostamat{tØ}o{nm}{ØaØØØ} /a
 kosteahko /a
 koste{aØo} /a
+kostea:koste{eeØ} /a
 kostei{ns}{eeØØ}{nØØØ} /a
 kotamai{ns}{eeØØ}{nØØØ} /a
 kotelolli{ns}{eeØØ}{nØØØ} /a
@@ -3366,8 +3410,10 @@ kourui{ns}{eeØØ}{nØØØ} /a
 kourumai{ns}{eeØØ}{nØØØ} /a
 kourut{tØ}o{nm}{ØaØØØ} /a
 kovahko /a
+kovaksi_keitet{tØØ}y /a
 kovanlai{ns}{eeØØ}{nØØØ} /a
 kov{aØeØ} /a
+kova_pintai{ns}{eeØØ}{nØØØ} /a
 kover{aØoØ} /a
 kovero /a
 kovettumat{tØ}o{nm}{ØaØØØ} /a
@@ -3440,6 +3486,7 @@ kukkamai{ns}{eeØØ}{nØØØ} /a
 kukkaromai{ns}{eeØØ}{nØØØ} /a
 kukkaselli{ns}{eeØØ}{nØØØ} /a
 kukke{aØo} /a
+kukkea:kukke{eeØ} /a
 kukkimat{tØ}o{nm}{ØaØØØ} /a
 kukkivai{ns}{eeØØ}{nØØØ} /a
 kukkomai{ns}{eeØØ}{nØØØ} /a
@@ -3527,6 +3574,7 @@ kunnot{tØ}o{nm}{ØaØØØ} /a
 kuntoi{ns}{eeØØ}{nØØØ} /a
 kuohitsemat{tØ}o{nm}{ØaØØØ} /a
 kuohke{aØo} /a
+kuohkea:kuohke{eeØ} /a
 kuohui{ns}{eeØØ}{nØØØ} /a
 kuohuis{aØ} /a
 kuohumat{tØ}o{nm}{ØaØØØ} /a
@@ -3636,6 +3684,7 @@ kuurilai{ns}{eeØØ}{nØØØ} /a
 kuurnamai{ns}{eeØØ}{nØØØ} /a
 kuuro /a
 kuuru /a
+kuusi_kymppi{ns}{eeØØ}{nØØØ} /a
 kuusi{ns}{eeØØ}{nØØØ} /a
 kuutamoi{ns}{eeØØ}{nØØØ} /a
 kuutav{aØ} /a
@@ -3676,6 +3725,7 @@ kyhmymäi{ns}{eeØØ}{nØØØ} /a
 kyhmyräi{ns}{eeØØ}{nØØØ} /a
 kyhmyt{tØ}ö{nm}{ØäØØØ} /a
 kyi{ns}{eeØØ}{nØØØ} /a
+kykyi{ns}{eeØØ}{nØØØ} /a
 kykenemät{tØ}ö{nm}{ØäØØØ} /a
 kykeneväi{ns}{eeØØ}{nØØØ} /a
 kykenev{äØ} /a
@@ -3865,7 +3915,8 @@ laajui{ns}{eeØØ}{nØØØ} /a
 laajuudelli{ns}{eeØØ}{nØØØ} /a
 laakamai{ns}{eeØØ}{nØØØ} /a
 laakeahko /a
-laake{aØo} /a
+laakea:laake{aØo} /a
+laakea:laake{eeØ} /a
 laakiomai{ns}{eeØØ}{nØØØ} /a
 laaksoi{ns}{eeØØ}{nØØØ} /a
 laaksomai{ns}{eeØØ}{nØØØ} /a
@@ -3920,7 +3971,9 @@ laillistamat{tØ}o{nm}{ØaØØØ} /a
 laimeahko /a
 laimeanlai{ns}{eeØØ}{nØØØ} /a
 laime{aØo} /a
+laimea:laime{eeØ} /a
 laimentamat{tØ}o{nm}{ØaØØØ} /a
+lain_vastai{ns}{eeØØ}{nØØØ} /a
 laineelli{ns}{eeØØ}{nØØØ} /a
 laineet{tØ}o{nm}{ØaØØØ} /a
 laineik{kØ}a{sØh}{ØaØØØ} /a
@@ -3948,6 +4001,7 @@ lajittumat{tØ}o{nm}{ØaØØØ} /a
 lakaisemat{tØ}o{nm}{ØaØØØ} /a
 lakastumat{tØ}o{nm}{ØaØØØ} /a
 lake{aØo} /a
+lakea:lake{eeØ} /a
 lakedaimonilai{ns}{eeØØ}{nØØØ} /a
 lakeeraamat{tØ}o{nm}{ØaØØØ} /a
 lakilli{ns}{eeØØ}{nØØØ} /a
@@ -3982,6 +4036,7 @@ lapioimat{tØ}o{nm}{ØaØØØ} /a
 lapiomai{ns}{eeØØ}{nØØØ} /a
 lappalai{ns}{eeØØ}{nØØØ} /a
 lappe{aØo} /a
+lappea:lappe{eeØ} /a
 lapsek{kØ}a{sØh}{ØaØØØ} /a
 lapselli{ns}{eeØØ}{nØØØ} /a
 lapset{tØ}o{nm}{ØaØØØ} /a
@@ -4017,6 +4072,7 @@ latinalai{ns}{eeØØ}{nØØØ} /a
 latomai{ns}{eeØØ}{nØØØ} /a
 latteahko /a
 latte{aØo} /a
+lattea:latte{eeØ} /a
 lattialli{ns}{eeØØ}{nØØØ} /a
 lattiat{tØ}o{nm}{ØaØØØ} /a
 latuskai{ns}{eeØØ}{nØØØ} /a
@@ -4030,6 +4086,7 @@ lauh{aoeØ} /a
 lauhe{aØo} /a
 lauhk{aoeØ} /a
 lauhke{aØo} /a
+lauhkea:lauhke{eeØ} /a
 lauhtumat{tØ}o{nm}{ØaØØØ} /a
 laukaisemat{tØ}o{nm}{ØaØØØ} /a
 laukeamat{tØ}o{nm}{ØaØØØ} /a
@@ -4059,6 +4116,7 @@ lavastukselli{ns}{eeØØ}{nØØØ} /a
 lavat{tØ}o{nm}{ØaØØØ} /a
 laveahko /a
 lave{aØo} /a
+lavea:lave{eeØ} /a
 lavi{ao} /a
 leeviläi{ns}{eeØØ}{nØØØ} /a
 legaali{ns}{eeØØ}{nØØØ} /a
@@ -4557,6 +4615,7 @@ lävet{tØ}ö{nm}{ØäØØØ} /a
 lävistämät{tØ}ö{nm}{ØäØØØ} /a
 läyl{ieeeØ} /a
 läyl{iieØ} /a
+lääke_tieteelli{ns}{eeØØ}{nØØØ} /a
 lääkinnälli{ns}{eeØØ}{nØØØ} /a
 lääkinnölli{ns}{eeØØ}{nØØØ} /a
 lääkkeelli{ns}{eeØØ}{nØØØ} /a
@@ -4619,6 +4678,7 @@ mahtumat{tØ}o{nm}{ØaØØØ} /a
 maidok{kØ}a{sØh}{ØaØØØ} /a
 maidot{tØ}o{nm}{ØaØØØ} /a
 maike{aØo} /a
+muikea:muike{eeØ} /a
 maineet{tØ}o{nm}{ØaØØØ} /a
 mainehik{kØ}a{sØh}{ØaØØØ} /a
 maineik{kØ}a{sØh}{ØaØØØ} /a
@@ -4630,6 +4690,7 @@ mainitunlai{ns}{eeØØ}{nØØØ} /a
 mainonnalli{ns}{eeØØ}{nØØØ} /a
 mai{ns}{eeØØ}{nØØØ} /a
 maire{aØo} /a
+mairea:maire{eeØ} /a
 mairei{ns}{eeØØ}{nØØØ} /a
 maire{Øth}{ØeØeØ} /a
 maisemalli{ns}{eeØØ}{nØØØ} /a
@@ -4644,6 +4705,7 @@ makasiinilli{ns}{eeØØ}{nØØØ} /a
 makeahko /a
 makeai{ns}{eeØØ}{nØØØ} /a
 make{aØo} /a
+makea:make{eeØ} /a
 makkaramai{ns}{eeØØ}{nØØØ} /a
 makoi{ns}{eeØØ}{nØØØ} /a
 makois{aØ} /a
@@ -4800,6 +4862,7 @@ merkitsemät{tØ}ö{nm}{ØäØØØ} /a
 merkitsev{äØ} /a
 merkittäv{äØ} /a
 merkit{tØ}ö{nm}{ØäØØØ} /a
+merkit{tØØ}y /a
 merkityksek{kØ}ä{sØh}{ØäØØØ} /a
 merkitykselli{ns}{eeØØ}{nØØØ} /a
 merkitykset{tØ}ö{nm}{ØäØØØ} /a
@@ -4966,9 +5029,11 @@ muhamettilai{ns}{eeØØ}{nØØØ} /a
 muhe{aØo} /a
 muhev{aØ} /a
 muhke{aØo} /a
+muhkea:muhke{eeØ} /a
 muhkurai{ns}{eeØØ}{nØØØ} /a
 muijat{tØ}o{nm}{ØaØØØ} /a
 muike{aØo} /a
+muikea:muike{eeØ} /a
 muinai{ns}{eeØØ}{nØØØ} /a
 muinoi{ns}{eeØØ}{nØØØ} /a
 muistamat{tØ}o{nm}{ØaØØØ} /a
@@ -5014,6 +5079,7 @@ muovautuv{aØ} /a
 muovi{ns}{eeØØ}{nØØØ} /a
 murak{kØØ}{ao} /a
 mure{aØo} /a
+murea:mure{eeØ} /a
 murei{ns}{eeØØ}{nØØØ} /a
 murenemat{tØ}o{nm}{ØaØØØ} /a
 murev{aØ} /a
@@ -5162,6 +5228,7 @@ nahjusmai{ns}{eeØØ}{nØØØ} /a
 nahkai{ns}{eeØØ}{nØØØ} /a
 nahkamai{ns}{eeØØ}{nØØØ} /a
 nahke{aØo} /a
+nahkea:nahke{eeØ} /a
 naiiv{iieØ} /a
 nailoni{ns}{eeØØ}{nØØØ} /a
 naimat{tØ}o{nm}{ØaØØØ} /a
@@ -5330,6 +5397,7 @@ noobel{iieØ} /a
 nopeahko /a
 nopeanlai{ns}{eeØØ}{nØØØ} /a
 nope{aØo} /a
+nopea:nope{eeØ} /a
 nops{aØeØ} /a
 nore{aØo} /a
 norjalai{ns}{eeØØ}{nØØØ} /a
@@ -5346,6 +5414,7 @@ nostannai{ns}{eeØØ}{nØØØ} /a
 nostattamat{tØ}o{nm}{ØaØØØ} /a
 notkeahko /a
 notke{aØo} /a
+notkea:notke{eeØ} /a
 notko /a
 notkoi{ns}{eeØØ}{nØØØ} /a
 notkumat{tØ}o{nm}{ØaØØØ} /a
@@ -5518,6 +5587,7 @@ oheelli{ns}{eeØØ}{nØØØ} /a
 ohei{ns}{eeØØ}{nØØØ} /a
 ohelli{ns}{eeØØ}{nØØØ} /a
 ohentamat{tØ}o{nm}{ØaØØØ} /a
+ohi_kiitäv{äØ} /a
 ohjaajat{tØ}o{nm}{ØaØØØ} /a
 ohjaamat{tØ}o{nm}{ØaØØØ} /a
 ohjakset{tØ}o{nm}{ØaØØØ} /a
@@ -5538,6 +5608,7 @@ ohukai{ns}{eeØØ}{nØØØ} /a
 ohu{tØthn}{ØeØØØ} /a
 oikaisemat{tØ}o{nm}{ØaØØØ} /a
 oike{aØo} /a
+oikea:oike{eeØ} /a
 oikeelli{ns}{eeØØ}{nØØØ} /a
 oikeistolai{ns}{eeØØ}{nØØØ} /a
 oikeudelli{ns}{eeØØ}{nØØØ} /a
@@ -5592,6 +5663,7 @@ olympolai{ns}{eeØØ}{nØØØ} /a
 omaamat{tØ}o{nm}{ØaØØØ} /a
 omai{ns}{eeØØ}{nØØØ} /a
 omaisuudet{tØ}o{nm}{ØaØØØ} /a
+oma_päi{ns}{eeØØ}{nØØØ} /a
 om{aØeØ} /a
 omenamai{ns}{eeØØ}{nØØØ} /a
 ominai{ns}{eeØØ}{nØØØ} /a
@@ -6193,6 +6265,7 @@ pilvi{ns}{eeØØ}{nØØØ} /a
 pimeähkö /a
 pimeänlai{ns}{eeØØ}{nØØØ} /a
 pime{äØö} /a
+pimeä:pime{eeØ} /a
 pingotet{tØØ}u /a
 pingottamat{tØ}o{nm}{ØaØØØ} /a
 pingottun{ue}{tØthn}{ØeØØØ} /a
@@ -6384,6 +6457,7 @@ povet{tØ}o{nm}{ØaØØØ} /a
 pragmaatti{ns}{eeØØ}{nØØØ} /a
 praktilli{ns}{eeØØ}{nØØØ} /a
 prame{aØo} /a
+pramea:prame{eeØ} /a
 predikatiivi{ns}{eeØØ}{nØØØ} /a
 preglasiaali{ns}{eeØØ}{nØØØ} /a
 pregnant{tØ}{iieØ} /a
@@ -6463,6 +6537,7 @@ puhumat{tØ}o{nm}{ØaØØØ} /a
 puhuvai{ns}{eeØØ}{nØØØ} /a
 puhuv{aØ} /a
 puike{aØo} /a
+puikea:puike{eeØ} /a
 puikelomai{ns}{eeØØ}{nØØØ} /a
 puikkomai{ns}{eeØØ}{nØØØ} /a
 puimat{tØ}o{nm}{ØaØØØ} /a
@@ -6479,6 +6554,7 @@ pul{iieØ} /a
 pullak{kØØ}{ao} /a
 pulleahko /a
 pulle{aØo} /a
+pullea:pulle{eeØ} /a
 pulleroi{ns}{eeØØ}{nØØØ} /a
 pullev{aØ} /a
 pullo /a
@@ -6489,6 +6565,7 @@ pulluk{kØØ}{ao} /a
 pulmalli{ns}{eeØØ}{nØØØ} /a
 pulsk{aØeØ} /a
 pulske{aØo} /a
+pulskea:pulske{eeØ} /a
 pulsk{iieØ} /a
 pulverimai{ns}{eeØØ}{nØØØ} /a
 pumpulai{ns}{eeØØ}{nØØØ} /a
@@ -6686,7 +6763,7 @@ raajalli{ns}{eeØØ}{nØØØ} /a
 raajat{tØ}o{nm}{ØaØØØ} /a
 raakalaismai{ns}{eeØØ}{nØØØ} /a
 raakamai{ns}{eeØØ}{nØØØ} /a
-raa{kØ}{aoeØ} /a
+raa{k'Ø}{aoeØ} /a
 raamatulli{ns}{eeØØ}{nØØØ} /a
 raar{iieØ} /a
 raatelevai{ns}{eeØØ}{nØØØ} /a
@@ -6774,6 +6851,7 @@ rannimmai{ns}{eeØØ}{nØØØ} /a
 rannukkai{ns}{eeØØ}{nØØØ} /a
 rannuk{kØ}a{sØh}{ØaØØØ} /a
 ranskalai{ns}{eeØØ}{nØØØ} /a
+ranskan_kieli{ns}{eeØØ}{nØØØ} /a
 rantui{ns}{eeØØ}{nØØØ} /a
 raolli{ns}{eeØØ}{nØØØ} /a
 raot{tØ}o{nm}{ØaØØØ} /a
@@ -6782,6 +6860,7 @@ rapakkoi{ns}{eeØØ}{nØØØ} /a
 rapak{kØØ}{ao} /a
 rapautumat{tØ}o{nm}{ØaØØØ} /a
 rape{aØo} /a
+rapea:rape{eeØ} /a
 rappaamat{tØ}o{nm}{ØaØØØ} /a
 rapsodi{ns}{eeØØ}{nØØØ} /a
 rasak{kØØ}{ao} /a
@@ -6821,6 +6900,7 @@ rauhasmai{ns}{eeØØ}{nØØØ} /a
 rauhat{tØ}o{nm}{ØaØØØ} /a
 raukeamat{tØ}o{nm}{ØaØØØ} /a
 rauke{aØo} /a
+raaukea:rauke{eeØ} /a
 raukkamai{ns}{eeØØ}{nØØØ} /a
 rauk{kØ}{aoeØ} /a
 raumalai{ns}{eeØØ}{nØØØ} /a
@@ -7068,6 +7148,7 @@ rodulli{ns}{eeØØ}{nØØØ} /a
 rodut{tØ}o{nm}{ØaØØØ} /a
 rohkeahko /a
 rohke{aØo} /a
+rohkea:rohke{eeØ} /a
 rohtimi{ns}{eeØØ}{nØØØ} /a
 roimak{kØØ}{ao} /a
 roim{aØeØ} /a
@@ -7185,6 +7266,7 @@ ruskahtav{aØ} /a
 ruskeahko /a
 ruskeahtav{aØ} /a
 ruske{aØo} /a
+ruskea:ruske{eeØ} /a
 ruskehtav{aØ} /a
 ruskoi{ns}{eeØØ}{nØØØ} /a
 rusoi{ns}{eeØØ}{nØØØ} /a
@@ -7363,6 +7445,7 @@ sakaramai{ns}{eeØØ}{nØØØ} /a
 sakeahko /a
 sakeanlai{ns}{eeØØ}{nØØØ} /a
 sake{aØo} /a
+sakea:sake{eeØ} /a
 sakkai{ns}{eeØØ}{nØØØ} /a
 sakoi{ns}{eeØØ}{nØØØ} /a
 sakois{aØ} /a
@@ -7384,6 +7467,7 @@ salolai{ns}{eeØØ}{nØØØ} /a
 salonkimai{ns}{eeØØ}{nØØØ} /a
 salpaamat{tØ}o{nm}{ØaØØØ} /a
 salske{aØo} /a
+salskea:salske{eeØ} /a
 salvamai{ns}{eeØØ}{nØØØ} /a
 salvamat{tØ}o{nm}{ØaØØØ} /a
 samai{ns}{eeØØ}{nØØØ} /a
@@ -7392,6 +7476,7 @@ samanmoi{ns}{eeØØ}{nØØØ} /a
 samarialai{ns}{eeØØ}{nØØØ} /a
 sameahko /a
 same{aØo} /a
+samea:same{eeØ} /a
 samenemat{tØ}o{nm}{ØaØØØ} /a
 samentumat{tØ}o{nm}{ØaØØØ} /a
 sameriai{ns}{eeØØ}{nØØØ} /a
@@ -7796,6 +7881,7 @@ sohjoi{ns}{eeØØ}{nØØØ} /a
 sohjui{ns}{eeØØ}{nØØØ} /a
 soikeahko /a
 soike{aØo} /a
+soikea:soike{eeØ} /a
 soikiomai{ns}{eeØØ}{nØØØ} /a
 soik{kØ}o /a
 soikulai{ns}{eeØØ}{nØØØ} /a
@@ -7819,6 +7905,7 @@ soistumat{tØ}o{nm}{ØaØØØ} /a
 soitannolli{ns}{eeØØ}{nØØØ} /a
 soittimelli{ns}{eeØØ}{nØØØ} /a
 soke{aØo} /a
+sokea:soke{eeØ} /a
 sokerimai{ns}{eeØØ}{nØØØ} /a
 sokeri{ns}{eeØØ}{nØØØ} /a
 sokerit{tØ}o{nm}{ØaØØØ} /a
@@ -7867,6 +7954,7 @@ sorai{ns}{eeØØ}{nØØØ} /a
 sorat{tØ}o{nm}{ØaØØØ} /a
 sorbilai{ns}{eeØØ}{nØØØ} /a
 sore{aØo} /a
+sorea:sore{eeØ} /a
 sorj{aØeØ} /a
 sorkalli{ns}{eeØØ}{nØØØ} /a
 sorkat{tØ}o{nm}{ØaØØØ} /a
@@ -8004,6 +8092,7 @@ sulot{tØ}o{nm}{ØaØØØ} /a
 sululli{ns}{eeØØ}{nØØØ} /a
 sulut{tØ}o{nm}{ØaØØØ} /a
 sume{aØo} /a
+sumea:sume{eeØ} /a
 sumeilemat{tØ}o{nm}{ØaØØØ} /a
 sumentumat{tØ}o{nm}{ØaØØØ} /a
 sumerilai{ns}{eeØØ}{nØØØ} /a
@@ -8057,7 +8146,9 @@ suopai{ns}{eeØØ}{nØØØ} /a
 suopamai{ns}{eeØØ}{nØØØ} /a
 suopeahko /a
 suope{aØo} /a
+suopea:suope{eeØ} /a
 suoranai{ns}{eeØØ}{nØØØ} /a
+suora_selkäi{ns}{eeØØ}{nØØØ} /a
 suoravai{ns}{eeØØ}{nØØØ} /a
 suor{aØeØ} /a
 suorittamat{tØ}o{nm}{ØaØØØ} /a
@@ -8078,11 +8169,13 @@ supistuvai{ns}{eeØØ}{nØØØ} /a
 suppeahko /a
 suppeanlai{ns}{eeØØ}{nØØØ} /a
 suppe{aØo} /a
+suppea:suppe{eeØ} /a
 suppilomai{ns}{eeØØ}{nØØØ} /a
 supuk{kØØ}{ao} /a
 surevai{ns}{eeØØ}{nØØØ} /a
 surev{aØ} /a
 surke{aØo} /a
+surkea:surke{eeØ} /a
 surkeilemat{tØ}o{nm}{ØaØØØ} /a
 surkuteltav{aØ} /a
 surrealisti{ns}{eeØØ}{nØØØ} /a
@@ -8118,6 +8211,7 @@ suurenmoi{ns}{eeØØ}{nØØØ} /a
 suurentelevai{ns}{eeØØ}{nØØØ} /a
 suurentelev{aØ} /a
 suur{ieØeØØ} /a
+suuri_töi{ns}{eeØØ}{nØØØ} /a
 suurui{ns}{eeØØ}{nØØØ} /a
 suurukai{ns}{eeØØ}{nØØØ} /a
 suurukset{tØ}o{nm}{ØaØØØ} /a
@@ -8327,6 +8421,7 @@ tahkoamat{tØ}o{nm}{ØaØØØ} /a
 tahmai{ns}{eeØØ}{nØØØ} /a
 tahmeahko /a
 tahme{aØo} /a
+tahmea:tahme{eeØ} /a
 tahnai{ns}{eeØØ}{nØØØ} /a
 tahnamai{ns}{eeØØ}{nØØØ} /a
 tahraamat{tØ}o{nm}{ØaØØØ} /a
@@ -8426,6 +8521,7 @@ tanak{kØØ}{ao} /a
 tane{aØo} /a
 tangentiaali{ns}{eeØØ}{nØØØ} /a
 tanke{aØo} /a
+tankea:tanke{eeØ} /a
 tankomai{ns}{eeØØ}{nØØØ} /a
 tanskalai{ns}{eeØØ}{nØØØ} /a
 tanssilli{ns}{eeØØ}{nØØØ} /a
@@ -8613,8 +8709,9 @@ tietämät{tØ}ö{nm}{ØäØØØ} /a
 tietäväi{ns}{eeØØ}{nØØØ} /a
 tietäv{äØ} /a
 tiheähkö /a
+tiheä:tihe{äØö} /a
+tiheä:tihe{eeØ} /a
 tiheänlai{ns}{eeØØ}{nØØØ} /a
-tihe{äØö} /a
 tihku /a
 tihkui{ns}{eeØØ}{nØØØ} /a
 tihru /a
@@ -8821,6 +8918,7 @@ tuhot{tØ}o{nm}{ØaØØØ} /a
 tuhrui{ns}{eeØØ}{nØØØ} /a
 tuh{td}{iieØ} /a
 tuike{aØo} /a
+tuikea:tuike{eeØ} /a
 tuim{aØeØ} /a
 tuiret{tØØ}u /a
 tuiretui{ns}{eeØØ}{nØØØ} /a
@@ -8961,6 +9059,7 @@ turmiok{kØ}a{sØh}{ØaØØØ} /a
 turmiolli{ns}{eeØØ}{nØØØ} /a
 turpeahko /a
 turpe{aØo} /a
+turpea:turpe{eeØ} /a
 turpei{ns}{eeØØ}{nØØØ} /a
 turpoamat{tØ}o{nm}{ØaØØØ} /a
 tursk{iieØ} /a
@@ -8991,6 +9090,7 @@ tut{tØ}u /a
 tutustumat{tØ}o{nm}{ØaØØØ} /a
 tuuheahko /a
 tuuhe{aØo} /a
+tuuhea:tuuhe{eeØ} /a
 tuulemat{tØ}o{nm}{ØaØØØ} /a
 tuulettamat{tØ}o{nm}{ØaØØØ} /a
 tuulet{tØ}o{nm}{ØaØØØ} /a
@@ -9164,6 +9264,7 @@ uhkaamat{tØ}o{nm}{ØaØØØ} /a
 uhkaavai{ns}{eeØØ}{nØØØ} /a
 uhkaav{aØ} /a
 uhke{aØo} /a
+uhkea:uhke{eeØ} /a
 uhkui{ns}{eeØØ}{nØØØ} /a
 uhmailev{aØ} /a
 uhmai{ns}{eeØØ}{nØØØ} /a
@@ -9223,6 +9324,7 @@ untuvai{ns}{eeØØ}{nØØØ} /a
 untuvamai{ns}{eeØØ}{nØØØ} /a
 untuvat{tØ}o{nm}{ØaØØØ} /a
 upe{aØo} /a
+upea:upe{eeØ} /a
 uper{aØoØ} /a
 uppoamat{tØ}o{nm}{ØaØØØ} /a
 uraalilai{ns}{eeØØ}{nØØØ} /a
@@ -9233,6 +9335,7 @@ urbaan{iieØ} /a
 urbaani{ns}{eeØØ}{nØØØ} /a
 urhak{kØØ}{ao} /a
 urhe{aØo} /a
+urhea:urhe{eeØ} /a
 urheilijamai{ns}{eeØØ}{nØØØ} /a
 urheilulli{ns}{eeØØ}{nØØØ} /a
 urheilumai{ns}{eeØØ}{nØØØ} /a
@@ -9304,6 +9407,7 @@ vaalahtav{aØ} /a
 vaalak{kØØ}{ao} /a
 vaaleahko /a
 vaale{aØo} /a
+vaalea:vaale{eeØ} /a
 vaalev{aØ} /a
 vaapper{aØoØ} /a
 vaappumat{tØ}o{nm}{ØaØØØ} /a
@@ -9349,6 +9453,7 @@ vaihtuvai{ns}{eeØØ}{nØØØ} /a
 vaikeahko /a
 vaikeanlai{ns}{eeØØ}{nØØØ} /a
 vaike{aØo} /a
+vaikea:vaike{eeØ} /a
 vaikenevai{ns}{eeØØ}{nØØØ} /a
 vaikuttamat{tØ}o{nm}{ØaØØØ} /a
 vaikuttavai{ns}{eeØØ}{nØØØ} /a
@@ -9358,6 +9463,7 @@ vaikutukset{tØ}o{nm}{ØaØØØ} /a
 vaillinai{ns}{eeØØ}{nØØØ} /a
 vailli{ns}{eeØØ}{nØØØ} /a
 vaime{aØo} /a
+vaimea:vaime{eeØ} /a
 vaimenemat{tØ}o{nm}{ØaØØØ} /a
 vaimentamat{tØ}o{nm}{ØaØØØ} /a
 vaimentumat{tØ}o{nm}{ØaØØØ} /a
@@ -9430,6 +9536,7 @@ valju /a
 valkaisemat{tØ}o{nm}{ØaØØØ} /a
 valkeai{ns}{eeØØ}{nØØØ} /a
 valke{aØo} /a
+valkea:valke{eeØ} /a
 valkei{ns}{eeØØ}{nØØØ} /a
 valkeui{ns}{eeØØ}{nØØØ} /a
 valk{kØ}o /a
@@ -9583,6 +9690,7 @@ vastineet{tØ}o{nm}{ØaØØØ} /a
 vastukselli{ns}{eeØØ}{nØØØ} /a
 vastukset{tØ}o{nm}{ØaØØØ} /a
 vastustamat{tØ}o{nm}{ØaØØØ} /a
+vastustus_kykyi{ns}{eeØØ}{nØØØ} /a
 vastuulli{ns}{eeØØ}{nØØØ} /a
 vastuut{tØ}o{nm}{ØaØØØ} /a
 vasur{iieØ} /a
@@ -10125,6 +10233,7 @@ ylet{tØ}ö{nm}{ØäØØØ} /a
 ylev{äØ} /a
 ylhäi{ns}{eeØØ}{nØØØ} /a
 ylh{äØeØ} /a
+yli_ampuv{aØ} /a
 ylimmäi{ns}{eeØØ}{nØØØ} /a
 ylimykselli{ns}{eeØØ}{nØØØ} /a
 yli{ns}{eeØØ}{nØØØ} /a

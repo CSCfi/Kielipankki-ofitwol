@@ -38,7 +38,7 @@
   Forb = [n j|k l|k r|k v|p r|p s|s m|s p|t l|t r] ;
   Forg = [$[Forl|Forb]] ;
   Coida = [b|d|n d|f|f f|g|h|j|k|l|l l|m|n|n n|p|r|s|š|t|t t|v] ;
-!LEXICON Verbs
+LEXICON VerbGuess
 !
 !        === o | u | ö | ä === PUNOA ===
 !

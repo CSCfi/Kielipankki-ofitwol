@@ -34,7 +34,7 @@
   Forl = [b|c|d|f|g|q|š|w|x|z|ž] ;
   Forb = [n j|k l|k r|k v|p r|p s|s m|s p|t l|t r] ;
   Forg = [$[Forl|Forb]] ;
-!LEXICON Adjectives
+LEXICON AdjGuess
 !
 !         === o |u | y | ö ===
 !
@@ -167,7 +167,7 @@ va{kØ}{aoeØ} /a  ; ! VAKA
 !
 !         === n-me-m ===
 !
-ha{pØ}a{mn}{ØeØeØ} /a  ; ! HAPAN 
+hap{pØ}a{mn}{ØeØeØ} /a  ; ! HAPAN 
 irtai{mn}{ØeØeØ} /a  ; ! IRTAIN
 rikkei{mn}{ØeØeØ} /a  ; ! RIKKEIN
 hulttioi{mn}{ØeØeØ} /a  ; ! HULTTIOIN

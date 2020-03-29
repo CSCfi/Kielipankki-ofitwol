@@ -25,15 +25,13 @@ VVo = VV | VoS :i | :a :u | :e :u | :e :y | :i :e | :u :o |
       :y :ö | :ä ({ØvØvØØ}:Ø) :y ;
 VbV = [:e :a|:e :ä|:i :a|:i :o|:i :ö|:o :a|:u :a|:u (:Ø) :e|:y (:Ø) :e] ;
 
-EOW = .#. | {`}:Ø  ;
+EOW = .#. | {§}: | {`}:Ø  ;
     ! End of stem and inflection (poss suffixes and clitics may follow)
-BOW = .#. | {§}:Ø ;
+BOW = .#. | {§}: ;
     ! beginning of stem (first parts of compounds may precede)
 
-!!CLOSED = VoM ({ij}:i|{ØiØ}:|{i}:) CoM (VoØ) [CoM|EOW|{PS}:] ;
-!!CLOSED = VoM ([:i - {ii}:] | VoØ) CoM (VoØ) [CoM|EOW|{PS}:] ;
 CLOSED = VoM ([:i - {ii}:] | VoØ) [CoM - {Øt}:Ø] (VoØ) [CoM|EOW|{PS}:] ;
-!!!OPEN = VoM (CoM) [VoS|:i] ;
+
 OPEN = VoM [(CoM) [VoS|(VoØ) :i] | EOW | {PS}:] ;
 
 ! STOP
@@ -590,9 +588,10 @@ s e {Øe}:Ø =>
 {aäØ}:Ø <=> _ EOW | {ij}: | {Øt}:t ;
     ! alimm<>issa alimp<>ien ylimp<>iin
 
-{eeØØ}:Ø => _ {nØØØ}:Ø [{ij}: | i {nm}: | :t e | {Øt}: | {nrs}:] ;
-{eeØØ}:e /<= _ {nØØØ}:Ø [{ij}: | :t e | {Øt}:] ;
+{eeØØ}:Ø => _ {nØØØ}:Ø [{ij}: | i {nm}: | :t e | {Øt}: | {nrs}: | {§}:] ;
+{eeØØ}:e /<= _ {nØØØ}:Ø [{ij}: | :t e | {Øt}: | {§}:] ;
     ! hevon<e>n hevos<e>n hevos<>ta hevos<e>na hevos<>sa hevos<>ia
+    ! hevos<>mies
 
 {ØeØeØ}:Ø <=> _ :Ø* [.#. | {§}: | {`}: | {ij}: | i {nm}: | t e | {Øt}:t] ;
     ! vastaus<> vastauks<e>n vastaus<>ta vastauks<e>na vastauks<>ia
@@ -704,8 +703,9 @@ s e {Øe}:Ø =>
 {ns}:n <=> _ :e :n ;
     ! hevo<n>en hevo<s>en hevo<s>ta hevo<s>ena hevo<s>na hevo<s>ia
 
-{nØØØ}:n <=> _ .#.|{§}:|{`}: ;
+{nØØØ}:n <=> _ .#.|{`}: ;
     ! hevone<n> hevose<>n hevos<>ta hevos<>ia
+    ! hevos<>ajoneuvo
 
 ! START
 

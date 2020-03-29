@@ -1,3 +1,4 @@
+LEXICON Nouns
 aakko{ns}{eeØØ}{nØØØ} /s
 aakkosto /s
 aakkostu{ØkØkk}s{ØeØeØ} /s
@@ -68,6 +69,7 @@ aavemaisuu{ØØØØk}{stds}{ØeØeØ} /s
 aave{Øth}{ØeØeØ} /s
 aavikkolai{ns}{eeØØ}{nØØØ} /s
 aavik{kØØ}o /s
+aavikoitumi{ns}{eeØØ}{nØØØ} /s
 aavistamattomuu{ØØØØk}{stds}{ØeØeØ} /s
 aavistelm{aØ} /s
 aavistelu /s
@@ -80,12 +82,14 @@ abbasid{iieØ} /s
 abbediss{ao} /s
 aberraatio /s
 abessiiv{iieØ} /s
+abhaas{iieØ} /s
 abitur{ao} /s
 abiturient{tØ}{iieØ} /s
 abituru{ØkØkk}s{ØeØeØ} /s
 ablatiiv{iieØ} /s
 abnormisuu{ØØØØk}{stds}{ØeØeØ} /s
 abnormiu{ØØØØk}{stds}{ØeØeØ} /s
+aboriginaal{iieØ} /s
 abort{tØ}{iieØ} /s
 abrakadabr{ao} /s
 absentism{iieØ} /s
@@ -135,6 +139,7 @@ aerologi{ao} /s
 aeronautiik{kØ}{ao} /s
 aeronaut{tØ}{iieØ} /s
 aerosol{iieØ} /s
+afaatik{kØØ}o /s
 afasi{ao} /s
 affekt{iieØ} /s
 affektio /s
@@ -242,6 +247,8 @@ aihk{iieØ} /s
 a{ij}{kØ}{ao} /s
 aikailemattomuu{ØØØØk}{stds}{ØeØeØ} /s
 aikailu /s
+aikakaus_kirj{ao} /s
+aikakaus_leh{td}{ieeeØ} /s
 aikalai{ns}{eeØØ}{nØØØ} /s
 ai{kj}e{Øth}{ØeØeØ} /s
 aikomu{ØkØkk}s{ØeØeØ} /s
@@ -407,6 +414,8 @@ alammai{ns}{eeØØ}{nØØØ} /s
 alaniin{iieØ} /s
 alan{kg}o /s
 alan{tn}e{Øth}{ØeØeØ} /s
+ala_os{aØ} /s
+ala_osasto /s
 alasi{mn}{ØeØeØ} /s
 alastomuu{ØØØØk}{stds}{ØeØeØ} /s
 alau{ØkØkk}s{ØeØeØ} /s
@@ -470,6 +479,7 @@ alkoholist{iieØ} /s
 alkov{iieØ} /s
 alkyyl{iieØ} /s
 al{kØ}u /s
+alku_per{äØ} /s
 allak{kØØ}{ao} /s
 allantois{ØieØ} /s
 allatiiv{iieØ} /s
@@ -571,6 +581,7 @@ ammatillisuu{ØØØØk}{stds}{ØeØeØ} /s
 ammattilai{ns}{eeØØ}{nØØØ} /s
 ammattilaisuu{ØØØØk}{stds}{ØeØeØ} /s
 ammattimaisuu{ØØØØk}{stds}{ØeØeØ} /s
+ammatti_yhdisty{ØkØkk}s{ØeØeØ} /s
 ammat{tØ}{iieØ} /s
 ammeelli{ns}{eeØØ}{nØØØ} /s
 ammennu{ØkØkk}s{ØeØeØ} /s
@@ -598,6 +609,7 @@ amppel{iieØ} /s
 ampuj{aØo} /s
 ampull{iieØ} /s
 ampum{aØ} /s
+ampuma_ase{Øth}{ØeØeØ} /s
 ampuniek{kØ}{ao} /s
 amputaatio /s
 amputoin{tn}{iieØ} /s
@@ -923,7 +935,8 @@ arkisuu{ØØØØk}{stds}{ØeØeØ} /s
 ar{kj}{ieeeØ} /s
 arkkiatr{iieØ} /s
 arkkimandriit{tØ}{ao} /s
-arkkiteh{td}{iieØ} /s
+arkkiteh{td}{iieØ} /s ! arkkitehtina?
+arkki_teh{td}{iieØ} /s ! arkkitehdeillä
 arkkitehtuur{iieØ} /s
 arkkitraav{iieØ} /s
 arkku{ns}{eeØØ}{nØØØ} /s
@@ -1051,6 +1064,7 @@ asetyleen{iieØ} /s
 asetyyl{iieØ} /s
 ase{Øth}{ØeØeØ} /s
 asfaltoin{tn}{iieØ} /s
+asia_kirj{aØo} /s
 asiakkuu{ØØØØk}{stds}{ØeØeØ} /s
 asiak{kØ}a{sØh}{ØaØØØ} /s
 asiallisuu{ØØØØk}{stds}{ØeØeØ} /s
@@ -2295,6 +2309,7 @@ elliptisyy{ØØØØk}{stds}{ØeØeØ} /s
 ellotu{ØkØkk}s{ØeØeØ} /s
 eloisuu{ØØØØk}{stds}{ØeØeØ} /s
 elok{kØ}a{sØh}{ØaØØØ} /s
+elo_kuv{aØ} /s
 elollisuu{ØØØØk}{stds}{ØeØeØ} /s
 elo /s
 elostelij{ao} /s
@@ -2316,6 +2331,7 @@ elysium{ØieØ} /s
 elähdyttäj{äØö} /s
 elähtäneisyy{ØØØØk}{stds}{ØeØeØ} /s
 eläimellisyy{ØØØØk}{stds}{ØeØeØ} /s
+eläin_suojelu /s ! -valvoja
 eläimistö /s
 eläi{mn}{ØeØeØ} /s
 eläj{äØö} /s
@@ -3311,6 +3327,7 @@ haarik{kØØ}o /s
 haarnisk{ao} /s
 haaroittum{aØ} /s
 haaroitu{ØkØkk}s{ØeØeØ} /s
+haaro_väl{iieØ} /s
 haaruk{kØØ}{ao} /s
 haaru /s
 haasi{ao} /s
@@ -3670,6 +3687,7 @@ harik{kØØ}o /s
 haritu{ØkØkk}s{ØeØeØ} /s
 harjaannu{ØkØkk}s{ØeØeØ} /s
 harjaantumattomuu{ØØØØk}{stds}{ØeØeØ} /s
+harjaantumi{ns}{eeØØ}{nØØØ} /s
 harjaantumu{ØkØkk}s{ØeØeØ} /s
 harjaantuneisuu{ØØØØk}{stds}{ØeØeØ} /s
 harjailu /s
@@ -5096,6 +5114,7 @@ huumar{ØeØeØ} /s
 huumau{ØkØkk}s{ØeØeØ} /s
 huum{aØ} /s
 huume{Øth}{ØeØeØ} /s
+huumeiden_käyttäj{äØ} /s
 huumio /s
 huumor{iieØ} /s
 huup{pØ}{aØ} /s
@@ -5600,6 +5619,7 @@ idu{ØkØkk}s{ØeØeØ} /s
 idyll{iieØ} /s
 idyllimäisyy{ØØØØk}{stds}{ØeØeØ} /s
 idyllisyy{ØØØØk}{stds}{ØeØeØ} /s
+idänsuhteet:idän_suh{td}e{Øth}{ØeØeØ} /s
 idättämö /s
 idäty{ØkØkk}s{ØeØeØ} /s
 iesty{ØkØkk}s{ØeØeØ} /s
@@ -5630,6 +5650,7 @@ ihme{Øth}{ØeØeØ} /s
 ihmi{ns}{eeØØ}{nØØØ} /s
 ihmisellisyy{ØØØØk}{stds}{ØeØeØ} /s
 ihmismäisyy{ØØØØk}{stds}{ØeØeØ} /s
+ihmis_oikeu{ØØØØk}{stds}{ØeØeØ} /s
 ihmisyy{ØØØØk}{stds}{ØeØeØ} /s
 ihok{kØ}a{sØh}{ØaØØØ} /s
 iho /s
@@ -5665,8 +5686,14 @@ iktyologi{ao} /s
 iktyolog{iieØ} /s
 ikuistu{ØkØkk}s{ØeØeØ} /s
 ikuisuu{ØØØØk}{stds}{ØeØeØ} /s
+ikkä_ero /s
+ikä_ihmi{ns}{eeØØ}{nØØØ} /s
+ikä_luok{kØ}{aØ} /s
+ikä_vuo{tds}{ieØeØ} /s
 ikäi{ns}{eeØØ}{nØØØ} /s
 ikäisyy{ØØØØk}{stds}{ØeØeØ} /s
+ikä_mie{shs}{ØeØØØ} /s
+ikä_raken{tn}e{Øth}{ØeØeØ} /s
 ikävystymy{ØkØkk}s{ØeØeØ} /s
 ikävystyneisyy{ØØØØk}{stds}{ØeØeØ} /s
 ikävyy{ØØØØk}{stds}{ØeØeØ} /s
@@ -6746,21 +6773,28 @@ jähin{äö} /s
 jähmety{ØkØkk}s{ØeØeØ} /s
 jähmey{ØØØØk}{stds}{ØeØeØ} /s
 jähmik{kØ}e{Øth}{ØeØeØ} /s
+jäiden_läh{td}ö /s
 jäisyy{ØØØØk}{stds}{ØeØeØ} /s
 jäkkär{äö} /s
 jäk{kØ}{iieØ} /s
 jäkälik{kØØ}ö /s
 jäkäl{äØö} /s
 jäliste{Øth}{ØeØeØ} /s
+jäljen{tn}e{Øth}{ØeØeØ} /s
 jäljenny{ØkØkk}s{ØeØeØ} /s
 jäljennö{ØkØkk}s{ØeØeØ} /s
 jäljentely /s
 jäljentäj{äØö} /s
+jäljestämi{ns}{eeØØ}{nØØØ} /s
 jäljitelm{äØ} /s
 jäljittelij{äö} /s
 jäljittely /s
 jäljit{tØ}e{Øth}{ØeØeØ} /s
 jäljity{ØkØkk}s{ØeØeØ} /s
+jälkeen_jäämi{ns}{eeØØ}{nØØØ} /s
+jälkeen_jääneisyy{ØØØØk}{stds}{ØeØeØ} /s
+jälkeen_jääv{äØ} /s
+jälkeen_jään{ye}{tØthn}{ØeØØØ} /s
 jälkei{ns}{eeØØ}{nØØØ} /s
 jälkeläi{ns}{eeØØ}{nØØØ} /s
 jälkeläistö /s
@@ -6850,6 +6884,7 @@ järähtely /s
 järäm{äØ} /s
 järäy{ØkØkk}s{ØeØeØ} /s
 jäsenistö /s
+jäsen_maksu /s
 jäsenny{ØkØkk}s{ØeØeØ} /s
 jäsentely /s
 jäsenyy{ØØØØk}{stds}{ØeØeØ} /s
@@ -7501,6 +7536,7 @@ kansitu{ØkØkk}s{ØeØeØ} /s
 kansler{iieØ} /s
 kansleriu{ØØØØk}{stds}{ØeØeØ} /s
 kansli{ao} /s
+kanslist{iieØ} /s
 kansoitu{ØkØkk}s{ØeØeØ} /s
 kanss{iieØ} /s
 kantaat{tØ}{iieØ} /s
@@ -9369,6 +9405,7 @@ koivik{kØ}a{sØh}{ØaØØØ} /s
 koivik{kØØ}o /s
 koivistolai{ns}{eeØØ}{nØØØ} /s
 koivisto /s
+koivu /s
 kojamo /s
 kojeisto /s
 koje{Øth}{ØeØeØ} /s
@@ -9582,6 +9619,7 @@ komitaat{tØ}{iieØ} /s
 komitatiiv{iieØ} /s
 komite{ao} /s
 komittent{tØ}{iieØ} /s
+kommandiitti_yhtiö /s
 kommanditäär{iieØ} /s
 kommellu{ØkØkk}s{ØeØeØ} /s
 kommentaar{iieØ} /s
@@ -11693,7 +11731,7 @@ laakso{ns}{eeØØ}{nØØØ} /s
 laakso /s
 laaksosto /s
 laakuu{ØØØØk}{stds}{ØeØeØ} /s
-laa{kØ}{ao} /s
+laa{k'Ø}{ao} /s
 laamalai{ns}{eeØØ}{nØØØ} /s
 laamalaisuu{ØØØØk}{stds}{ØeØeØ} /s
 laamann{iieØ} /s
@@ -11801,6 +11839,7 @@ laimisko /s
 laimu /s
 lainaaj{aØo} /s
 lainaamo /s
+lain_alaisuu{ØØØØk}{stds}{ØeØeØ} /s
 lain{ao} /s
 lainasto /s
 lainau{ØkØkk}s{ØeØeØ} /s
@@ -11874,6 +11913,9 @@ lakei{ns}{eeØØ}{nØØØ} /s
 laker{iieØ} /s
 lakeu{ØkØkk}s{ØeØeØ} /s
 lakeu{ØØØØk}{stds}{ØeØeØ} /s
+laki_aloit{tØ}e{Øth}{ØeØeØ} /s
+laki_ehdotu{ØkØkk}s{ØeØeØ} /s
+laki_kirj{aØo} /s
 lakilli{ns}{eeØØ}{nØØØ} /s
 lakimu{ØkØkk}s{ØeØeØ} /s
 lakio /s
@@ -12200,6 +12242,7 @@ laulelm{aØ} /s
 laulelmisto /s
 laulelu /s
 lauleskelu /s
+laulu /s
 laulullisuu{ØØØØk}{stds}{ØeØeØ} /s
 laulumaisuu{ØØØØk}{stds}{ØeØeØ} /s
 laulu{ns}{eeØØ}{nØØØ} /s
@@ -14757,6 +14800,7 @@ metsäläi{ns}{eeØØ}{nØØØ} /s
 metsälö /s
 metsästy{ØkØkk}s{ØeØeØ} /s
 metsästäj{äØö} /s
+metsä_talou{ØØØØk}{stds}{ØeØeØ} /s
 metsättömyy{ØØØØk}{stds}{ØeØeØ} /s
 metsä{ØkØkk}s{ØeØeØ} /s
 mets{äØ} /s
@@ -17308,7 +17352,6 @@ ora{sØh}{ØaØØØ} /s
 oratorio /s
 oravai{ns}{eeØØ}{nØØØ} /s
 orav{aØ} /s
-or{aØ} /s
 ord{aØ} /s
 order{iieØ} /s
 ordinaat{tØ}{ao} /s
@@ -18966,6 +19009,7 @@ pikkurui{ns}{eeØØ}{nØØØ} /s
 pik{kØ}{ao} /s
 pik{kØ}o /s
 piklau{ØkØkk}s{ØeØeØ} /s
+piknik{ØieØ} /s
 piknik{kØ}{iieØ} /s
 pikofarad{iieØ} /s
 pikomm{iieØ} /s
@@ -20735,6 +20779,7 @@ päivittely /s
 päivyr{iieØ} /s
 päivysty{ØkØkk}s{ØeØeØ} /s
 päivystäj{äØö} /s
+päivä_hoi{td}o /s
 päiväisyy{ØØØØk}{stds}{ØeØeØ} /s
 päivälli{ns}{eeØØ}{nØØØ} /s
 päiväläi{ns}{eeØØ}{nØØØ} /s
@@ -20822,6 +20867,7 @@ päällysty{ØkØkk}s{ØeØeØ} /s
 päällyst{äö} /s
 päällystö /s
 päälly{ØkØkk}s{ØeØeØ} /s
+pää_oma{aØ} /s
 päär{iieØ} /s
 päärly /s
 päärme{Øth}{ØeØeØ} /s
@@ -20981,7 +21027,7 @@ raak{kØ}u /s
 raakun{ao} /s
 raakun{tn}{ao} /s
 raakuu{ØØØØk}{stds}{ØeØeØ} /s
-raa{kØ}{ao} /s
+raa{k'Ø}{ao} /s
 raamat{tØØ}u /s
 raamatullisuu{ØØØØk}{stds}{ØeØeØ} /s
 raam{iieØ} /s
@@ -22455,7 +22501,21 @@ ruok{kØ}o /s
 ruoko{ns}{eeØØ}{nØØØ} /s
 ruo{k'}o /s
 ruokottomuu{ØØØØk}{stds}{ØeØeØ} /s
-ruo{kØ}{aØ} /s
+
+ruoka:ruo{kØ}{aØ} /s
+ruoka+N+SG+TRA:ruuaksi Clit
+ruoka+N+SG+ADE:ruualla Clit
+ruoka+N+SG+ALL:ruualle Clit
+ruoka+N+SG+ADE:ruualta Clit
+ruoka+N+SG+GEN:ruuan Clit
+ruoka+N+SG+INE:ruuassa Clit
+ruoka+N+PL+NOM:ruuat Clit
+ruoka+N+SG+ABE:ruuatta Clit
+ruoka+N+PL+ADE:ruuilla Clit
+ruoka+N+PL+ALL:ruuille Clit
+ruoka+N+PL+INE:ruuissa Clit
+ruoka+N+PL+ELA:ruuista Clit
+
 ruo{kØ}o /s
 ruom{aØ} /s
 ruon{aØ} /s
@@ -25708,6 +25768,7 @@ synkronoin{tn}{iieØ} /s
 synkrotron{iieØ} /s
 synnillisyy{ØØØØk}{stds}{ØeØeØ} /s
 synnittömyy{ØØØØk}{stds}{ØeØeØ} /s
+synnyin_seu{td}u /s
 synnynnäi{ns}{eeØØ}{nØØØ} /s
 synnyn{tn}{äö} /s
 synnyttäj{äØö} /s
@@ -26428,6 +26489,7 @@ tapailu /s
 tapai{ns}{eeØØ}{nØØØ} /s
 tapan{iieØ} /s
 tapan{tn}{ao} /s
+tapa_turm{aØo} /s
 tapauksettomuu{ØØØØk}{stds}{ØeØeØ} /s
 tapau{ØkØkk}s{ØeØeØ} /s
 tapeet{tØ}{iieØ} /s
@@ -27040,6 +27102,7 @@ tietoisuu{ØØØØk}{stds}{ØeØeØ} /s
 tietou{ØØØØk}{stds}{ØeØeØ} /s
 tiettömyy{ØØØØk}{stds}{ØeØeØ} /s
 tietymättömyy{ØØØØk}{stds}{ØeØeØ} /s
+tie_työ_ma{aØ} /s
 tietäj{äØö} /s
 tietämy{ØkØkk}s{ØeØeØ} /s
 tietämättömyy{ØØØØk}{stds}{ØeØeØ} /s
@@ -28465,8 +28528,10 @@ työkyr{iieØ} /s
 työllisyy{ØØØØk}{stds}{ØeØeØ} /s
 työläi{ns}{eeØØ}{nØØØ} /s
 työläy{ØØØØk}{stds}{ØeØeØ} /s
+työ_ma{aØ} /s
 työnnähdy{ØkØkk}s{ØeØeØ} /s
 työnnälly{ØkØkk}s{ØeØeØ} /s
+työn_tekij{äö} /s
 työntely /s
 työn{tn}{iieØ} /s
 työn{tn}i{mn}{ØeØeØ} /s
@@ -28582,6 +28647,7 @@ täydenny{ØkØkk}s{ØeØeØ} /s
 täydentely /s
 täydentäj{äØö} /s
 täysinäisyy{ØØØØk}{stds}{ØeØeØ} /s
+täys_istun{tn}o /s
 täyteisyy{ØØØØk}{stds}{ØeØeØ} /s
 täyteliäisyy{ØØØØk}{stds}{ØeØeØ} /s
 täytelyy{ØØØØk}{stds}{ØeØeØ} /s
@@ -28812,6 +28878,7 @@ ulkoiluttaj{aØo} /s
 ulkoi{ns}{eeØØ}{nØØØ} /s
 ulkoisuu{ØØØØk}{stds}{ØeØeØ} /s
 ulkolai{ns}{eeØØ}{nØØØ} /s
+ulko_ma{aØ} /s
 ulkonaisuu{ØØØØk}{stds}{ØeØeØ} /s
 ulkonem{aØ} /s
 ulkoum{aØ} /s
@@ -29088,7 +29155,7 @@ vaaks{ao} /s
 vaaksiai{ns}{eeØØ}{nØØØ} /s
 vaakun{ao} /s
 vaakun{tn}{ao} /s
-vaa{kØ}{ao} /s
+vaa{k'Ø}{ao} /s
 vaa{kØk}s{ieeØeØ} /s
 vaalennu{ØkØkk}s{ØeØeØ} /s
 vaaleu{ØØØØk}{stds}{ØeØeØ} /s
@@ -29516,6 +29583,7 @@ vangitsij{ao} /s
 vanh{ao} /s
 vanhastavuu{ØØØØk}{stds}{ØeØeØ} /s
 vanhemmuu{ØØØØk}{stds}{ØeØeØ} /s
+vanhe /scomp
 vanhentumattomuu{ØØØØk}{stds}{ØeØeØ} /s
 vanhentuneisuu{ØØØØk}{stds}{ØeØeØ} /s
 vanhi{nm}{ØpmØ}{aäØ} /s
@@ -30237,6 +30305,7 @@ vigvam{iieØ} /s
 vihaaj{aØo} /s
 vihaisuu{ØØØØk}{stds}{ØeØeØ} /s
 vihalai{ns}{eeØØ}{nØØØ} /s
+viha_mielisyy{ØØØØk}{stds}{ØeØeØ} /s
 vihanne{ØkØkk}s{ØeØeØ} /s
 vihannuu{ØØØØk}{stds}{ØeØeØ} /s
 vihan{tn}{aØo} /s
@@ -31047,6 +31116,7 @@ väkäty{ØkØkk}s{ØeØeØ} /s
 vä{kØ}{ieeeØ} /s
 vä{kØ}{äØ} /s
 väl{iieØ} /s
+väliin_putoaj{aØo} /s
 välik{kØ}e{Øth}{ØeØeØ} /s
 välik{kØØ}ö /s
 välillisyy{ØØØØk}{stds}{ØeØeØ} /s
@@ -31234,6 +31304,7 @@ yhdisty{ØkØkk}s{ØeØeØ} /s
 yhdistäj{äØö} /s
 yhdynnäi{ns}{eeØØ}{nØØØ} /s
 yhdyn{tn}{äö} /s
+yhdysvallat:yhdys_val{td}{ao} /s
 yhkin{äö} /s
 yhteellisyy{ØØØØk}{stds}{ØeØeØ} /s
 yhteisyy{ØØØØk}{stds}{ØeØeØ} /s
@@ -31283,6 +31354,7 @@ ylhyy{ØØØØk}{stds}{ØeØeØ} /s
 ylhäi{ns}{eeØØ}{nØØØ} /s
 ylhäisyy{ØØØØk}{stds}{ØeØeØ} /s
 ylhäisö /s
+yli_jääm{äØ} /s
 ylimmäi{ns}{eeØØ}{nØØØ} /s
 ylimyksellisyy{ØØØØk}{stds}{ØeØeØ} /s
 ylimystö /s
@@ -31446,6 +31518,7 @@ zymaas{iieØ} /s
 ähm{äØ} /s
 ähähdy{ØkØkk}s{ØeØeØ} /s
 äidillisyy{ØØØØk}{stds}{ØeØeØ} /s
+äidin_kiel{ieØeØ} /s
 äidittömyy{ØØØØk}{stds}{ØeØeØ} /s
 äij{iieØ} /s
 äijyy{ØØØØk}{stds}{ØeØeØ} /s
