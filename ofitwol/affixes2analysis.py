@@ -23,16 +23,39 @@ import argparse
 import argparse
 argparser = argparse.ArgumentParser(
     "python3 affies2analysis.py",
-    description="Converts an affix CSV file into an analyzing affix LEXC file")
+    description="""Converts an affix CSV file into a LEXC file according to the mode
+    that is selected.
+
+    In 'guess' mode continuation class names containing '/' are
+    included in the input string and all features are omitted.
+
+    In 'base' mode features are present but the continuation names are
+    omitted.  This mode assumes that the lexicon entries already have
+    a base form given for each entry.  Compounding and derivation is
+    restrected in this mode because the base form of complex analyses
+    is just a concatenation of those base forms.
+
+    In 'mphon' mode the continuation names are also omitted and the
+    features are present but some additional derivations and loops and
+    continuations can be allowed because inverted rules will still
+    produce the desired base forms.""")
 argparser.add_argument(
-    "infile", help="input CSV file containing the affix data")
+    "infile",
+    help="input CSV file which is a table of the affix data")
 argparser.add_argument(
-    "outfile", help="output LEXC file of the affix data")
-argparser.add_argument("-d", "--delimiter", default=",",
+    "outfile",
+    help="output LEXC file of the affix data")
+argparser.add_argument(
+    "-d", "--delimiter", default=",",
     help="CSV field delimiter (default is ',')")
-argparser.add_argument("-e", "--entry-mode", action="store_true",
-    help="include the continuation lexicon in the analysis")
-argparser.add_argument("-v", "--verbosity", default=0, type=int,
+argparser.add_argument(
+    "-mode", "--mode", choices=["BASE", "MPHON", "GUESS"],
+    help="""Whether the lexicon produces base forms, morphophonemic form or
+    guessed entries""",
+    default="base")
+argparser.add_argument(
+    "-v", "--verbosity",
+    default=0, type=int,
     help="level of diagnostic output")
 args = argparser.parse_args()
 
@@ -55,9 +78,11 @@ prevID = ",,"
 for r in rdr:
     if args.verbosity >= 10:
         print(r)
-    if r["NEXT"] == '' or r["NEXT"][0] == '!':
+    if r["NEXT"] == '' or r["NEXT"].startswith('!'):
         continue
     ide = prevID if r["ID"] == '' else r["ID"]
+    if r["MODE"] and not args.mode in r["MODE"]:
+        continue
     if prevID != ide:
         prevID = ide
         out_lst.append("LEXICON %s" % ide)
@@ -66,7 +91,7 @@ for r in rdr:
         r['BASEF'] = r['MPHON']
     if r['BASEF'] == "!":
         r['BASEF'] = ""
-    if r['FEAT']:
+    if r['FEAT'] and args.mode != "GUESS":
         featlist = re.split(" +", r['FEAT'])
         feat_str = '+' + '+'.join(featlist)
         for feat in featlist:
@@ -76,9 +101,11 @@ for r in rdr:
     weight = r["WEIGHT"].strip()
     if weight:
         weight = '"weight: {}"'.format(weight)
-    if "/" in ide and args.entry_mode:
+    if "/" in ide and args.mode == "GUESS" and r['NEXT'] != "SecondPart":
         feat_str = "% " + ide + "%;" + feat_str
         features.add("% " + ide + "%;")
+    elif "/" in ide and args.mode == "MPHON" and r['NEXT'] != "SecondPart":
+        feat_str = "{§}" + feat_str
     for next in re.split(" +", r["NEXT"]):
         if next:
             if r['BASEF'] + feat_str == r['MPHON']:
@@ -93,12 +120,13 @@ for r in rdr:
                                                        next,
                                                        weight))
 outfile = open(args.outfile, "w")
-print("Multichar_Symbols", file=outfile)
-multichar_lst = sorted(list(multichars))
-multichar_str = " ".join(multichar_lst)
-print(multichar_str, file=outfile)
-features_lst = sorted(list(features))
-print(" ".join(features_lst), file=outfile)
+if multichars or features:
+    print("Multichar_Symbols", file=outfile)
+    multichar_lst = sorted(list(multichars))
+    multichar_str = " ".join(multichar_lst)
+    print(multichar_str, file=outfile)
+    features_lst = sorted(list(features))
+    print(" ".join(features_lst), file=outfile)
 for line in out_lst:
     print(line, file=outfile)
 outfile.close()
