@@ -91,6 +91,7 @@ abnormisuu{ØØØØk}{stds}{ØeØeØ} /s
 abnormiu{ØØØØk}{stds}{ØeØeØ} /s
 aboriginaal{iieØ} /s
 abort{tØ}{iieØ} /s
+abraasio /s
 abrakadabr{ao} /s
 absentism{iieØ} /s
 absess{iieØ} /s
@@ -107,6 +108,7 @@ abstrahoin{tn}{iieØ} /s
 abstraktio /s
 abstraktisuu{ØØØØk}{stds}{ØeØeØ} /s
 adaptaatio /s
+addiktio /s
 adekvaattisuu{ØØØØk}{stds}{ØeØeØ} /s
 adenoom{aØ} /s
 adept{iieØ} /s
@@ -119,6 +121,7 @@ adjunkt{iieØ} /s
 administraatio /s
 adoni{ØkØkk}s{ØeØeØ} /s
 adoptio /s
+adoptoin{tn}{iieØ} /s
 adrenaliin{iieØ} /s
 adressaat{tØ}{iieØ} /s
 adress{iieØ} /s
@@ -134,6 +137,7 @@ adversatiivisuu{ØØØØk}{stds}{ØeØeØ} /s
 advokaat{tØ}{iieØ} /s
 advokatyyr{iieØ} /s
 aerobati{ao} /s
+aero_dynamiik{kØØ}{ao} /s
 aerogramm{iieØ} /s
 aerologi{ao} /s
 aeronautiik{kØ}{ao} /s
@@ -146,14 +150,21 @@ affektio /s
 affektisuu{ØØØØk}{stds}{ØeØeØ} /s
 affiks{iieØ} /s
 affiniteet{tØ}{iieØ} /s
+afrikaaner{iieØ} /s
+afrikaans{ØieØ} /s
 affrikaat{tØ}{ao} /s
+afgaan{iieØ} /s
+afla_toksiin{iieØ} /s
 aforism{iieØ} /s
+aforistiik{kØØ}{ao} /s
+aforistik{kØØ}o /s
 afrikkalai{ns}{eeØØ}{nØØØ} /s
 afäär{iieØ} /s
 agaat{tØ}{iieØ} /s
 agaave /s
 agent{tØ}{iieØ} /s
 agentuur{iieØ} /s
+agility /s
 agglomeraat{tØ}{iieØ} /s
 aggregaat{tØ}{iieØ} /s
 aggressiivisuu{ØØØØk}{stds}{ØeØeØ} /s
@@ -171,6 +182,7 @@ agnostisuu{ØØØØk}{stds}{ØeØeØ} /s
 agogiik{kØØ}{ao} /s
 agoni{ao} /s
 agon{iieØ} /s
+agor{aØo} /s
 agorafobi{ao} /s
 agraar{iieØ} /s
 agraff{iieØ} /s
@@ -183,9 +195,12 @@ agronom{iieØ} /s
 ahav{aØo} /s
 ahavoitum{aØ} /s
 ahdan{tn}{ao} /s
+ahdas_katseisuu{ØØØØk}{stds}{ØeØeØ} /s
+ahdas_mielisyys{ØieØ} /s
 ahdin{kg}o /s
 ahdinkoisuu{ØØØØk}{stds}{ØeØeØ} /s
 ahdistaj{aØo} /s
+ahdistavuu{ØØØØk}{stds}{ØeØeØ} /s
 ahdistelij{ao} /s
 ahdistelu /s
 ahdistuneisuu{ØØØØk}{stds}{ØeØeØ} /s
@@ -196,6 +211,7 @@ ahertaj{aØo} /s
 ahertelu /s
 ahin{kg}a{sØh}{ØaØØØ} /s
 ahjo /s
+ahkera_liis{ao} /s
 ahkeroin{tn}{iieØ} /s
 ahkeruu{ØØØØk}{stds}{ØeØeØ} /s
 ahkio /s
@@ -216,6 +232,7 @@ ahnur{iieØ} /s
 aho /s
 ahrai{mn}{ØeØeØ} /s
 ahtaaj{aØo} /s
+ahtaan_paikan_kammo /s
 ahtaj{aØo} /s
 ahtaum{aØ} /s
 ahtautum{aØ} /s
@@ -226,6 +243,7 @@ ah{td}{iieØ} /s
 ah{td}i{mn}{ØeØeØ} /s
 ah{td}o /s
 ahter{iieØ} /s
+ahto_jä{äØ} /s
 ahtol{ao} /s
 ahv{ao} /s
 ahven{aØo} /s
@@ -243,6 +261,7 @@ aiheuttaj{aØo} /s
 aiheutu{ØkØkk}s{ØeØeØ} /s
 aihe{Øth}{ØeØeØ} /s
 aihio /s
+aihioin{tn}{iieØ} /s
 aihk{iieØ} /s
 a{ij}{kØ}{ao} /s
 aikailemattomuu{ØØØØk}{stds}{ØeØeØ} /s
@@ -404,6 +423,7 @@ akvarellist{iieØ} /s
 akvatint{tØ}{ao} /s
 akvaviit{tØ}{iieØ} /s
 akvedukt{iieØ} /s
+al{ao} /s 40 ! voi tuottaa huonoja yhdyssanoja
 alabaster{iieØ} /s
 aladob{iieØ} /s
 alai{ns}{eeØØ}{nØØØ} /s 50
@@ -518,6 +538,7 @@ al{pv}e{Øth}{ØeØeØ} /s
 al{pv}{ieeeØ} /s
 altaan{iieØ} /s
 altailaisuu{ØØØØk}{stds}{ØeØeØ} /s
+alta_vastaaj{aØ} /s
 alteraatio /s
 alternatiiv{iieØ} /s
 altistu{ØkØkk}s{ØeØeØ} /s
@@ -1068,6 +1089,7 @@ asia_kirj{aØo} /s
 asiakkuu{ØØØØk}{stds}{ØeØeØ} /s
 asiak{kØ}a{sØh}{ØaØØØ} /s
 asiallisuu{ØØØØk}{stds}{ØeØeØ} /s
+asian_tuntij{aØo} /s
 asi{ao} /s
 asiattomuu{ØØØØk}{stds}{ØeØeØ} /s
 asidoos{iieØ} /s
@@ -1155,6 +1177,7 @@ asuk{kØ}a{sØh}{ØaØØØ} /s
 asuk{kØ}{iieØ} /s
 asumattomuu{ØØØØk}{stds}{ØeØeØ} /s
 asum{aØ} /s
+asumi{ns}{eeØØ}{nØØØ} /s
 asumu{ØkØkk}s{ØeØeØ} /s
 asunnottomuu{ØØØØk}{stds}{ØeØeØ} /s
 asun{tn}{ao} /s
@@ -1604,6 +1627,7 @@ brutaaliu{ØØØØk}{stds}{ØeØeØ} /s
 brut{tØ}o /s
 budhalai{ns}{eeØØ}{nØØØ} /s
 budhalaisuu{ØØØØk}{stds}{ØeØeØ} /s
+budjetoin{tn}{iieØ} /s
 budjet{tØ}{iieØ} /s
 budoaar{iieØ} /s
 bufet{tØ}{iieØ} /s
@@ -2189,6 +2213,7 @@ ekonomi{ao} /s
 ekonom{iieØ} /s
 ekonomist{iieØ} /s
 ekonomisuu{ØØØØk}{stds}{ØeØeØ} /s
+eko_systeem{iieØ} /s
 eksaktisuu{ØØØØk}{stds}{ØeØeØ} /s
 ekseem{aØ} /s
 eksegees{iieØ} /s
@@ -5385,6 +5410,7 @@ häly /s
 hälyttäj{äØö} /s
 hälyt{tØ}i{mn}{ØeØeØ} /s
 hälyty{ØkØkk}s{ØeØeØ} /s
+hälytys_järjestelm{äØ} /s
 häläk{kØØ}{äö} /s
 hämet{tØ}är{ØeØeØ} /s
 häm{iieØ} /s
@@ -5445,6 +5471,7 @@ härsyttely /s
 härsyty{ØkØkk}s{ØeØeØ} /s
 härvel{iieØ} /s
 häräk{kØ}e{Øth}{ØeØeØ} /s
+hässäk{kØØ}{äö} /s
 häsy /s
 häsäk{kØØ}{äö} /s
 hä{td}{äØ} /s
@@ -5745,6 +5772,7 @@ ilmaisi{mn}{ØeØeØ} /s
 ilmaisu /s
 ilmakkuu{ØØØØk}{stds}{ØeØeØ} /s
 ilm{ao} /s
+ilma_piir{iieØ} /s
 ilmastoin{tn}{iieØ} /s
 ilmasto /s
 ilmastu{ØkØkk}s{ØeØeØ} /s
@@ -5805,6 +5833,7 @@ imek{kØ}e{Øth}{ØeØeØ} /s
 imello{ØkØkk}s{ØeØeØ} /s
 imelly{ØkØkk}s{ØeØeØ} /s
 imelyy{ØØØØk}{stds}{ØeØeØ} /s
+imemis_ky{kv}y /s
 imen{tn}{äö} /s
 imettäj{äØö} /s
 imettäväi{ns}{eeØØ}{nØØØ} /s
@@ -6395,6 +6424,7 @@ joh{td}e{Øth}{ØeØeØ} /s
 joh{td}i{mn}{ØeØeØ} /s
 joh{td}o /s
 johtelu /s
+johto_kunt{aØ} /s
 joikau{ØkØkk}s{ØeØeØ} /s
 joikun{ao} /s
 joi{kØ}u /s
@@ -8169,6 +8199,7 @@ kehittelij{äö} /s
 kehittely /s
 kehittymättömyy{ØØØØk}{stds}{ØeØeØ} /s
 kehittym{äØ} /s
+kehittyneisyy{ØØØØk}{stds}{ØeØeØ} /s
 kehittyväisyy{ØØØØk}{stds}{ØeØeØ} /s
 kehittäj{äØö} /s
 kehittämättömyy{ØØØØk}{stds}{ØeØeØ} /s
@@ -8242,6 +8273,8 @@ keikaruu{ØØØØk}{stds}{ØeØeØ} /s
 keikau{ØkØkk}s{ØeØeØ} /s
 keikistely /s
 keikisty{ØkØkk}s{ØeØeØ} /s
+keikkailij{ao} /s
+keikkailu /s
 keikkuj{aØo} /s
 keik{kØ}{ao} /s
 keikun{tn}{ao} /s
@@ -8260,6 +8293,7 @@ keim{ao} /s
 keinahdu{ØkØkk}s{ØeØeØ} /s
 keinahtelu /s
 keinautu{ØkØkk}s{ØeØeØ} /s
+keino_kastelu /s
 keinokkuu{ØØØØk}{stds}{ØeØeØ} /s
 keinollisuu{ØØØØk}{stds}{ØeØeØ} /s
 keinon{tn}o /s
@@ -8861,6 +8895,7 @@ killin{kg}{iieØ} /s
 killut{tØ}i{mn}{ØeØeØ} /s
 kilok{kØ}{iieØ} /s
 kilo /s
+kilo_metr{iieØ} /s
 kilotu{ØkØkk}s{ØeØeØ} /s
 kilpaaj{aØo} /s
 kilpailij{ao} /s
@@ -9450,6 +9485,7 @@ kokoomo /s
 kokoomukselai{ns}{eeØØ}{nØØØ} /s
 kokoomuslai{ns}{eeØØ}{nØØØ} /s
 kokoomu{ØkØkk}s{ØeØeØ} /s
+kokoon_pano /s
 kokoontum{aØ} /s
 kokot{tØ}{iieØ} /s
 kokotu{ØkØkk}s{ØeØeØ} /s
@@ -9822,6 +9858,7 @@ konsulaat{tØ}{iieØ} /s
 konsulent{tØ}{iieØ} /s
 konsul{iieØ} /s
 konsultaatio /s
+konsult{tØ}{iieØ} /s
 konsument{tØ}{iieØ} /s
 konsumtio /s
 kontakt{iieØ} /s
@@ -10105,6 +10142,7 @@ kort{tØ}e{Øth}{ØeØeØ} /s
 kort{tØ}{iieØ} /s
 kort{tØ}o /s
 koruilu /s
+korun{aØo} /s
 korund{iieØ} /s
 koru /s
 koruttomuu{ØØØØk}{stds}{ØeØeØ} /s
@@ -10114,6 +10152,7 @@ korvak{kØ}e{Øth}{ØeØeØ} /s
 korvak{kØØ}o /s
 korvalli{ns}{eeØØ}{nØØØ} /s
 korvasi{mn}{ØeØeØ} /s
+korvattavuu{ØØØØk}{stds}{ØeØeØ} /s
 korvattomuu{ØØØØk}{stds}{ØeØeØ} /s
 korvauksettomuu{ØØØØk}{stds}{ØeØeØ} /s
 korvau{ØkØkk}s{ØeØeØ} /s
@@ -10129,14 +10168,17 @@ koseerisuu{ØØØØk}{stds}{ØeØeØ} /s
 kosekant{tØ}{iieØ} /s
 koseri{ao} /s
 kosij{ao} /s
+kosima_oikeu{ØØØØk}{stds}{ØeØeØ} /s
 kosin{iieØ} /s
 kosin{tn}{ao} /s
+kosio /s
 kosiskelij{ao} /s
 kosiskelu /s
 koskelo /s
 koskemattomuu{ØØØØk}{stds}{ØeØeØ} /s
 kosken{tn}{ao} /s
 koskettamattomuu{ØØØØk}{stds}{ØeØeØ} /s
+koskettavuu{ØØØØk}{stds}{ØeØeØ} /s
 koskettelemattomuu{ØØØØk}{stds}{ØeØeØ} /s
 koskettelu /s
 koskettimisto /s
@@ -10144,22 +10186,28 @@ koskettomuu{ØØØØk}{stds}{ØeØeØ} /s
 kosket{tØ}i{mn}{ØeØeØ} /s
 kosketu{ØkØkk}s{ØeØeØ} /s
 kosk{ieeeØ} /s
+koski_seikkailu /s
 koskisuu{ØØØØk}{stds}{ØeØeØ} /s
 kosku /s
 kosku{tØthn}{ØeØØØ} /s
 kosku{ØkØkk}s{ØeØeØ} /s
 kosmetiik{kØ}{ao} /s
+kosmetiikka_al{ao} /s
 kosmetolog{iieØ} /s
+kosmetologi{ao} /s
 kosmillisuu{ØØØØk}{stds}{ØeØeØ} /s
 kosmisuu{ØØØØk}{stds}{ØeØeØ} /s
 kosmogoni{ao} /s
 kosmografi{ao} /s
 kosmograf{iieØ} /s
 kosmologi{ao} /s
+kosmolog{iieØ} /s
 kosmopoliittisuu{ØØØØk}{stds}{ØeØeØ} /s
 kosmopoliit{tØ}{iieØ} /s
 kosmopolitism{iieØ} /s
 kosmo{ØkØkk}s{ØeØeØ} /s
+kosovo /s
+kosovolai{ns}{eeØØ}{nØØØ} /s
 koss{aØ} /s
 kossel{iieØ} /s
 koss{iieØ} /s
@@ -10187,6 +10235,16 @@ ko{td}o /s
 kotelolli{ns}{eeØØ}{nØØØ} /s
 kotelo /s
 kotero /s
+koti_a{pv}u /s
+kotiin_jäämi{ns}{eeØØ}{nØØØ} /s
+kotiin_kan{tØ}o /s
+kotiin_läh{td}ö /s
+kotiin_palaaj{aØ} /s
+kotiin_palu{uØ} /s
+kotiin_pääsy /s
+kotiin_tulo /s
+kotiin_tuomi{ns}{eeØØ}{nØØØ} /s
+kotiin_viemi{ns}{eeØØ}{nØØØ} /s
 kotilai{ns}{eeØØ}{nØØØ} /s
 kotiljon{kg}{iieØ} /s
 kotilo /s
@@ -10727,6 +10785,7 @@ kunnostaj{aØo} /s
 kunnostamo /s
 kunnostelu /s
 kunnostu{ØkØkk}s{ØeØeØ} /s
+kunnostus_t{yØ}ö /s
 kunnottomuu{ØØØØk}{stds}{ØeØeØ} /s
 kuntalai{ns}{eeØØ}{nØØØ} /s
 kuntal{ao} /s
@@ -11086,6 +11145,7 @@ kuuluvaisuu{ØØØØk}{stds}{ØeØeØ} /s
 kuuluvuu{ØØØØk}{stds}{ØeØeØ} /s
 kuumal{ao} /s
 kuum{aØ} /s
+kuume_mittar{iieØ} /s
 kuumeettomuu{ØØØØk}{stds}{ØeØeØ} /s
 kuumeilu /s
 kuumei{ns}{eeØØ}{nØØØ} /s
@@ -11850,6 +11910,7 @@ laineitu{ØkØkk}s{ØeØeØ} /s
 lainemaisuu{ØØØØk}{stds}{ØeØeØ} /s
 laine{Øth}{ØeØeØ} /s
 lainoitu{ØkØkk}s{ØeØeØ} /s
+lain_säädän{tn}ö /s
 lainu{uØ} /s
 laipasto /s
 laipio /s
@@ -11957,6 +12018,7 @@ la{kØ}e{sØh}{ØeØØØ} /s
 la{kØ}e{Øth}{ØeØeØ} /s
 la{kØ}{ieeeØ} /s 50
 la{kØ}{iieØ} /s 50
+laki_mie{shs}{ØeØØØ} /s
 la{kØ}o /s
 lallattelu /s
 lallatu{ØkØkk}s{ØeØeØ} /s
@@ -12748,6 +12810,7 @@ liikanaisuu{ØØØØk}{stds}{ØeØeØ} /s
 liikautu{ØkØkk}s{ØeØeØ} /s
 liikehdin{tn}{äö} /s
 liikehtely /s
+liike_ide{ao} /s
 liikennöij{äØ} /s
 liikennöin{tn}{iieØ} /s
 liikennöitsij{äö} /s
@@ -13499,6 +13562,8 @@ luokittaj{aØo} /s
 luokittelij{ao} /s
 luokittelu /s
 luokitu{ØkØkk}s{ØeØeØ} /s
+luokka_jakaum{aØ} /s
+luokka_raken{tn}e{Øth}{ØeØeØ} /s
 luok{kØ}{aØ} /s
 luok{kØ}{iieØ} /s
 luo{k'}o /s
@@ -13989,6 +14054,10 @@ maagillisuu{ØØØØk}{stds}{ØeØeØ} /s
 maagisuu{ØØØØk}{stds}{ØeØeØ} /s
 maahiai{ns}{eeØØ}{nØØØ} /s
 maahi{ns}{eeØØ}{nØØØ} /s
+maa_joukkue{Øth}{ØeØeØ} /s
+maa_ilm{ao} /s
+maa_kun{tn}{aØ} /s
+maakunta_liit{tØ}o /s
 maakalai{ns}{eeØØ}{nØØØ} /s
 maakar{iieØ} /s
 maalaajat{tØ}ar{ØeØeØ} /s
@@ -14023,6 +14092,7 @@ maat{tØ}o /s
 maatum{aØ} /s
 maatusk{ao} /s
 ma{aØ} /s
+maa_pin{tn}{ao} /s
 macci{ao} /s
 machiavellilai{ns}{eeØØ}{nØØØ} /s
 machiavellism{iieØ} /s
@@ -14668,6 +14738,7 @@ merellisyy{ØØØØk}{stds}{ØeØeØ} /s
 mergel{iieØ} /s
 meridiaan{iieØ} /s
 mer{ieØeØ} /s
+meren_pin{tn}{ao} /s
 meriit{tØ}{iieØ} /s
 meriläi{ns}{eeØØ}{nØØØ} /s
 merino /s
@@ -15766,6 +15837,7 @@ määrly /s
 määräily /s
 määräisyy{ØØØØk}{stds}{ØeØeØ} /s
 määrän{tn}e{Øth}{ØeØeØ} /s
+määrä_rah{ao} /s
 määrät{tØ}{iieØ} /s
 määrättömyy{ØØØØk}{stds}{ØeØeØ} /s
 määräy{ØkØkk}s{ØeØeØ} /s
@@ -16217,8 +16289,9 @@ neuron{iieØ} /s
 neuroom{aØ} /s
 neuroos{iieØ} /s
 neurootik{kØØ}o /s
-neuropaat{tØ}{iieØ} /s
-neuropati{ao} /s
+neuro_paat{tØ}{iieØ} /s
+neuro_pati{ao} /s
+neuro_psykologi{ao} /s
 neuston{ØieØ} /s
 neutraalisuu{ØØØØk}{stds}{ØeØeØ} /s
 neutraaliu{ØØØØk}{stds}{ØeØeØ} /s
@@ -16671,6 +16744,7 @@ nuottue{Øth}{ØeØeØ} /s
 nuottur{iieØ} /s
 nuot{tØ}{aØ} /s
 nuot{tØ}{iieØ} /s
+nuotti_pin{tn}{ao} /s
 nup{iieØ} /s
 nupin{ao} /s
 nupitu{ØkØkk}s{ØeØeØ} /s
@@ -17038,6 +17112,7 @@ oikeistolaisuu{ØØØØk}{stds}{ØeØeØ} /s
 oikeisto /s
 oikenemi{ns}{eeØØ}{nØØØ} /s
 oikeudellisuu{ØØØØk}{stds}{ØeØeØ} /s
+oikeuden_käyn{tn}{iieØ} /s
 oikeudettomuu{ØØØØk}{stds}{ØeØeØ} /s
 oikeusto /s
 oikeuttomuu{ØØØØk}{stds}{ØeØeØ} /s
@@ -17174,6 +17249,7 @@ olm{iieØ} /s
 olo{ns}{eeØØ}{nØØØ} /s
 olo /s
 olostelu /s
+olo_suh{td}e{Øth}{ØeØeØ} /s
 oltav{aØ} /s
 oltermann{iieØ} /s
 olu{ns}{eeØØ}{nØØØ} /s
@@ -17438,6 +17514,7 @@ or{trs}{ieØeØ} /s
 orvok{kØ}{iieØ} /s
 osaaj{aØo} /s
 osaamattomuu{ØØØØk}{stds}{ØeØeØ} /s
+osake_yhtiö /s
 osakkeisto /s
 osakkuu{ØØØØk}{stds}{ØeØeØ} /s
 osak{kØ}a{sØh}{ØaØØØ} /s
@@ -17499,6 +17576,7 @@ ostrakism{iieØ} /s
 ostrakismo{ØkØkk}s{ØeØeØ} /s
 osum{aØ} /s
 osuu{ØØØØk}{stds}{ØeØeØ} /s
+osuus_kun{tn}{aØ} /s
 osuvuu{ØØØØk}{stds}{ØeØeØ} /s
 osviit{tØ}{ao} /s
 otaksum{aØ} /s
@@ -18567,6 +18645,7 @@ perho{ns}{eeØØ}{nØØØ} /s
 perho /s
 perhostu{ØkØkk}s{ØeØeØ} /s
 perhydrol{iieØ} /s
+peri_aat{tØ}e{Øth}{ØeØeØ} /s
 peridotiit{tØ}{iieØ} /s
 perifeerisyy{ØØØØk}{stds}{ØeØeØ} /s
 perifraas{iieØ} /s
@@ -19110,9 +19189,9 @@ pinkkau{ØkØkk}s{ØeØeØ} /s
 pink{kØ}{ao} /s
 pinkoj{aØo} /s
 pinkomo /s
+pinn{ao} /s ! compounding?? 
 pinnaaj{aØo} /s
 pinnallisuu{ØØØØk}{stds}{ØeØeØ} /s
-pinn{ao} /s
 pinnar{iieØ} /s
 pinnau{ØkØkk}s{ØeØeØ} /s
 pinnistely /s
@@ -19129,6 +19208,7 @@ pinseerau{ØkØkk}s{ØeØeØ} /s
 pinset{tØ}{iieØ} /s
 pinspak{kØ}{iieØ} /s
 pintaaj{aØo} /s
+pinta_al{ao} /s
 pintau{ØkØkk}s{ØeØeØ} /s
 pintel{iieØ} /s
 pin{tn}{ao} /s
@@ -20998,6 +21078,7 @@ pöyry /s
 pöyryty{ØkØkk}s{ØeØeØ} /s
 pöyst{iieØ} /s
 pöy{td}{äØ} /s
+pöytä_kirj{ao} /s
 pöytye{Øth}{ØeØeØ} /s
 pöytyr{iieØ} /s
 pööbel{iieØ} /s
@@ -23975,6 +24056,7 @@ seuraan{tn}o /s
 seuraav{aØ} /s
 seurailij{ao} /s
 seurailu /s
+seura_kun{tn}{aØ} /s
 seuralai{ns}{eeØØ}{nØØØ} /s
 seurallisuu{ØØØØk}{stds}{ØeØeØ} /s
 seurannai{ns}{eeØØ}{nØØØ} /s
@@ -24796,6 +24878,7 @@ sopeutuvuu{ØØØØk}{stds}{ØeØeØ} /s
 sopiai{ns}{eeØØ}{nØØØ} /s
 sopimattomuu{ØØØØk}{stds}{ØeØeØ} /s
 sopimu{ØkØkk}s{ØeØeØ} /s
+sopimus_kiist{ao} /s
 sopivaisuu{ØØØØk}{stds}{ØeØeØ} /s
 sopivuu{ØØØØk}{stds}{ØeØeØ} /s
 sopotu{ØkØkk}s{ØeØeØ} /s
@@ -25365,6 +25448,7 @@ suojelevaisuu{ØØØØk}{stds}{ØeØeØ} /s
 suojelij{ao} /s
 suojelijat{tØ}ar{ØeØeØ} /s
 suojelu /s
+suojelu_la{kØ}{iieØ} /s
 suojelu{ØkØkk}s{ØeØeØ} /s
 suojue{Øth}{ØeØeØ} /s
 suojur{iieØ} /s
@@ -26390,6 +26474,7 @@ talo /s
 talottomuu{ØØØØk}{stds}{ØeØeØ} /s
 taloudellisuu{ØØØØk}{stds}{ØeØeØ} /s
 talou{ØØØØk}{stds}{ØeØeØ} /s
+talous_tie{td}e{Øth}{ØeØeØ} /s
 talrik{kØ}{iieØ} /s
 talso /s
 taltioi{mn}{ØeØeØ} /s
@@ -26604,6 +26689,7 @@ tarpon{iieØ} /s
 tar{pv}e{sØh}{ØeØØØ} /s
 tar{pv}e{Øth}{ØeØeØ} /s
 tarraaj{aØo} /s
+tarr{ao} /s
 tarrau{ØkØkk}s{ØeØeØ} /s
 tarr{iieØ} /s
 tarrik{kØØ}{ao} /s
@@ -26642,6 +26728,7 @@ tasaisuu{ØØØØk}{stds}{ØeØeØ} /s
 tasan{kg}o /s
 tasan{tn}e{Øth}{ØeØeØ} /s
 tas{ao} /s
+tasa_paino /s
 tasautu{ØkØkk}s{ØeØeØ} /s
 tasau{ØkØkk}s{ØeØeØ} /s
 tasav{aØ} /s
@@ -27374,6 +27461,7 @@ toilau{ØkØkk}s{ØeØeØ} /s
 toimekkuu{ØØØØk}{stds}{ØeØeØ} /s
 toimeliaisuu{ØØØØk}{stds}{ØeØeØ} /s
 toimellisuu{ØØØØk}{stds}{ØeØeØ} /s
+toimen_pi{td}e{Øth}{ØeØeØ} /s
 toimentaj{aØo} /s
 toimettomuu{ØØØØk}{stds}{ØeØeØ} /s
 toimij{ao} /s
@@ -28523,14 +28611,17 @@ tyyttäy{ØkØkk}s{ØeØeØ} /s
 tyytymy{ØkØkk}s{ØeØeØ} /s
 tyytymättömyy{ØØØØk}{stds}{ØeØeØ} /s
 tyytyväisyy{ØØØØk}{stds}{ØeØeØ} /s
+työ_kalu /s
 työkkyr{iieØ} /s
 työkyr{iieØ} /s
+työ_leir{iieØ} /s
 työllisyy{ØØØØk}{stds}{ØeØeØ} /s
 työläi{ns}{eeØØ}{nØØØ} /s
 työläy{ØØØØk}{stds}{ØeØeØ} /s
 työ_ma{aØ} /s
 työnnähdy{ØkØkk}s{ØeØeØ} /s
 työnnälly{ØkØkk}s{ØeØeØ} /s
+työ_pano{ØkØkk}s{ØeØeØ} /s
 työn_tekij{äö} /s
 työntely /s
 työn{tn}{iieØ} /s
@@ -29263,6 +29354,7 @@ vaih{td}e{Øth}{ØeØeØ} /s
 vaih{td}i{mn}{ØeØeØ} /s
 vaih{td}o /s
 vaihteisto /s
+vaihto_eh{td}o /s
 vaihtelemattomuu{ØØØØk}{stds}{ØeØeØ} /s
 vaihtelevaisuu{ØØØØk}{stds}{ØeØeØ} /s
 vaihtelevuu{ØØØØk}{stds}{ØeØeØ} /s
@@ -29903,6 +29995,7 @@ vavahtelu /s
 vavistu{ØkØkk}s{ØeØeØ} /s
 veddalai{ns}{eeØØ}{nØØØ} /s
 vedd{ao} /s
+veden_pin{tn}{ao} /s
 vedettömyy{ØØØØk}{stds}{ØeØeØ} /s
 vedik{kØ}e{Øth}{ØeØeØ} /s
 vedosti{mn}{ØeØeØ} /s
@@ -30628,6 +30721,7 @@ vintiö /s
 vintofk{ao} /s
 vintohk{ao} /s
 vinttau{ØkØkk}s{ØeØeØ} /s
+vintti_koir{aØ} /s
 vinttur{ao} /s
 vinttur{iieØ} /s
 vint{tØ}{ao} /s
@@ -31121,6 +31215,7 @@ välik{kØ}e{Øth}{ØeØeØ} /s
 välik{kØØ}ö /s
 välillisyy{ØØØØk}{stds}{ØeØeØ} /s
 välineistö /s
+väline_kauppia{sØh}{ØaØØØ} /s
 väline{Øth}{ØeØeØ} /s
 väli{ns}{eeØØ}{nØØØ} /s
 väliste{Øth}{ØeØeØ} /s
@@ -31307,6 +31402,7 @@ yhdyn{tn}{äö} /s
 yhdysvallat:yhdys_val{td}{ao} /s
 yhkin{äö} /s
 yhteellisyy{ØØØØk}{stds}{ØeØeØ} /s
+yhteis_kun{tn}{aØ} /s
 yhteisyy{ØØØØk}{stds}{ØeØeØ} /s
 yhteisöllisyy{ØØØØk}{stds}{ØeØeØ} /s
 yhteisö /s

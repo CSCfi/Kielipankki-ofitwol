@@ -25,6 +25,8 @@ absorboi{td}u /v
 absorbo{iØ} /v
 abstrahoi{td}u /v
 abstraho{iØ} /v
+addikto{iØ} /v
+addiktoi{td}u /v
 adopto{iØ} /v
 adsorboi{td}u /v
 adsorbo{iØ} /v
@@ -58,6 +60,7 @@ ahvet{tØ}u /v
 aidast{aØaae} /v
 aidastu /v
 aidoit{tØ}{aØaae} /v
+aiheellistu /v
 aihel{eØØØeØØ} /v
 aiheu{td}u /v
 aiheut{tØ}{aØaae} /v
@@ -3489,6 +3492,8 @@ keinah{td}el{eØØØeØØ} /v
 keinahut{tØ}{aØaae} /v
 keinaut{tØ}{aØaae} /v
 keinaut{tØ}el{eØØØeØØ} /v
+keino_hedelmöit{tØ}{äØääe} /v
+keino_kastel{eØØØeØØ} /v
 keinot{tØ}el{eØØØeØØ} /v
 keinuil{eØØØeØØ} /v
 keinuskel{eØØØeØØ} /v
@@ -4416,6 +4421,7 @@ kortisto{iØ} /v
 kortit{tØ}{aØaae} /v
 koruil{eØØØeØØ} /v
 korvaan{tn}u /v
+korvamerki{tnt}{sØ}{eØØØeØØ} /v
 korvau{td}u /v
 korva{ØsnØtt}{aØØØØ} /v
 korven{tn}el{eØØØeØØ} /v
@@ -4436,6 +4442,7 @@ kossit{tØ}{aØaae} /v
 kostau{td}u /v
 kost{aØaae} /v
 kostel{eØØØeØØ} /v
+kosteut{tØ}{aØaae} /v
 kostut{tØ}{aØaae} /v
 kostut{tØ}el{eØØØeØØ} /v
 kostu /v
@@ -8488,7 +8495,7 @@ paksun{tnst}{aØaae} /v
 paksun{tn}u /v
 paksuun{tn}u /v
 pa{kØ}e{nt}{eØØØeØØ} /v
-palaa{ØsnØtt}{aØØØØ} /v
+! palaa{ØsnØtt}{aØØØØ} /v ! ??
 palail{eØØØeØØ} /v
 pal{aoaae} /v
 palast{aØaae} /v
@@ -8501,6 +8508,7 @@ palau{td}u /v
 palaut{tØ}{aØaae} /v
 palaut{tØ}el{eØØØeØØ} /v
 pala{ØsnØtt}{aØØØØ} /v
+kotiin_pala{ØsnØtt}{aØØØØ} /v
 palel{eØØØeØØ} /v
 palellut{tØ}{aØaae} /v
 palel{tlst}{aØaae} /v

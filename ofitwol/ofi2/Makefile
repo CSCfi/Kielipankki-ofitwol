@@ -23,6 +23,8 @@ LEXG2=lexic-firstpart.lexc
 
 ANALYSES=$(ID)-corpus-$(MODE).big.analyses
 
+rules : ofi-rules.fst ofi-rules-inv.fst
+
 build : $(ANALYSER)
 
 ofibase : ofibase.ofst
