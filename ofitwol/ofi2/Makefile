@@ -136,7 +136,7 @@ delete.fst :
 	echo "Ø -> 0" | hfst-regexp2fst -o $@
 
 bound.fst : Makefile
-	echo '[§+ -> 0 || _ [%+N | %+A | %+V | %+P]] .o. [%§ -> %_]' | hfst-regexp2fst -o $@
+	echo '[§+ -> 0 || _ [%+N | %+A | %+V | %+P | %+PRON | %+NUM]] .o. [%§ -> %_]' | hfst-regexp2fst -o $@
 
 guesses : sktp-corpus-base.big.analyses
 	egrep 'inf$$' sktp-corpus-base.big.analyses | \

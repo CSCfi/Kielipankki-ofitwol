@@ -429,6 +429,12 @@ alabaster{iieØ} /s
 aladob{iieØ} /s
 alai{ns}{eeØØ}{nØØØ} /s 50
 alaisuu{ØØØØk}{stds}{ØeØeØ} /s
+ala_ker{tr}{ao} /s
+ala_kulo /s
+ala_lai{td}{ao} /s
+ala_mä{kØ}{ieeeØ} /s
+ala_puol{ieØeØ} /s
+ala_pä{äØ} /s
 alamai{ns}{eeØØ}{nØØØ} /s
 alamaisuu{ØØØØk}{stds}{ØeØeØ} /s
 alammai{ns}{eeØØ}{nØØØ} /s
@@ -10661,11 +10667,13 @@ kulkevai{ns}{eeØØ}{nØØØ} /s
 kulkijai{mn}{ØeØeØ} /s
 kulkij{ao} /s
 kulk{kØ}u /s
+kulku_neuvo /s
 kulkue{Øth}{ØeØeØ} /s
 kulkulai{ns}{eeØØ}{nØØØ} /s
 kulku{ns}{eeØØ}{nØØØ} /s
 kulkur{iieØ} /s
 kul{kØ}u /s 20
+kulku_tau{td}{iieØ} /s
 kullero /s
 kull{iieØ} /s
 kulmai{mn}{ØeØeØ} /s
@@ -19206,7 +19214,7 @@ pinkkau{ØkØkk}s{ØeØeØ} /s
 pink{kØ}{ao} /s
 pinkoj{aØo} /s
 pinkomo /s
-pinn{ao} /s ! compounding?? 
+pinn{ao} /s 20 ! compounding?? 
 pinnaaj{aØo} /s
 pinnallisuu{ØØØØk}{stds}{ØeØeØ} /s
 pinnar{iieØ} /s
