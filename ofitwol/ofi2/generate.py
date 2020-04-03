@@ -79,7 +79,7 @@ def generate(word):
 
 if __name__ == "__main__":
     import sys, re
-    init("ofi-rules.fst")
+    init("ofi-rules-in.fst")
     for line_nl in sys.stdin:
         line = line_nl.strip()
         res = generate(line)

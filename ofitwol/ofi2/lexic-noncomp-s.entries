@@ -87,14 +87,19 @@ tipl{ao} /s
 tipo /s
 toim{iieØ} /s
 tull{aØ} /s
-
+u{kØk}s{ieeØeØ} /s
+!
 uro_te{kØ}o /s
 uro_t{yØ}ö /s
 ä{kØ}{äØ} /s
-
+!
+! ansa
+!
 ans{ao} /s
 paitsio_ans{ao} /s
-
+!
+! ala
+!
 al{ao} /s
 ahtaus_al{ao} /s
 alkoholi_al{ao} /s
@@ -395,7 +400,9 @@ yritys_al{ao} /s
 yrtti_al{ao} /s
 ääni_al{ao} /s
 öljy_al{ao} /s
-
+!
+! alainen
+!
 alai{ns}{eeØØ}{nØØØ} /s
 ehdon_alai{ns}{eeØØ}{nØØØ} /s
 holhouksen_alai{ns}{eeØØ}{nØØØ} /s
@@ -436,25 +443,33 @@ vastaavan_alai{ns}{eeØØ}{nØØØ} /s
 vastuun_alai{ns}{eeØØ}{nØØØ} /s
 veden_alai{ns}{eeØØ}{nØØØ} /s
 veron_alai{ns}{eeØØ}{nØØØ} /s
-
+!
+! amme
+!
 amme{Øth}{ØeØeØ} /s
 istuma_amme{Øth}{ØeØeØ} /s
 kylpy_amme{Øth}{ØeØeØ} /s
 pore_amme{Øth}{ØeØeØ} /s
-
+!
+! ape
+!
 ap{pØ}e{Øth}{ØeØeØ} /s
 aamu_ap{pØ}e{Øth}{ØeØeØ} /s
 heinä_ap{pØ}e{Øth}{ØeØeØ} /s
 mieli_ap{pØ}e{Øth}{ØeØeØ} /s
 ruis_ap{pØ}e{Øth}{ØeØeØ} /s
-
+!
+! harmoni
+!
 harmon{iieØ} /s
 antiikki_harmon{iieØ} /s
 käsi_harmon{iieØ} /s
 urku_harmon{iieØ} /s
 urku_harmoon{iieØ} /s
 soitto_harmon{iieØ} /s
-
+!
+! ikä
+!
 i{kØ}{äØ} /s
 aikuis_i{kØ}{äØ} /s
 aloitus_i{kØ}{äØ} /s
@@ -513,7 +528,9 @@ vauva_i{kØ}{äØ} /s
 vieroitus_i{kØ}{äØ} /s
 vihkimis_i{kØ}{äØ} /s
 äänestys_i{kØ}{äØ} /s
-
+!
+! ilta
+!
 il{tl}{ao} /s
 aatto_il{tl}{ao} /s
 alku_il{tl}{ao} /s
@@ -566,18 +583,69 @@ teko_il{tl}{ao} /s
 varhais_il{tl}{ao} /s
 voitto_il{tl}{ao} /s
 yleisö_il{tl}{ao} /s
-
+!
+! itä
+!
 i{td}{äØ} /s
 keski_i{td}{äØ} /s
 kauko_i{td}{äØ} /s
 lähi_i{td}{äØ} /s
-
+!
+! isi
+!
 is{iieØ} /s
 koti_is{iieØ} /s
-
+!
+! isä
+!
+is{äØ} /s
+alkoholisti_is{äØ} /s
+arkkitehti_is{äØ} /s
+biologi_is{äØ} /s
+diplomaatti_is{äØ} /s
+dominikaani_is{äØ} /s
+ekonomi_is{äØ} /s
+esi_is{äØ} /s
+juutalais_is{äØ} /s
+hanuristi_is{äØ} /s
+iso_is{äØ} /s
+isän_is{äØ} /s
+kanta_is{äØ} /s
+kapteeni_is{äØ} /s
+kasvatus_is{äØ} /s
+kaupungin_is{äØ} /s
+kirkko_is{äØ} /s
+koti_is{äØ} /s
+kunnan_is{äØ} /s
+leski_is{äØ} /s
+lestadiolais_is{äØ} /s
+maan_is{äØ} /s
+malli_is{äØ} /s
+oppi_is{äØ} /s
+otto_is{äØ} /s
+perheen_is{äØ} /s
+perustaja_is{äØ} /s
+poliisi_is{äØ} /s
+poliitikko_is{äØ} /s
+raataja_is{äØ} /s
+raumalais_is{äØ} /s
+rippi_is{äØ} /s
+soturi_is{äØ} /s
+suomalais_is{äØ} /s
+taiteilija_is{äØ} /s
+tuomari_is{äØ} /s
+upseeri_is{äØ} /s
+valmentaja_is{äØ} /s
+yllätys_is{äØ} /s
+äidin_is{äØ} /s
+!
+! iva
+!
 iv{ao} /s
 sala_iv{ao} /s
-
+!
+! koi
+!
 ko{iØ} /s
 aamun_ko{iØ} /s
 herukka_ko{iØ} /s
@@ -585,7 +653,9 @@ kaali_ko{iØ} /s
 niini_ko{iØ} /s
 norkko_ko{iØ} /s
 vaate_ko{iØ} /s
-
+!
+! -koni
+!
 kyyti_kon{iieØ} /s
 mustalais_kon{iieØ} /s
 työ_kon{iieØ} /s
@@ -618,7 +688,9 @@ talvi_ko{td}{aØ} /s
 tuppilo_ko{td}{aØ} /s
 turve_ko{td}{aØ} /s
 yö_ko{td}{aØ} /s
-
+!
+! kulku
+!
 kul{kØ}u /s
 ajan_kul{kØ}u /s
 ajatuksen_kul{kØ}u /s
@@ -645,7 +717,9 @@ tavaran_kul{kØ}u /s
 tiedon_kul{kØ}u /s
 työn_kul{kØ}u /s
 voitto_kul{kØ}u /s
-
+!
+! kulu
+!
 _kulu /s
 ajan_kulu /s
 asennus_kulu /s
@@ -783,17 +857,23 @@ vienti_kulu /s
 vuokra_kulu /s
 vuosi_kulu /s
 väline_kulu /s
-
+!
+! kunnas
+!
 kunna{sØh}{ØaØØØ} /s
 kataja_kunna{sØh}{ØaØØØ} /s
 kivi_kunna{sØh}{ØaØØØ} /s
 laakso_kunna{sØh}{ØaØØØ} /s
 sora_kunna{sØh}{ØaØØØ} /s
-
+!
+! laki ~ laen
+!
 la{kØ}{ieeeØ} /s
 pää_la{kØ}{ieeeØ} /s
 kita_la{kØ}{ieeeØ} /s
-
+!
+! laki ~lain
+!
 la{kØ}{iieØ} /s
 abortti_la{kØ}{iieØ} /s
 alkoholi_la{kØ}{iieØ} /s
@@ -937,7 +1017,9 @@ yhdistys_la{kØ}{iieØ} /s
 yhteisö_la{kØ}{iieØ} /s
 yhtiö_la{kØ}{iieØ} /s
 ympäristö_la{kØ}{iieØ} /s
-
+!
+! lapsi
+!
 la{pØp}s{ieØeØØ} /s
 aasialais_la{pØp}s{ieØeØØ} /s
 adoptio_la{pØp}s{ieØeØØ} /s
@@ -1042,7 +1124,9 @@ venäläis_la{pØp}s{ieØeØØ} /s
 virolais_la{pØp}s{ieØeØØ} /s
 votjakki_la{pØp}s{ieØeØØ} /s
 äpärä_la{pØp}s{ieØeØØ} /s
-
+!
+! lasta
+!
 last{ao} /s
 betoni_last{ao} /s
 kaivaus_last{ao} /s
@@ -1054,7 +1138,9 @@ paistin_last{ao} /s
 reuna_last{ao} /s
 tasoitus_last{ao} /s
 teräs_last{ao} /s
-
+!
+! musta
+!
 must{aØ} /s
 harmaan_must{aØ} /s ! 1
 hiilen_must{aØ} /s ! 3
@@ -1068,18 +1154,24 @@ puna_must{aØ} /s ! 13
 sini_must{aØ} /s ! 5
 sysi_must{aØ} /s ! 9
 yön_must{aØ} /s ! 4
-
-
+!
+! nakki
+!
 nak{kØ}{iieØ} /s
 prinssi_nak{kØ}{iieØ} /s
 raaka_nak{kØ}{iieØ} /s
-
+!
+! neiti
+!
 nei{td}{ieØeØ} /s
 hienosto_nei{td}{ieØeØ} /s
 hovi_nei{td}{ieØeØ} /s
 kartanon_nei{td}{ieØeØ} /s
+pankki_nei{td}{ieØeØ} /s
 seura_nei{td}{ieØeØ} /s
-
+!
+! pala
+!
 aamu_pal{ao} /s
 alku_pal{ao} /s
 ananas_pal{ao} /s
@@ -1191,7 +1283,9 @@ vaneri_pal{ao} /s
 vanerin_pal{ao} /s
 väli_pal{ao} /s
 yö_pal{ao} /s
-
+!
+! palo
+!
 aatteen_palo /s
 ahjo_palo /s
 aho_palo /s
@@ -1268,7 +1362,9 @@ vene_palo /s
 veturi_palo /s
 vety_palo /s
 öljy_palo /s
-
+!
+! sakki
+!
 sak{kØ}{iieØ} /s
 aseman_sak{kØ}{iieØ} /s
 huuto_sak{kØ}{iieØ} /s
@@ -1279,8 +1375,9 @@ poika_sak{kØ}{iieØ} /s
 roska_sak{kØ}{iieØ} /s
 rosvo_sak{kØ}{iieØ} /s
 vara_sak{kØ}{iieØ} /s
-
-
+!
+! salko
+!
 sal{kØ}o /s
 humala_sal{kØ}o /s
 juhannus_sal{kØ}o /s
@@ -1288,7 +1385,9 @@ lippu_sal{kØ}o /s
 rauta_sal{kØ}o /s
 tuomi_sal{kØ}o /s
 vaaja_sal{kØ}o /s
-
+!
+! seksi
+!
 seks{iieØ} /s
 arki_seks{iieØ} /s
 avio_seks{iieØ} /s
@@ -1300,7 +1399,9 @@ ryhmä_seks{iieØ} /s
 suu_seks{iieØ} /s
 tunti_seks{iieØ} /s
 turva_seks{iieØ} /s
-
+!
+! suu
+!
 su{uØ} /s
 ahteen_su{uØ} /s
 enon_su{uØ} /s
@@ -1345,8 +1446,9 @@ tien_su{uØ} /s
 tuulen_su{uØ} /s
 tykin_su{uØ} /s
 verkon_su{uØ} /s
-
-
+!
+! takki
+!
 tak{kØ}{iieØ} /s
 aamu_tak{kØ}{iieØ} /s
 ammatti_tak{kØ}{iieØ} /s
@@ -1392,7 +1494,9 @@ untuva_tak{kØ}{iieØ} /s
 valko_tak{kØ}{iieØ} /s
 villa_tak{kØ}{iieØ} /s
 virka_tak{kØ}{iieØ} /s
-
+!
+! tee
+!
 te{eeØ} /s
 aamu_te{eeØ} /s
 ilta_te{eeØ} /s
@@ -1405,7 +1509,9 @@ pussi_te{eeØ} /s
 sitruuna_te{eeØ} /s
 timjami_te{eeØ} /s
 yrtti_te{eeØ} /s
-
+!
+! tuki
+!
 _tu{kØ}{ieeeØ} /s
 aikuis_tu{kØ}{ieeeØ} /s
 ala_tu{kØ}{ieeeØ} /s
@@ -1551,15 +1657,17 @@ yllätys_tu{kØ}{ieeeØ} /s
 ympäristö_tu{kØ}{ieeeØ} /s
 ympäristön_tu{kØ}{ieeeØ} /s
 yritys_tu{kØ}{ieeeØ} /s
-
-u{kØk}s{ieeØeØ} /s
-
+!
+! vuo
+!
 v{uØ}o /s
 magneetti_v{uØ}o /s
 sähkö_v{uØ}o /s
 tulva_v{uØ}o /s
 vesi_v{uØ}o /s
-
+!
+! vuori
+!
 vuor{iieØ} /s
 hiki_vuor{iieØ} /s
 huopa_vuor{iieØ} /s

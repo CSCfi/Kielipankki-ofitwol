@@ -215,7 +215,7 @@ pyy{dsnttt}{äØäØØ} /v  ; !
 ! saa-vat sa-i sa-isi saa-nee saa- saa-nut saa-daan
 !
 jä{äØØää} /v  ; ! JÄÄDÄ
-kä{ØvØvØØ}{yØ} /v  ; ! KÄYDÄ
+kä{ØvØvØØ}{yØi} /v  ; ! KÄYDÄ
 my{yØ} /v  ; ! MYYDÄ
 na{iØ} /v ; ! NAIDA
 pu{iØ} /v ; ! PUIDA
@@ -235,46 +235,46 @@ v{iØ}e /v  ; ! VIEDÄ
 
 < Co [{uØ} o |{yØ} ö ] > /v ; ! JUODA SYÖDÄ
 
-< Co* [Vo|VV] Co* (a|ä) i s {eØØØØ} > /v ; ! NUOLAISTA
-< Co* [Vo|VV] (Cocl Vo+) Co* s {eØØØØ} > /v ; ! NOUSTA SEISTÄ
-< Co VV l {eØØØØ} > /v ; ! TUULLA NIELLÄ
-< Co [u|i e] r {eØØØØ} > /v ; ! PURRA PIERRÄ
-< Co* Syl* Vo+ Co+ [e|i e|e i] l [{eØØØeØØ}|{eØØØeØØ}] > /v ; ! KATSELLA HORJAHDELLA PARVEILLA
-< Co* Syl* Vo+ Gw e l [{eØØØeØØ}|{eØØØeØØ}] > /v ; ! HUUDELLA POKSAHDELLA
-< Co* Syl* Vo+ Co+ [a|ä|o|ö|u|y] i l [{eØØØeØØ}|{eØØØeØØ}] 0::5 > /v ; ! HERMOILLA
-< Co* Syl* Vo+ Co+ [a|ä|o|ö|u|y] i l [{eØØØeØØ}|{eØØØeØØ}] > /v ; ! ARVAILLA PAKOILLA KIUKKUILLA
-< Co* i i [a|ä|o|ö|u|y] i l [{eØØØeØØ}|{eØØØeØØ}] > /v ; ! NIIAILLA
+< Co* [Vo|VV] Co* (a|ä) i s {eØØØØi} > /v ; ! NUOLAISTA
+< Co* [Vo|VV] (Cocl Vo+) Co* s {eØØØØi} > /v ; ! NOUSTA SEISTÄ
+< Co VV l {eØØØØi} > /v ; ! TUULLA NIELLÄ
+< Co [u|i e] r {eØØØØi} > /v ; ! PURRA PIERRÄ
+< Co* Syl* Vo+ Co+ [e|i e|e i] l {eØØØei} > /v ; ! KATSELLA HORJAHDELLA PARVEILLA
+< Co* Syl* Vo+ Gw e l {eØØØei} > /v ; ! HUUDELLA POKSAHDELLA
+< Co* Syl* Vo+ Co+ [a|ä|o|ö|u|y] i l {eØØØei} 0::5 > /v ; ! HERMOILLA
+< Co* Syl* Vo+ Co+ [a|ä|o|ö|u|y] i l {eØØØei} > /v ; ! ARVAILLA PAKOILLA KIUKKUILLA
+< Co* i i [a|ä|o|ö|u|y] i l {eØØØei} > /v ; ! NIIAILLA
 < Co* Syl* Vo* (j|(s) k|l|(l) m|(n) n|r|(s)t|v) [o|ö] {iØ} 0::5 > /v ; ! HARAVOIDA
-< Co* ((Syl) Syl) Vo+ Co* i {tnt} {sØ} [{eØØØeØØ} | {eØØØeØØ}] > /v ; ! VALITA
-< Co* (Syl) Vo+ Co+ [a|ä|o|ö|u|y|e] {nt} [{eØØØeØØ} | {eØØØeØØ}] > /v ; ! ALETA ale-ne/v
-< Co* (Syl) Vo+ Gw [a|ä|o|ö|u|y|e] {nt} [{eØØØeØØ} | {eØØØeØØ}] > /v ; ! KYETÄ ale-ne/v
-< Co* (Syl) Vo+ Gwj e {nt} [{eØØØeØØ}|{eØØØeØØ}] > /v ; ! KYETÄ ale-ne/v
+< Co* ((Syl) Syl) Vo+ Co* i {tnt} {sØ} {eØØØei} > /v ; ! VALITA
+< Co* (Syl) Vo+ Co+ [a|ä|o|ö|u|y|e] {nt} {eØØØei} > /v ; ! ALETA ale-ne/v
+< Co* (Syl) Vo+ Gw [a|ä|o|ö|u|y|e] {nt} {eØØØei} > /v ; ! KYETÄ ale-ne/v
+< Co* (Syl) Vo+ Gwj e {nt} {eØØØei} > /v ; ! KYETÄ ale-ne/v
 !
-pan{eØØØØ} /v ;
-men{eØØØØ} /v ;
-män{eØØØØ} /v ;
-juo{kkkØØ}s{eØØØØ} /v ;
-pie{kkkØØ}s{eØØØØ} /v ;
-syö{kkkØØ}s{eØØØØ} /v ;
-nä{Økhkhh}{eØØØØ} /v ;
-te{Økhkhh}{eØØØØ} /v ;
-rankais{eØØØØ} /v  ; ! 
-rangais{eØØØØ} /v3  ; ! 
-vilkais{eØØØØ} /v  ; ! 
-vilais{eØØØØ} /v3  ; ! 
-tempais{eØØØØ} /v  ; ! 
-temmais{eØØØØ} /v3  ; ! 
-sokais{eØØØØ} /v  ; ! 
-soais{eØØØØ} /v3  ; ! 
-laukais{eØØØØ} /v  ; ! 
-lauais{eØØØØ} /v3  ; ! 
-sipais{eØØØØ} /v  ; ! 
-sivais{eØØØØ} /v3  ; ! 
-rapis{eØØØØ} /v  ; ! 
-ravis{eØØØØ} /v3  ; ! 
-läpäis{eØØØØ} /v  ; ! 
-läväis{eØØØØ} /v3  ; ! 
-tul{eØØØØ} /v  ; ! 
+pan{eØØØØi} /v ;
+men{eØØØØi} /v ;
+män{eØØØØi} /v ;
+juo{kkkØØ}s{eØØØØi} /v ;
+pie{kkkØØ}s{eØØØØi} /v ;
+syö{kkkØØ}s{eØØØØi} /v ;
+nä{Økhkhh}{eØØØØi} /v ;
+te{Økhkhh}{eØØØØi} /v ;
+rankais{eØØØØi} /v  ; ! 
+rangais{eØØØØi} /v3  ; ! 
+vilkais{eØØØØi} /v  ; ! 
+vilais{eØØØØi} /v3  ; ! 
+tempais{eØØØØi} /v  ; ! 
+temmais{eØØØØi} /v3  ; ! 
+sokais{eØØØØi} /v  ; ! 
+soais{eØØØØi} /v3  ; ! 
+laukais{eØØØØi} /v  ; ! 
+lauais{eØØØØi} /v3  ; ! 
+sipais{eØØØØi} /v  ; ! 
+sivais{eØØØØi} /v3  ; ! 
+rapis{eØØØØi} /v  ; ! 
+ravis{eØØØØi} /v3  ; ! 
+läpäis{eØØØØi} /v  ; ! 
+läväis{eØØØØi} /v3  ; ! 
+tul{eØØØØi} /v  ; ! 
 !
 < Co* Syl* Vo+ Co* [a|ä] {ØsnØtt} [{aØØØØ}|{äØØØØ}] > /v ; ! SALATA sala-V/v
 < Co* Syl* Vo+ Gw [a|ä] {ØsnØtt} [{aØØØØ}|{äØØØØ}] > /v ; ! AIDATA sala-V/v
@@ -289,10 +289,10 @@ tul{eØØØØ} /v  ; !
 < Co* [Vo|VV] Gw [o {ØsnØtt} {aØaØØ} | ö {ØsnØtt} {äØäØØ}] > /v ; ! TAUOTA koho-A/v
 < Co* [Vo|VV] Co+ [u {ØsnØtt} {aØaØØ} | y {ØsnØtt} {äØäØØ}] > /v ; ! HALUTA halu-A/v
 < Co* [Vo|VV] Gw [u {ØsnØtt} {aØaØØ} | y {ØsnØtt} {äØäØØ}] > /v ; ! RYÖPYTÄ halu-A/v
-< Co* Vo Co+ i s {eØØØØ} 0::5 > /v ; ! KIHISTÄ-KIHISEN V41
+< Co* Vo Co+ i s {eØØØØi} 0::5 > /v ; ! KIHISTÄ-KIHISEN V41
 < Co* Vo Co+ [a j {aØaae} | ä j {äØääe}] 0::5 > /v012 ; ! KIHISTÄ-KIHAJAN
-< Co* Vo Gw i s {eØØØØ} 0::5 > /v ; ! RAVISTA-RAPAJAN
-< Co* Vo Gw a j {eØØØØ} 0::5 > /v012 ; ! 
+< Co* Vo Gw i s {eØØØØi} 0::5 > /v ; ! RAVISTA-RAPAJAN
+< Co* Vo Gw a j {eØØØØi} 0::5 > /v012 ; ! 
 < Co* [Vo|Syl+] Vo u {td} u > /v ; ! ANTAUTUA HIOUTUA
 < Co* [Vo|Syl+] Vo y {td} y > /v ; ! KÄYTTÄYTYÄ
 < Co* [Vo|Syl+] Vo [u {ØsØØØ} |y {ØsØØØ} ] > /v ; ! PYSÄYTÄ-PYSÄYSIN

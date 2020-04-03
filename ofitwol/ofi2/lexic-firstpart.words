@@ -10,12 +10,11 @@ aakkoston
 aakkostuksen
 aakkostus
 aallokko
-aallokkoisuuden
-aallokkoisuus
 aallokkuuden
 aallokkuus
 aallokon
 aallon
+aallonpituus
 aallopin
 aalloppi
 aallotar
@@ -29,8 +28,6 @@ aaltois
 aaltoisen
 aaltoisuuden
 aaltoisuus
-aaltomaisuuden
-aaltomaisuus
 aaltopahvi
 aaluva
 aaluvan
@@ -486,6 +483,7 @@ ahva
 ahvan
 ahven
 ahvena
+ahvenan
 ahvenanahvenanmaalais
 ahvenen
 ahvääri
@@ -3365,8 +3363,8 @@ centurio
 centurion
 cerium
 ceriumin
-ces
-cesin
+! ces
+! cesin
 champagne
 champagnen
 championi
@@ -16432,6 +16430,7 @@ katsojais
 katsojaisen
 katsojan
 katsoma
+katsomis ! -aika -hetki -kerta
 katsoman
 katsomo
 katsomon
@@ -16441,10 +16440,12 @@ katsonnan
 katsonta
 kattaja
 kattajan
+kattamis ! -työt
 kattara
 kattaran
 kattauksen
 kattaus
+kattavuus ! alue
 katteen
 katteettomuuden
 katteettomuus
@@ -16455,19 +16456,32 @@ kattilallis
 kattilallisen
 kattilan
 katto
+kattohaikara
+kattohuopa
+kattonopeus
+kattotiili
 kattuuni
 kattuunin
 katu
+katualue
 katuja
 katujan
+katukauppa
+katulapsi
+katulähetys
+katuma
 katumattomuuden
 katumattomuus
+katumis
 katumuksen
 katumus
+katurakennus
+katuteatteri
 katuvais
 katuvaisen
 katuvaisuuden
 katuvaisuus
+katuvalo
 katve
 katveen
 katvehen
@@ -16475,6 +16489,7 @@ katveikko
 katveikon
 kauden
 kauha
+kauhakuormaaja
 kauhallis
 kauhallisen
 kauhan
@@ -16530,6 +16545,7 @@ kaune
 kauneen
 kaunehen
 kauneuden
+kauneudenhoito
 kauneus
 kauniais
 kauniaisen
@@ -19399,7 +19415,7 @@ kolhoosi
 kolhoosin
 kolhu
 kolhun
-! koli
+koli 10
 koliais
 koliaisen
 kolibri
@@ -21759,7 +21775,7 @@ kulumattomuuden
 kulumattomuus
 kulun ! -valvonta
 ! kuluneisuuden
-! kuluneisuus
+kuluneisuus
 kulungin
 kulunki
 kulunnan
@@ -28621,6 +28637,8 @@ maahiais
 maahiaisen
 maahis
 maahisen
+maailmanennätys
+maailmanmestaruus
 maakalais
 maakalaisen
 maakari
@@ -44103,17 +44121,21 @@ reivauksen
 reivaus
 reivi
 reivin
-reiällisyyden
-reiällisyys
+! reiällisyyden
+! reiällisyys
 reiän
-rekan
+! rekan
 reki
 rekin
 rekisteri
+rekisterikilpi ! -tunnus
 rekisterin
 rekisteröinnin
 rekisteröinti
+rekisteröitymis ! -vaatimus -paikat
 rekka
+rekka_auto
+rekka_auton
 rekki
 rekko
 reklaami
@@ -44139,6 +44161,7 @@ rekos
 rekosen
 rekrytoinnin
 rekrytointi
+rekrytointipalvelu
 rekryytin
 rekryytti
 reksauksen

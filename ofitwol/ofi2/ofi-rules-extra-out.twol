@@ -1,0 +1,9 @@
+! HYPHEN IN COMPOUNDS
+! ===================
+
+{§}:§ <=> _ ;
+!{§}: - {§}:Ø <=>                     ! should be: {§}:%-
+!        :a _ :a , :e _ :e , :i _ :i ,
+!        :o _ :o , :u _ :u , :y _ :y ,
+!        :ä _ :ä , :ö _ :ö ;
+!    ! kuorma<->auto henkilö<>auto

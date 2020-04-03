@@ -5,7 +5,7 @@
 ID=sktp
 MODE=mphon
 ANALYSER=ofi$(MODE).ofst
-RULEFST=ofi-rules.fst
+RULEFST=ofi-rules-in.fst
 AFF=analy
 DATA=../../data
 
@@ -23,7 +23,7 @@ LEXG2=lexic-firstpart.lexc
 
 ANALYSES=$(ID)-corpus-$(MODE).big.analyses
 
-rules : ofi-rules.fst ofi-rules-inv.fst
+rules : ofi-rules-in.fst ofi-rules-out.fst
 
 build : $(ANALYSER)
 
@@ -42,9 +42,9 @@ ofibase.ofst : base-lex.fst $(RULEFST) delete.fst Makefile
 	hfst-minimize |\
 	hfst-fst2fst -w -o $@
 
-ofitwol.ofst : ofimphon.fst ofi-rules-inv.fst bound.fst ofimphon.ofst Makefile
+ofitwol.ofst : ofimphon.fst ofi-rules-out.fst bound.fst ofimphon.ofst Makefile
 	hfst-project -p out -i $< -o ofimphon-out.fst
-	hfst-compose-intersect -1 ofimphon-out.fst -2 ofi-rules-inv.fst -o ofitwol-tmp.fst
+	hfst-compose-intersect -1 ofimphon-out.fst -2 ofi-rules-out.fst -o ofitwol-tmp.fst
 	hfst-compose -1 ofitwol-tmp.fst -2 delete.fst |\
 	hfst-compose -2 bound.fst -o ofitwol-aux.fst
 	hfst-compose -1 ofimphon.fst -2 ofitwol-aux.fst -o ofitwol-cps.fst
@@ -78,25 +78,25 @@ guess-lex.fst : guess-aff.lexc $(LEXG) $(LEXG2) Makefile
 #guess-lex.fst : guess-aff.lexc $(LEXG) $(LEXG2) Makefile
 #	hfst-lexc -f sfst $< $(LEXG) $(LEXG2) | hfst-fst2fst -t  -o $@
 
-base-aff.lexc : ofi-affixes.csv ../affixes2analysis.py
-	python3 ../affixes2analysis.py -m BASE $< $@
+base-aff.lexc : ofi-affixes.csv affixes2lexc.py
+	python3 affixes2lexc.py -m BASE < $< > $@
 
-mphon-aff.lexc : ofi-affixes.csv ../affixes2analysis.py
-	python3 ../affixes2analysis.py -m MPHON $< $@
+mphon-aff.lexc : ofi-affixes.csv affixes2lexc.py
+	python3 affixes2lexc.py -m MPHON < $< > $@
 
-guess-aff.lexc : ofi-affixes.csv ../affixes2analysis.py
-	python3 ../affixes2analysis.py -m GUESS $< $@
+guess-aff.lexc : ofi-affixes.csv affixes2lexc.py
+	python3 affixes2lexc.py -m GUESS < $< > $@
 
-$(LEXB) : base-%.lexc : lexic-%.entries ofi-rules.fst entries2lexc.py
-	python3 entries2lexc.py -r ofi-rules.fst < $< > $@
+$(LEXB) : base-%.lexc : lexic-%.entries ofi-rules-out.fst entries2lexc.py
+	python3 entries2lexc.py -r ofi-rules-out.fst < $< > $@
 
-base-r.lexc : lexic-r.entries ofi-rules.twol ofi-rules.fst entries2lexc.py
-	python3 entries2lexc.py -r ofi-rules.fst -c End < $< > $@
+base-r.lexc : lexic-r.entries ofi-rules-out.fst entries2lexc.py
+	python3 entries2lexc.py -r ofi-rules-out.fst -c End < $< > $@
 
-lexic-n.lexc : lexic-n.entries ofi-rules.twol ofi-rules.fst entries2lexc.py
-	python3 entries2lexc.py -r ofi-rules.fst -c End < $< > $@
+lexic-n.lexc : lexic-n.entries ofi-rules-out.fst entries2lexc.py
+	python3 entries2lexc.py -r ofi-rules-out.fst -c End < $< > $@
 
-lexic-firstpart.lexc : lexic-gener1st.words entries2lexc.py
+lexic-firstpart.lexc : lexic-firstpart.words entries2lexc.py
 	python3 entries2lexc.py -n FirstPart -c SecondPart < $< > $@
 
 $(LEXM) : mphon-%.lexc : lexic-%.entries entries2lexc.py
@@ -112,19 +112,31 @@ $(ANALYSES) : $(DATA)/$(ID)-corpus.words $(ANALYSER)
 	hfst-lookup -b 15 -i $(ANALYSER) -I $< | \
 		egrep '..' > $@
 
-$(RULEFST) : ofi-examples.pstr ofi-rules.twol
+ofi-rules-in.fst : ofi-examples-in.pstr ofi-rules-in.twol
 	twol-comp -t 2 -w ofi-wrong.fst -l ofi-lost.fst -o $@ \
-		$+ > ofi-rules.log
+		$+ > ofi-rules-in.log
 
-ofi-rules-inv.fst : ofi-examples-inv.pstr ofi-rules-inv.twol
-	twol-comp -t 2 -w ofi-wrong-inv.fst -l ofi-lost-inv.fst -o $@ \
-		$+ > ofi-rules-inv.log
+ofi-rules-out.fst : ofi-examples-out.pstr ofi-rules-out.twol
+	twol-comp -t 2 -w ofi-wrong-out.fst -l ofi-lost-out.fst -o $@ \
+		$+ > ofi-rules-out.log
+
+ofi-rules-in.twol : ofi-rules.twol ofi-rules-extra-in.twol
+	cat $+ > $@
+
+ofi-rules-out.twol : ofi-rules.twol ofi-rules-extra-out.twol
+	cat $+ > $@
+
+ofi-examples-in.pstr : ofi-examples.pstr ofi-examples-extra-in.pstr
+	cat $+ > $@
+
+ofi-examples-out.pstr : ofi-examples.pstr ofi-examples-extra-out.pstr
+	cat $+ > $@
 
 delete.fst :
 	echo "Ø -> 0" | hfst-regexp2fst -o $@
 
 bound.fst : Makefile
-	echo '[§ -> 0 || _ [%+N | %+A | %+V | %+P]] .o. [%§ -> %_]' | hfst-regexp2fst -o $@
+	echo '[§+ -> 0 || _ [%+N | %+A | %+V | %+P]] .o. [%§ -> %_]' | hfst-regexp2fst -o $@
 
 guesses : sktp-corpus-base.big.analyses
 	egrep 'inf$$' sktp-corpus-base.big.analyses | \

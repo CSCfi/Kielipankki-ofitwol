@@ -248,6 +248,7 @@ ahtol{ao} /s
 ahv{ao} /s
 ahven{aØo} /s
 ahven{ØeØØØ} /s
+ahvenan_maalai{ns}{eeØØ}{nØØØ} /s
 ahväär{iieØ} /s
 aidak{kØ}e{Øth}{ØeØeØ} /s
 aida{ØkØkk}s{ØeØeØ} /s
@@ -1956,6 +1957,7 @@ diplom{iieØ} /s
 diplont{tØ}{iieØ} /s
 dipodi{ao} /s
 dipol{iieØ} /s
+direktiiv{iieØ} /s
 direktor{iieØ} /s
 direktorio /s
 dis_harmoni{ao} /s
@@ -4532,6 +4534,7 @@ hirtehisyy{ØØØØk}{stds}{ØeØeØ} /s
 hirtei{ns}{eeØØ}{nØØØ} /s
 hir{trs}{ieØeØ} /s
 hirttäj{äØö} /s
+hirttäjäiset:hirttäjäi{ns}{eeØØ}{nØØØ} /s
 hirt{tØ}o /s
 hirva{sØh}{ØaØØØ} /s
 hirvesty{ØkØkk}s{ØeØeØ} /s
@@ -6202,7 +6205,7 @@ isän{tn}{äØ} /s
 isäntäi{ns}{eeØØ}{nØØØ} /s
 isäntämäisyy{ØØØØk}{stds}{ØeØeØ} /s
 isättömyy{ØØØØk}{stds}{ØeØeØ} /s
-is{äØ} /s
+! is{äØ} /s ! --> noncomp-s
 itaal{iieØ} /s
 italialai{ns}{eeØØ}{nØØØ} /s
 italialaisuu{ØØØØk}{stds}{ØeØeØ} /s
@@ -6374,6 +6377,7 @@ jeevel{iieØ} /s
 jefreitter{iieØ} /s
 jehu /s
 jek{kØ}u /s
+jeng{iieØ} /s
 jen{kg}{ao} /s
 jenk{kØ}{ao} /s
 jenk{kØ}{iieØ} /s
@@ -6548,6 +6552,7 @@ julistu{ØkØkk}s{ØeØeØ} /s
 julkaisij{ao} /s
 julkaisu /s
 julkeu{ØØØØk}{stds}{ØeØeØ} /s
+julki_sivu /s
 julkisuu{ØØØØk}{stds}{ØeØeØ} /s
 jull{iieØ} /s
 jullik{kØØ}{ao} /s
@@ -6953,6 +6958,7 @@ jäähdyttämö /s
 jäähdyt{tØ}e{Øth}{ØeØeØ} /s
 jäähdyt{tØ}i{mn}{ØeØeØ} /s
 jäähdyty{ØkØkk}s{ØeØeØ} /s
+jää_kiek{kØ}o /s
 jääkär{iieØ} /s
 jäämistö /s
 jääm{äØ} /s
@@ -8006,6 +8012,7 @@ ka{td}{ao} /s
 ka{td}e{Øth}{ØeØeØ} /s
 ka{td}o /s
 ka{td}u /s
+katu_kivey{ØkØkk}s{ØeØeØ} /s
 kateder{iieØ} /s
 katedraal{iieØ} /s
 kateellisuu{ØØØØk}{stds}{ØeØeØ} /s
@@ -8081,6 +8088,7 @@ katsom{aØ} /s
 katsomo /s
 katsomu{ØkØkk}s{ØeØeØ} /s
 katson{tn}{ao} /s
+katsottavuu{ØØØØk}{stds}{ØeØeØ} /s
 kattaj{aØo} /s
 kattar{ao} /s
 kattau{ØkØkk}s{ØeØeØ} /s
@@ -8091,6 +8099,8 @@ kattuun{iieØ} /s
 kat{tØ}e{Øth}{ØeØeØ} /s
 kat{tØ}{iieØ} /s
 kat{tØ}o /s
+katto_järjestö /s
+katto_nopeu{ØØØØk}{stds}{ØeØeØ} /s
 katuj{aØo} /s
 katumattomuu{ØØØØk}{stds}{ØeØeØ} /s
 katumu{ØkØkk}s{ØeØeØ} /s
@@ -8103,6 +8113,7 @@ kauh{ao} /s
 kauhavalai{ns}{eeØØ}{nØØØ} /s
 kauhe{aØo} /s
 kauheu{ØØØØk}{stds}{ØeØeØ} /s
+kauhistelu /s
 kauhistu{ØkØkk}s{ØeØeØ} /s
 kauhtanai{ns}{eeØØ}{nØØØ} /s
 kauhtan{ao} /s
@@ -8151,6 +8162,7 @@ kaupunkilai{ns}{eeØØ}{nØØØ} /s
 kaupunkilaisuu{ØØØØk}{stds}{ØeØeØ} /s
 kaupunkimaisuu{ØØØØk}{stds}{ØeØeØ} /s
 kaupustelij{ao} /s
+kaupustelu /s
 kaupu{ØkØkk}s{ØeØeØ} /s
 kaur{ao} /s
 kauri{sØh}{ØiØiØ} /s
@@ -8296,6 +8308,7 @@ keinautu{ØkØkk}s{ØeØeØ} /s
 keino_kastelu /s
 keinokkuu{ØØØØk}{stds}{ØeØeØ} /s
 keinollisuu{ØØØØk}{stds}{ØeØeØ} /s
+keino_lannot{tØ}e{Øth}{ØeØeØ} /s
 keinon{tn}o /s
 keino /s
 keinottelij{ao} /s
@@ -10032,6 +10045,8 @@ koreu{ØØØØk}{stds}{ØeØeØ} /s
 korianter{iieØ} /s
 koridor{iieØ} /s
 kor{iieØ} /s
+kori_pallo /s
+koripallo_kent{tØ}{äØ} /s
 korilli{ns}{eeØØ}{nØØØ} /s
 korin{ao} /s
 korinttilai{ns}{eeØØ}{nØØØ} /s
@@ -14908,6 +14923,7 @@ miekkoi{ns}{eeØØ}{nØØØ} /s
 miekko{ns}{eeØØ}{nØØØ} /s
 miek{kØ}{ao} /s
 mielekkyy{ØØØØk}{stds}{ØeØeØ} /s
+mielen_osoitu{ØkØkk}s{ØeØeØ} /s
 mielettömyy{ØØØØk}{stds}{ØeØeØ} /s
 mielevyy{ØØØØk}{stds}{ØeØeØ} /s
 miel{ieØeØ} /s
@@ -17377,7 +17393,7 @@ opiaat{tØ}{iieØ} /s
 opillisuu{ØØØØk}{stds}{ØeØeØ} /s
 opinio /s
 opinnoin{tn}{iieØ} /s
-opin{tn}{ao} /s
+opin{tn}{ao} /s 20
 opin{tn}o /s
 opiskelij{ao} /s
 opiskelu /s
@@ -17990,6 +18006,7 @@ palvelevaisuu{ØØØØk}{stds}{ØeØeØ} /s
 palvelij{ao} /s
 palvelijat{tØ}ar{ØeØeØ} /s
 palvelu /s
+palvelu_yrity{ØkØkk}s{ØeØeØ} /s
 palvelu{ØkØkk}s{ØeØeØ} /s
 palve{Øth}{ØeØeØ} /s
 palv{ieeeØ} /s
@@ -21281,6 +21298,7 @@ rakeisuu{ØØØØk}{stds}{ØeØeØ} /s
 rakennelm{aØ} /s
 rakennuttaj{aØo} /s
 rakennu{ØkØkk}s{ØeØeØ} /s
+rakennus_mestar{iieØ} /s
 rakentaj{aØo} /s
 rakentami{ns}{eeØØ}{nØØØ} /s
 rakenteellisuu{ØØØØk}{stds}{ØeØeØ} /s
@@ -21375,6 +21393,7 @@ rapell{iieØ} /s
 rapeu{ØØØØk}{stds}{ØeØeØ} /s
 rapin{ao} /s
 raplau{ØkØkk}s{ØeØeØ} /s
+rapnin{kg}{iieØ} /s
 raport{tØ}{iieØ} /s
 raportöör{iieØ} /s
 rappaaj{aØo} /s
@@ -21655,6 +21674,7 @@ reiällisyy{ØØØØk}{stds}{ØeØeØ} /s
 rekister{iieØ} /s
 rekisteröin{tn}{iieØ} /s
 rek{kØ}{ao} /s
+rekka_auto /s
 rek{kØ}{iieØ} /s
 rek{kØ}o /s
 reklaam{iieØ} /s
@@ -23323,7 +23343,7 @@ saksannu{ØkØkk}s{ØeØeØ} /s
 saks{ao} /s
 saksat{tØ}ar{ØeØeØ} /s
 saksau{ØkØkk}s{ØeØeØ} /s
-saks{ieeeØ} /s
+sakset:saks{ieeeØ} /s
 saks{iieØ} /s
 saksilai{ns}{eeØØ}{nØØØ} /s
 saksmann{iieØ} /s
@@ -26005,6 +26025,7 @@ sähköisyy{ØØØØk}{stds}{ØeØeØ} /s
 sähkö /s
 sähköttäj{äØö} /s
 sähköty{ØkØkk}s{ØeØeØ} /s
+sähly /s
 sähläily /s
 sähläy{ØkØkk}s{ØeØeØ} /s
 sähähdy{ØkØkk}s{ØeØeØ} /s
@@ -26490,6 +26511,7 @@ taluttelu /s
 talut{tØ}i{mn}{ØeØeØ} /s
 talutu{ØkØkk}s{ØeØeØ} /s
 talvehtij{ao} /s
+talvi_asu /s
 talv{ieeeØ} /s
 talvik{kØ}{iieØ} /s
 talvik{kØØ}o /s
@@ -26804,6 +26826,7 @@ tax{iieØ} /s
 teak{ØieØ} /s
 teatraalisuu{ØØØØk}{stds}{ØeØeØ} /s
 teatter{iieØ} /s
+teatteri_esity{ØkØkk}s{ØeØeØ} /s
 teatterilai{ns}{eeØØ}{nØØØ} /s
 teatterilli{ns}{eeØØ}{nØØØ} /s
 teatterimaisuu{ØØØØk}{stds}{ØeØeØ} /s
@@ -27048,6 +27071,7 @@ termiik{kØ}{iieØ} /s
 termiin{ao} /s
 termiin{iieØ} /s
 termiit{tØ}{iieØ} /s
+terminaal{iieØ} /s
 terminologi{ao} /s
 termistö /s
 termofor{iieØ} /s
@@ -29523,6 +29547,7 @@ valimo /s
 valinnaisuu{ØØØØk}{stds}{ØeØeØ} /s
 valin{tn}{ao} /s
 valio /s
+valio_kun{tn}{aØ} /s
 valiosto /s
 valistaj{aØo} /s
 valistumattomuu{ØØØØk}{stds}{ØeØeØ} /s
@@ -30745,6 +30770,7 @@ vipu{ns}{eeØØ}{nØØØ} /s
 vipusi{mn}{ØeØeØ} /s
 vi{pv}u /s
 virallisuu{ØØØØk}{stds}{ØeØeØ} /s
+viran_omai{ns}{eeØØ}{nØØØ} /s
 vir{ao} /s
 virastomaisuu{ØØØØk}{stds}{ØeØeØ} /s
 virasto /s
@@ -31084,6 +31110,7 @@ vuojalai{ns}{eeØØ}{nØØØ} /s
 vuoja{ns}{eeØØ}{nØØØ} /s
 vuojolai{ns}{eeØØ}{nØØØ} /s
 vuojo{ns}{eeØØ}{nØØØ} /s
+vuokat{tØ}{iieØ} /s
 vuokko{ns}{eeØØ}{nØØØ} /s
 vuok{kØ}o /s
 vuokraaj{aØo} /s
@@ -31107,7 +31134,9 @@ vuom{aØ} /s
 vuomen{ØeØØØ} /s
 vuon{aØ} /s
 vuonelo /s
+vuo_nie{mn}{ieØeØ} /s
 vuono /s
+vuon_ohjau{ØkØkk}s{ØeØeØ} /s
 vuopaj{aØo} /s
 vuopio /s
 vuorau{ØkØkk}s{ØeØeØ} /s
@@ -31125,6 +31154,8 @@ vuorottelij{ao} /s
 vuorottelu /s
 vuorotu{ØkØkk}s{ØeØeØ} /s
 vuorso /s
+vuo_saar{ieØeØ} /s
+vuo_salm{ieeeØ} /s
 vuotamattomuu{ØØØØk}{stds}{ØeØeØ} /s
 vuotavuu{ØØØØk}{stds}{ØeØeØ} /s
 vuo{td}{aØ} /s
@@ -31203,11 +31234,15 @@ väkevöit{tØ}e{Øth}{ØeØeØ} /s
 väkevöity{ØkØkk}s{ØeØeØ} /s
 väkinäisyy{ØØØØk}{stds}{ØeØeØ} /s
 väkisyy{ØØØØk}{stds}{ØeØeØ} /s
+väki_val{tl}{ao} /s
+väki_valtaisuu{ØØØØk}{stds}{ØeØeØ} /s
 väkkär{iieØ} /s
 väkkär{äö} /s
 väkä{ns}{eeØØ}{nØØØ} /s
 väkäty{ØkØkk}s{ØeØeØ} /s
 vä{kØ}{ieeeØ} /s
+väki_val{tl}{ao} /s
+väki_valtaisuu{ØØØØk}{stds}{ØeØeØ} /s
 vä{kØ}{äØ} /s
 väl{iieØ} /s
 väliin_putoaj{aØo} /s
