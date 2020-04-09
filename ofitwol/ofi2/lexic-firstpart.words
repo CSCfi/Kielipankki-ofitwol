@@ -863,6 +863,7 @@ alanko
 alanne
 alanteen
 alantehen
+alas ! varottava yligenerointia
 alasimen
 alasin
 alastomuuden
@@ -1205,6 +1206,7 @@ ammattilaisuus
 ammattimaisuuden
 ammattimaisuus
 ammattiyhdistys ! -liike
+amme ! ??
 ammeellis
 ammeellisen
 ammennin
@@ -2722,6 +2724,7 @@ avisooni
 avisoonin
 avitaminoosi
 avitaminoosin
+avo ! tarkistettava generoiko yli
 avokas
 avokkaan
 avokkahan
@@ -4223,6 +4226,8 @@ dyyni
 dyynin
 džonkin
 džonkki
+ebenpuu
+ebenpuun
 eboniitin
 eboniitti
 edellis
@@ -5203,7 +5208,7 @@ erästyksen
 erästys
 erääntymättömyyden
 erääntymättömyys
-es
+! es
 esanssi
 esanssin
 escudo
@@ -6885,6 +6890,7 @@ haikean
 haikeuden
 haikeus
 haiku
+haikun
 haikus
 haikusen
 hailakkuuden
@@ -7934,6 +7940,7 @@ heikin
 heikkari
 heikkarin
 heikki
+heikko_ Adjectives
 heikkouden
 heikkous
 heikommuuden
@@ -19415,7 +19422,7 @@ kolhoosi
 kolhoosin
 kolhu
 kolhun
-koli 10
+koli ! 10
 koliais
 koliaisen
 kolibri
@@ -50465,10 +50472,12 @@ soittimen
 soittimisto
 soittimiston
 soitto
+soittokunnan
 sokaisu
 sokaisun
 sokan
 sokea
+sokeain
 sokean
 sokeisto
 sokeiston
@@ -59761,6 +59770,7 @@ vahtera
 vahteran
 vahti
 vahto
+vahva_ Adjectives
 vahvemmuuden
 vahvemmuus
 vahvenne

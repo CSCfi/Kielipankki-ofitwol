@@ -3,10 +3,13 @@ LEXICON Compounds
 ! ul{aØ} /s
 
 ais{ØieØ} /s
-ape{§}ruokin{tn}{ao} /s
+ape_ruokin{tn}{ao} /s
+arjalai{ns}{eeØØ}{nØØØ} /s
 as{ØieØ} /s
 asu_kokonaisuu{ØØØØk}{stds}{ØeØeØ} /s
 etsi{mn}{ØeØeØ} /s
+ev{ao} /s ! propri
+graaf{ØieØ} /s 20
 harmo /s
 in{ao} /s
 inar{iieØ} /s
@@ -17,7 +20,7 @@ jak{kØ}{iieØ} /s
 jen{ØieØ} /s
 jääm{iieØ} /s
 kal{iieØ} /s
-kali{§}suol{ao} /s
+kali_suol{ao} /s
 kall{ao} /s
 kann{ao} /s
 ki{pv}en{ØeØeØ} /s
@@ -27,18 +30,19 @@ kylä{ns}{eeØØ}{nØØØ} /s 20
 lah{td}{iieØ} /s
 la{iieØ} /s
 laist{ao} /s
-le{eeØ} /s
-laon{§}alttiu{ØØØØk}{stds}{ØeØeØ} /s
-laon{§}arkuu{ØØØØk}{stds}{ØeØeØ} /s
-laon{§}kestävyy{ØØØØk}{stds}{ØeØeØ} /s
+le{eØ} /s
+laon_alttiu{ØØØØk}{stds}{ØeØeØ} /s
+laon_arkuu{ØØØØk}{stds}{ØeØeØ} /s
+laon_kestävyy{ØØØØk}{stds}{ØeØeØ} /s
+lol{aØ} /s ! propri
 luv{aØ} /s
 läpinäkyv{äØ} /a
 määr{iieØ} /s
 onnik{kØ}{ao} /s
 or{aØ} /s
-ota{§}kaar{ieØeØ} /s
-ota{§}lah{td}{ieeeØ} /s
-ota{§}nie{mn}{ieØeØ} /s
+ota_kaar{ieØeØ} /s
+ota_lah{td}{ieeeØ} /s
+ota_nie{mn}{ieØeØ} /s
 paik{kØ}o /s
 ! pal{kØ}a{sØh}{ØaØØØ} /s
 päivä{ns}{eeØØ}{nØØØ} /s
@@ -67,27 +71,28 @@ sir{ØieØ} /s
 sto{aØ} /s
 ta{kØ}{ao} /s
 ! te{kØ}e{Øth}{ØeØeØ} /s
-tela{§}kaivur{iieØ} /s
-tela{§}ketju /s
-tela{§}kone{Øth}{ØeØeØ} /s
-tela{§}kärr{iieØ} /s
-tela{§}mat{tØ}o /s
-tela{§}miin{ao} /s
-tela{§}muot{tØ}{iieØ} /s
-tela{§}palvelu /s
-tela{§}pyör{äØ} /s
-tela{§}ran{tn}{ao} /s
-tela{§}rik{kØ}o /s
-tela{§}t{iØ}e /s
-tela{§}traktor{iieØ} /s
-tela{§}tykistö /s
-tela{§}kiv{ieeeØ} /s
+tela_kaivur{iieØ} /s
+tela_ketju /s
+tela_kone{Øth}{ØeØeØ} /s
+tela_kärr{iieØ} /s
+tela_mat{tØ}o /s
+tela_miin{ao} /s
+tela_muot{tØ}{iieØ} /s
+tela_palvelu /s
+tela_pyör{äØ} /s
+tela_ran{tn}{ao} /s
+tela_rik{kØ}o /s
+tela_t{iØ}e /s
+tela_traktor{iieØ} /s
+tela_tykistö /s
+tela_kiv{ieeeØ} /s
 tip{ao} /s
 tipl{ao} /s
 tipo /s
 toim{iieØ} /s
 tull{aØ} /s
 u{kØk}s{ieeØeØ} /s
+uot{iieØ} /s
 !
 uro_te{kØ}o /s
 uro_t{yØ}ö /s
@@ -599,12 +604,15 @@ koti_is{iieØ} /s
 ! isä
 !
 is{äØ} /s
+aikuis__is{äØ} /s
 alkoholisti_is{äØ} /s
 arkkitehti_is{äØ} /s
 biologi_is{äØ} /s
 diplomaatti_is{äØ} /s
 dominikaani_is{äØ} /s
 ekonomi_is{äØ} /s
+elatus__is{äØ} /s
+elätys__is{äØ} /s
 esi_is{äØ} /s
 juutalais_is{äØ} /s
 hanuristi_is{äØ} /s
@@ -1497,18 +1505,18 @@ virka_tak{kØ}{iieØ} /s
 !
 ! tee
 !
-te{eeØ} /s
-aamu_te{eeØ} /s
-ilta_te{eeØ} /s
-jää_te{eeØ} /s
-kamomilla_te{eeØ} /s
-laihdutus_te{eeØ} /s
-mieli_te{eeØ} /s
-minttu_te{eeØ} /s
-pussi_te{eeØ} /s
-sitruuna_te{eeØ} /s
-timjami_te{eeØ} /s
-yrtti_te{eeØ} /s
+te{eØ} /s
+aamu_te{eØ} /s
+ilta_te{eØ} /s
+jää_te{eØ} /s
+kamomilla_te{eØ} /s
+laihdutus_te{eØ} /s
+mieli_te{eØ} /s
+minttu_te{eØ} /s
+pussi_te{eØ} /s
+sitruuna_te{eØ} /s
+timjami_te{eØ} /s
+yrtti_te{eØ} /s
 !
 ! tuki
 !

@@ -9,11 +9,11 @@ RULEFST=ofi-rules-in.fst
 AFF=analy
 DATA=../../data
 
-LEXB=base-s.lexc base-v.lexc base-a.lexc base-p.lexc base-edited.lexc base-noncomp-s.lexc
+LEXB=base-s.lexc base-v.lexc base-a.lexc base-p.lexc base-noncomp-s.lexc
 
 LEXB2=base-r.lexc lexic-firstpart.lexc lexic-n.lexc
 
-LEXM=mphon-s.lexc mphon-v.lexc mphon-a.lexc mphon-p.lexc mphon-edited.lexc mphon-noncomp-s.lexc
+LEXM=mphon-s.lexc mphon-v.lexc mphon-a.lexc mphon-p.lexc mphon-noncomp-s.lexc
 
 LEXM2=mphon-r.lexc lexic-firstpart.lexc lexic-n.lexc
 

@@ -566,18 +566,18 @@ taku{uØ} /s ; ! TAKUU
 vastu{uØ} /s ; ! VASTUU
 veisu{uØ} /s ; ! VEISUU
 !
-< Co* Syl+ e {eeØ} 0::10 > /s ; ! S26: KAMEE APOKOPEE KLIŠEE TEE - 2+syll
-bide{eeØ} /s ; ! BIDEE
-esse{eeØ} /s ; ! ESSEE
-file{eeØ} /s ; ! FILEE
-frote{eeØ} /s ; ! FROTEE
-kliše{eeØ} /s ; ! KLIŠEE
-le{eeØ} /s ; ! LEE
-pyre{eeØ} /s ; ! PYREE
-te{eeØ} /s ; ! TEE
-toffe{eeØ} /s ; ! TOFFEE
-trok{eeØ} /s ; ! TROKEE
-äite{eeØ} /s ; ! ÄITEE
+< Co* Syl+ e {eØ} 0::10 > /s ; ! S26: KAMEE APOKOPEE KLIŠEE TEE - 2+syll
+bide{eØ} /s ; ! BIDEE
+esse{eØ} /s ; ! ESSEE
+file{eØ} /s ; ! FILEE
+frote{eØ} /s ; ! FROTEE
+kliše{eØ} /s ; ! KLIŠEE
+le{eØ} /s ; ! LEE
+pyre{eØ} /s ; ! PYREE
+te{eØ} /s ; ! TEE
+toffe{eØ} /s ; ! TOFFEE
+trok{eØ} /s ; ! TROKEE
+äite{eØ} /s ; ! ÄITEE
 !
 < Co* [Vo+ Co+]* [i|a|ä|o] {iØ} 0::10 > /s ; ! S27: PII SAMURAI HELLUNTAI PROSTOI VOI SI TÄI
 ha{iØ} /s ; ! HAI
@@ -866,6 +866,7 @@ kimmel{ØeØeØ} /s ; ! KIMMEL
 koit{tØ}ar{ØeØeØ} /s ; ! KOITAR
 sisar{ØeØeØ} /s ; ! SISAR
 somer{ØeØeØ} /s ; ! SOMER
+nivel{ØeØeØ} /s ; ! NIVEL
 sävel{ØeØeØ} /s ; ! SÄVEL
 tat{tØ}ar{ØeØeØ} /s ; ! TATAR
 tyt{tØ}är{ØeØeØ} /s ; ! TYTÄR

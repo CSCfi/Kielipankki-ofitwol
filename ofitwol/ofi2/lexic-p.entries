@@ -55,6 +55,7 @@ aidosti /pc
 aiemmin /pc
 aiheellisesti /pc
 aiheettomasti /pc
+ai /p
 aih /p
 aijai /pc
 aikaan /pc
@@ -121,6 +122,7 @@ alakynteen /pc
 alamaisimmasti /pc
 alamaisimmin /pc
 alas /pc
+alaspäin /pc
 alasti /pc
 alastomasti /pc
 alati /pc
@@ -175,6 +177,7 @@ allekkain /pc
 alle /po
 alletusten /pc
 alta /po
+altakulmain /p
 alternatiivisesti /pc
 altruistisesti /pc
 alttiisti /pc
@@ -185,6 +188,7 @@ alumma /pc
 alumpaa /pc
 alumpana /pc
 alun /pc
+alunalkaen /pc
 alusilla /ps
 alussa /po
 alusta /pc
@@ -424,6 +428,8 @@ edelleen /pc
 edelle /po
 edellä /po
 edeltä /po
+edeltäkäsin /pc
+edeltäpäin /pc
 edeltävästi /pc
 edemmäksi /pc
 edemmä /pc
@@ -564,10 +570,14 @@ ennelle /ps
 ennellä /ps
 ennemmin /pc
 ennen /pc
+ennen_aikoja /po
+ennen_kuin /p
 ennestään /pc
 ennustuksellisesti /pc
 ennätyksellisesti /pc
 ennätysmäisesti /pc
+ensi_hädässä /ps
+ensi_hätään /ps
 ensikseen /pc
 ensiksi /pc
 ensimmäiseksi /pc
@@ -618,6 +628,7 @@ eri /p
 eripuraisesti /pc
 eriseuraisesti /pc
 eristävästi /pc
+eri_toten /pc
 erittäinkin /pc
 erittäin /pc
 erittäisin /pc
@@ -669,8 +680,9 @@ etnologisesti /pc
 etsimättömästi /pc
 etsivästi /pc
 että /pc
-etunenässä /pc
-etunenään /pc
+ettäs End
+etu_nenässä /pc
+etu_nenään /pc
 etymologisesti /pc
 etäimpänä /pc
 etäinnä /pc
@@ -778,8 +790,9 @@ hajallisesti /pc
 hajalta /pc
 hajanaisesti /pc
 hajan /pc
-hajasormin /pc
-hajasäärin /pc
+haja_sormin /pc
+haja_säärin /pc
+haja_reisin /pc
 hajottavasti /pc
 hajuakaan /pc
 hajuttomasti /pc

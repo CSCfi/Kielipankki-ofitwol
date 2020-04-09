@@ -193,7 +193,7 @@ OPEN = VoM [(CoM) [VoS|(VoØ) :i] | EOW | {PS}:] ;
 
 !!! lisää muut vokaalit, kun niitä tulee esimerkkeihin !!!
 
-{eeØ}:Ø | {oØ}:Ø | {öØ}:Ø <=> _ {ij}: ;
+{eØ}:Ø | {oØ}:Ø | {öØ}:Ø <=> _ {ij}: ;
     ! leve<e> leve<e>tä leve<>itä
     ! kame<e> kame<e>ta kame<>ita
     ! tieno<o> tieno<o>ta tieno<>ita aino<o>
@@ -204,6 +204,8 @@ OPEN = VoM [(CoM) [VoS|(VoØ) :i] | EOW | {PS}:] ;
     ! t<i>e t<>eitä pi<>iden
     ! vapaisi<i>in vapahisi<>n
     ! v<i>en v<>eivät v<>eisi v<i>enyt
+    ! sall<i>n sall<>i sall<>isi sall<i>nee sall<i>ttu
+    ! na<i> na<>i na<>isi na<i>nee na<i>tu
 
 {uØ}:Ø <=> _ (:o) :i ;
     ! s<u>o s<>oita tenkkapo<o> tenkkapo<>ita
@@ -318,10 +320,6 @@ OPEN = VoM [(CoM) [VoS|(VoØ) :i] | EOW | {PS}:] ;
 {iiiieii}:e <=> _ l :e i s i ;
     ! arva<i>len arva<i>li arva<i>lisi arva<e>lisi arva<i>llut
 
-{iØiØii}:Ø <=> _ (e) [{i}: | i s i] ;
-    ! sall<i>n sall<>i sall<>isi sall<i>nee sall<i>ttu
-    ! na<i> na<>i na<>isi na<i>nee na<i>tu
-
 {äØØØØ}:Ø <=> _ {i}: | i s i | {nlrs}: | k | {dlnrtØ}: | {tttØ}: ;
     ! hylkä<ä>n hylkäs<>i hylka<>isi hylät<>ään
 
@@ -337,8 +335,6 @@ OPEN = VoM [(CoM) [VoS|(VoØ) :i] | EOW | {PS}:] ;
 
 {sØ}:Ø <=> _ VoØ [{nlrs}: | k | {dlnrtØ}: | {tttØ}:] ;
     ! valit<s>en valit<s>i valin<>nee valit<s>isi valit<s>eisi valit<>koon
-
-{ssØsØØ}:s <=> _ :e | (VoØ) :i ;
     ! haravoit<s>en haravoit<s>i haravoit<s>isi haravoit<>koon
     ! haravoin<>nut haravoit<>tu haravoit<>tiin
 

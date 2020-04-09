@@ -26,7 +26,7 @@ kaksitoista+NUM:kahtatoista Clit
 kaksitoista+NUM:kahteentoista Clit
 kaksitoista+NUM:kaksitoista Clit
 kolmas:kolma{ØnØnn}{snt}{ØeØØØ} /n
-kolm{eeØ} /n01
+kolm{eØ} /n01 ! ? tarkista
  kolmetoista+NUM:kolmastoista Clit
 kolmetoista+NUM:kolmentoista Clit
 kolmetoista+NUM:kolmetoista Clit
