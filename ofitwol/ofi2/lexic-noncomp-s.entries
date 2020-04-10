@@ -44,7 +44,7 @@ ota_kaar{ieØeØ} /s
 ota_lah{td}{ieeeØ} /s
 ota_nie{mn}{ieØeØ} /s
 paik{kØ}o /s
-! pal{kØ}a{sØh}{ØaØØØ} /s
+! pal{kØ}a{sØh}{aäØ} /s
 päivä{ns}{eeØØ}{nØØØ} /s
 päät{tØ}ö /s
 pyörin{äö} /s
@@ -868,11 +868,11 @@ väline_kulu /s
 !
 ! kunnas
 !
-kunna{sØh}{ØaØØØ} /s
-kataja_kunna{sØh}{ØaØØØ} /s
-kivi_kunna{sØh}{ØaØØØ} /s
-laakso_kunna{sØh}{ØaØØØ} /s
-sora_kunna{sØh}{ØaØØØ} /s
+kunna{sØh}{aäØ} /s
+kataja_kunna{sØh}{aäØ} /s
+kivi_kunna{sØh}{aäØ} /s
+laakso_kunna{sØh}{aäØ} /s
+sora_kunna{sØh}{aäØ} /s
 !
 ! laki ~ laen
 !

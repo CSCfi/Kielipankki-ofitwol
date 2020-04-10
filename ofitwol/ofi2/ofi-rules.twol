@@ -215,7 +215,7 @@ OPEN = VoM [(CoM) [VoS|(VoØ) :i] | EOW | {PS}:] ;
     ! s<y>ön s<>öi s<y>onee s<>öisi s<y>ököön
     ! <y>ö <>öitä sy<>itä käv<>isi
 
-{aä}:a|{oö}:o|{uy}:u <=> [:a|:o|:u] [\{§}:]* _ ;
+{aä}:a | {oö}:o | {uy}:u <=> [:a|:o|:u] [\{§}:]* _ ;
     ! maass<a> piiss<ä> juot<u> syöt<y> tulk<o><o>n syök<ö><ö>n
 
 ! VERB SUFFIX ALTERNATIONS
@@ -552,16 +552,6 @@ s e {Øe}:Ø =>
 {aØoØ}:a | {äØöØ}:ä /<= _ i {nm}: | {ij}: ;
     ! matal<a> ihan<a>ssa hämär<ä>n
 
-{ØaØØØ}:Ø|{ØäØØØ}:Ø => _ (CoØ) [{ij}: | i {nm}: | {Øt}:t | t e | {nrs}: | EOW] ;
-{ØaØØØ}:a|{ØäØØØ}:ä /<= :n (:p)  _  ,
-                        _ :Ø* [EOW | {ij}: | i {nm}:] ;
-    ! muuan<> muutam<a>n muuat<>ta (muuan<>na)
-    ! saapa<>s saappa<a>n saapa<>sta
-    ! vieras<> viera<a>n vierah<a>n vieras<>ta (vieras<>na)
-    ! kevät<> kevä<ä>n kevät<>tä (kevän<>nä) kevä<>itä
-    ! pahin<> pahimm<a>n pahin<>ta (pahin<>na)
-    ! lämmin<> lämpim<ä>n lämmin<>tä (lämmin<>nä) lämpim<>iä
-
 !{ØaØaØ}:Ø => _ [{ij}: | {Øt}:t | t e |EOW] ; 
 !{ØaØaØ}:a /<= _ [{ij}:|EOW] ,
 !             :s _ ;
@@ -579,15 +569,40 @@ s e {Øe}:Ø =>
               VoS (CoØ) [:s|:n] _ {nrs}: ;
     ! ahven<>na terven<>nä
 
-{aäØ}:a => [:a|:o|:u] [\{§}:]* _ ;
+{aäØ}:a => [:a | :o | :u] [\{§}:]* _ ;
     ! alimp<a>na
-{aäØ}:ä /<= [:a|:o|:u] [\{§}:]* _ ;
+{aäØ}:ä /<= [:a | :o | :u] [\{§}:]* _ ;
     ! ylimp<ä>nä
 {aäØ}:Ø <=>
-        _ {ij}: | {Øt}:t ,
-    ! alimm<>issa alimp<>ien ylimp<>iin
-        {ØpmØ}: _ EOW ;
-    ! alin<>
+        _ {ij}: | i {nm}: ,
+    ! alimm<>issa alimp<>ien ylimp<>iin viera<>issa pahimm<>issa
+    ! saappa<>issa kevä<>itä kevä<>istä lämpim<>iä onnettom<>issa
+    ! lämpim<>iä
+	:n ({ØpmØ}) | :s | t _ {Øt}:t | t e ,
+    ! muuat<>ta saapa<>sta vieras<>ta kevät<>tä pahin<>ta
+    ! muuat<>ta vieras<>ta kevät<>tä onneton<>ta
+    ! lämmin<>tä onneton<>ta pahin<>ta lämmin<>tä
+        [:n ({ØpmØ}:Ø) | :s | :t] _ EOW ,
+    ! alin<> alin<>ten muuan<>
+    ! saapas<> saapas<>ta vieras<> kevät<> kevä<>itä pahin<>
+    ! lämmin<> onneton<>
+        [:n ({ØpmØ}:Ø) | :s] _ {nrs}: ;
+    ! alin<>na (muuan<>na) (vieras<>na) (kevän<>nä)
+    ! (pahin<>na) (lämmin<>nä) onneton<>na
+
+!{ØaØØØ}:Ø|{ØäØØØ}:Ø =>
+!        _ (CoØ) [{ij}: | i {nm}: | {Øt}:t | t e | {nrs}: | EOW] ;
+    ! muuan<> muuat<>ta (muuan<>na)
+    ! saapa<>s saapa<>sta vieras<> vieras<>ta (vieras<>na)
+    ! kevät<> kevät<>tä (kevän<>nä) kevä<>itä
+    ! pahin<> pahin<>ta (pahin<>na)
+    ! lämmin<> lämpim<ä>n lämmin<>tä (lämmin<>nä) lämpim<>iä
+    ! onneton<> onneton<>ta onneton<>na
+!{ØaØØØ}:a|{ØäØØØ}:ä /<=
+!        :n (:p)  _  ,
+!        _ :Ø* [EOW | {ij}: | i {nm}:] ;
+    ! muutam<a>n saappa<a>n viera<a>n vierah<a>n kevä<ä>n
+    ! pahimm<a>n lämpim<ä>n onnettom<a>n myymättöm<ä>n
 
 {aäoöØ}:a | {aäoöØ}:o => [:a|:o|:u] [\{§}:]* _ ;
     ! kulkij<a> kulkij<o>ita
@@ -692,8 +707,13 @@ s e {Øe}:Ø =>
 {iiiie}:e <=> _ :Ø* i {nm}: ;
     ! tyyr<e>intä
 
-{ue}:u <=> _ [:t|:n] ;
+    ! kuoll<e>ita
+{uye}:u | {uye}:y <=> _ [:t|:n] ;
     ! kuoll<u>t kuoll<u>tta kuoll<u>nna
+{uye}:u => [:a|:o|:u] [\{§}:]* _ ;
+    ! kuoll<u>tta
+{uye}:y /<= [:a|:o|:u] [\{§}:]* _ ;
+    ! menn<y>t
 
 {ØuØuØ}:Ø | {ØoØoØ}:Ø <=> _ :Ø* [:t e|{Øt}:|{ij}:|EOW] ;
     ! kiiru<> kiiru<u>n kiirut<>ta kiiru<u>na kiiruh<u>na

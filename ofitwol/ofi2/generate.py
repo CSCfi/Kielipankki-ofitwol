@@ -72,7 +72,7 @@ def generate(word):
     global result_set, rule_dict_lst
     result_set = set()
     insym_lst = re.findall(r"{[^{}]+}|[^{}+]|[+][A-Z1-9]+", word)
-    print(insym_lst) ###
+    #print(insym_lst) ###
     start_state_lst = [0 for r in rule_dict_lst]
     search(start_state_lst, insym_lst, [])
     return result_set
