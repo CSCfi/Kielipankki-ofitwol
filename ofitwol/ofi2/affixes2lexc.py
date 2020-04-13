@@ -20,7 +20,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 import re, csv, sys
 
 import argparse
-import argparse
 argparser = argparse.ArgumentParser(
     "python3 affies2analysis.py",
     description="""
@@ -53,7 +52,7 @@ argparser = argparse.ArgumentParser(
 
 """)
 argparser.add_argument(
-    "-m", "--mode", choices=["MPHON", "GUESS", "ENTRY", "BASE", ],
+    "-m", "--mode", choices=["MPHON", "GUESS", "ENTRY", "BASE"],
     help="""Whether the lexicon produces base forms, morphophonemic form or
     guessed entries""",
     default="base")

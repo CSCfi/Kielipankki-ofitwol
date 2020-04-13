@@ -574,11 +574,11 @@ s e {Øe}:Ø =>
 {aäØ}:ä /<= [:a | :o | :u] [\{§}:]* _ ;
     ! ylimp<ä>nä
 {aäØ}:Ø <=>
-        _ {ij}: | i {nm}: ,
+        _ ({nØØØ}:Ø) [{ij}: | i {nm}:] ,
     ! alimm<>issa alimp<>ien ylimp<>iin viera<>issa pahimm<>issa
     ! saappa<>issa kevä<>itä kevä<>istä lämpim<>iä onnettom<>issa
     ! lämpim<>iä
-	:n ({ØpmØ}) | :s | t _ {Øt}:t | t e ,
+	[:n ({ØpmØ}:Ø) | :s | :t] _ ({nØØØ}:Ø) [{Øt}:t | t e] ,
     ! muuat<>ta saapa<>sta vieras<>ta kevät<>tä pahin<>ta
     ! muuat<>ta vieras<>ta kevät<>tä onneton<>ta
     ! lämmin<>tä onneton<>ta pahin<>ta lämmin<>tä
@@ -586,7 +586,7 @@ s e {Øe}:Ø =>
     ! alin<> alin<>ten muuan<>
     ! saapas<> saapas<>ta vieras<> kevät<> kevä<>itä pahin<>
     ! lämmin<> onneton<>
-        [:n ({ØpmØ}:Ø) | :s] _ {nrs}: ;
+        [:n ({ØpmØ}:Ø) | :s] _ ({nØØØ}:Ø) {nrs}: ;
     ! alin<>na (muuan<>na) (vieras<>na) (kevän<>nä)
     ! (pahin<>na) (lämmin<>nä) onneton<>na
 
