@@ -373,7 +373,7 @@ ajoittaisuu{ØØØØk}{stds}{ØeØeØ} /s
 ajoitu{ØkØkk}s{ØeØeØ} /s
 ajok{kØ}a{sØh}{aäØ} /s
 ajok{kØ}{iieØ} /s
-ajo{ØkØkk}s{ØeØeØ} /s
+! ajo{ØkØkk}s{ØeØeØ} /s ! -> special
 aju /s
 ajue{Øth}{ØeØeØ} /s
 ajur{iieØ} /s
@@ -458,6 +458,7 @@ ak{kØ}{ao} /s
 ala_ker{tr}{ao} /s
 ala_kohtai{ns}{eeØØ}{nØØØ} /s
 ala_kulo /s
+ala_kuloisuu{ØØØØk}{stds}{ØeØeØ} /s
 ala_lai{td}{ao} /s
 ala_mä{kØ}{ieeeØ} /s
 ala_osasto /s
@@ -2035,7 +2036,6 @@ dekstriin{iieØ} /s
 delegaatio /s
 delfiin{iieØ} /s
 delikaat{tØ}{iieØ} /s
-delt{ao} /s
 demagogisuu{ØØØØk}{stds}{ØeØeØ} /s
 demagogi{ao} /s
 demagog{iieØ} /s
@@ -2761,8 +2761,8 @@ empirist{iieØ} /s
 emu /s
 emulsio /s
 emust{ao} /s
-em{iieØ} /s
-em{äØ} /s
+! em{iieØ} /s ! -> special
+! em{äØ} /s ! -> special
 emäksisyy{ØØØØk}{stds}{ØeØeØ} /s
 emäk{kØ}{iieØ} /s
 emännyy{ØØØØk}{stds}{ØeØeØ} /s
@@ -3076,6 +3076,7 @@ espanjalai{ns}{eeØØ}{nØØØ} /s
 espanjat{tØ}ar{ØeØeØ} /s
 espanjolet{tØ}{iieØ} /s
 espanj{ao} /s
+espanjalaisuu{ØØØØk}{stds}{ØeØeØ} /s
 esparto /s
 esperantist{iieØ} /s
 esperanto /s
@@ -6677,6 +6678,7 @@ inklinaattor{iieØ} /s
 inkognito /s
 inkompetenss{iieØ} /s
 inkongruenss{iieØ} /s
+inkontinenss{iieØ} /s
 inkrustaatio /s
 inkrust{iieØ} /s
 inkubaatio /s
@@ -6898,7 +6900,7 @@ isotoop{pØ}{iieØ} /s
 isotopi{ao} /s
 isottelu /s
 isou{ØØØØk}{stds}{ØeØeØ} /s
-iso{ns}{eeØØ}{nØØØ} /s
+! iso{ns}{eeØØ}{nØØØ} /s ! -> special
 ispin{äö} /s
 israeliit{tØ}{ao} /s
 israelilai{ns}{eeØØ}{nØØØ} /s
@@ -6918,7 +6920,7 @@ istuttaj{aØo} /s
 istutu{ØkØkk}s{ØeØeØ} /s
 isvosik{kØØ}{ao} /s
 isvossik{kØØ}{ao} /s
-isyy{ØØØØk}{stds}{ØeØeØ} /s
+! isyy{ØØØØk}{stds}{ØeØeØ} /s ! -> special
 isällisyy{ØØØØk}{stds}{ØeØeØ} /s
 isännistö /s
 isännyy{ØØØØk}{stds}{ØeØeØ} /s
@@ -9508,7 +9510,7 @@ kerub{iieØ} /s
 keru{uØ} /s
 ker{iieØ} /s
 ker{pv}o /s
-ker{tr}o /s
+! ker{tr}o /s ! -> special
 ker{tr}{ao} /s
 ker{äØ} /s
 keräelm{äØ} /s
@@ -10472,7 +10474,7 @@ koh{td}u /s
 koh{td}{aØ} /s
 koijar{iieØ} /s
 koiju /s
-koij{aØ} /s
+! koij{aØ} /s ! -> special
 koilli{ns}{eeØØ}{nØØØ} /s
 koipeliin{iieØ} /s
 koirailu /s
@@ -13717,7 +13719,7 @@ leh{td}o /s
 leh{td}{ieeeØ} /s
 leijau{ØkØkk}s{ØeØeØ} /s
 leijon{ao} /s
-leijon{aØo} /s
+! leijon{aØo} /s ! *leijonoita
 leijun{tn}{ao} /s
 leij{ao} /s
 leikar{iieØ} /s
@@ -14216,7 +14218,7 @@ liiv{ao} /s
 liiv{iieØ} /s
 lii{kØ}{ao} /s
 lii{td}i{mn}{ØeØeØ} /s
-lii{td}o /s
+! lii{td}o /s ! -> special
 lii{td}u /s
 likaaj{aØo} /s
 likaisuu{ØØØØk}{stds}{ØeØeØ} /s
@@ -14499,8 +14501,8 @@ liver{tr}e{Øth}{ØeØeØ} /s
 livety{ØkØkk}s{ØeØeØ} /s
 livohk{aØo} /s
 livre{eØ} /s
-li{kØ}o /s
-li{kØ}{ao} /s
+! li{kØ}o /s ! -> special
+! li{kØ}{ao} /s  -> special
 li{pv}e{Øth}{ØeØeØ} /s
 li{pv}u /s
 li{pv}{ao} /s
@@ -21842,7 +21844,7 @@ potret{tØ}{iieØ} /s
 pots{iieØ} /s
 potuus{iieØ} /s
 pot{tØ}u /s
-pot{tØ}{aØ} /s
+! pot{tØ}{aØ} /s ! -> special
 pot{tØ}{iieØ} /s
 poukahdu{ØkØkk}s{ØeØeØ} /s
 poukahtelu /s
@@ -28371,7 +28373,7 @@ syyttömyy{ØØØØk}{stds}{ØeØeØ} /s
 syyt{tØ}e{Øth}{ØeØeØ} /s
 syytö{ØkØkk}s{ØeØeØ} /s
 sy{tds}{ieØeØ} /s
-sy{yØ} /s
+! sy{yØ} /s ! -> special
 syä{mn}{ØeØeØ} /s
 syöj{äØ} /s
 syöjät{tØ}är{ØeØeØ} /s
@@ -30646,7 +30648,7 @@ tulostu{ØkØkk}s{ØeØeØ} /s
 tuloutu{ØkØkk}s{ØeØeØ} /s
 tulovero_asteik{kØØ}o /s
 tulovero_prosent{tØ}{iieØ} /s
-tulo{ns}{eeØØ}{nØØØ} /s
+! tulo{ns}{eeØØ}{nØØØ} /s ! -> special
 tulo{ØkØkk}s{ØeØeØ} /s
 tulpaan{iieØ} /s
 tulppaan{iieØ} /s
@@ -30667,7 +30669,7 @@ tumpur{ao} /s
 tumpur{iieØ} /s
 tump{pØ}u /s
 tump{pØ}{iieØ} /s
-tum{aØ} /s
+! tum{aØ} /s ! -> special
 tumöör{iieØ} /s
 tunaroin{tn}{iieØ} /s
 tunar{iieØ} /s
@@ -30991,7 +30993,7 @@ tuttuu{ØØØØk}{stds}{ØeØeØ} /s
 tutustumis_koh{td}e{Øth}{ØeØeØ} /s
 tutustumis_matk{aØo} /s
 tut{tØ}u /s
-tut{tØ}{iieØ} /s
+! tut{tØ}{iieØ} /s ! -> special
 tuub{aØ} /s
 tuub{iieØ} /s
 tuudin{tn}{ao} /s
@@ -32564,7 +32566,7 @@ varmisti{mn}{ØeØeØ} /s
 varmistu{ØkØkk}s{ØeØeØ} /s
 varmuu{ØØØØk}{stds}{ØeØeØ} /s
 varm{ao} /s
-varo /s
+! varo /s ! -> special
 varoittaj{aØo} /s
 varoittelu /s
 varoitu{ØkØkk}s{ØeØeØ} /s
@@ -34024,7 +34026,7 @@ vyötäi{ns}{eeØØ}{nØØØ} /s
 vyötäre{Øth}{ØeØeØ} /s
 vyötäry{ØkØkk}s{ØeØeØ} /s
 vyötärö /s
-v{uØ}o /s
+! v{uØ}o /s ! -> special
 v{yØ}ö /s
 väestö /s
 väheksyn{tn}{äö} /s

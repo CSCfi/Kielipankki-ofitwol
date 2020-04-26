@@ -27,7 +27,7 @@ kaksitoista+NUM:kahteentoista Clit
 kaksitoista+NUM:kaksitoista Clit
 kolmas:kolma{ØnØnn}{snt}{ØeØØØ} /n
 kolm{eØ} /n01 ! ? tarkista
- kolmetoista+NUM:kolmastoista Clit
+kolmetoista+NUM:kolmastoista Clit
 kolmetoista+NUM:kolmentoista Clit
 kolmetoista+NUM:kolmetoista Clit
 kolmisen:kolmi{ns}{eeØØ}{nØØØ} /n
@@ -67,7 +67,7 @@ sata:sa{td}{ao} /n
 satanen:sata{ns}{eeØØ}{nØØØ} /n
 seitsemisen:seitsemi{ns}{eeØØ}{nØØØ} /n
 seitsemän:seitsem{äØ} /n12
-seitsemän:seitsemän+NUM+SG+NOM Clit
+seitsemän+NUM+SG+NOM:seitsemän Clit
 seitsemän:seitsen /n3
 seitsemäntoista+NUM:seitsemäntoista Clit
 seitsemäntoista+NUM:seitsemästoista Clit

@@ -26,43 +26,44 @@ argparser = argparse.ArgumentParser(
     Converts an affix CSV file into a LEXC file according to the mode
     that is selected.
 
-    The "MPHON" mode produces LEXC entries suitable for constructing
+    The "M" mode produces LEXC entries suitable for constructing
     an analyser where one can produce the base form of the lexeme by
     generating from the upper string according to the rules.
 
-    The "GUESS" mode produces LEXC entries suitable for guessing LEXC
+    The "G" mode produces LEXC entries suitable for guessing LEXC
     entries for lexemes out of inflected forms of that lexeme.  In
     guessing, the inflection features are not needed, so they are
     omitted from the upper string of the LEXC entries.  Instead, the
     name of the continuation class is included in entries whose
     continuation class contains a slash "/".
 
-    The "ENTRY" mode produces LEXC entries suitable for e.g. creating
+    The "E" mode produces LEXC entries suitable for e.g. creating
     new lexcial entries with a special analysator with more liberal
     compounding or derivational mechanism.  The mode is similar to the
     GUESS mode but the inflectional features are included in the upper
     string of the LEXC entries.
 
-    The "BASE" mode assumes that the base forms of the word entries
+    The "B" mode assumes that the base forms of the word entries
     already have a base form as their upper LEXC string.  No
     morphophonemes of the affixes are included in the upper LEXC
     string.  Compounding and derivation is restrected in this mode
     because the base form of complex analyses is just a concatenation
     of those base forms.
 
-""")
+    """)
 argparser.add_argument(
-    "-m", "--mode", choices=["MPHON", "GUESS", "ENTRY", "BASE"],
-    help="""Whether the lexicon produces base forms, morphophonemic form or
-    guessed entries""",
-    default="base")
+    "-m", "--mode", choices=["M", "G", "E", "B"],
+    help="""Whether the lexicon produces base forms (B), morphophonemic
+    form (M) or guessed entries (G)""",
+    default="M")
 argparser.add_argument(
-    "-d", "--delimiter", default=",",
-    help="CSV field delimiter (default is ',')")
+    "-d", "--delimiter",
+    help="CSV field delimiter (default is ',')",
+    default=",")
 argparser.add_argument(
     "-v", "--verbosity",
-    default=0, type=int,
-    help="level of diagnostic output")
+    help="Level of diagnostic output, (default is 0).",
+    default=0, type=int)
 args = argparser.parse_args()
 
 mode = args.mode
@@ -104,21 +105,21 @@ for r in rdr:
     weight_str = (' "weight: {}"'.format(r["WEIGHT"])
                   if r["WEIGHT"] else "" )
     for nxt in next_lst:
-        if mode == "MPHON":
-            if ("/" in ide) and nxt != "SecondPart":
+        if mode == "M":
+            if ("/" in ide) and (not "/" in nxt) and (ide != "/more"):
                 feat_str = "{§}" + feature_str
             else:
                 feat_str = feature_str
-        elif mode == "GUESS":
+        elif mode == "G":
             feat_str = ""
-            if "/" in ide and nxt != "SecondPart":
+            if "/" in ide and (not "/" in nxt) and (ide != "/more"):
                 feat_str = "% " + ide + "%;" + feat_str
-        elif mode == "ENTRY":
-            if "/" in ide and nxt != "SecondPart":
+        elif mode == "E":
+            if "/" in ide and (not "/" in nxt) and (ide != "/more"):
                 feat_str = "% " + ide + "%;" + feature_str
             else:
                 feat_str = feature_str
-        elif  mode == "BASE":
+        elif  mode == "B":
             basef_str = ""
             feat_str = feature_str
         basefeat_str = basef_str + feat_str

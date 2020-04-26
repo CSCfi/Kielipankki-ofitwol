@@ -9,17 +9,21 @@ RULEFST=ofi-rules-in.fst
 AFF=analy
 DATA=../../data
 
-LEXB=base-s.lexc base-v.lexc base-a.lexc base-p.lexc base-noncomp-s.lexc
+LEXB=base-s.lexc base-v.lexc base-a.lexc base-p.lexc base-special.lexc
 
 LEXB2=base-r.lexc lexic-firstpart.lexc lexic-n.lexc
 
-LEXM=mphon-s.lexc mphon-v.lexc mphon-a.lexc mphon-p.lexc mphon-noncomp-s.lexc
+LEXM=mphon-s.lexc mphon-v.lexc mphon-a.lexc mphon-p.lexc mphon-special.lexc
 
 LEXM2=mphon-r.lexc lexic-firstpart.lexc lexic-n.lexc
 
 LEXG=guess-s.lexc guess-a.lexc guess-v.lexc
 
 LEXG2=lexic-firstpart.lexc
+
+LEXE=mphon-s.lexc mphon-a.lexc mphon-v.lexc mphon-p.lexc mphon-special.lexc
+
+LEXE2=mphon-r.lexc lexic-firstpart.lexc
 
 ANALYSES=$(ID)-corpus-$(MODE).big.analyses
 
@@ -66,6 +70,13 @@ ofiguess.ofst : guess-lex.fst $(RULEFST) delete.fst Makefile
 	hfst-minimize |\
 	hfst-fst2fst -w -o $@
 
+ofientry.ofst : entry-lex.fst $(RULEFST) delete.fst Makefile
+	hfst-compose-intersect -a -1 $< -2 $(RULEFST) |\
+	hfst-compose -2 delete.fst |\
+	hfst-invert |\
+	hfst-minimize |\
+	hfst-fst2fst -w -o $@
+
 base-lex.fst : base-aff.lexc $(LEXB) $(LEXB2) Makefile
 	hfst-lexc -E -f openfst-tropical -o $@ $< $(LEXB) $(LEXB2)
 
@@ -75,17 +86,20 @@ mphon-lex.fst : mphon-aff.lexc $(LEXM) $(LEXM2) Makefile
 guess-lex.fst : guess-aff.lexc $(LEXG) $(LEXG2) Makefile
 	hfst-lexc -E -f openfst-tropical -o $@ $< $(LEXG) $(LEXG2)
 
-#guess-lex.fst : guess-aff.lexc $(LEXG) $(LEXG2) Makefile
-#	hfst-lexc -f sfst $< $(LEXG) $(LEXG2) | hfst-fst2fst -t  -o $@
+entry-lex.fst : entry-aff.lexc $(LEXE) $(LEXE2) Makefile
+	hfst-lexc -E -f openfst-tropical -o $@ $< $(LEXE) $(LEXE2)
 
 base-aff.lexc : ofi-affixes.csv affixes2lexc.py
-	python3 affixes2lexc.py -m BASE < $< > $@
+	python3 affixes2lexc.py -m B < $< > $@
 
 mphon-aff.lexc : ofi-affixes.csv affixes2lexc.py
-	python3 affixes2lexc.py -m MPHON < $< > $@
+	python3 affixes2lexc.py -m M < $< > $@
 
 guess-aff.lexc : ofi-affixes.csv affixes2lexc.py
-	python3 affixes2lexc.py -m GUESS < $< > $@
+	python3 affixes2lexc.py -m G < $< > $@
+
+entry-aff.lexc : ofi-affixes.csv affixes2lexc.py
+	python3 affixes2lexc.py -m E < $< > $@
 
 $(LEXB) : base-%.lexc : lexic-%.entries ofi-rules-out.fst entries2lexc.py
 	python3 entries2lexc.py -r ofi-rules-out.fst < $< > $@
@@ -97,7 +111,7 @@ lexic-n.lexc : lexic-n.entries ofi-rules-out.fst entries2lexc.py
 	python3 entries2lexc.py -r ofi-rules-out.fst -c End < $< > $@
 
 lexic-firstpart.lexc : lexic-firstpart.words entries2lexc.py
-	python3 entries2lexc.py -n FirstPart -c SecondPart < $< > $@
+	python3 entries2lexc.py -n FirstPart -c /more < $< > $@
 
 $(LEXM) : mphon-%.lexc : lexic-%.entries entries2lexc.py
 	python3 entries2lexc.py < $< > $@
