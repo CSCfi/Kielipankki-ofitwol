@@ -9,4 +9,4 @@ Ofitwol is related to OMORFI (by Tommi Pirinen et al.) an open Finnish morpholog
 
 For some information on installing OFITWOL itself see the wiki page https://github.com/koskenni/ofitwol/wiki but most of the dicumentation of OFITWOL will appear in READTHEDOCS.
 
-OFITWOL is in the development stages but one may well experiment with it.
+OFITWOL is in the development stages but one may well experiment with it. The directory ./ofitwol contains subdirectories where the current files are in particular the subdirectory ./ofitwol/ofi2 contains a version which anyone ought to be able to rebuild.  The files directly in the directory ./ofitwol cannot be easily be used for building a complete analyser and a guesser for Finnish.
