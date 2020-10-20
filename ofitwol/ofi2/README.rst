@@ -29,7 +29,7 @@ word::
 
 The following builds, from the same rules and lexicon source files, a
 slightly different FST, ``ofimphon.ofst`` which, instead of a
-conventional base form, gives a ``morphophonemic`` version of the base
+conventional base form, gives a *morphophonemic* version of the base
 form::
    
    $ make ofimphon
@@ -47,8 +47,8 @@ of those words.  This kind of an analyser might be useful in the
 development stages as one sees what kind entries are involved in the
 analysed forms.
 
-The following builds a ``guesser`` FST ofiguess.ofst which is used in
-guessing new entries e.g. out of corpus data::
+The following builds a *guesser* FST ofiguess.ofst which is used in
+guessing new entries e.g. out of corpus data ::
    
    $ make guesser
    
