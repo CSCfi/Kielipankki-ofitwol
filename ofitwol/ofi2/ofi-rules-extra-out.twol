@@ -7,3 +7,8 @@
 !        :o _ :o , :u _ :u , :y _ :y ,
 !        :ä _ :ä , :ö _ :ö ;
 !    ! kuorma<->auto henkilö<>auto
+!
+! EXCLUDE LESS FREQUENT ALTERNATIVES
+!
+{sØh}:Ø <=> _ Vok | VoØ {ij}:i | VoØ i {nm}: ;
+    ! viera<>an viera<>ana uro<>on uro<>oseen uro<s>ten

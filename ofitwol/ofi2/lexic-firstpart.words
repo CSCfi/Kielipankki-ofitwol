@@ -29,14 +29,14 @@ aaltoisen
 aaltoisuuden
 aaltoisuus
 aaltopahvi
-aaluva
-aaluvan
+! aaluva
+! aaluvan
 aamen
 aamenen
-aami
+! aami
 aamiais
 aamiaisen
-aamin
+! aamin
 aamu
 aamukahvi
 aamullis
@@ -484,13 +484,12 @@ ahvan
 ahven
 ahvena
 ahvenan
-ahvenanahvenanmaalais
+ahvenanmaalais
 ahvenen
 ahvääri
 ahväärin
 aidake
 aidakkeen
-aidakkehen
 aidaksen
 aidan
 aidas
@@ -863,7 +862,7 @@ alanko
 alanne
 alanteen
 alantehen
-alas ! varottava yligenerointia
+alas /more 30 ! varottava yligenerointia
 alasimen
 alasin
 alastomuuden
@@ -17422,6 +17421,7 @@ keskeytyksen
 keskeytymättömyyden
 keskeytymättömyys
 keskeytys
+keski
 keskinäisyyden
 keskinäisyys
 keskistyksen
@@ -23321,7 +23321,7 @@ kyvykkyys
 kyvyn
 kyvyttömyyden
 kyvyttömyys
-kyy
+kyy /more 50
 kyydin
 kyyditsijä
 kyyditsijän
@@ -23967,7 +23967,7 @@ köytyri
 köytyrin
 köytöksen
 köytös
-köö
+! köö ! 
 kööki
 köökin
 köökin
@@ -64392,6 +64392,7 @@ yöllisen
 yön
 yöpyjä
 yöpyjän
+yöpymis
 yös
 yösen
 yötyri

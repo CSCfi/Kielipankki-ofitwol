@@ -6,8 +6,6 @@ finality_dict_lst = []
 name_lst = []
 sym_pair_set = set()
 
-error_count = 100       # so many errors can still be reported
-
 def acceptor_dict(rule_fst):
     brule = hfst.HfstBasicTransducer(rule_fst)
     rule_dict = {}
@@ -19,13 +17,15 @@ def acceptor_dict(rule_fst):
         for transition in brule.transitions(state):
             insym = transition.get_input_symbol()
             outsym = transition.get_output_symbol()
+            psym = insym if insym == outsym else insym + ":" + outsym
             sym_pair_set.add((insym, outsym))
             target = transition.get_target_state()
             trans_dict[(insym,outsym)] = target
         rule_dict[state] = trans_dict
     return rule_dict, final_states
 
-def init(rule_file_name):
+def init(rule_file_name, maxerr):
+    global error_count
     istream = hfst.HfstInputStream(rule_file_name)
     while not (istream.is_eof()):
         fst = istream.read()
@@ -35,10 +35,11 @@ def init(rule_file_name):
         name = fst.get_name()
         name_lst.append(name)
     istream.close()
+    error_count = maxerr
     return
 
 def complain(pre_lst, post_lst, name):
-    global verbosity
+    global verbosity, error_count
     pre_lst = [(insym if insym == outsym
                 else insym + ":" + outsym) for insym, outsym in pre_lst]
     pre_str = " ".join(pre_lst)
@@ -47,6 +48,9 @@ def complain(pre_lst, post_lst, name):
     post_str = " ".join(post_lst)
     print(pre_str, ">>>", post_str)
     print(" "*8, name)
+    error_count -= 1
+    if error_count <= 0:
+        exit("** ERROR LIMIT REACHED - THE PROGRAM QUITS NOW")
 
 def accept(state_lst, accepted_lst,
            remaining_lst,
@@ -102,7 +106,7 @@ def test(pair_sym_str):
     return
 
 if __name__ == "__main__":
-    global verbosity
+    global verbosity, error_count
     import sys
     import argparse
     argparser = argparse.ArgumentParser("python3 pairtest.py",
@@ -111,7 +115,11 @@ if __name__ == "__main__":
 
     The examples are read from STDIN and possible discrepancies are
     printed.  The testing checks one example at a time and reports all
-    rules which do not accept the example. """)
+    rules which do not accept the example.
+
+    This program is similar to the hfst-pair-test program but it does
+    not require (nor allow) the examples to have explicit boundary
+    markers '#:0' at both ends of the example.""")
     argparser.add_argument(
         "-r", "--rules",
         help="""An FST file containing the compiled two-level rules.
@@ -130,7 +138,7 @@ if __name__ == "__main__":
     args = argparser.parse_args()
     verbosity = args.verbosity
 
-    init(args.rules)
+    init(args.rules, args.max_errors)
     for line_nl in sys.stdin:
         line = line_nl.strip()
         test(line)

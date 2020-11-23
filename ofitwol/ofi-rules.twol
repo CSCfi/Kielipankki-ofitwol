@@ -10,6 +10,8 @@ VoS = :a | :e | :i | :o | :u | :y | :ä | :ö ;
 Vok = [VoS - {ij}:] ;
 VoM = Vok.m ;
 VoØ = [VoM - VoS] ;
+Seg = CoM | :' | VoM ;
+NonSeg = : - Seg ;
 MeSØ = :e.m & :Ø ;
     ! all X:Ø where X:e in :
 Z = [:Ø* |:'] ;
@@ -587,8 +589,19 @@ s e {Øe}:Ø =>
     ! alimp<a>na
 {aäØ}:ä /<= [:a|:o|:u] [\{§}:]* _ ;
     ! ylimp<ä>nä
-{aäØ}:Ø <=> _ EOW | {ij}: | {Øt}:t ;
+{aäØ}:Ø <=> _ {ij}: | {Øt}:t ,
     ! alimm<>issa alimp<>ien ylimp<>iin
+        {ØpmØ}: | {sØh}: _ EOW ;
+    ! alin<> ahdas<>
+
+{iaäØ}:a => [:a|:o|:u] [\{§}:]* _ ;
+    ! alemp<a>na
+{iaäØ}:ä /<= [:a|:o|:u] [\{§}:]* _ ;
+    ! ylemp<ä>nä
+{iaäØ}:Ø <=> _ {ij}: | {Øt}:t ;
+    ! alemm<>issa alemp<>ien ylemp<>iin
+{iaäØ}:i <=> _ EOW ;
+    ! suuremp<i>
 
 {eeØØ}:Ø => _ {nØØØ}:Ø [{ij}: | i {nm}: | :t e | {Øt}: | {nrs}:] ;
 {eeØØ}:e /<= _ {nØØØ}:Ø [{ij}: | :t e | {Øt}:] ;
@@ -704,7 +717,7 @@ s e {Øe}:Ø =>
 {ns}:n <=> _ :e :n ;
     ! hevo<n>en hevo<s>en hevo<s>ta hevo<s>ena hevo<s>na hevo<s>ia
 
-{nØØØ}:n <=> _ .#.|{§}:|{`}: ;
+{nØØØ}:n <=> _ NonSeg* .#. | {`}: ;
     ! hevone<n> hevose<>n hevos<>ta hevos<>ia
 
 ! START

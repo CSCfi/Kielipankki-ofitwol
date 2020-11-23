@@ -86,7 +86,6 @@ aidaksi{ns}{eeØØ}{nØØØ} /a
 aidat{tØ}o{nm}{aäØ} /a
 aidon_näköi{ns}{eeØØ}{nØØØ} /a
 aidon_tuntui{ns}{eeØØ}{nØØØ} /a
-aiem{pm}{iaäØ} /acomp
 aiheelli{ns}{eeØØ}{nØØØ} /a
 aiheet{tØ}o{nm}{aäØ} /a
 aihei{ns}{eeØØ}{nØØØ} /a
@@ -174,7 +173,6 @@ alasto{nm}{aäØ} /a
 alavahko /a
 alav{aØ} /a
 albanialai{ns}{eeØØ}{nØØØ} /a
-alem{pm}{iaäØ} /acomp
 alempi_arvoi{ns}{eeØØ}{nØØØ} /a
 alenev{aØ} /a
 alentamat{tØ}o{nm}{aäØ} /a
@@ -847,7 +845,6 @@ endogaami{ns}{eeØØ}{nØØØ} /a
 endogeeni{ns}{eeØØ}{nØØØ} /a
 endokriini{ns}{eeØØ}{nØØØ} /a
 endotermi{ns}{eeØØ}{nØØØ} /a
-enem{pm}{iaäØ} /acomp
 energeetti{ns}{eeØØ}{nØØØ} /a
 energia_poliitti{ns}{eeØØ}{nØØØ} /a
 energi{ns}{eeØØ}{nØØØ} /a
@@ -2035,7 +2032,6 @@ hysteeri{ns}{eeØØ}{nØØØ} /a
 hyveelli{ns}{eeØØ}{nØØØ} /a
 hyvin_hoidet{tØ}u /a
 hyvinkääläi{ns}{eeØØ}{nØØØ} /a
-hyv{äØeØ} /a
 hyvä_kuntoi{ns}{eeØØ}{nØØØ} /a
 hyvä_laatui{ns}{eeØØ}{nØØØ} /a
 hyvä_mainei{ns}{eeØØ}{nØØØ} /a
@@ -6688,7 +6684,6 @@ parasympaatti{ns}{eeØØ}{nØØØ} /a
 paratakti{ns}{eeØØ}{nØØØ} /a
 paratiisilli{ns}{eeØØ}{nØØØ} /a
 paratiisimai{ns}{eeØØ}{nØØØ} /a
-para{sØh}{aäØ} /a
 pareittai{ns}{eeØØ}{nØØØ} /a
 paremmai{ns}{eeØØ}{nØØØ} /a
 parempi_kuntoi{ns}{eeØØ}{nØØØ} /a
@@ -6722,7 +6717,7 @@ parvekkeelli{ns}{eeØØ}{nØØØ} /a
 parvekkeet{tØ}o{nm}{aäØ} /a
 parvelli{ns}{eeØØ}{nØØØ} /a
 parvet{tØ}o{nm}{aäØ} /a
-par{kØ}{aoeØ} /a
+par{kØ}{aoeØ} /apos
 pasifisti{ns}{eeØØ}{nØØØ} /a
 passel{iieØ} /a
 passiivi{ns}{eeØØ}{nØØØ} /a
@@ -7083,7 +7078,6 @@ pitel{äØöØ} /a
 pitempi_aikai{ns}{eeØØ}{nØØØ} /a
 pitkittäi{ns}{eeØØ}{nØØØ} /a
 pitkulai{ns}{eeØØ}{nØØØ} /a
-pitk{äØeØ} /a
 pitkä_ikäi{ns}{eeØØ}{nØØØ} /a
 pitkä_jäntei{ns}{eeØØ}{nØØØ} /a
 pitkä_kestoi{ns}{eeØØ}{nØØØ} /a

@@ -1003,6 +1003,7 @@ arapialai{ns}{eeØØ}{nØØØ} /s
 arapi{ao} /s
 arastelu /s
 araukaari{ao} /s
+arav{aØo} /s
 arava_lain{ao} /s
 aravavuokra_talo /s
 arbuus{iieØ} /s
@@ -24725,19 +24726,21 @@ ruoju /s
 ruoju{ns}{eeØØ}{nØØØ} /s
 ruoju{tØthn}{ØeØØØ} /s
 ruoj{aØ} /s
-ruoka+N+PL+ADE:ruuilla Clit
-ruoka+N+PL+ALL:ruuille Clit
-ruoka+N+PL+ELA:ruuista Clit
-ruoka+N+PL+INE:ruuissa Clit
-ruoka+N+PL+NOM:ruuat Clit
-ruoka+N+SG+ABE:ruuatta Clit
-ruoka+N+SG+ADE:ruualla Clit
-ruoka+N+SG+ADE:ruualta Clit
-ruoka+N+SG+ALL:ruualle Clit
-ruoka+N+SG+GEN:ruuan Clit
-ruoka+N+SG+INE:ruuassa Clit
-ruoka+N+SG+TRA:ruuaksi Clit
-ruoka:ruo{kØ}{aØ} /s
+
+ruo{kØ}{aØ}+N+PL+ADE:ruuilla Clit ! & Special
+ruo{kØ}{aØ}+N+PL+ALL:ruuille Clit ! & Special
+ruo{kØ}{aØ}+N+PL+ELA:ruuista Clit ! & Special
+ruo{kØ}{aØ}+N+PL+INE:ruuissa Clit ! & Special
+ruo{kØ}{aØ}+N+PL+NOM:ruuat Clit ! & Special
+ruo{kØ}{aØ}+N+SG+ABE:ruuatta Clit ! & Special
+ruo{kØ}{aØ}+N+SG+ADE:ruualla Clit ! & Special
+ruo{kØ}{aØ}+N+SG+ADE:ruualta Clit ! & Special
+ruo{kØ}{aØ}+N+SG+ALL:ruualle Clit ! & Special
+ruo{kØ}{aØ}+N+SG+GEN:ruuan Clit ! & Special
+ruo{kØ}{aØ}+N+SG+INE:ruuassa Clit ! & Special
+ruo{kØ}{aØ}+N+SG+TRA:ruuaksi Clit ! & Special
+ruo{kØ}{aØ} /s ! & Special
+
 ruokailij{ao} /s
 ruokailu /s
 ruokaisuu{ØØØØk}{stds}{ØeØeØ} /s
@@ -26117,6 +26120,7 @@ selvyy{ØØØØk}{stds}{ØeØeØ} /s
 sely{ØkØkk}s{ØeØeØ} /s
 sel{kØ}o /s
 sel{kØ}{äØ} /s
+sel{kj}{äØ} /s ! dialect
 seläk{kØ}e{Øth}{ØeØeØ} /s
 selän{tn}e{Øth}{ØeØeØ} /s
 seläty{ØkØkk}s{ØeØeØ} /s
@@ -32417,7 +32421,7 @@ vangitsemi{ns}{eeØØ}{nØØØ} /s
 vangitsij{ao} /s
 vanhain_ko{td}{iieØ} /s
 vanhastavuu{ØØØØk}{stds}{ØeØeØ} /s
-vanhe /scomp
+vanhem{pm}{iaäØ} /s
 vanhemmuu{ØØØØk}{stds}{ØeØeØ} /s
 vanhempain_lom{aØ} /s
 vanhentumattomuu{ØØØØk}{stds}{ØeØeØ} /s
@@ -34463,6 +34467,7 @@ yli_päällik{kØØ}ö /s
 yli_tihe{äØö} /s
 yli_tuotan{tn}o /s
 yli_t{yØ}ö /s
+yli_voim{aØ} /s
 ylimmäi{ns}{eeØØ}{nØØØ} /s
 ylimyksellisyy{ØØØØk}{stds}{ØeØeØ} /s
 ylimystö /s
@@ -34625,6 +34630,7 @@ yök{kØ}ö /s
 yököty{ØkØkk}s{ØeØeØ} /s
 yölli{ns}{eeØØ}{nØØØ} /s
 yöpyj{äØö} /s
+yöpymi{ns}{eeØØ}{nØØØ} /s
 yötyr{iieØ} /s
 yö{ns}{eeØØ}{nØØØ} /s
 zambo /s
@@ -34685,6 +34691,7 @@ zymaas{iieØ} /s
 äitiy{ØØØØk}{stds}{ØeØeØ} /s
 äi{td}y{tØthn}{ØeØØØ} /s
 äi{td}{iieØ} /s
+äit{iieØ} /s ! dialect
 äjäy{ØkØkk}s{ØeØeØ} /s
 äkeily /s
 äkey{ØØØØk}{stds}{ØeØeØ} /s

@@ -67,6 +67,7 @@ aikaiseksi /pc
 aikaisesti /pc
 aikaisin /pc
 aikaisintaan /pc
+aikalailla /pc
 aikamoisesti /pc
 aika /pc
 aikavasti /pc
@@ -150,6 +151,7 @@ alhaisesti /pc
 alhalla /pc
 alhalle /pc
 alhalta /pc
+ali /pc
 alias /pc
 alimmaksi /pc
 alimma /pc
@@ -159,6 +161,7 @@ alimpana /pc
 alinomaa /pc
 alistuvaisesti /pc
 alitse /po
+alitte /pc ! dialect
 alituisesti /pc
 alitusten /pc
 alkaen /pc
@@ -4840,6 +4843,7 @@ paradoksimaisesti /pc
 paradoksisesti /pc
 parahiksi /pc
 parahultaisesti /pc
+paraikaa /pc
 paraiksi /pc
 paraillaan /pc
 paralleelisesti /pc
@@ -8560,7 +8564,7 @@ ylimpää /pc
 ylimyksellisesti /pc
 ylinnä /pc
 yliolkaisesti /pc
-yli /p
+yli /pc
 ylipäätänsä /pc
 ylipäätään /pc
 ylisille /ps
@@ -8568,6 +8572,7 @@ ylisillä /ps
 ylisummaan /pc
 ylitse /po
 ylitsevuotavasti /pc
+ylitte /pc ! dialect
 ylivuotisesti /pc
 ylle /po
 yllyttävästi /pc

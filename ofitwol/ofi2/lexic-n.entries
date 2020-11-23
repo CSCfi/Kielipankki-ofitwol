@@ -1,15 +1,15 @@
 LEXICON Numerals
 ! kolmansi N75
-!/kolmatta N88
-!/kunta N88 *
-!/kymmentä N88
-!/sataa2 N88
-!/toista N88
-!/tuhatta N88
+!/kolmatta
+!/kunta*
+!/kymmentä
+!/sataa
+!/toista
+!/tuhatta
 ensimmäinen:ensimmäi{ns}{eeØØ}{nØØØ} /n
-kahdeksan+NUM:kahdeksan
+kahdeksan+NUM:kahdeksan Clit
 kahdeksan+NUM:kahdeks{aØ} /n12
-kahdeksantoista+NUM:kahdeksastoista
+kahdeksantoista+NUM:kahdeksastoista Clit
 kahdeksas:kahdeksa{ØnØnn}{snt}{ØeØØØ} /n
 kahdeksisen:kahdeksi{ns}{eeØØ}{nØØØ} /n
 kahdes:kahde{ØnØnn}{snt}{ØeØØØ} /n

@@ -86,7 +86,7 @@ prevID = args.delimiter
 for r in rdr:
     if args.verbosity >= 10:
         print(r)
-    next_lst = r["NEXT"].split()
+    next_lst = r["NEXT"].strip().split()
     if (not next_lst) or r["NEXT"].startswith('!'):
         continue
     ide = prevID if r["ID"] == '' else r["ID"]
@@ -95,7 +95,7 @@ for r in rdr:
         continue
     mphon_str = r["MPHON"].strip()
     collect_multichars(mphon_str)
-    feature_lst = r['FEAT'].split()
+    feature_lst = r['FEAT'].strip().split()
     feature_str = (('+' + ('+'.join(feature_lst)))) if feature_lst else ""
     for feat in feature_lst:
         feature_set.add("+" + feat)

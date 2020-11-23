@@ -9,21 +9,13 @@ RULEFST=ofi-rules-in.fst
 AFF=analy
 DATA=../../data
 
-LEXB=base-s.lexc base-v.lexc base-a.lexc base-p.lexc base-special.lexc
+LEX=lexic-s.lexc lexic-a.lexc lexic-v.lexc lexic-p.lexc lexic-special.lexc lexic-n.lexc
 
-LEXB2=base-r.lexc lexic-firstpart.lexc lexic-n.lexc
+LEXM=$(LEX) lexic-r.lexc lexic-firstpart.lexc
 
-LEXM=mphon-s.lexc mphon-v.lexc mphon-a.lexc mphon-p.lexc mphon-special.lexc
+LEXE=$(LEX) lexic-r.lexc lexic-firstpart.lexc
 
-LEXM2=mphon-r.lexc lexic-firstpart.lexc lexic-n.lexc
-
-LEXG=guess-s.lexc guess-a.lexc guess-v.lexc
-
-LEXG2=lexic-firstpart.lexc
-
-LEXE=mphon-s.lexc mphon-a.lexc mphon-v.lexc mphon-p.lexc mphon-special.lexc
-
-LEXE2=mphon-r.lexc lexic-firstpart.lexc
+LEXG=guess-s.lexc guess-a.lexc guess-v.lexc lexic-firstpart.lexc lexic-special.lexc lexic-p.lexc lexic-r.lexc
 
 ANALYSES=$(ID)-corpus-$(MODE).big.analyses
 
@@ -31,20 +23,13 @@ rules : ofi-rules-in.fst ofi-rules-out.fst
 
 build : $(ANALYSER)
 
-ofibase : ofibase.ofst
-
 ofimphon : ofimphon.ofst 
 
 guesser : ofiguess.ofst
 
 analyse : $(ANALYSES)
 
-ofibase.ofst : base-lex.fst $(RULEFST) delete.fst Makefile
-	hfst-compose-intersect -a -1 $< -2 $(RULEFST) |\
-	hfst-compose -2 delete.fst |\
-	hfst-invert |\
-	hfst-minimize |\
-	hfst-fst2fst -w -o $@
+rejected-guesses : $(ID)-rejected-guessed.entries
 
 ofitwol.ofst : ofimphon.fst ofi-rules-out.fst bound.fst ofimphon.ofst Makefile
 	hfst-project -p out -i $< -o ofimphon-out.fst
@@ -77,20 +62,14 @@ ofientry.ofst : entry-lex.fst $(RULEFST) delete.fst Makefile
 	hfst-minimize |\
 	hfst-fst2fst -w -o $@
 
-base-lex.fst : base-aff.lexc $(LEXB) $(LEXB2) Makefile
-	hfst-lexc -E -f openfst-tropical -o $@ $< $(LEXB) $(LEXB2)
+mphon-lex.fst : mphon-aff.lexc $(LEXM) Makefile
+	hfst-lexc -E -f openfst-tropical -o $@ $< $(LEXM)
 
-mphon-lex.fst : mphon-aff.lexc $(LEXM) $(LEXM2) Makefile
-	hfst-lexc -E -f openfst-tropical -o $@ $< $(LEXM) $(LEXM2)
+guess-lex.fst : guess-aff.lexc $(LEXG) Makefile
+	hfst-lexc -E -f openfst-tropical -o $@ $< $(LEXG)
 
-guess-lex.fst : guess-aff.lexc $(LEXG) $(LEXG2) Makefile
-	hfst-lexc -E -f openfst-tropical -o $@ $< $(LEXG) $(LEXG2)
-
-entry-lex.fst : entry-aff.lexc $(LEXE) $(LEXE2) Makefile
-	hfst-lexc -E -f openfst-tropical -o $@ $< $(LEXE) $(LEXE2)
-
-base-aff.lexc : ofi-affixes.csv affixes2lexc.py
-	python3 affixes2lexc.py -m B < $< > $@
+entry-lex.fst : entry-aff.lexc $(LEXE) Makefile
+	hfst-lexc -E -f openfst-tropical -o $@ $< $(LEXE)
 
 mphon-aff.lexc : ofi-affixes.csv affixes2lexc.py
 	python3 affixes2lexc.py -m M < $< > $@
@@ -101,25 +80,22 @@ guess-aff.lexc : ofi-affixes.csv affixes2lexc.py
 entry-aff.lexc : ofi-affixes.csv affixes2lexc.py
 	python3 affixes2lexc.py -m E < $< > $@
 
-$(LEXB) : base-%.lexc : lexic-%.entries ofi-rules-out.fst entries2lexc.py
-	python3 entries2lexc.py -r ofi-rules-out.fst < $< > $@
+guess-s.lexc : guess-s.entries
+	python3 entries2lexc.py < $< > $@
 
-base-r.lexc : lexic-r.entries ofi-rules-out.fst entries2lexc.py
-	python3 entries2lexc.py -r ofi-rules-out.fst -c End < $< > $@
+guess-a.lexc : guess-a.entries
+	python3 entries2lexc.py < $< > $@
 
-lexic-n.lexc : lexic-n.entries ofi-rules-out.fst entries2lexc.py
-	python3 entries2lexc.py -r ofi-rules-out.fst -c End < $< > $@
+guess-v.lexc : guess-v.entries
+	python3 entries2lexc.py < $< > $@
 
 lexic-firstpart.lexc : lexic-firstpart.words entries2lexc.py
 	python3 entries2lexc.py -n FirstPart -c /more < $< > $@
 
-$(LEXM) : mphon-%.lexc : lexic-%.entries entries2lexc.py
-	python3 entries2lexc.py < $< > $@
-
-mphon-r.lexc : lexic-r.entries entries2lexc.py
+lexic-r.lexc : lexic-r.entries entries2lexc.py
 	python3 entries2lexc.py -c End < $< > $@
 
-$(LEXG) : guess-%.lexc : guess-%.entries entries2lexc.py
+$(LEX) : lexic-%.lexc : lexic-%.entries entries2lexc.py
 	python3 entries2lexc.py < $< > $@
 
 $(ANALYSES) : $(DATA)/$(ID)-corpus.words $(ANALYSER)
@@ -157,6 +133,15 @@ guesses : sktp-corpus-base.big.analyses
 	cut -f 1 > sktp-rejected.big.words
 	hfst-lookup -i ofiguess.ofst -I sktp-rejected.big.words -o sktp-guessed.big.analyses
 	python3 ../guessfromwords.py < sktp-guessed.big.analyses > sktp-guessed.big.entries
+
+$(ID)-rejected.words : ofientry.ofst
+	hfst-lookup -i $< -I $(DATA)/$(ID)-corpus.words | egrep 'inf$$' | cut -f 1 | sort > $@
+
+$(ID)-rejected.analyses : $(ID)-rejected.words ofiguess.ofst
+	hfst-lookup -i ofiguess.ofst -I $< -o $@
+
+$(ID)-rejected-guessed.entries : $(ID)-rejected.analyses ../guessfromwords.py
+	 python3 ../guessfromwords.py -d 1 -b 10 -m 3 -a $< > $@
 
 $(ID)-compo-by-secd.analyses : $(ANALYSES)
 	cut -f 2 $< | \

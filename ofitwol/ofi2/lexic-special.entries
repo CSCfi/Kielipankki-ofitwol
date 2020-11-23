@@ -1,6 +1,54 @@
 LEXICON Special
 ! ul{aØ} /s
-
+!
+! Epäsäännöllisiä adjektiiveja
+!
+aiem{pm}{iaäØ} /acomp
+enem{pm}{iaäØ} /acomp
+!
+alem{pm}{iaäØ} /acomp
+ali{nm}{ØpmØ}{aäØ} /asup
+!
+hyvä:hyv{äØeØ} /apos
+hyvä:parem{pm}{iaäØ} /acomp
+hyvä:para{sØh}{aäØ} /asup
+hyvä+A+SUP:parha{aäØ} s12
+hyvä:parha{aäØ}m{pm}{iaäØ} /acomp
+hyvä:parhai{nm}{ØpmØ}{aäØ} /asup
+hyvä:parahi{nm}{ØpmØ}{aäØ} /asup
+hyvä:parai{nm}{ØpmØ}{aäØ} /asup
+!
+liki:like{aäØ}m{pm}{iaäØ} /acomp
+!
+pitk{äØeØ} /apos
+pitk{äØeØ}:pidem{pm}{iaäØ} /acomp
+pitk{äØeØ}:pitem{pm}{iaäØ} /acomp
+pitk{äØeØ}:pisi{nm}{ØpmØ}{aäØ} /asup
+!
+ulom{pm}{iaäØ} /acomp
+uloi{nm}{ØpmØ}{aäØ} /asup
+varhe{pm}{iaäØ} /acomp
+ylem{pm}{iaäØ} /acomp
+yli{nm}{ØpmØ}{aäØ} /asup
+!
+! epäsäännöllisiä substantiiveja
+!
+ruo{kØ}{aØ}+N+PL+ADE:ruuilla Clit ! & Nouns
+ruo{kØ}{aØ}+N+PL+ALL:ruuille Clit ! & Nouns
+ruo{kØ}{aØ}+N+PL+ELA:ruuista Clit ! & Nouns
+ruo{kØ}{aØ}+N+PL+INE:ruuissa Clit ! & Nouns
+ruo{kØ}{aØ}+N+PL+NOM:ruuat Clit ! & Nouns
+ruo{kØ}{aØ}+N+SG+ABE:ruuatta Clit ! & Nouns
+ruo{kØ}{aØ}+N+SG+ADE:ruualla Clit ! & Nouns
+ruo{kØ}{aØ}+N+SG+ADE:ruualta Clit ! & Nouns
+ruo{kØ}{aØ}+N+SG+ALL:ruualle Clit ! & Nouns
+ruo{kØ}{aØ}+N+SG+GEN:ruuan Clit ! & Nouns
+ruo{kØ}{aØ}+N+SG+INE:ruuassa Clit ! & Nouns
+ruo{kØ}{aØ}+N+SG+TRA:ruuaksi Clit ! & Nouns
+ruo{kØ}{aØ} /s ! & Nouns
+!
+! epäsäännöllisiä verbejä
+!
 ei+V+NEG+1PL:emme Clit
 ei+V+NEG+1PL:emmekä End
 ei+V+NEG+1SG:en Clit
@@ -14,6 +62,39 @@ ei+V+NEG+3PL:eivätkä End
 ei+V+NEG+3SG:ei Clit
 ei+V+NEG+3SG:eikä End
 
+ellei+V+NEG+1PL:ellemme Clit
+ellei+V+NEG+1SG:ellen Clit
+ellei+V+NEG+2PL:ellette Clit
+ellei+V+NEG+2SG:ellet Clit
+ellei+V+NEG+3PL:elleivät Clit
+ellei+V+NEG+3SG:ellei Clit
+
+ettei+V+NEG+1PL:ettemme Clit
+ettei+V+NEG+1SG:etten Clit
+ettei+V+NEG+2PL:ettette Clit
+ettei+V+NEG+2SG:ettet Clit
+ettei+V+NEG+3PL:etteivät Clit
+ettei+V+NEG+3SG:ettei Clit
+
+jollei+V+NEG+1SG:jollen Clit
+jollei+V+NEG+2SG:jollet Clit
+jollei+V+NEG+3SG:jollei Clit
+jollei+V+NEG+3SG:jollemme Clit
+jollei+V+NEG+2PL:jollette Clit
+jollei+V+NEG+3PL:jolleivät Clit
+
+olla+V+COND+ACT+1SG:olisin Clit
+olla+V+COND+ACT+1SG:oisin Clit ! dialect
+olla+V+COND+ACT+2SG:olisit Clit
+olla+V+COND+ACT+2SG:oisit Clit ! dialect
+olla+V+COND+ACT+3SG:olisi Clit
+olla+V+COND+ACT+3SG:oisi Clit ! dialect
+olla+V+COND+ACT+1PL:olisimme Clit
+olla+V+COND+ACT+1PL:oisimme Clit ! dialect
+olla+V+COND+ACT+2PL:olisitte Clit
+olla+V+COND+ACT+2PL:oisitte Clit ! dialect
+olla+V+COND+ACT+3PL:olisivat Clit
+olla+V+COND+ACT+3PL:oisivat Clit ! dialect
 olla+V+COND+PSS+4PE:oltaisi Clit
 olla+V+COND+PSS+4PE:oltaisiin Clit
 olla+V+DVMA+PSS+INS:oltaman Clit
@@ -23,6 +104,7 @@ olla+V+IMPV+ACT+1PL:olkamme Clit
 olla+V+IMPV+ACT+2PL:olkaa Clit
 olla+V+IMPV+ACT+2PL:olkaatte Clit
 olla+V+IMPV+ACT+2SG:ole Clit
+olla+V+IMPV+ACT+3SG:olkoon Clit
 olla+V+IMPV+ACT+3PL:olkoot Clit
 olla+V+IMPV+PSS+4PE:oltako Clit
 olla+V+IMPV+PSS+4PE:oltakoon Clit
@@ -53,7 +135,9 @@ olla+V+PRES+ACT+NEG:ole Clit
 olla+V+PRES+PSS+4PE:ollaan Clit
 olla+V:ol{eØØeei} v1
 olla+V:ol{eØØeei} v2
-
+!
+! yhdyssanojen jälkiosaksi sopimattomia
+!
 ais{ØieØ} /s
 ajo{ØkØkk}s{ØeØeØ} /s
 anteeksi_pyyn{tn}ö /s
@@ -132,6 +216,7 @@ sill{ao} /s
 ! sin{tn}u /s
 sir{ØieØ} /s
 sto{aØ} /s
+syys_lom{aØ} /s
 ta{kØ}{ao} /s
 ! te{kØ}e{Øth}{ØeØeØ} /s
 tela_kaivur{iieØ} /s
@@ -162,6 +247,9 @@ varo /s 10
 uro_te{kØ}o /s
 uro_t{yØ}ö /s
 ä{kØ}{äØ} /s
+!
+! vain rajoitetusti yhdyssanan jälkiosana
+! =======================================
 !
 ! ansa
 !
@@ -548,6 +636,7 @@ soitto_harmon{iieØ} /s
 ! ikä
 !
 i{kØ}{äØ} /s
+i{kj}{äØ} /s ! dial
 aikuis_i{kØ}{äØ} /s
 aloitus_i{kØ}{äØ} /s
 elin_i{kØ}{äØ} /s

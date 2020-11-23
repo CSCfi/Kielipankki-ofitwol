@@ -582,7 +582,7 @@ s e {Øe}:Ø =>
     ! muuat<>ta saapa<>sta vieras<>ta kevät<>tä pahin<>ta
     ! muuat<>ta vieras<>ta kevät<>tä onneton<>ta
     ! lämmin<>tä onneton<>ta pahin<>ta lämmin<>tä
-        [:n ({ØpmØ}:Ø) | :s | :t ({tØ}:Ø)] _ EOW ,
+        [:n ({ØpmØ}:Ø) | :s | :t ({tØ}:Ø) | {sØh}:] _ EOW ,
     ! alin<> alin<>ten muuan<>
     ! saapas<> saapas<>ta vieras<> kevät<> kevä<>itä pahin<>
     ! lämmin<> onneton<>
@@ -886,3 +886,8 @@ START
 !        :o _ :o , :u _ :u , :y _ :y ,
 !        :ä _ :ä , :ö _ :ö ;
 !    ! kuorma<->auto henkilö<>auto
+!
+! EXCLUDE LESS FREQUENT ALTERNATIVES
+!
+{sØh}:Ø <=> _ Vok | VoØ {ij}:i | VoØ i {nm}: ;
+    ! viera<>an viera<>ana uro<>on uro<>oseen uro<s>ten
