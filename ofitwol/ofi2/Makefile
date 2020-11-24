@@ -103,7 +103,7 @@ $(ANALYSES) : $(DATA)/$(ID)-corpus.words $(ANALYSER)
 		egrep '..' > $@
 
 ofi-rules-in.fst : ofi-examples-in.pstr ofi-rules-in.twol
-	twol-comp -t 2 -w ofi-wrong.fst -l ofi-lost.fst -o $@ \
+	twol-comp -t 2 -w ofi-wrong-in.fst -l ofi-lost.fst -o $@ \
 		$+ > ofi-rules-in.log
 
 ofi-rules-out.fst : ofi-examples-out.pstr ofi-rules-out.twol

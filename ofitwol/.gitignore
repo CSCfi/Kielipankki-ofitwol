@@ -1,6 +1,11 @@
 *.fst
 *.hfst
 *.ofst
+*.xlsx
+*.analyses
 *.lexc
 *.log
+*rejected*
+*guessed*
+temp/*
 .gitignore
