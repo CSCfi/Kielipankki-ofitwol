@@ -1341,19 +1341,19 @@ n a l l e {nrs}:n {aä}:a
 n a l l e {Øh}:h {V}:e n
 n a l l e {Øh}:Ø {V}:e n
 n a l l e {Øt}:Ø {aä}:a
-n a {iØiØii}:i k {oö}:o {oö}:o n
-n a {iØiØii}:i n
-n a {iØiØii}:i {C}:Ø
-n a {iØiØii}:i {VØ}:Ø
-n a {iØiØii}:i {dlnrtØ}:d {C}:Ø {aä}:a {aä}:a n
-n a {iØiØii}:i {dlnrtØ}:d {aä}:a k s e n i
-n a {iØiØii}:i {nlrs}:n e {VØ}:e
-n a {iØiØii}:i {nlrs}:n {uy}:u t
-n a {iØiØii}:i {tttØ}:Ø t i i n
-n a {iØiØii}:i {tttØ}:Ø {dlnrtØ}:d {uy}:u n
-n a {iØiØii}:i {tttØ}:Ø {dlnrtØ}:t {uy}:u
-n a {iØiØii}:Ø i s i {VØ}:Ø
-n a {iØiØii}:Ø {i}:i {VØ}:Ø
+n a {iØ}:i k {oö}:o {oö}:o n
+n a {iØ}:i n
+n a {iØ}:i {C}:Ø
+n a {iØ}:i {VØ}:Ø
+n a {iØ}:i {dlnrtØ}:d {C}:Ø {aä}:a {aä}:a n
+n a {iØ}:i {dlnrtØ}:d {aä}:a k s e n i
+n a {iØ}:i {nlrs}:n e {VØ}:e
+n a {iØ}:i {nlrs}:n {uy}:u t
+n a {iØ}:i {tttØ}:Ø t i i n
+n a {iØ}:i {tttØ}:Ø {dlnrtØ}:d {uy}:u n
+n a {iØ}:i {tttØ}:Ø {dlnrtØ}:t {uy}:u
+n a {iØ}:Ø i s i {VØ}:Ø
+n a {iØ}:Ø {i}:i {VØ}:Ø
 n i e {mn}:m {ieeØeØ}:e n
 n i e {mn}:m {ieeØeØ}:e {nrs}:n {aä}:ä
 n i e {mn}:m {ieeØeØ}:e {Øh}:h {V}:e n
@@ -1422,17 +1422,17 @@ o n n e t {tØ}:Ø o {ØiØ}:Ø {mn}:n {aäØ}:Ø
 o n n e t {tØ}:Ø o {ØiØ}:Ø {mn}:n {aäØ}:Ø t e n
 o n n e t {tØ}:Ø o {ØiØ}:Ø {mn}:n {aäØ}:Ø {nrs}:n {aä}:a
 o n n e t {tØ}:Ø o {ØiØ}:Ø {mn}:n {aäØ}:Ø {Øt}:t {aä}:a
-o n {kg}:g {iØiØii}:i n
-o n {kg}:g {iØiØii}:i {C}:Ø
-o n {kg}:g {iØiØii}:i {dlnrtØ}:t {C}:Ø {aä}:a {aä}:a n
-o n {kg}:g {iØiØii}:i {tttØ}:t t i i n
-o n {kg}:g {iØiØii}:i {tttØ}:t {dlnrtØ}:t {uy}:u
-o n {kg}:k {iØiØii}:i k {oö}:o {oö}:o n
-o n {kg}:k {iØiØii}:i {dlnrtØ}:Ø {aä}:a k s e n i
-o n {kg}:k {iØiØii}:i {nlrs}:n e {VØ}:e
-o n {kg}:k {iØiØii}:i {nlrs}:n {uy}:u t
-o n {kg}:k {iØiØii}:Ø i s i {VØ}:Ø
-o n {kg}:k {iØiØii}:Ø {i}:i {VØ}:Ø
+o n {kg}:g {iØ}:i n
+o n {kg}:g {iØ}:i {C}:Ø
+o n {kg}:g {iØ}:i {dlnrtØ}:t {C}:Ø {aä}:a {aä}:a n
+o n {kg}:g {iØ}:i {tttØ}:t t i i n
+o n {kg}:g {iØ}:i {tttØ}:t {dlnrtØ}:t {uy}:u
+o n {kg}:k {iØ}:i k {oö}:o {oö}:o n
+o n {kg}:k {iØ}:i {dlnrtØ}:Ø {aä}:a k s e n i
+o n {kg}:k {iØ}:i {nlrs}:n e {VØ}:e
+o n {kg}:k {iØ}:i {nlrs}:n {uy}:u t
+o n {kg}:k {iØ}:Ø i s i {VØ}:Ø
+o n {kg}:k {iØ}:Ø {i}:i {VØ}:Ø
 o r i {Øth}:h {ØiØiØ}:i n
 o r i {Øth}:h {ØiØiØ}:i s e {Øe}:Ø n
 o r i {Øth}:h {ØiØiØ}:i {nrs}:n {aä}:a
@@ -1726,15 +1726,15 @@ r e h {td}:d {iieØ}:i m {pm}:p {iaäØ}:i
 r e h {td}:d {iieØ}:i n 
 r e h {td}:d {iieØ}:i s t {aä}:ä
 r e h {td}:t {iieØ}:i
-r u m {aØe}:a
-r u m {aØe}:e m {pm}:p {iaäØ}:i
-r u m {aØe}:e m {pm}:m {iaäØ}:a n
-r u m {aØe}:e m {pm}:m {iaäØ}:a s s {aä}:a
-r u m {aØe}:e m {pm}:m {iaäØ}:Ø {ij}:i s s {aä}:a
-r u m {aØe}:Ø i {nm}:m {ØpmØ}:m {aäØ}:a s s {aä}:a
-r u m {aØe}:Ø i {nm}:m {ØpmØ}:p {aäØ}:a {nrs}:n {aä}:a
-r u m {aØe}:Ø i {nm}:n {ØpmØ}:Ø {aäØ}:Ø
-r u m {aØe}:Ø {ij}:i s s {aä}:a
+r u m {aØeØ}:a
+r u m {aØeØ}:e m {pm}:p {iaäØ}:i
+r u m {aØeØ}:e m {pm}:m {iaäØ}:a n
+r u m {aØeØ}:e m {pm}:m {iaäØ}:a s s {aä}:a
+r u m {aØeØ}:e m {pm}:m {iaäØ}:Ø {ij}:i s s {aä}:a
+r u m {aØeØ}:Ø i {nm}:m {ØpmØ}:m {aäØ}:a s s {aä}:a
+r u m {aØeØ}:Ø i {nm}:m {ØpmØ}:p {aäØ}:a {nrs}:n {aä}:a
+r u m {aØeØ}:Ø i {nm}:n {ØpmØ}:Ø {aäØ}:Ø
+r u m {aØeØ}:Ø {ij}:i s s {aä}:a
 s a a p {pØ}:p a {sØh}:h {aäØ}:a n
 s a a p {pØ}:p a {sØh}:h {aäØ}:a s e {Øe}:Ø n
 s a a p {pØ}:p a {sØh}:h {aäØ}:a {nrs}:n {aä}:a
@@ -1783,17 +1783,17 @@ s a l a {ØsnØtt}:t {aØØØØ}:Ø {tttØ}:Ø {dlnrtØ}:Ø {uy}:u t
 s a l a {ØsnØtt}:Ø {aØØØØ}:a n
 s a l a {ØsnØtt}:Ø {aØØØØ}:a {C}:Ø
 s a l a {ØsnØtt}:Ø {aØØØØ}:Ø i s i {VØ}:Ø
-s a l l {iØiØii}:i k {oö}:o {oö}:o n
-s a l l {iØiØii}:i n
-s a l l {iØiØii}:i {C}:Ø
-s a l l {iØiØii}:i {dlnrtØ}:t {C}:Ø {aä}:a {aä}:a n
-s a l l {iØiØii}:i {dlnrtØ}:Ø {aä}:a k s e n i
-s a l l {iØiØii}:i {nlrs}:n e {VØ}:e
-s a l l {iØiØii}:i {nlrs}:n {uy}:u t
-s a l l {iØiØii}:i {tttØ}:t t i i n
-s a l l {iØiØii}:i {tttØ}:t {dlnrtØ}:t {uy}:u
-s a l l {iØiØii}:Ø i s i {VØ}:Ø
-s a l l {iØiØii}:Ø {i}:i {VØ}:Ø
+s a l l {iØ}:i k {oö}:o {oö}:o n
+s a l l {iØ}:i n
+s a l l {iØ}:i {C}:Ø
+s a l l {iØ}:i {dlnrtØ}:t {C}:Ø {aä}:a {aä}:a n
+s a l l {iØ}:i {dlnrtØ}:Ø {aä}:a k s e n i
+s a l l {iØ}:i {nlrs}:n e {VØ}:e
+s a l l {iØ}:i {nlrs}:n {uy}:u t
+s a l l {iØ}:i {tttØ}:t t i i n
+s a l l {iØ}:i {tttØ}:t {dlnrtØ}:t {uy}:u
+s a l l {iØ}:Ø i s i {VØ}:Ø
+s a l l {iØ}:Ø {i}:i {VØ}:Ø
 s a n k a r {iieØ}:e {ii}:i n
 s a n k a r {iieØ}:e {ij}:i s s {aä}:a
 s a n k a r {iieØ}:e {ij}:i {dt}:d {Øt}:Ø e n
@@ -2300,17 +2300,17 @@ v i {pv}:v u {ØsnØtt}:t {aØaØØ}:Ø {dlnrtØ}:Ø {C}:Ø {aä}:a {aä}:a n
 v i {pv}:v u {ØsnØtt}:t {aØaØØ}:Ø {dlnrtØ}:Ø {aä}:a k s e n i
 v i {pv}:v u {ØsnØtt}:t {aØaØØ}:Ø {tttØ}:Ø t i i n
 v i {pv}:v u {ØsnØtt}:t {aØaØØ}:Ø {tttØ}:Ø {dlnrtØ}:t {uy}:u
-v {iØiØii}:i e k {oö}:ö {oö}:ö n
-v {iØiØii}:i e n
-v {iØiØii}:i e {C}:Ø
-v {iØiØii}:i e {dlnrtØ}:d {C}:Ø {aä}:ä {aä}:ä n
-v {iØiØii}:i e {dlnrtØ}:d {aä}:ä k s e n i
-v {iØiØii}:i e {nlrs}:n e {VØ}:e
-v {iØiØii}:i e {nlrs}:n {uy}:y t
-v {iØiØii}:i e {tttØ}:Ø t i i n
-v {iØiØii}:i e {tttØ}:Ø {dlnrtØ}:t {uy}:y
-v {iØiØii}:Ø e i s i {VØ}:Ø
-v {iØiØii}:Ø e {i}:i {VØ}:Ø
+v {iØ}:i e k {oö}:ö {oö}:ö n
+v {iØ}:i e n
+v {iØ}:i e {C}:Ø
+v {iØ}:i e {dlnrtØ}:d {C}:Ø {aä}:ä {aä}:ä n
+v {iØ}:i e {dlnrtØ}:d {aä}:ä k s e n i
+v {iØ}:i e {nlrs}:n e {VØ}:e
+v {iØ}:i e {nlrs}:n {uy}:y t
+v {iØ}:i e {tttØ}:Ø t i i n
+v {iØ}:i e {tttØ}:Ø {dlnrtØ}:t {uy}:y
+v {iØ}:Ø e i s i {VØ}:Ø
+v {iØ}:Ø e {i}:i {VØ}:Ø
 y l i {nm}:m {ØpmØ}:m {aäØ}:Ø {ij}:i s s {aä}:ä
 y l i {nm}:m {ØpmØ}:m {aäØ}:ä n
 y l i {nm}:m {ØpmØ}:p {aäØ}:ä {ii}:i n
