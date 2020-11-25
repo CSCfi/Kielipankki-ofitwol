@@ -16,7 +16,10 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
-import hfst, sys, argparse
+import hfst
+import sys
+import re
+import argparse
 
 argparser = argparse.ArgumentParser(
     "python3 gyessbyasking.py",
@@ -34,21 +37,24 @@ args = argparser.parse_args()
 guesser_fil = hfst.HfstInputStream(args.guesser)
 guesser_fst = guesser_fil.read()
 guesser_fil.close()
-#guesser_fst.invert()
-#guesser_fst.minimize()
-#guesser_fst.lookup_optimize()
 
 print("\nENTER FORMS OF A WORD:\n")
 while True:
-    remaining = set()
+    remaining_set = set()
     weights = {}                 # weights[entry] == weight
     first = True
     while True:
         linenl = sys.stdin.readline()
         if not linenl: exit()
         line = linenl.strip()
-        if line == "":
+        if line in {"", "0"} :
             print("GIVING UP THIS WORD\n\n")
+            break
+        if re.match("[1-9][0-9]*", line):
+            e = remaining_lst[int(line)-1]
+            print("\n" + "="*len(e))
+            print(e)
+            print("="*len(e) + "\n")
             break
         if line[0] == '-':
             res = guesser_fst.lookup(line[1:], output="tuple")
@@ -69,27 +75,32 @@ while True:
                 weights[entry] = w
         if first:
             first = False
-            remain = entries
+            new_remaining_set = entries
         elif line[0] == '-':
-            remain = remaining - entries
+            new_remaining_set = remaining_set - entries
         else:
-            remain = remaining & entries
-        best_weight = min([weights[e] for e in remain], default=0)
-        rema = set()
-        for e in remain:
+            new_remaining_set = remaining_set & entries
+        best_weight = min([weights[e] for e in new_remaining_set], default=0)
+        remaining_lst = []
+        for e in new_remaining_set:
             if weights[e] <= best_weight + args.reject:
-                rema.add(e)
-        if len(rema) == 1:
-            print("\n" + "="*18)
-            print(list(rema)[0], ";")
-            print("="*18 + "\n")
+                remaining_lst.append(e)
+        remaining_lst.sort(key = lambda e : weights[e])
+        if len(remaining_lst) == 1:
+            e = remaining_lst[0]
+            print("\n" + "="*len(e))
+            print(e)
+            print("="*len(e) + "\n")
             break
-        elif not rema:
+        elif not remaining_lst:
             print("DOES NOT FIT! IGNORED.")
         else:
-            rml = [(entry, weights[entry]) for entry in rema]
-            print("        ", rml)
-            remaining = rema
+            i = 0
+            for entry in remaining_lst:
+                i += 1
+                w = weights[entry]
+                print("    ({}) {}  {}".format(i, entry, w))
+            remaining_set = set(remaining_lst)
 
 
 
