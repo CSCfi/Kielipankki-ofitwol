@@ -34,6 +34,9 @@
   Forl = [b|c|d|f|g|q|š|w|x|z|ž] ;
   Forb = [n j|k l|k r|k v|p r|p s|s m|s p|t l|t r] ;
   Forg = [$[Forl|Forb]] ;
+!
+! /(ea|eä|ias|iäs|inen|isa|isä|kas|käs|kka|kkä|la|lä|ton|tön|va|vä)$
+!
 LEXICON AdjGuess
 !
 !         === o |u | y | ö ===

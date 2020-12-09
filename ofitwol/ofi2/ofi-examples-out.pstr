@@ -1726,15 +1726,15 @@ r e h {td}:d {iieØ}:i m {pm}:p {iaäØ}:i
 r e h {td}:d {iieØ}:i n 
 r e h {td}:d {iieØ}:i s t {aä}:ä
 r e h {td}:t {iieØ}:i
-r u m {aØe}:a
-r u m {aØe}:e m {pm}:p {iaäØ}:i
-r u m {aØe}:e m {pm}:m {iaäØ}:a n
-r u m {aØe}:e m {pm}:m {iaäØ}:a s s {aä}:a
-r u m {aØe}:e m {pm}:m {iaäØ}:Ø {ij}:i s s {aä}:a
-r u m {aØe}:Ø i {nm}:m {ØpmØ}:m {aäØ}:a s s {aä}:a
-r u m {aØe}:Ø i {nm}:m {ØpmØ}:p {aäØ}:a {nrs}:n {aä}:a
-r u m {aØe}:Ø i {nm}:n {ØpmØ}:Ø {aäØ}:Ø
-r u m {aØe}:Ø {ij}:i s s {aä}:a
+r u m {aØeØ}:a
+r u m {aØeØ}:e m {pm}:p {iaäØ}:i
+r u m {aØeØ}:e m {pm}:m {iaäØ}:a n
+r u m {aØeØ}:e m {pm}:m {iaäØ}:a s s {aä}:a
+r u m {aØeØ}:e m {pm}:m {iaäØ}:Ø {ij}:i s s {aä}:a
+r u m {aØeØ}:Ø i {nm}:m {ØpmØ}:m {aäØ}:a s s {aä}:a
+r u m {aØeØ}:Ø i {nm}:m {ØpmØ}:p {aäØ}:a {nrs}:n {aä}:a
+r u m {aØeØ}:Ø i {nm}:n {ØpmØ}:Ø {aäØ}:Ø
+r u m {aØeØ}:Ø {ij}:i s s {aä}:a
 s a a p {pØ}:p a {sØh}:h {aäØ}:a n
 s a a p {pØ}:p a {sØh}:h {aäØ}:a s e {Øe}:Ø n
 s a a p {pØ}:p a {sØh}:h {aäØ}:a {nrs}:n {aä}:a
@@ -2300,17 +2300,17 @@ v i {pv}:v u {ØsnØtt}:t {aØaØØ}:Ø {dlnrtØ}:Ø {C}:Ø {aä}:a {aä}:a n
 v i {pv}:v u {ØsnØtt}:t {aØaØØ}:Ø {dlnrtØ}:Ø {aä}:a k s e n i
 v i {pv}:v u {ØsnØtt}:t {aØaØØ}:Ø {tttØ}:Ø t i i n
 v i {pv}:v u {ØsnØtt}:t {aØaØØ}:Ø {tttØ}:Ø {dlnrtØ}:t {uy}:u
-v {iØiØii}:i e k {oö}:ö {oö}:ö n
-v {iØiØii}:i e n
-v {iØiØii}:i e {C}:Ø
-v {iØiØii}:i e {dlnrtØ}:d {C}:Ø {aä}:ä {aä}:ä n
-v {iØiØii}:i e {dlnrtØ}:d {aä}:ä k s e n i
-v {iØiØii}:i e {nlrs}:n e {VØ}:e
-v {iØiØii}:i e {nlrs}:n {uy}:y t
-v {iØiØii}:i e {tttØ}:Ø t i i n
-v {iØiØii}:i e {tttØ}:Ø {dlnrtØ}:t {uy}:y
-v {iØiØii}:Ø e i s i {VØ}:Ø
-v {iØiØii}:Ø e {i}:i {VØ}:Ø
+v {iØ}:i e k {oö}:ö {oö}:ö n
+v {iØ}:i e n
+v {iØ}:i e {C}:Ø
+v {iØ}:i e {dlnrtØ}:d {C}:Ø {aä}:ä {aä}:ä n
+v {iØ}:i e {dlnrtØ}:d {aä}:ä k s e n i
+v {iØ}:i e {nlrs}:n e {VØ}:e
+v {iØ}:i e {nlrs}:n {uy}:y t
+v {iØ}:i e {tttØ}:Ø t i i n
+v {iØ}:i e {tttØ}:Ø {dlnrtØ}:t {uy}:y
+v {iØ}:Ø e i s i {VØ}:Ø
+v {iØ}:Ø e {i}:i {VØ}:Ø
 y l i {nm}:m {ØpmØ}:m {aäØ}:Ø {ij}:i s s {aä}:ä
 y l i {nm}:m {ØpmØ}:m {aäØ}:ä n
 y l i {nm}:m {ØpmØ}:p {aäØ}:ä {ii}:i n

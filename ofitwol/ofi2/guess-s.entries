@@ -49,8 +49,6 @@
 !  VbVB = VbV -$[Väöy] ;
   Syl = [Vo | VV] Cocl ; ! Counts as one syllable
   SylVo = [VbV|VV Vo|Vo VV|Syl Vo+] ; ! Counts as two syllables
-!  SylB = VoPB Cocl ; ! Back harmony compat syllable
-!  SylF = VoPF Cocl ; ! Front harmony compat syllable
   SylB = VnucB Cocl ; ! Back harmony compat syllable
   SylF = VnucF Cocl ; ! Front harmony compat syllable
   SylVoB = SylB VnucB ; ! Counts as two back harmony syllables
@@ -77,13 +75,11 @@ LEXICON NounGuess
 !
 !         === o | u | y | ö ===
 !
-< (Cini) VoB+ NonGs [o|u] 0::10 > /s ; ! S01: VALO PURU - bisyll
-< (Cini) VoF+ NonGs [ö|y] 0::10 > /s ; ! HÄLY SÄILÖ - bisyll
-!< (Cini) VoB+ [k|p|t] [o|u] 0::40 > /s ; ! GUANAKO
-!< (Cini) VoF+ [k|p|t] [ö|y] 0::40 > /s ; ! TÖPÖ LÖPÖ
-< (Cini) VoB+ Grad [o|u] 0::10 > /s ; ! HAPPO PATO ARKKU SALKKU SANKO - bisyll
-< (Cini) VoF+ Grad [ö|y] 0::10 > /s ; ! PÄÄTY LÄMPÖ SÄNKY YÖKKÖ - bisyll
-< (Cini) VoB+ NonGs [y] 0::30 > /s ; ! S01: BANDY JURY - bisyll
+< (Cini) VoB+ NonGs [o|u] > /s  10 VALO ; ! PURU - bisyll
+< (Cini) VoF+ NonGs [ö|y] > /s  10 HÄLY ; ! SÄILÖ - bisyll
+< (Cini) VoB+ Grad [o|u] > /s  10 HAPPO ; ! PATO ARKKU SALKKU SANKO - bisyll
+< (Cini) VoF+ Grad [ö|y] > /s  10 PÄÄTY ; ! LÄMPÖ SÄNKY YÖKKÖ - bisyll
+< (Cini) VoB+ NonGs [y] > /s  30 JURY ; ! BANDY - bisyll
 !
 ahku /s ; ! AHKU
 auto /s ; ! AUTO
@@ -91,7 +87,7 @@ duo /s ; ! DUO
 hehku /s ; ! HEHKU
 heh{kØ}u /s ; ! HEHKU
 hihku /s ; ! HIHKU
-himp{§}hamp{pØ}u /s ; ! HIMPHAMPPU
+himp_hamp{pØ}u /s ; ! HIMPHAMPPU
 hoopo /s ; ! HOOPO
 hyyhky /s ; ! HYYHKY
 ilko /s ; ! ILKO
@@ -117,7 +113,7 @@ nyyhky /s ; ! NYYHKY
 nökö /s ; ! NÖKÖ
 nöpö /s ; ! NÖPÖ
 pahku /s ; ! PAHKU
-pasi{§}lisko /s ; ! PASILISKO
+pasi_lisko /s ; ! PASILISKO
 pehko /s ; ! PEHKO
 peh{kØ}o /s ; ! PEHKO
 pehku /s ; ! PEHKU
@@ -132,13 +128,13 @@ pökö /s ; ! PÖKÖ
 pöpö /s ; ! PÖPÖ
 rahko /s ; ! RAHKO
 siku /s ; ! SIKU
-sisi{§}lisko /s ; ! SISILISKO
+sisi_lisko /s ; ! SISILISKO
 suihku /s ; ! SUIHKU
 sähkö /s ; ! SÄHKÖ
 säihky /s ; ! SÄIHKY
 tahko /s ; ! TAHKO
 tah{kØ}o /s ; ! TAHKO
-tele{§}foto /s ; ! TELEFOTO
+tele_foto /s ; ! TELEFOTO
 tempo /s ; ! TEMPO
 tihku /s ; ! TIHKU
 tipo /s ; ! TIPO
@@ -215,26 +211,26 @@ pu{kv}u /s ; ! PUKU
 ky{kv}y /s ; ! KYKY
 my{kv}y /s ; ! MYKY
 !
-< (Cini) SylB VoB+ NonGs [o|u] 0::10 > /s ; ! S02: ARVELU RUOISTO - trisyll
-< (Cini) SylF VoF+ NonGs [ö|y] 0::10 > /s ; ! VILJELY PÖKKELÖ - trisyll
-< (Cini) Syl Vo+ NonGs [o|ö|u|y] 0::20 > /s ; ! BURBERRY - trisyll
-< (Cini) [Syl+ Vo* | Vo+] [o|ö|u|y] 0::40 > /s ; ! PLATY - 3+syll
+< (Cini) SylB VoB+ NonGs [o|u] > /s 10 ARVELU ; ! RUOISTO - trisyll
+< (Cini) SylF VoF+ NonGs [ö|y] > /s 10 VILJELY ; !  PÖKKELÖ - trisyll
+< (Cini) Syl Vo+ NonGs [o|ö|u|y] > /s 20 BURBERRY ; ! trisyll
+< (Cini) [Syl+ Vo* | Vo+] [o|ö|u|y] > /s 40 PLATY ; ! 3+syll
 !
-< (Cini) [[Syl* SylVo] - $[ä|ö]] [k {kØØ} | n {kg}] [o|u] 0::10 > /s ;
-!   SAMMAKKO SAMMALIKKO KYYNIKKO AURINKO - 3+syl
-< (Cini) [[Syl* SylVo] - $[ä|ö]] [n {tn} | t {tØ}] [o|u] 0::10 > /s ;
-!   SEURAANTO PIHATTO - 3+syl
-< (Cini) SylF+ VoF+ [n {kg} | k {kØØ} | t {tØ} | n {tn}] [ö|y] 0::10 > /s ;
-!   KÄYTÄNTÖ HÄIRIKKÖ RYTEIKKÖ PYHÄTTÖ - 3+syl
-< (Cini) [Syl* SylVo] [t] [o|u] 0::10 > /s ;
+< (Cini) [[Syl* SylVo] - $[ä|ö]] [k {kØØ} | n {kg}] [o|u] > /s 10 SAMMAKKO ;
+!   SAMMALIKKO KYYNIKKO AURINKO - S02 3+syl
+< (Cini) [[Syl* SylVo] - $[ä|ö]] [n {tn} | t {tØ}] [o|u] > /s 10 PIHATTO ;
+!   SEURAANTO - S02 3+syll
+< (Cini) SylF+ VoF+ [n {kg} | k {kØØ} | t {tØ} | n {tn}] [ö|y] > /s 10 KÄYTÄNTÖ ;
+!   KÄYTÄNTÖ HÄIRIKKÖ RYTEIKKÖ PYHÄTTÖ - S02 3+syl
+< (Cini) [Syl* SylVo] [t] [o|u] > /s 10 LEGATO ; ! INKOGNITO - S02
 !
+dynamo /s ; ! DYNAMO
 iljan{kg}o /s ; ! ILJANKO
 prostituoi{td}u /s ; ! PROSTITUOITU
 sisäl{tØ}ö /s ; ! SISÄLTÖ
 !
-< (Cini) [[Syl+] - $[ä|ö]] i o 0::10 > /s ; ! S03: AUTIO AKVAARIO - 3/4-syll
-< (Cini) SylF+ i ö 0::10 > /s ; ! HÄIRIÖ VIHERIÖ - trisyll
-!!!< (Cini) Syl Vo+ {§} Co* SylB i o > /s ; ! compound - trisyll
+< (Cini) [[Syl+] - $[ä|ö]] i o > /s 10 AUTIO ; ! S03: AUTIO AKVAARIO - 3/4-syll
+< (Cini) SylF+ i ö > /s 10 HÄIRIÖ ; ! HÄIRIÖ VIHERIÖ - trisyll
 embryo /s ; ! EMBRYO
 faarao /s ; ! FAARAO
 kaakao /s ; ! KAAKAO
@@ -245,7 +241,7 @@ trio /s ; ! TRIO
 !
 !         === i-i-e ===
 !
-< (Cini) Syl* Vo+ NonGs {iieØ} 0::10 > /s ; ! S04: RISTI - bisyll
+< (Cini) Syl* Vo+ NonGs {iieØ} > /s 10 RISTI ; ! S04: RISTI - bisyll
 !        S06: PAPERI BANAALI ASUKKI ANNULOINTI PYSÄKKI- trisyll
 herskaap{iieØ} /s ; ! HERSKAAPI
 herskap{iieØ} /s ; ! HERSKAPI
@@ -253,8 +249,8 @@ klap{iieØ} /s ; ! KLAPI
 pars{iieØ} /s ; ! PARSI ??
 riis{iieØ} /s ; ! RIISI (cf. riisi - riiden)
 !
-< (Cini) Vo+ [k|p|t] {iieØ} 0::15 > /s ; ! LAAKI PIPI PETI - bisyll
-< (Cini) Syl* Vo+ GradNZ {iieØ} 0::10 > /s ; ! LAKKI HAUKI - bisyll
+< (Cini) Vo+ [k|p|t] {iieØ} > /s 15 LAAKI ; ! LAAKI PIPI PETI - bisyll
+< (Cini) Syl* Vo+ GradNZ {iieØ} > /s 10 LAKKI ; ! LAKKI HAUKI - bisyll
 hau{kØ}{iieØ} /s ; ! HAUKI (dial.)
 la{kØ}{iieØ} /s ; ! LAKI
 lauanta{kØ}{iieØ} /s ; ! LAUANTAKI
@@ -270,12 +266,12 @@ vih{kØ}{iieØ} /s ; ! VIHKI
 !
 !         === Ø-i-e ===
 !
-< (Cini) Syl* Vo+ Co+ {ØieØ} 0::30 > /s ; ! S07: KALSIUM - 2+syll
-< (Cini) SylF* (i) u m {ØieØ} 0::10 > /s ; ! KALSIUM - 2+syll
+< (Cini) Syl* Vo+ Co+ {ØieØ} > /s 30 KALSIUM ; ! S07: KALSIUM - 2+syll
+< (Cini) SylF* (i) u m {ØieØ} > /s 10 ONYX ; ! KALSIUM - 2+syll
 !
 !         === i-e-Ø ===
 !
-< IniFiCo Vo [[NonGs - ForgCoSeq] & [Co (Co)]] {ieeeØ} 0::10 > /s ; ! S08: LOVI - bisyll
+< IniFiCo Vo [[NonGs - ForgCoSeq] & [Co (Co)]] {ieeeØ} > /s 10 LOVI ; ! S08: LOVI - bisyll
 aarn{ieeeØ} /s ; ! AARNI
 kaih{ieeeØ} /s ; ! KAIHI
 kiisk{ieeeØ} /s ; ! KIISKI
@@ -292,7 +288,7 @@ tuoni{ieeeØ} /s ; ! TUONI
 viiks{ieeeØ} /s ; ! VIIKSI
 vuoks{ieeeØ} /s ; ! VUOKSI
 !
-< IniFiCo Vo [[l|r] {kj} | n {kg}] {ieeeØ} 0::10 > /s ; ! S08: JOKI JÄLKI KÄRKI - bisyll
+< IniFiCo Vo [[l|r] {kj} | n {kg}] {ieeeØ} > /s 10 JOKI ; ! S08: JOKI JÄLKI KÄRKI - bisyll
 ar{kj}{ieeeØ} /s ; ! ARKI
 hau{kØ}{ieeeØ} /s ; ! HAUKI
 hi{kØ}{ieeeØ} /s ; ! HIKI
@@ -310,7 +306,7 @@ vä{kØ}{ieeeØ} /s ; ! VÄKI
 yr{kj}{ieeeØ} /s ; ! YRKI
 än{kg}{ieeeØ} /s ; ! ÄNKI
 !
-< IniFiCo Vo [p {pØ} | (l|r) {pv} | m {pm}}] {ieeeØ} 0::10 > /s ; ! S08: KOIPI KILPI KORPI APPI 
+< IniFiCo Vo [p {pØ} | (l|r) {pv} | m {pm}] {ieeeØ} > /s 10 KOIPI; ! S08: KOIPI KILPI KORPI APPI 
 al{pv}{ieeeØ} /s ; ! ALPI
 ap{pØ}{ieeeØ} /s ; ! APPI
 ar{pv}{ieeeØ} /s ; ! ARPI
@@ -319,7 +315,7 @@ koi{pv}{ieeeØ} /s ; ! KOIPI
 sii{pv}{ieeeØ} /s ; ! SIIPI
 um{pm}{ieeeØ} /s ; ! UMPI
 !
-!< IniFiCo Vo [h {td}] {ieeeØ} 0::10 > /s ; ! LAHTI TÄHTI - bisyll
+!< IniFiCo Vo [h {td}] {ieeeØ} > /s 10 LAHTI ; ! LAHTI TÄHTI - bisyll
 lah{td}{ieeeØ} /s ; ! LAHTI
 leh{td}{ieeeØ} /s ; ! LEHTI
 täh{td}{ieeeØ} /s ; ! TÄHTI
@@ -455,7 +451,7 @@ pengerm{äØ} /s ; ! PENGERMÄ
 kiherm{äØ} /s ; ! KIHERMÄ
 sikerm{äØ} /s ; ! SIKERMÄ
 sykerm{äØ} /s ; ! SYKERMÄ
-nysterm{äØ} /s ; !NYSTERMÄ
+nysterm{äØ} /s ; ! NYSTERMÄ
 !
 < (Cini) SylB* SylVoB (l|r) v {aØ} 0::20 > /s ; ! MAHTAVA - 3+syll
 < (Cini) SylF* SylVoF (l|r) v {äØ} 0::20 > /s ; ! VÄKEVÄ - 3+syll
@@ -660,7 +656,7 @@ v{yØ}ö /s ; ! VYÖ
 !
 < Co ö {öØ} 0::10 > /s ; ! KÖÖ - monosyll
 !
-< (Cini) Syl+ Vo+ {§} Co o {oØ} 0::20 > /s ; ! TENKKAPOO
+tenkka{§}po{oØ} /s ; ! TENKKAPOO
 !
 !        === i-e-Ø-e-Ø ===
 !

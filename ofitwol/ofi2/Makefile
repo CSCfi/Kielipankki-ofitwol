@@ -9,13 +9,15 @@ RULEFST=ofi-rules-in.fst
 AFF=analy
 DATA=../../data
 
-LEX=lexic-s.lexc lexic-a.lexc lexic-v.lexc lexic-p.lexc lexic-special.lexc lexic-n.lexc
+LEX=lexic-s.lexc lexic-a.lexc lexic-v.lexc lexic-p.lexc \
+    lexic-special.lexc lexic-n.lexc
 
 LEXM=$(LEX) lexic-r.lexc lexic-firstpart.lexc
 
 LEXE=$(LEX) lexic-r.lexc lexic-firstpart.lexc
 
-LEXG=guess-s.lexc guess-a.lexc guess-v.lexc lexic-firstpart.lexc lexic-special.lexc lexic-p.lexc lexic-r.lexc
+LEXG=guess-s.lexc guess-a.lexc guess-v.lexc lexic-firstpart.lexc \
+     lexic-special.lexc lexic-p.lexc lexic-r.lexc
 
 ANALYSES=$(ID)-corpus-$(MODE).big.analyses
 
@@ -80,13 +82,13 @@ guess-aff.lexc : ofi-affixes.csv affixes2lexc.py
 entry-aff.lexc : ofi-affixes.csv affixes2lexc.py
 	python3 affixes2lexc.py -m E < $< > $@
 
-guess-s.lexc : guess-s.entries
+guess-s.lexc : guess-s.entries entries2lexc.py
 	python3 entries2lexc.py < $< > $@
 
-guess-a.lexc : guess-a.entries
+guess-a.lexc : guess-a.entries entries2lexc.py
 	python3 entries2lexc.py < $< > $@
 
-guess-v.lexc : guess-v.entries
+guess-v.lexc : guess-v.entries entries2lexc.py
 	python3 entries2lexc.py < $< > $@
 
 lexic-firstpart.lexc : lexic-firstpart.words entries2lexc.py

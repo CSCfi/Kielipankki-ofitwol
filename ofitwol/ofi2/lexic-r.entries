@@ -4,62 +4,62 @@ LEXICON Pronouns
 ! ==================
 minä+PRON:minä Clit
 minä+PRON:ma Clit
-minä+PRON:mä Clit ! arkik
-minä+PRON:mää Clit ! arkik
-minä+PRON:mie Clit ! murt
+minä+PRON:mä Clit 20 ! arkik
+minä+PRON:mää Clit 20 ! arkik
+minä+PRON:mie Clit 20 ! murt
 minä+PRON:minut Clit
 minä+PRON:minun Clit
-minä+PRON:mun Clit ! arkik
+minä+PRON:mun Clit 20 ! arkik
 minä+PRON:minuna Clit
 minä+PRON:minuksi Clit
 minä+PRON:minua Clit
-minä+PRON:mua Clit ! arkik
-minä+PRON:milma Clit ! vanh
+minä+PRON:mua Clit 20 ! arkik
+minä+PRON:milma Clit 20 ! vanh
 minä+PRON:minussa Clit
-minä+PRON:mussa Clit ! arkik
+minä+PRON:mussa Clit 20 ! arkik
 minä+PRON:minusta Clit
-minä+PRON:musta Clit ! arkik
+minä+PRON:musta Clit 20 ! arkik
 minä+PRON:minuun Clit
-minä+PRON:muhun Clit ! arkik
+minä+PRON:muhun Clit 20 ! arkik
 minä+PRON:minulla Clit
-minä+PRON:mulla Clit ! arkik
+minä+PRON:mulla Clit 20 ! arkik
 minä+PRON:minulta Clit
-minä+PRON:multa Clit ! arkik
+minä+PRON:multa Clit 20 ! arkik
 minä+PRON:minulle Clit
-minä+PRON:mulle Clit ! arkik
+minä+PRON:mulle Clit 20 ! arkik
 minä+PRON:minutta Clit
 
-minä+PRON:miut Clit ! arkik
-minä+PRON:miun Clit ! arkik
-minä+PRON:miusta Clit ! arkik
-minä+PRON:miulla Clit ! arkik
-minä+PRON:miulle Clit ! arkik
-minä+PRON:miulta Clit ! arkik
+minä+PRON:miut Clit 20 ! arkik
+minä+PRON:miun Clit 20 ! arkik
+minä+PRON:miusta Clit 20 ! arkik
+minä+PRON:miulla Clit 20 ! arkik
+minä+PRON:miulle Clit 20 ! arkik
+minä+PRON:miulta Clit 20 ! arkik
 
 sinä+PRON:sinä Clit
-sinä+PRON:sa Clit ! runok
-sinä+PRON:sä Clit ! arkik
-sinä+PRON:sää Clit ! murt
-sinä+PRON:sie Clit ! murt
+sinä+PRON:sa Clit 20 ! runok
+sinä+PRON:sä Clit 20 ! arkik
+sinä+PRON:sää Clit 20 ! murt
+sinä+PRON:sie Clit 20 ! murt
 sinä+PRON:sinut Clit
 sinä+PRON:sinun Clit
-sinä+PRON:sun Clit ! arkik
+sinä+PRON:sun Clit 20 ! arkik
 sinä+PRON:sinuna Clit
 sinä+PRON:sinuksi Clit
 sinä+PRON:sinua Clit
-sinä+PRON:sua Clit ! arkik
-sinä+PRON:silma Clit ! vanh
+sinä+PRON:sua Clit 20 ! arkik
+sinä+PRON:silma Clit 20 ! vanh
 sinä+PRON:sinussa Clit
-sinä+PRON:sussa Clit ! arkik
+sinä+PRON:sussa Clit 20 ! arkik
 sinä+PRON:sinusta Clit
-sinä+PRON:susta Clit ! arkik
+sinä+PRON:susta Clit 20 ! arkik
 sinä+PRON:sinuun Clit
 sinä+PRON:sinulla Clit
-sinä+PRON:sulla Clit ! arkik
+sinä+PRON:sulla Clit 20 ! arkik
 sinä+PRON:sinulta Clit
-sinä+PRON:sulta Clit ! arkik
+sinä+PRON:sulta Clit 20 ! arkik
 sinä+PRON:sinulle Clit
-sinä+PRON:sulle Clit ! arkik
+sinä+PRON:sulle Clit 20 ! arkik
 sinä+PRON:sinutta Clit
 
 hän+PRON:hän Clit
@@ -80,7 +80,7 @@ hän+PRON:hälle Clit
 hän+PRON:hänettä Clit
 
 me+PRON:me Clit
-me+PRON:myö Clit ! murt
+me+PRON:myö Clit 20 ! murt
 me+PRON:meidät Clit
 me+PRON:meidän Clit
 me+PRON:meinä Clit
@@ -109,7 +109,7 @@ te+PRON:teille Clit
 te+PRON:teittä Clit
 
 he+PRON:he Clit
-he+PRON:hyö Clit ! murt
+he+PRON:hyö Clit 20 ! murt
 he+PRON:heidät Clit
 he+PRON:heidän Clit
 he+PRON:heinä Clit
@@ -126,9 +126,9 @@ he+PRON:meittä Clit
 ! demonstratiivipronominit
 ! ========================
 tämä+PRON:tämä Clit
-tämä+PRON:tää Clit ! runok ja arkik
+tämä+PRON:tää Clit 20 ! runok ja arkik
 tämä+PRON:tämän Clit
-tämä+PRON:tän Clit ! runok ja arkik
+tämä+PRON:tän Clit 20 ! runok ja arkik
 tämä+PRON:tänä Clit
 tämä+PRON:täksi Clit
 tämä+PRON:tätä Clit
@@ -141,24 +141,24 @@ tämä+PRON:tälle Clit
 tämä+PRON:tättä Clit
 
 tuo+PRON:tuo
-tuo+PRON:toi ! arkik
+tuo+PRON:toi 20 ! arkik
 tuo+PRON:tuon
-tuo+PRON:ton ! arkik
+tuo+PRON:ton 20 ! arkik
 tuo+PRON:tuota
-tuo+PRON:tota ! arkik
+tuo+PRON:tota 20 ! arkik
 tuo+PRON:tuoksi
-tuo+PRON:toksi ! arkik
+tuo+PRON:toksi 20 ! arkik
 tuo+PRON:tuossa
-tuo+PRON:tossa ! arkik
+tuo+PRON:tossa 20 ! arkik
 tuo+PRON:tuosta
-tuo+PRON:tuohon ! arkik
-tuo+PRON:tohon
-tuo+PRON:tuolla ! arkik
-tuo+PRON:tolla
-tuo+PRON:tuolta ! arkik
-tuo+PRON:tolta
-tuo+PRON:tuolle ! arkik
-tuo+PRON:tolle
+tuo+PRON:tuohon
+tuo+PRON:tohon 20 ! arkik
+tuo+PRON:tuolla
+tuo+PRON:tolla 20 ! arkik
+tuo+PRON:tuolta
+tuo+PRON:tolta 20 ! arkik
+tuo+PRON:tuolle
+tuo+PRON:tolle 20 ! arkik
 
 
 se+PRON:se Clit
@@ -176,7 +176,7 @@ se+PRON:sillen Clit
 se+PRON:siittä Clit
 
 nämä+PRON:nämä Clit
-nämä+PRON:nää Clit ! runok ja arkik
+nämä+PRON:nää Clit 20 ! runok ja arkik
 nämä+PRON:näiden Clit
 nämä+PRON:näitten Clit
 nämä+PRON:näinä Clit
@@ -192,8 +192,8 @@ nämä+PRON:näine Clit
 nämä+PRON:näin Clit
 
 nuo+PRON:nuo Clit
-nuo+PRON:noi Clit ! arkik
-nuo+PRON:nuot Clit ! murt?
+nuo+PRON:noi Clit 20 ! arkik
+nuo+PRON:nuot Clit 20 ! murt?
 nuo+PRON:noiden Clit
 nuo+PRON:noitten Clit
 nuo+PRON:noina Clit
@@ -277,8 +277,8 @@ kukin+PRON:kullakin
 kukin+PRON:kultakin
 kukin+PRON:kullekin
 kukin+PRON:kutkin
-kukin+PRON:kuidenkin ! harv
-kukin+PRON:kuittenkin ! harv
+kukin+PRON:kuidenkin 20 ! harv
+kukin+PRON:kuittenkin 20 ! harv
 kukin+PRON:kuinakin
 kukin+PRON:kuitakin
 kukin+PRON:kuiksikin
@@ -323,14 +323,14 @@ mikin+PRON:minkin
 mikään+PRON:mikään
 mikään+PRON:minkään
 mikään+PRON:minäään
-mikään+PRON:minäkään ! vanh harv
+mikään+PRON:minäkään 20 ! vanh harv
 mikään+PRON:mitään
-mikään+PRON:mitäkään ! juhl harv
+mikään+PRON:mitäkään 20 ! juhl harv
 mikään+PRON:miksikään
 mikään+PRON:missään
-mikään+PRON:missäkään ! vanh harv
+mikään+PRON:missäkään 20 ! vanh harv
 mikään+PRON:mistään
-mikään+PRON:mistäkään ! vanh harv
+mikään+PRON:mistäkään 20 ! vanh harv
 mikään+PRON:mihinkään
 mikään+PRON:millään
 mikään+PRON:miltään
@@ -436,12 +436,12 @@ yksi:y{kh}s{ieeØeØ} /r
 ! interrogatiivipronominit
 ! ========================
 kuka+PRON:kuka Clit
-kuka+PRON:ku ! runok harv
-kuka+PRON:kunka ! er harv
-kuka+PRON:kuna ! ylät
-kuka+PRON:kuta! ylät
-kuka+PRON:kuksi ! harv
-kuka+PRON:kussa ! ylät
+kuka+PRON:ku 20 ! runok harv
+kuka+PRON:kunka 20 ! er harv
+kuka+PRON:kuna 10 ! ylät
+kuka+PRON:kuta 10 ! ylät
+kuka+PRON:kuksi 20 ! harv
+kuka+PRON:kussa 10 ! ylät
 kuka+PRON:kusta
 kuka+PRON:kuhin
 kuka+PRON:kuhunka
@@ -450,78 +450,78 @@ kuka+PRON:kulta
 kuka+PRON:kulle
 kuka+PRON:kulleka
 kuka+PRON:kutka
-kuka+PRON:kut ! harv
-kuka+PRON:kuiden ! harv
-kuka+PRON:kuina ! harv
-kuka+PRON:kuita ! harv
-kuka+PRON:kuiksi ! harv
-kuka+PRON:kuissa ! harv
-kuka+PRON:kuihin ! harv
-kuka+PRON:kuilla ! harv
-kuka+PRON:kuilta ! harv
-kuka+PRON:kuille ! harv
-kuka+PRON:kuine ! harv
-kuka+PRON:kuitta ! harv
-kuka+PRON:kuin ! harv
+kuka+PRON:kut 20 ! harv
+kuka+PRON:kuiden 20 ! harv
+kuka+PRON:kuina 20 ! harv
+kuka+PRON:kuita 20 ! harv
+kuka+PRON:kuiksi 20 ! harv
+kuka+PRON:kuissa 20 ! harv
+kuka+PRON:kuihin 20 ! harv
+kuka+PRON:kuilla 20 ! harv
+kuka+PRON:kuilta 20 ! harv
+kuka+PRON:kuille 20 ! harv
+kuka+PRON:kuine 20 ! harv
+kuka+PRON:kuitta 20 ! harv
+kuka+PRON+PL+INS:kuin 20 ! harv
 
 kuka+PRON:kuka
-kuka+PRON:ken ! runok
-kuka+PRON:kekä ! murt
-kuka+PRON:kunka ! tuskin esiintyvä
+kuka+PRON:ken 10 ! runok
+kuka+PRON:kekä 20 ! murt
+kuka+PRON:kunka 20 ! tuskin esiintyvä
 kuka+PRON:kenen
 kuka+PRON:kenet
 kuka+PRON:kenä
 kuka+PRON:kenenä
 kuka+PRON:ketä
 kuka+PRON:keneksi
-kuka+PRON:keksi ! ani harv
-kuka+PRON:kuksi ! ani harv
+kuka+PRON:keksi 20 ! ani harv
+kuka+PRON:kuksi 20 ! ani harv
 kuka+PRON:kenessä
-kuka+PRON:kessä ! etup ylät
-kuka+PRON:kussa ! etup ylät, erit merk
+kuka+PRON:kessä 10 ! etup ylät
+kuka+PRON:kussa 10 ! etup ylät, erit merk
 kuka+PRON:kenestä
-kuka+PRON:kestä ! etup ylät
-kuka+PRON:kusta ! etup ylät, erit merk
+kuka+PRON:kestä 10 ! etup ylät
+kuka+PRON+SG+ELA:kusta 10 ! etup ylät, erit merk
 kuka+PRON:keneen
 kuka+PRON:kehen
-kuka+PRON:kuhun ! ylät
+kuka+PRON:kuhun 10 ! ylät
 kuka+PRON:kenellä
 kuka+PRON:kellä
-kuka+PRON:kulla ! harv
+kuka+PRON:kulla 20 ! harv
 kuka+PRON:keneltä
 kuka+PRON:keltä
-kuka+PRON:kulta ! harv
+kuka+PRON:kulta 20 ! harv
 kuka+PRON:kenelle
 kuka+PRON:kelle
-kuka+PRON:kulle ! harv
+kuka+PRON:kulle 20 ! harv
 kuka+PRON:kenettä
 kuka+PRON:kutka
 kuka+PRON:ketkä
 kuka+PRON:keiden
 kuka+PRON:keitten
-kuka+PRON:kuiden ! ani harv
+kuka+PRON+PL+GEN:kuiden 30 ! ani harv
 kuka+PRON:keinä
-kuka+PRON:kuina ! harv
+kuka+PRON+PL+ESS:kuina 30 ! harv
 kuka+PRON:keitä
-kuka+PRON:kuita ! harv
+kuka+PRON:kuita 30 ! harv
 kuka+PRON:keiksi
-kuka+PRON:kuiksi ! harv
+kuka+PRON:kuiksi 30 ! harv
 kuka+PRON:keissä
-kuka+PRON:kuissa ! harv
+kuka+PRON:kuissa 30 ! harv
 kuka+PRON:keistä
-kuka+PRON:kuista ! harv
+kuka+PRON:kuista 30 ! harv
 kuka+PRON:keihin
-kuka+PRON:kuihin ! harv
+kuka+PRON:kuihin 30 ! harv
 kuka+PRON:keillä
-kuka+PRON:kuillä ! harv
+kuka+PRON:kuilla 30 ! harv
 kuka+PRON:keiltä
-kuka+PRON:kuilta ! harv
+kuka+PRON:kuilta 30 ! harv
 kuka+PRON:keille
-kuka+PRON:keille ! harv
+kuka+PRON:keille 20 ! harv
 kuka+PRON:keittä
-kuka+PRON:keine
-kuka+PRON:kuin
-kuka+PRON:kein ! ani harv
+kuka+PRON+SG+CMT:keine 20
+kuka+PRON+SG+INS:kuin 20 ! harv
+kuka+PRON+SG+INS:kein 30 ! ani harv
 
 ken+PRON:ken Clit ! vanh
 ken+PRON:kenet Clit
@@ -536,7 +536,7 @@ ken+PRON:keneltä Clit
 ken+PRON:kenelle Clit
 ken+PRON:keneltä Clit
 
-kekä+PRON:kekä ! murt
+kekä+PRON:kekä 20 ! murt
 kekä+PRON:kenä Clit
 kekä+PRON:ketä Clit
 kekä+PRON:keksi ! harv
@@ -565,7 +565,7 @@ kekä+PRON:keiltä Clit
 kekä+PRON:keille Clit
 kekä+PRON:keillekä
 
-kenkin+PRON:kenkin ! harv
+kenkin+PRON:kenkin 20 ! harv
 kenkin+PRON:kenetkin
 kenkin+PRON:kenenkin
 kenkin+PRON:kenenäkin
@@ -578,7 +578,7 @@ kenkin+PRON:keneltäkin
 kenkin+PRON:kenellekin
 kenkin+PRON:kenettäkin
 
-kekään+PRON:kekään ! harv
+kekään+PRON:kekään 20 ! harv
 kekään+PRON:ketään
 kekään+PRON:ketäkään ! juhl harv
 kekään+PRON:kessään
