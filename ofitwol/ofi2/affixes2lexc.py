@@ -52,7 +52,7 @@ argparser = argparse.ArgumentParser(
 
     """)
 argparser.add_argument(
-    "-m", "--mode", choices=["M", "G", "E", "B"],
+    "-m", "--mode", choices=["M", "G", "G+", "E", "B"],
     help="""Whether the lexicon produces base forms (B), morphophonemic
     form (M) or guessed entries (G)""",
     default="M")
@@ -90,7 +90,7 @@ for r in rdr:
     if (not next_lst) or r["NEXT"].startswith('!'):
         continue
     ide = prevID if r["ID"] == '' else r["ID"]
-    ok = (not r["MODE"]) or (mode in r["MODE"])
+    ok = (not r["MODE"]) or (mode[0] in r["MODE"])
     if not ok:
         continue
     mphon_str = r["MPHON"].strip()
@@ -110,8 +110,8 @@ for r in rdr:
                 feat_str = "{§}" + feature_str
             else:
                 feat_str = feature_str
-        elif mode == "G":
-            feat_str = ""
+        elif mode in {"G", "G+"}:
+            feat_str = "" if mode == "G" else feature_str
             if "/" in ide and (not "/" in nxt) and (ide != "/more"):
                 feat_str = "% " + ide + "%;" + feat_str
         elif mode == "E":

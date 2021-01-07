@@ -16,8 +16,9 @@ LEXM=$(LEX) lexic-r.lexc lexic-firstpart.lexc
 
 LEXE=$(LEX) lexic-r.lexc lexic-firstpart.lexc
 
-LEXG=guess-s.lexc guess-a.lexc guess-v.lexc lexic-firstpart.lexc \
-     lexic-special.lexc lexic-p.lexc lexic-r.lexc
+#LEXG=guess-s.lexc guess-a.lexc guess-v.lexc lexic-firstpart.lexc \
+#     lexic-special.lexc lexic-p.lexc lexic-r.lexc
+LEXG=guess-s.lexc
 
 ANALYSES=$(ID)-corpus-$(MODE).big.analyses
 
@@ -50,11 +51,13 @@ ofimphon.ofst : mphon-lex.fst $(RULEFST) delete.fst Makefile
 	hfst-minimize > ofimphon.fst
 	hfst-fst2fst -w -i ofimphon.fst -o $@
 
-ofiguess.ofst : guess-lex.fst $(RULEFST) delete.fst Makefile
+ofiguess.ofst : guess-lex.fst $(RULEFST) delete.fst Makefile weight.fst
 	hfst-compose-intersect -a -1 $< -2 $(RULEFST) |\
 	hfst-compose -2 delete.fst |\
 	hfst-invert |\
-	hfst-minimize |\
+	hfst-minimize -o ofiguess.fst
+	hfst-fst2fst -i ofiguess.fst -w -o guess.ofst
+	hfst-compose -1 ofiguess.fst -2 cleanlex.fst |\
 	hfst-fst2fst -w -o $@
 
 ofientry.ofst : entry-lex.fst $(RULEFST) delete.fst Makefile
@@ -69,6 +72,7 @@ mphon-lex.fst : mphon-aff.lexc $(LEXM) Makefile
 
 guess-lex.fst : guess-aff.lexc $(LEXG) Makefile
 	hfst-lexc -E -f openfst-tropical -o $@ $< $(LEXG)
+	python3 cleanlex.py < $@ > cleanlex.fst
 
 entry-lex.fst : entry-aff.lexc $(LEXE) Makefile
 	hfst-lexc -E -f openfst-tropical -o $@ $< $(LEXE)
@@ -77,19 +81,19 @@ mphon-aff.lexc : ofi-affixes.csv affixes2lexc.py
 	python3 affixes2lexc.py -m M < $< > $@
 
 guess-aff.lexc : ofi-affixes.csv affixes2lexc.py
-	python3 affixes2lexc.py -m G < $< > $@
+	python3 affixes2lexc.py -m G+ < $< > $@
 
 entry-aff.lexc : ofi-affixes.csv affixes2lexc.py
 	python3 affixes2lexc.py -m E < $< > $@
 
 guess-s.lexc : guess-s.entries entries2lexc.py
-	python3 entries2lexc.py < $< > $@
+	python3 entries2lexc.py -p < $< > $@
 
 guess-a.lexc : guess-a.entries entries2lexc.py
-	python3 entries2lexc.py < $< > $@
+	python3 entries2lexc.py -p < $< > $@
 
 guess-v.lexc : guess-v.entries entries2lexc.py
-	python3 entries2lexc.py < $< > $@
+	python3 entries2lexc.py -p < $< > $@
 
 lexic-firstpart.lexc : lexic-firstpart.words entries2lexc.py
 	python3 entries2lexc.py -n FirstPart -c /more < $< > $@
