@@ -17,7 +17,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
 def main():
-    import hfst, sys, argparse
+
+    import argparse
 
     argparser = argparse.ArgumentParser(
         "python3 gyessbygenerating.py",
@@ -31,29 +32,39 @@ def main():
         help="name of the two-level rule file",
         default="ofi-rules.fst")
     argparser.add_argument(
+        "-p", "--suffixes", 
+        help="name of the proincipal suffix file",
+        default="principal-suffixes.json")
+    argparser.add_argument(
         "-w", "--weights", 
         help="Print the weight of guessed entries, default is not to print",
         action="store_true", default=False)
     argparser.add_argument(
-        "-v", "--verbosity", default=0, type=int,
-        help="level of diagnostic output")
+        "-v", "--verbosity", type=int,
+        help="level of diagnostic output",
+        default=0)
     args = argparser.parse_args()
 
+    import hfst
     guesser_fil = hfst.HfstInputStream(args.guesser)
     guesser_fst = guesser_fil.read()
     guesser_fil.close()
 
-    import sys, re
-    import generate
+    import re
+    import sys
 
+    import generate
     generate.init(args.rules)
 
-    suf = {
-        "/s": ["", "n", "{nrs}{aä}", "{ij}{Øt}{aä}"],
-        "/v": ["{dlnrtØ}{aä}", "n", "{i}{VØ}", "isi",
-               "{C}", "{nlrs}{uy}{tØthn}{ØeØØØ}"],
-        "/a": ["", "n", "{nrs}{aä}", "{ij}{Øt}{aä}", "m{pm}i"]
-    }
+    import json
+    suffix_file = open(args.suffixes, "r")
+    suffix_lst_dic = json.load(suffix_file)
+    #suffix_lst_dic = {
+    #    "/s": ["", "n", "{nrs}{aä}", "{ij}{Øt}{aä}"],
+    #    "/v": ["{dlnrtØ}{aä}", "n", "{i}{VØ}", "isi",
+    #           "{C}", "{nlrs}{uy}{tØthn}{ØeØØØ}"],
+    #    "/a": ["", "n", "{nrs}{aä}", "{ij}{Øt}{aä}", "m{pm}i"]
+    #}
 
     print()
     for line_nl in sys.stdin:
@@ -84,23 +95,32 @@ def main():
         if args.verbosity >= 10:
             print("lookup stem_cont_weight_lst =", stem_cont_weight_lst)
         best_w = min([weight for stem, cont, weight in stem_cont_weight_lst])
-
+        stem_cont_weight_lst.sort(key = lambda scw : scw[2])
         i = 0
         for [stem, cont, weight] in stem_cont_weight_lst:
             i += 1
-            suffix_lst = suf.get(cont, "")
+            suffix_lst = suffix_lst_dic.get(cont, [])
             word_lst = []
             for suffix in suffix_lst:
                 generated_words = generate.generate(stem+suffix)
                 for word in generated_words:
                     word = word.replace("Ø", "")
                     word_lst.append(word)
-            print("{}:".format(i), " ".join(word_lst))
-            if args.weights:
-                print("            {} {} ; {:6.2f}".format(stem, cont, weight))
+            print("{}: {} ".format(i, cont), " ".join(word_lst))
+        num = len(stem_cont_weight_lst)
+        print(",".join([str(i + 1) for i in range(num)]),  "?")
+        linenl = sys.stdin.readline()
+        if not linenl: exit()
+        line = linenl.strip()
+        if re.fullmatch("([1-9][0-9]*)", line):
+            i = int(line)
+            if (i > 0) and (i <= len(stem_cont_weight_lst)):
+                stem, cont, weight = stem_cont_weight_lst[i-1]
+                print(stem, cont, "+++\n")
             else:
-                print("            {} {} ;".format(stem, cont))
-        print()
+                print("--rejected ({})\n".format(i))
+        else:
+            print("--rejected\n")
     return
 
 if __name__ == "__main__":

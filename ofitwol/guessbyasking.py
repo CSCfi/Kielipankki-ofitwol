@@ -20,17 +20,21 @@ import hfst
 import sys
 import re
 import argparse
+from collections import defaultdict
 
 argparser = argparse.ArgumentParser(
     "python3 gyessbyasking.py",
     description="Guess lexicon entries by asking forms from the user")
 argparser.add_argument(
-    "guesser", help="Guesser file FST", default="finv-guess.fst")
+    "guesser",
+    help="Guesser file FST")
 argparser.add_argument(
-    "-r", "--reject", default=1000000, type=int,
+    "-r", "--reject",
+    type=int, default=1000000,
     help="reject candidates which are worse than the best by REJECTION or more")
 argparser.add_argument(
-    "-v", "--verbosity", default=0, type=int,
+    "-v", "--verbosity",
+    type=int, default=0,
     help="level of diagnostic output")
 args = argparser.parse_args()
 
@@ -41,7 +45,7 @@ guesser_fil.close()
 print("\nENTER FORMS OF A WORD:\n")
 while True:
     remaining_set = set()
-    weights = {}                 # weights[entry] == weight
+    weights = defaultdict(int)  # weights[entry] == weight
     first = True
     while True:
         linenl = sys.stdin.readline()
@@ -69,10 +73,7 @@ while True:
         for entry_and_feats, w in res:
             entry, semicol, feats = entry_and_feats.partition(";")
             entries.add(entry)
-            if entry in weights:
-                weights[entry] = min(w, weights[entry])
-            else:
-                weights[entry] = w
+            weights[entry] = min(w, weights[entry])
         if first:
             first = False
             new_remaining_set = entries
