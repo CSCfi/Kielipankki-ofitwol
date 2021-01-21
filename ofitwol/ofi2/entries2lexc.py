@@ -95,8 +95,9 @@ def main():
         (
           \s+                     #
           (?P<weight> \d+ )       # weight
-          \s+
-          (?P<name> [A-ZŠŽÅÄÖ]+ ) # name of the pattern
+          ( \s+
+            (?P<name> [A-ZŠŽÅÄÖ]+ ) # name of the pattern
+          )?
         )?
         """, re.X)
     defi_pat = re.compile(r"^\s*[A-ZÅÄÖa-zåäö][A-ZÅÄÖa-zåäö0-9]+\s*=")
@@ -117,7 +118,7 @@ def main():
             entry_lst.append(line)
             continue
 
-        #print("line:", line) ###
+        # print("line:", line) ###
 
         if defi_line_lst or " = " in line:
             # definitions may consist of several lines
@@ -177,10 +178,10 @@ def main():
                 if ":" not in e and args.rules:
                     e = generated_base(e, c) + ":" + e
             w = ent_mat.group("weight")
-            ## w = ' "weight {}"'.format(w) if w else ""
-            w = 'W{}'.format(w) if w else ""
+            w = ' "weight {}"'.format(w) if w else ""
+            ## w = 'W{}'.format(w) if w else ""
             ## entry = "{} {}{} ;".format(e, c, w)
-            entry = "{}{} {} ;".format(e, w, c)
+            entry = "{} {}{} ;".format(e, c, w)
             entry_lst.append(entry)
 
 

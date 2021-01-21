@@ -1,179 +1,357 @@
-!Definitions
   Co = b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|š|t|v|w|x|z|ž ;
-  Gk = (l|r|n) k {kØ} | (h|l|r) {kØ} | n {kg} ;
-  Gk2 = (l|r|n) k {kØ}| [h] {kØ} | n {kg} ; ! excluding Vo (r|l) {kØ} Vo
+  Cini = (b|b j|b l|b r|c|c h|c h r|c l|c r|c s|d|d j|d r|d š|d ž|
+          f|f l|f r|g|g h|g l|g n|g r|h|j|k|k h|k l|k n|k r|k s|k v|
+	  l|m|m n|n|p|p j|p l|p n|p r|p s|p t|q|r|r h|
+	  s|š|s c|s c h|s c h l|s c r|s c h w|s f|s f r|s h|s k|s k l|s k r|
+	  s l|š l|s m|s n|š n|s p|s p l|s p r|š r|s t|s t r|s v|š v|s w|
+	  t|t h|t h r|t r|t s|t š|t v|t w|v|w|w h|x|z|z l) ;
+  Gk  = (l|r|n) k {kØ} | (l|r) {kØ} | n {kg} ;
+  Gk2 = (l|r|n) k {kØ} |              n {kg} ; ! excluding {kØ} between vowels
   Gj = [h|l|r] {kj} ;
   Gp = m {pm} | (l|r) {pv} | (l|r|m) p {pØ} ;
   Gt = (h) {td} | l {tl} | n {tn} | r {tr} | (l|r|n) t {tØ} ;
   Grad = Gk | Gp | Gt ;
-  GradNZ = Gk2 | Gp | Gt ; ! excluding {kØ} between vowels
+  GradNZ = [Gk2|Gp|Gt] ; ! excluding {kØ} between vowels
   GsU = (l|r|n) k k | (h|l|r) k | n k |
         m p | (l|r) p | (l|r|m) p p |
-	(h) t | l t | n t | r t| (l|r|n) t t ;
-  NonG = [[Co+] - GsU] | h k ; ! non-gradating consonant clusters
+	(h) t | l t | n t | r t | (l|r|n) t t ;
+  GwU = (l|r|n) k | n g |
+        m m | (l|r) v | (l|r|m) p |
+	(h) d | l l | n n | r r | (l|r|n) t ;
+  NonGs = [[Co+] - GsU] | h k ; ! non-gradating consonant clusters
+  NonGw = [[Co+] - GwU] | h ; ! non-gradating consonant clusters
   Gtds = l {tls} | n {tns} | r {trs} ;
-  Cocl = Co+|' ;
+  Cocl = Co+ | ' ;
   Vo = a | e | i | o | u | y | ä | ö ;
   Vaou = a | o | u ; ! Back vowel
   Väöy = ä | ö | y ; ! Front vowel
   Vei = e | i ; ! Neutral vowel
   VoB = Vaou | Vei ; ! Back harmony compatible vowel
   VoF = Väöy | Vei ; ! Front harmony compatible vowel
-  V1V1 = [a a|e e|i i|o o|u u|y y|ä ä|ö ö] ;
-  Vi = [Vo i] ;
-  V1V2 = [a u|e u|i e|e u|e y|i e|i u|i y|o u|u o|y ö|ä y|ö y] ;
-  VV = [V1V1|Vi|V1V2] ;
-  VbV = [Vo Vo+] - VV ; ! Vowel sequence in two separate syllables
-  VV1 = VV | Vo ; ! One or two vowels in the same syllable
-  Syl = Vo+ Cocl ;
-  SylF = VoF+ Cocl ; ! Front harmony compat syllable
-  SylB = VoB+ Cocl ; ! Back harmony compat syllable
-  SylVo = [VbV|VV Vo|Vo VV|Syl Vo+] ; ! Counts as two syllables
-  SylVoF = SylVo - $[Vaou] ; ! Counts as two front harmony syllables
-  SylVoB = SylVo & $[Vaou] ; ! Counts as two back harmony syllables
-  Forl = [b|c|d|f|g|q|š|w|x|z|ž] ;
-  Forb = [n j|k l|k r|k v|p r|p s|s m|s p|t l|t r] ;
-  Forg = [$[Forl|Forb]] ;
-!
-! /(ea|eä|ias|iäs|inen|isa|isä|kas|käs|kka|kkä|la|lä|ton|tön|va|vä)$
+  Vaeiouy = Vaou | Vei | y ; ! Back harmony compatible vowel incl 'y'
+  V1V1 = [a a|e e|i i|o o|u u|y y|ä ä|ö ö] ; ! Long vowel
+  V1V1B = [a a|e e|i i|o o|u u] ; ! Long back vowel
+  V1V1F = [e e|i i|y y|ä ä|ö ö] ; ! Long front vowel
+  Vi = Vo i ;
+  ViB = VoB i ;
+  ViF = VoF i ;
+  VVdiph  =  a u|e u|e i|e y|i e|i u|i y|o u|u o|y ö|ä y|ö y ;
+  VVdiphB =  a u|e u|e i|    i e|i u|    o u|u o ;
+  VVdiphF =      e u|e i|e y|i e|i u|i y|        y ö|ä y|ö y ;
+  VVdiphY = a u|e u|e i|e y|i e|i u|i y|o u|u o ;
+  VV = V1V1 | Vi | VVdiph ; ! Long vowel or diphthong
+  VVB = V1V1B | ViB | VVdiphB ; ! Back compat long vowel or diphthong
+  VVF = V1V1F | ViF | VVdiphF ; ! Front compat long vowel or diphthong
+  VVY = V1V1B | ViB | VVdiphY | y y | y i ; ! Back + y long Vo or diphthong 
+  VnucB = VoB | VVB ; ! Back compat syll nucleus
+  VnucF = VoF | VVF ; ! Front compat syll nucleus
+  VnucY = VnucB | y | y i | y y ;
+  Vnuc = Vo | VV ; ! Syllable nucleus
+  VnucBou = [[[o|u] (VoB)] & VnucB] ; ! Back nucl starting with o|u
+  VnucBaei = [[[a|e|i] (VoB)] & VnucB] ; ! Back nucl starting with a|e|i
+  VVsepB = [VnucB VnucB] - VV ; ! Back vowel sequence in two sep syllables
+  VVsepF = [VnucF VnucF] - VV ; ! Front vowel seq in two sep syllables
+  VVsepY = [VnucY VnucY] - VV ; ! Back vowel + y seq in two sep syllables
+  VVsep = [Vnuc Vnuc] - VV ; ! Any vowel sequence in two sep syllables
+
+  Syl = [Vo | VV] Cocl ; ! Counts as one syllable
+  SylB = VnucB Cocl ; ! Back harmony compat syllable
+  SylF = VnucF Cocl ; ! Front harmony compat syllable
+  SylY = VnucY Cocl ; ! Back harmony compat syllable
+
+  SylPlusB = [[VnucB | VVsepB] Cocl]+ ; ! One or more back syllables
+  SylPlusF = [[VnucF | VVsepF] Cocl]+ ; ! One or more front syllables
+  SylPlusY = [[VnucY | VVsepY] Cocl]+ ; ! One or more back + y syllables
+  SylPlus = [[Vnuc | VVsep] Cocl]+ ; ! One or more back sylls or front sylls
+  SylPlusX = SylPlus - [SylPlusY | SylPlusF] ; ! Conflicting harmony
+
+  SylStar = (SylPlus) ; !
+  SylStarB = (SylPlusB) ; !
+  SylStarF = (SylPlusF) ; !
+  SylStarY = (SylPlusY) ; !
+
+  SylSylB = [SylB SylB | VVsepB Cocl] ; ! Two back syllables
+  SylSylF = [SylF SylF | VVsepF Cocl] ; ! Two front syllables
+  SylSyl = [Syl Syl | VVsep Cocl] ; !
+
+  SylVo = Syl Vnuc | VVsep ; ! Counts as two syllables
+  SylVoB = SylB VnucB | VVsepB ; ! Counts as two back harmony syllables
+  SylVoF = SylF VnucF | VVsepF ; ! Counts as two front harmony syllables
+  SylVoY = SylY VnucY | VVsepY ; ! Counts as two back harmony syllables
+
+  SylPlusVo = SylPlus Vnuc | SylStar VVsep ; ! 
+  SylPlusVoB = SylPlusB VnucB | SylStarB VVsepB ; ! 
+  SylPlusVoF = SylPlusF VnucF | SylStarF VVsepF ; ! 
+  SylPlusVoY = SylPlusY VnucY | SylStarY VVsepY ; !
+
+  SylStarVoB = SylStarB [VnucB | VVsepB] ;
+  SylStarVoF = SylStarF [VnucF | VVsepF] ;
+  SylStarVo = SylStar [Vnuc | VVsep] ;
+
+  SylSylVo = SylSyl Vnuc | Syl VVsep ; ! Counts as three syllables
+  SylSylVoB = SylSylB VnucB | SylB VVsepB ; ! Counts as 3 back harmony syllables
+  SylSylVoF = SylSylF VnucF | SylF VVsepF ; ! Counts as 3 front harmony syllables
+
+  OblIniFiCo = h | j | k | l | m | n | p | r | s | t | v ;
+  IniFiCo = (OblIniFiCo) ;
+  NonFiCo = b | c | f | g | q | š | w | x | z | ž ;
+  NonFiCoSeq = n d |n j | k l | k r | k v |
+               p r | p s | r d | s m | s p | t l | t r ;
+  ForgCoSeq = Co* [NonFiCo | NonFiCoSeq] Co* ;
+  FiCoSeq = Co+ - $ForgCoSeq ;
+  FiCseq = h (d|k|t) | j | k |l|m|n|p|r|s|š|t|v ;
+  FiNonGw = NonGw - $ForgCoSeq ;
+  FiCocl = FiCoSeq | ' ;
+
+  FiSylPlusB = [[VnucB | VVsepB] FiCoSeq]+ ; ! 1+ back syllables
+  FiSylPlusF = [[VnucF | VVsepF] FiCoSeq]+ ; ! 1+ front syllables
+  FiSylStarB = (FiSylPlusB) ; !
+  FiSylStarF = (FiSylPlusF) ; !
+  FiSylB = VnucB FiCoSeq ;
+  FiSylF = VnucF FiCoSeq ;
+  FiSylVoB = FiSylB VnucB | VVsepB ; ! Counts as two back harmony syllables
+  FiSylVoF = FiSylF VnucF | VVsepF ; ! Counts as two front harmony syllables
+  FiSylVo = FiSylVoB | FiSylVoF ;
+  FiSylPlusVoB = FiSylPlusB VnucB | FiSylStarB VVsepB ; ! 
+  FiSylPlusVoF = FiSylPlusF VnucF | FiSylStarF VVsepF ; ! 
+  FiSylStarVoB = FiSylPlusVoB | VnucB ;
+  FiSylStarVoF = FiSylPlusVoF | VnucF ;
+  FiSylStarVo = FiSylStarVoB | FiSylStarVoF ;
 !
 LEXICON AdjGuess
 !
-!         === o |u | y | ö ===
+!        === o |u | y | ö ===
 !
-< Co* Vo+ NonG [o|ö|u|y] 0::30 > /a ; ! JURO - bisyll
-!!!< Co* Syl [o|ö|u|y] 0::30 > /a ; ! NUPO - bisyll
-< Co* Vo+ GradNZ [o|ö|u|y] 0::30 > /a ; ! RENTO HELPPO KOLKKO - bisyll
-< Co* Vo Gk2 [o|ö|u|y] 0::30 > /a ; ! LAKO - bisyll
-< Co Vo+ [Vo - u] {kØ} u 0::30 > /a ; ! RAIKU raiun - bisyll
+!        --- bisyllabic ---
+< Cini
+  [ VnucB [ NonGs | GradNZ ] [ o | u ]
+  | VnucF [ NonGs | GradNZ ] [ ö | y ]
+  ] > /a 10
+             JURO ; ! A01: VALO
+!            aito viisto tuttu kesy pölhö tönkkö
+!
+!        --- tri+syllabic ---
+< IniFiCo
+  [ SylPlusVoB [ l | r | h k | [ k | l ] {kØ} ] [ o | u ] 
+  | SylPlusVoF [ l | r | h k | [ k | l ] {kØ} ] [ ö | y ]
+  ] > /a 10
+         KAPEAHKO ; ! A02: ARVELU
+!            ruipelo hiirakko löperö lyhyehkö
+< Cini
+  [ SylPlusVoB [ s t | Gt ] u
+  | SylPlusVoF [ s t | Gt ] y
+  ] > /a 50
+        SULJETTU ; ! A02
+!            verbal entries ought to generate most of them 
+< IniFiCo
+  SylPlus [[a|e|i] o|i ö] > /a 50
+         AUTIO ; ! A03: AUTIO
+!            (known lexemes listed as exceptions)
+!
+!         === i-i-e ===
+!
+!        --- bisyllabic --- A04: RISTI
+< Cini
+  [ VnucB | VnucF ]
+  [ NonGs | GradNZ ]
+  {iieØ} > /a 10
+         KARSKI ; ! A04: RISTI
+!            nami rehti höyli fiini
+!
+!        --- tri+syllabic --- A05: PAPERI
+< Cini
+  SylPlusVo
+  [ (r) d | s k | (l) l | (r) r | m | (g|r) n | (k|s) s
+  | k t | s t | v | (n) t {tØ}
+  ] {iieØ} > /a 10
+         KOKETTI ;
+!            makaaberi kommensuraabeli pompöösi reaktionääri
+!            intiimi bisarri  perverssi eksakti robusti
+!
+!         === a-Ø-e == a-o-e == a|e-Ø|o-a-Ø ===
+!
+!         --- bisyllabic ---
+< Cini
+  [ VnucBou [ NonGs | Grad ] {aØeØ}      ! A11: KOIRA - kova
+  | VnucBaei [ NonGs | Grad ] {aoeØ}     ! A10: KALA - paha
+  | VnucF [ NonGs | Grad ] {äØeØ}        ! A11: nöyrä sievä
+  | SylB a {ØØh} {aØ}                    ! A23: VAPAA
+  ] > /a 10 KUIVA ;
+!
+!        --- tri+syllabic ---
+< Cini
+  [ SylB a k {kØØ} {ao}        ! A15: KARAHKA - kipakka
+  | SylVoB [ l | r ] {aØoØ}    ! A12: MATALA - hatara
+  | SylPlusB [a|o|u] i s {aØ}  ! A13: ASEMA -sopuisa valoisa lukuisa
+  | SylPlusVoB v {aØ}          ! A13: sopiva
+  | SylF [y|ä] k {kØØ} {äö}    ! A15: jämäkkä
+  | SylVoF [ l | r ] {äØöØ}    ! A12: vetelä jämerä
+  | SylPlusF (y|ä|ö) i s {äØ}  ! A13: leikkisä viihtyisä näköisä
+  | SylPlusVoF v {äØ}          ! A13: rehevä
+  | SylB e {aeØo}              ! A21: KORKEA
+  | SylF e {äeØö}              ! A21: ilkeä
+  ] > /a 10
+             NAPSAKKA ; ! A10,11,12,13,14,15,16,18,21,23
+!
+!         === nen-se-s === A63 HEVONEN ===
+!
+< Cini
+  [ SylPlusVo                ! hetteinen kallioinen herooinen
+  | SylPlus (i)               ! rukiinen amfibinen graafinen
+  ]
+  i {ns} {eeØØ} {nØØØ} > /a 10
+             ILOINEN ;
+!
+!         === on-oma-om | ön-ömä|öm ===
+!
+< Cini
+  [ SylStarVoB t {tØ} o {nm} {aäØ}      ! A57: onneton
+  | SylStarVoF t {tØ} ö {nm} {aäØ}      ! työtön
+  ] > /a 10
+             ONNETON ;
+!
+!         === as-aa-a === A66: VIERAS
+!
+< Cini
+  [ SylPlusB i a {sØh} {aäØ}                          ! laupias
+  | SylPlusF i ä {sØh} {aäØ}                          ! pisteliäs
+  | SylStarVoB [ NonGw | GradNZ ] a {sØh} {aäØ}       ! vieras hidas
+  | SylStarVoF [ NonGw | GradNZ ] ä {sØh} {aäØ}       ! työläs kyvykäs
+  ] > /a 10
+             LAUPIAS ;
+!
+!         === ut-ee-t  === A77: KUOLLUT
+!
+< Cini
+  [ SylPlusB
+  | SylPlusF ]
+  {uye} {tØthn} {ØeØØØ} > /a 50
+             KUOLLUT ;
+!
+!         === e-ee-et === A78: HAME
+!
+< Cini
+  SylStarVo
+  [ NonGw | h j | h k | v                         ! ahne tiine kiire 
+  | Grad | Gj                                     ! kade helle
+  ] e {Øth} {ØeØeØ} > /a 10
+             KIIRE ;
 
-< Co* (Syl) SylVo h k [o|ö] 0::10 > /a ; ! KOVAHKO KORKEAHKO YLEVÄHKÖ - trisyll
-< Co* (Syl) SylVo NonG [o|ö|u|y] 0::30 > /a ; ! KOHELO  - trisyll
-
-< Co* (Syl) SylVo [k {kØØ}|(n|r) t {tØØ}|n {tn}] [o|ö|u|y] 0::20 > /a ; ! UMMIKKO USKALLETTU - trisyll
-< Co* Syl Syl+ SylVo [k {kØØ}|(n|r) t {tØØ}|n {tn}] [o|ö|u|y] 0::20 > /a ; ! SAKRAMENSKATTU - 3+syl
-< Co* (Syl) SylVo [{td}|n {tn}|r {tr}|l {tl}] [u|y] 0::20 > /a ; ! IHAILTU JÄLJITELTY - trisyll
-< Co* Syl+ Syl SylVo [{td}|n {tn}|r {tr}|l {tl}] [u|y] 0::20 > /a ; ! PRIVILEGIOITU - tri+syll
-
-< Co* Syl+ [[a|e|i] o|i ö] 0::50 > /a ; ! AUTIO YLTIÖ
+!
+! --- exceptions ---
+!
+ai{td}o /a ; ! AITO
+auh{td}p /a ; ! AUHTO
 autio /a ; ! AUTIO
+epat{tØ}o /a ; ! EPATTO
+heittiö /a ; ! HEITTIÖ
 hoopo /a ; ! HOOPO
 hoto /a ; ! HOTO
+hulttio /a ; ! HULTTIO
+kei{td}o /a ; ! KEITO
+koi{td}o /a ; ! KOITO
 kyytö /a ; ! KYYTÖ
+lai{td}o /a ; ! LAITO
+la{kØ}o /a ; ! LAKO
+leu{td}o /a ; ! LEUTO
+lie{td}o /a ; ! LIETO
+lu{td}o /a ; ! LUTO
 mainio /a ; ! MAINIO
 nupo /a ; ! NUPO
+ou{td}o /a ; ! OUTO
 pökö /a ; ! PÖKÖ
+rai{kØ}ku /a ! RAIKU
+rautio /a ; ! RAUTIO
+riiviö /a ; ! RIIVIÖ
 söpö /a ; ! SÖPÖ
 tihku /a ; ! TIHKU
 töpö /a ; ! TÖPÖ
 vakio /a ; ! VAKIO
+valio /a ; ! VALIO
 valko /a ; ! VALKO
+vihan{tn}o /a ; ! VIHANTO
+viuru /a ; ! VIURU
 yltiö /a ; ! YLTIÖ
-!
-!         === i-i-e ===
-!
-< Co* Vo+ NonG {iieØ} 0::30 > /a ; ! PIHI HÄRSKI - bisyll
-< Co* Syl* SylVo NonG {iieØ} 0::40 > /a ; ! MAKAABERI KOMMENSURAABELI - 3+syll
-< Co* Vo+ Grad {iieØ} 0::30 > /a ; ! LUNKI REHTI - bisyll
-< Co* Syl* SylVo Grad {iieØ} 0::30 > /a ; ! RELEVANTTI DIVERGENTTI - other
-jämt{tØ}{iieØ} /a  ; ! JÄMTTI
+
+abnorm{iieØ} /a ; ! ABNORMI
+anonyym{iieØ} /a ; ! ANONYYMI
+ekivook{kØ}{iieØ} /a ! EKIVOOKKI
+humid{iieØ} /a ; ! HUMIDI
+jämtt{iieØ} /a ! JÄMTTI
+jämt{tØ}{iieØ} /a ! JÄMTTI
+likvid{iieØ} /a ; ! LIKVIDI
 nut{iieØ} /a  ; ! NUTI
+opaak{kØ}{iieØ} /a ; ! OPAAKKI
 piet{iieØ} /a  ; ! PIETI
 pip{iieØ} /a  ; ! PIPI
+pittoresk{iieØ} /a ; ! PITTORESKI
 pöp{iieØ} /a  ; ! PÖPI
+suvereen{iieØ} /a ; ! SUVEREENI
+uniik{kØ}{iieØ} /a ; ! UNIIKKI
 väät{iieØ} /a  ; ! VÄÄTI
+
+läyl{ieeeØ} /a  ; ! LÄYLI
+pien{ieØeØØ} /a  ; ! PIENI pienenä piennä
+tyyn{ieØeØØ} /a  ; ! TYYNI
+nuor{ieØeØØ} /a  ; ! NUORI nuorena nuorna nuorra
+on{tds}{ieØeØ} /a  ; ! ONSI
+ky{pØp}s{ieØeØØ} /s ; ! KYPSI
+suur{ieØeØØ} /a  ; ! SUURI suurena suurna suurra
+uu{tds}{ieØeØ} /a  ; ! UUSI
+to{tds}{ieØeØ} /a  ; ! TOSI
+täy{tds}{ieØeØ} /a  ; !TÄYSI
+
+dille /a ; ! DILLE
+toope /a ; ! TOOPE
+
+vapa{aØ} /a ; ! VAPAA
+vaka{aØ} /a ; ! VAPAA
+vaja{aØ} /a ; ! VAJAA
 !
-!         === Ø-i-e ===
-!
-!
-!         === i-e-Ø ===
-!
-läyl{ieeeØ} /a  ; ! 
-pien{ieØeØØ} /a  ; ! !! pienenä piennä
-tyyn{ieØeØØ} /a  ; ! 
-nuor{ieØeØØ} /a  ; ! !! nuorena nuorna nuorra
-suur{ieØeØØ} /a  ; ! !! suurena suurna suurra
-uu{tds}{ieØeØ} /a  ; ! 
-to{tds}{ieØeØ} /a  ; ! 
-täy{tds}{ieØeØ} /a  ; !
-!
-!         === e ===
-!
-toope /a  ; ! 
-!
-!         === a-o-e | ä-ö-e | a-o-a ===
-!
-< Co* [VoB - $[o|u]] (VoB) NonG {aoeØ} 0::30 > /a ; ! LAIHA LAUHA VARMA - bisyll
-< Co* [VoB - $[o|u]] (VoB) GradNZ {aoeØ} 0::30 > /a ; ! TIUKKA SAITA - bisyll
-< Co* SylB [a|u] k {kØØ} {ao} 0::30 > /a ; ! KIPAKKA SUPUKKA - 3+syll
-< Co* SylF [ä|y] k {kØØ} {äö} 0::30 > /a ; ! JÄMÄKKÄ - 3+syll
-ar{kØ}{aoeØ} /a ; ! ARKA
-huppan{ao} /a ; ! HUPPANA
-höppän{äö} /a ; ! HÖPPÄNÄ
-ihan{tn}{ao} /a ; ! IHANA
-jänttär{äö} /a ; ! JÄNTTÄRÄ
-kauhi{ao} /a ; ! KAUHIA
-latusk{ao} /a ; ! LATUSKA
-lavia{ao} /a ; ! LAVIA
-lättän{äö} /a ;! LÄTTÄNÄ
-lätysk{äö} /a ; ! LÄTYSKÄ
-par{kØ}{aoeØ} /a ; ! PARKA
-pohat{tØ}{ao} /a ; ! POHATTA
-raa{k'Ø}{aoeØ} /a ; ! RAAKA
-sikkar{ao} /a ; ! SIKKARA
-tolvan{ao} /a ; ! TOLVANA
-tölppän{äö} /a ; ! TÖLPPÄNÄ
-vak{äö} /a ; ! VAKA
-viheri{äö} /a ; ! VIHERIÄ
-viherj{äö} /a ; ! VIHERJÄ
-vihri{äö} /a ; ! VIHRIÄ
-!
-!         === a-Ø-e | ä-Ø-e | a-Ø-a ===
-!
-< Co* [o|u] (VoB) NonG {aØeØ} 0::20 > /a ; ! LUJA LOIVA - bisyll
-< Co* VoF (VoF) NonG {äØeØ} 0::20 > /a ; ! PÖLJÄ MÄRKÄ - bisyll
-< Co* [o|u] (VoB) Grad {aØeØ} 0::20 > /a ; ! HOIKKA TURTA - bisyll
-< Co* VoF (VoF) Grad {äØeØ} 0::20 > /a ; ! SYNKKÄ - bisyll
-!
-< Co* [[SylB VoB (VoB)] & $[VoB]] i s {aØ} 0::20 > /a ; ! RAUHAISA - trisyll
-< Co* [[SylB+ VoB (VoB)] & $[VoB]] v {aØ} 0::20 > /a ; ! SEKAVA TAKAUTUVA - 3+syll
-< Co* SylF (VoF) i s {äØ} 0::20 > /a ; ! SÄVYISÄ LEIKKISÄ - trisyll
-< Co* SylF+ VoF (VoF) v {äØ} 0::20 > /a ; ! MEHEVÄ VIETTELEVÄ - trisyll
-!
-< Co* SylB e {aØoØ} 0::20 > /a ; ! KARHEA RUSKEA - 3+syll
-< Co* SylF e {äØöØ} 0::20 > /a ; ! SELKEÄ TIHEÄ - 3+syll
-< Co* SylB a {ØØh} {aØ} 0::20 > /a ; ! VAPAA HARMAA - bisyll
-!
+imis{äØ} /a ; ! IMISÄ
 harmaj{aØ} /a ; ! HARMAJA
-hivel{äØ} /a ; ! HIVELÄ
+! hivel{äØ} /a ; ! HIVELÄ
 kellerv{äØ} /a ; ! KELLERVÄ
 kopioiv{aØ} /a ; ! KOPIOIVA
+leikkis{äØ} /a ; ! LEIKKISÄ
 lämpim{äØ} /a ; ! LÄMPIMÄ
 mär{kØ}{äØeØ} /a ; ! MÄRKÄ
 nuuk{aØeØ} /a ; ! NUUKA
 punerv{aØ} /a ; ! PUNERVA
 sinerv{äØ} /a ; ! SIRNERVÄ
 vekam{aØ} /a ; ! VEKAMA
-viherv{äØ} /a ; ! VIHERVÄ
-!
-!         === a-Ø-o-e | ä-Ø-ö-e | a-Ø-o-a ===
-!
-< Co* SylVoB [l|r] {aØoØ} 0::10 > /a ; ! HANKALA MATALA - trisyll
-< Co* SylVoF [l|r] {äØöØ} 0::10 > /a ; ! VETELÄ HÄMÄRÄ - trisyll
-ihan{aØoØ} /a ; ! IHANA
-vihan{tn}{aØoØ} /a ; ! VIHANTA
-< (Co) SylB e {aØoØ} 0::10 > /a ; ! KORKEA KALSEA - trisyll
-< (Co) SylF e {äØöØ} 0::10 > /a ; ! JÄYHEÄ PÖYHKEÄ - trisyll
-kau{kØ}{aoeØ} /a  ; ! KAUKA
-kihar{aØoØ} /a  ; ! KIHARA
-kiher{äØöØ} /a  ; ! KIHERÄ
-kikkar{aØoØ} /a  ; ! KIKKARA
-laa{k'Ø}{aoeØ} /a  ; ! LAAKA
-lii{kØ}{aoeØ} /a  ; ! LIIKA
-va{kØ}{aoeØ} /a  ; ! VAKA
-!
-!         === n-me-m ===
-!
+viherv{äØö} /a ; ! VIHERVÄ
+
+ar{kØ}{aoeØ} /a ; ! ARKA
+huppan{ao} /a ; ! HUPPANA
+höppän{äö} /a ; ! HÖPPÄNÄ
+ihan{tn}{ao} /a ; ! IHANA
+! jänttär{äö} /a ; ! JÄNTTÄRÄ
+kanalj{ao} /a ; ! KANALJA
+kauhi{ao} /a ; ! KAUHIA
+latusk{ao} /a ; ! LATUSKA
+lavia{ao} /a ; ! LAVIA
+lättän{äö} /a ;! LÄTTÄNÄ
+lätysk{äö} /a ; ! LÄTYSKÄ
+! niuk{kØ}{ao} /a ; ! NIUKKA
+par{kØ}{aoeØ} /a ; ! PARKA
+! piuk{kØ}{ao} /a ; ! PIUKKA
+pohat{tØ}{ao} /a ; ! POHATTA
+pulluk{kØ}{ao} /a ; ! PULLUKKA
+raa{k'Ø}{aoeØ} /a ; ! RAAKA
+riusk{ao} /a ; ! RIUSKA
+! sikkar{ao} /a ; ! SIKKARA
+soikul{ao} /a ; ! SOIKULA
+supuk{kØ}{ao} /a ; ! SUPUKKA
+pulluk{kØ}{ao} /a ; ! PULLUKKA
+! tiuk{kØ}{ao} /a ; ! TIUKKA
+tolvan{ao} /a ; ! TOLVANA
+tölppän{äö} /a ; ! TÖLPPÄNÄ
+vak{äö} /a ; ! VAKA
+viheri{äö} /a ; ! VIHERIÄ
+viherj{äö} /a ; ! VIHERJÄ
+vihri{äö} /a ; ! VIHRIÄ
+
 hap{pØ}a{mn}{ØeØeØ} /a  ; ! HAPAN 
 irtai{mn}{ØeØeØ} /a  ; ! IRTAIN
 rikkei{mn}{ØeØeØ} /a  ; ! RIKKEIN
@@ -185,14 +363,21 @@ avoi{mn}{ØeØeØ} /a  ; ! AVOIN
 rikkiöi{mn}{ØeØeØ} /a  ; ! RIKKIÖIN
 alasto{nm}{aäØ} /a  ; ! ALASTON
 läm{pm}i{mn}{aäØ} /a  ; ! LÄMMIN
-!
-!         === nen-se-s ===
-!
-< Co* Syl* SylVo i {ns} {eeØØ} {nØØØ} 0::00 > /a ; ! ILOINEN - 3+syll
-< Co* Syl* Syl (Vo) i {ns} {eeØØ} {nØØØ} 0::00 > /a ; ! ILOINEN - 3+syll
+
+ihan{aØoØ} /a ; ! IHANA
+vihan{tn}{aØoØ} /a ; ! VIHANTA
+kau{kØ}{aoeØ} /a  ; ! KAUKA
+kihar{aØoØ} /a  ; ! KIHARA
+kiher{äØöØ} /a  ; ! KIHERÄ
+kikkar{aØoØ} /a  ; ! KIKKARA
+laa{k'Ø}{aoeØ} /a  ; ! LAAKA
+lii{kØ}{aoeØ} /a  ; ! LIIKA
+va{kØ}{aoeØ} /a  ; ! VAKA
+
 herra{ns}{eeØØ}{nØØØ} /a  ; ! HERRANEN
 hertta{ns}{eeØØ}{nØØØ} /a  ; ! HERTTANEN
 hyi{ns}{eeØØ}{nØØØ} /a  ; ! HYINEN
+hyvä{ns}{eeØØ}{nØØØ} /a  ; ! HYVÄNEN
 iäi{ns}{eeØØ}{nØØØ} /a  ; ! IÄINEN
 jäi{ns}{eeØØ}{nØØØ} /a  ; ! JÄINEN
 kui{ns}{eeØØ}{nØØØ} /a  ; ! KUINEN
@@ -217,11 +402,15 @@ valko{ns}{eeØØ}{nØØØ} /a  ; ! VALKONEN
 voi{ns}{eeØØ}{nØØØ} /a  ; ! VOINEN
 vöi{ns}{eeØØ}{nØØØ} /a  ; ! VÖINEN
 ylö{ns}{eeØØ}{nØØØ} /a  ; ! YLÖNEN
-öi{ns}{eeØØ}{nØØØ} /a  ; !  ÖINEN
+yö{ns}{eeØØ}{nØØØ} /a  ; ! YÖNEN
+äkki{ns}{eeØØ}{nØØØ} /a  ; ! ÄKKINEN
+öi{ns}{eeØØ}{nØØØ} /a  ; ! ÖINEN
 !
-aino{aØ} /a  ; ! AINOA (S puiroa, ei muita)
-prame{aØoØ} /a  ; ! PRAMEA
+aino{aØ} /a  ; ! AINOA
+aino{oØ} /a  ; ! AINOO
+! prame{aØoØ} /a  ; ! PRAMEA
 tyven{ØeØØØ} /a  ; ! TYVEN
+
 !
 !         === n-mpa-mma-mp-mm ===
 !
@@ -271,22 +460,7 @@ levy{tØthn}{ØeØØØ} /a  ; ! LEVYT
 tuore{ØØthn}{ØeØØØ} /a  ; ! TUORE
 terve{ØØthn}{ØeØØØ} /a  ; ! TERVE
 vetre{ØØthn}{ØeØØØ} /a  ; ! VETRE
-!
-!         === on-oma-om | ön-ömä|öm ===
-!
-< Co* SylB* VoB+ t {tØ} o {nm} {aäØ} 0::00 > /a ; ! ONNETON - 2+syll
-< Co* SylF* VoF+ t {tØ} ö {nm} {aäØ} 0::00 > /a ; ! TYÖTÖN - 2+syll
-!
-!         === as-aa-a | es-ee-e |...| äs-ää-ä ===
-!
-< Co* SylB* VoB+ Co+ i a {sØh} {aäØ} 0::10 > /a ; ! LAUPIAS - 2+syll
-< Co* SylF* VoF+ Co+ i ä {sØh} {aäØ} 0::10 > /a ; ! PISTELIÄS - 2+syll
 
-< Co* SylB* VoB+ NonG a {sØh} {aäØ} 0::10 > /a ; ! VIERAS PALJAS - 2+syll
-< Co* SylF* VoF+ NonG ä {sØh} {aäØ} 0::10 > /a ; ! TYÖLÄS - 2+syll
-
-< Co* SylB* VoB+ GradNZ a {sØh} {aäØ} 0::10 > /a ; ! HIDAS AHDAS ARVOKAS - 2+syll
-< Co* SylF* VoF+ GradNZ ä {sØh} {aäØ} 0::10 > /a ; ! NENÄKÄS KYVYKÄS - 2+syll
 !
 alt{tØ}{iiiie}{sØh}{ØiØiØ} /a  ; ! ALTIS
 antia{sØh}{aäØ} /a ; ! ANTIAS
@@ -295,6 +469,7 @@ autua{sØh}{aäØ} /a ; ! AUTUAS
 heta{sØh}{aäØ} /a ; ! HETAS
 kalva{sØh}{aäØ} /a ; ! KALVAS
 kaun{iiiie}{sØh}{ØiØiØ} /a  ; ! KAUNIS
+kall{iiiie}{sØh}{ØiØiØ} /a  ; ! KALLIS
 laupia{sØh}{aäØ} /a ; ! LAUPIAS
 raava{sØh}{aäØ} /a ; ! RAAVAS
 rait{tØ}{iiiie}{sØh}{ØiØiØ} /a  ; ! RAITIS
@@ -306,12 +481,11 @@ tyyr{iiiie}{sØh}{ØiØiØ} /a  ; ! TYYRIS
 valm{iiiie}{sØh}{ØiØiØ} /a  ; ! VALMIS
 vilva{sØh}{aäØ} /a ; ! VILVAS
 ylvä{sØh}{aäØ} /a ; ! YLVÄS
-!
-!         === ut-ee-t | yt-ee-t ===
-!
-< Co* Syl {uye} {tØthn} {ØeØØØ} 0::50 > /a ; ! KUOLLUT MENNYT - bisyll
-< Co* Syl Syl {uye} {tØthn} {ØeØØØ} 0::40 > /a ; ! KOKENUT - trisyll
-< Co* Syl Syl Syl+ {uye} {tØthn} {ØeØØØ} 0::30 > /a ; ! KOKENUT - 4+ syll
+
+se{kØ}e{sØh}{ØeØØØ} /a ; ! SEES
+tuore{sØh}{ØeØØØ} /a ; ! TUORES
+
+
 heränn{uye}{tØthn}{ØeØØØ} /a ! HERÄNNYT
 juopun{uye}{tØthn}{ØeØØØ} /a ! JUOPUNUT
 jään{uye}{tØthn}{ØeØØØ} /a ! JÄÄNYT
@@ -335,16 +509,13 @@ päihtyn{uye}{tØthn}{ØeØØØ} /a ! PÄIHTYNYT
 syntyn{uye}{tØthn}{ØeØØØ} /a ! SYNTYNYT
 tottun{uye}{tØthn}{ØeØØØ} /a ! TOTTUNUT
 väsyn{uye}{tØthn}{ØeØØØ} /a ! VÄSYNYT
-!
-!         === e-ee-et ===
-!
-< Co* Syl* Vo+ [NonG | h j | h k | v] e {Øth} {ØeØeØ} 0::90 > /a ; ! AHNE TIINE KIIRE - 2+syll
-< Co* Syl* Vo+ [Grad | Gj] e {Øth} {ØeØeØ} 0::90 > /a ; ! KADE HELLE - 2+syll
+
 ahne{Øth}{ØeØeØ} /a ; ! AHNE
 an{kg}e{Øth}{ØeØeØ} /a ; ! ANGE
 hatsale{Øth}{ØeØeØ} /a ; ! HATSALE
 helle{Øth}{ØeØeØ} /a ; ! HELLE
 hemme{Øth}{ØeØeØ} /a ; ! HEMME
+hem{pm}e{Øth}{ØeØeØ} /a ; ! HEMME
 iman{tn}e{Øth}{ØeØeØ} /a ; ! IMANNE
 ka{td}e{Øth}{ØeØeØ} /a ; ! KADE
 kiire{Øth}{ØeØeØ} /a ; ! KIIRE
@@ -352,3 +523,35 @@ repale{Øth}{ØeØeØ} /a ; ! REPALE
 tiine{Øth}{ØeØeØ} /a ; ! TIINE
 tyyne{Øth}{ØeØeØ} /a ; ! TYYNE
 
+ah{td}a{sØh}{aäØ} /a ; ! AHDAS
+hurska{sØh}{aäØ} /a ; ! HURSKAS
+raska{sØh}{aäØ} /a ; ! RASKAS
+kiik{kØ}a{sØh}{aäØ} /a ; ! KIIKAS
+kirk{kØ}a{sØh}{aäØ} /a ; ! KIRKAS
+kook{kØ}a{sØh}{aäØ} /a ; ! KOOKAS
+liuk{kØ}a{sØh}{aäØ} /a ; ! LIUKAS
+maak{kØ}a{sØh}{aäØ} /a ; ! MAAKAS
+mauk{kØ}a{sØh}{aäØ} /a ; ! MAUKAS
+puh{td}a{sØh}{aäØ} /a ; ! PUHDAS
+palja{sØh}{aäØ} /a ; ! PALJAS
+rak{kØ}a{sØh}{aäØ} /a ; ! RAKAS
+raik{kØ}a{sØh}{aäØ} /a ; ! RAIKAS
+rik{kØ}a{sØh}{aäØ} /a ; ! RIKAS
+raska{sØh}{aäØ} /a ; ! RASKAS
+sitka{sØh}{aäØ} /a ; ! SITKAS
+ulja{sØh}{aäØ} /a ; ! ULJAS
+viek{kØ}a{sØh}{aäØ} /a ; ! VIEKAS
+vilk{kØ}a{sØh}{aäØ} /a ; ! VILKAS
+verk{kØ}a{sØh}{aäØ} /a ; ! VERKAS
+!
+! Exceptional exceptions
+!
+hyvä+A+POS:hyv{äØ} s0123 ; ! HYVÄ
+hyvä+A+CMP:parem{pm}{iaäØ} s012 ; ! HYVÄ PAREMPI
+hyvä+A+SUP:para{sØh}{aäØ} s03 ; ! HYVÄ PARAS
+hyvä+A+SUP:parha{sØh}{aäØ} s12 ; ! HYVÄ PARAS
+
+pitkä+A+POS:pitk{äØeØ} s0123 ;
+pitkä+A+CMP:pitem{pm}{iaäØ} s012 ;
+pitkä+A+CMP:pi{td}em{pm}{iaäØ} s012 ;
+pitkä+A+SUP:pisi{nm}{ØpmØ}{aäØ} s0123 ;

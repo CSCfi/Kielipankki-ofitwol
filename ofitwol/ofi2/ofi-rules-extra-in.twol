@@ -1,8 +1,41 @@
+!
+! These rules allow some alternative surface realisations
+! which are not desired in the generated base forms
+!
 ! HYPHEN IN COMPOUNDS
 ! ===================
 
 {§}: - {§}:Ø <=>
-       	:a _ :a , :e _ :e , :i _ :i ,
-        :o _ :o , :u _ :u , :y _ :y ,
-        :ä _ :ä , :ö _ :ö ;
-    ! kuorma<->auto henkilö<>auto
+    :a _ :a , :e _ :e , :i _ :i ,
+    :o _ :o , :u _ :u , :y _ :y ,
+    :ä _ :ä , :ö _ :ö ;
+            ! kuorma<->auto henkilö<>auto
+
+
+            ! katke<a>vat halu<a>n halu<a>isi kimpo<a>n höyry<ä>mme töllö<ä>vät
+{aVØaØØ}:Ø | {äVØäØØ}:Ø =>
+    _ {i}: | {nlrs}: | k | {dlnrtØ}: | {tttØ}: | i s i ;
+            ! katkes<>i katke<a>isi katken<>nee
+            ! katket<>koon katket<>aan katket<>tiin
+            ! halu<>si halu<>nnee
+{aVØaØØ}:a | {aVØaØØ}:o | {aVØaØØ}:u | {äVØäØØ}:ä | {äVØäØØ}:ö | {äVØäØØ}:y /<=
+    _ {i}: | {nlrs}: | k | {dlnrtØ}: | {tttØ}: ;
+
+{aVØaØØ}:e | {äVØäØØ}:e =>
+    :e :Ø* _ ;
+            ! katke<e>n
+{aVØaØØ}:i | {äVØäØØ}:i =>
+    :i :Ø* _ ;
+            ! katke<e>n
+{aVØaØØ}:o =>
+    :o :Ø* _ ;
+	    ! kimpo<o>n
+{aVØaØØ}:u =>
+    :u :Ø* _ ;
+	    ! kimpo<o>n
+{äVØäØØ}:y =>
+    :y :Ø* _ ;
+            ! höyry<y>n
+{äVØäØØ}:ö =>
+    :ö :Ø* _ ;
+            ! töllö<ö>n

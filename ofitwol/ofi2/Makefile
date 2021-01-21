@@ -18,7 +18,8 @@ LEXE=$(LEX) lexic-r.lexc lexic-firstpart.lexc
 
 #LEXG=guess-s.lexc guess-a.lexc guess-v.lexc lexic-firstpart.lexc \
 #     lexic-special.lexc lexic-p.lexc lexic-r.lexc
-LEXG=guess-s.lexc
+#LEXG=guess-s.lexc guess-a.lexc lexic-r.lexc
+LEXG=guess-s.lexc guess-a.lexc guess-v.lexc lexic-r.lexc lexic-special.lexc
 
 ANALYSES=$(ID)-corpus-$(MODE).big.analyses
 
@@ -58,6 +59,7 @@ ofiguess.ofst : guess-lex.fst $(RULEFST) delete.fst Makefile weight.fst
 	hfst-minimize -o ofiguess.fst
 	hfst-fst2fst -i ofiguess.fst -w -o guess.ofst
 	hfst-compose -1 ofiguess.fst -2 cleanlex.fst |\
+	hfst-minimize |\
 	hfst-fst2fst -w -o $@
 
 ofientry.ofst : entry-lex.fst $(RULEFST) delete.fst Makefile
@@ -70,7 +72,7 @@ ofientry.ofst : entry-lex.fst $(RULEFST) delete.fst Makefile
 mphon-lex.fst : mphon-aff.lexc $(LEXM) Makefile
 	hfst-lexc -E -f openfst-tropical -o $@ $< $(LEXM)
 
-guess-lex.fst : guess-aff.lexc $(LEXG) Makefile
+guess-lex.fst : guess-aff.lexc $(LEXG) # Makefile
 	hfst-lexc -E -f openfst-tropical -o $@ $< $(LEXG)
 	python3 cleanlex.py < $@ > cleanlex.fst
 

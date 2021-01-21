@@ -43,7 +43,7 @@
   VV = V1V1 | Vi | VVdiph ; ! Long vowel or diphthong
   VVB = V1V1B | ViB | VVdiphB ; ! Back compat long vowel or diphthong
   VVF = V1V1F | ViF | VVdiphF ; ! Front compat long vowel or diphthong
-  VVY = V1V1B | ViB | VVdiphY | y y | y i ; ! Back + y compat long vowel or diphthong 
+  VVY = V1V1B | ViB | VVdiphY | y y | y i ; ! Back + y compat long vowel/diphth
   VnucB = VoB | VVB ; ! Back compat syll nucleus
   VnucF = VoF | VVF ; ! Front compat syll nucleus
   VnucY = VnucB | y | y i | y y ;
@@ -52,8 +52,8 @@
   VnucBaei = [[[a|e|i] (VoB)] & VnucB] ; ! Back nucl starting with a|e|i
   VVsepB = [VnucB VnucB] - VV ; ! Back vowel sequence in two separate syllables
   VVsepF = [VnucF VnucF] - VV ; ! Front vowel sequence in two separate syllables
-  VVsepY = [VnucY VnucY] - VV ; ! Back vowel + y sequence in two separate syllables
-  VVsep = [Vnuc Vnuc] - VV ; ! Any vowel sequence in two separate syllables
+  VVsepY = [VnucY VnucY] - VV ; ! Back vowel + y seq in 2 separate sylls
+  VVsep = [Vnuc Vnuc] - VV ; ! Any vowel seq in two separate sylls
 
   Syl = [Vo | VV] Cocl ; ! Counts as one syllable
   SylB = VnucB Cocl ; ! Back harmony compat syllable
@@ -90,13 +90,14 @@
   SylStarVo = SylStar [Vnuc | VVsep] ;
 
   SylSylVo = SylSyl Vnuc | Syl VVsep ; ! Counts as three syllables
-  SylSylVoB = SylSylB VnucB | SylB VVsepB ; ! Counts as 3 back harmony syllables
-  SylSylVoF = SylSylF VnucF | SylF VVsepF ; ! Counts as 3 front harmony syllables
+  SylSylVoB = SylSylB VnucB | SylB VVsepB ; ! Counts as 3 back harm sylls
+  SylSylVoF = SylSylF VnucF | SylF VVsepF ; ! Counts as 3 front harm sylls
 
   OblIniFiCo = h | j | k | l | m | n | p | r | s | t | v ;
   IniFiCo = (OblIniFiCo) ;
   NonFiCo = b | c | f | g | q | š | w | x | z | ž ;
-  NonFiCoSeq = n d |n j | k l | k r | k v | p r | p s | r d | s m | s p | t l | t r ;
+  NonFiCoSeq = n d | n j | k l | k r | k v | p r | p s |
+               r d | s m | s p | t l | t r ;
   ForgCoSeq = Co* [NonFiCo | NonFiCoSeq] Co* ;
   FiCoSeq = Co+ - $ForgCoSeq ;
   FiCseq = h (d|k|t) | j | k |l|m|n|p|r|s|š|t|v ;
@@ -120,21 +121,23 @@
 
 LEXICON NounGuess
 !
-!         === o | u | y | ö ===
+!        === o | u | y | ö ===
 !
-< Cini VnucB NonGs [o|u] > /s  10
-             VALO ; ! S01: VALO - PURU - bisyll
-< Cini VnucF NonGs [ö|y] > /s  10
+!        --- bisyllabic ---
+!
+< Cini VnucB [ NonGs | Grad ] [ o | u ] > /s  10
+             VALO ; ! S01: VALO - bisyll
+!            puru happo
+< Cini VnucF [ NonGs | Grad ] [ö|y] > /s  10
              HÄLY ; ! S01: VALO - SÄILÖ - bisyll
-< Cini VnucB Grad [o|u] > /s  10
-             HAPPO ; ! S01: VALO - PATO SALKKU SANKO - bisyll
-< Cini VnucF Grad [ö|y] > /s  10
-             PÄÄTY ; ! S01: VALO - LÄMPÖ SÄNKY YÖKKÖ - bisyll
+!            pääty
 < Cini [Vnuc - VnucB] Cocl [o|u] > /s  50
              JURY ; ! S01: VALO -- bisyll
 < Cini [Vnuc - VnucF] Cocl [y|ö] > /s  50
-             JURY ; ! S01: VALO -  BANDY PLATY -- bisyll
+             PLATY ; ! S01: VALO -- bisyll
+!            bandy
 !
+!        --- tri+syllabic ---
 !
 < Cini SylPlusVoY NonGs [o|u] > /s 10
              ARVELU ; ! S02: ARVELU -- trisyll
@@ -1037,6 +1040,8 @@ my{kv}y /s ; ! MYKY
 mäkär{äØö} /s ; ! MÄKÄRÄ
 mä{kØ}{ieeeØ} /s ; ! MÄKI
 naara{sØh}{ØaØØØ} /s ; ! NAARAS
+nah{kØ}{ao} /s ; ! NAHKA
+nahk{ao} /s ; ! NAHKA
 nai{ns}{eeØØ}{nØØØ} /s ; ! NAINEN
 nalle /s ; ! NALLE
 nappul{aØo} /s ; ! NAPPULA
@@ -1252,8 +1257,6 @@ sep{pØ}el{ØeØeØ} /s ; ! SEPPEL
 seroos{aØ} /s ; ! SEROOSA
 setolk{kØ}{ao} /s ; ! SETOLKKA
 setäl{äØö} /s ; ! SETÄLÄ
-se{kØ}e{sØh}{ØeØØØ} /s ! SEES
-se{kØ}e{sØh}{ØeØØØ} /s ; ! SEES
 se{pv}{iieØ} /s ; ! SEPI
 sialm{ao} /s ; ! SIALMA
 siemen{ØeØØØ} /s ; ! SIEMEN
