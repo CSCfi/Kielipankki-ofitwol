@@ -162,7 +162,7 @@ def main():
             if lgt < args.minimum:
                 del_ent_lst.append(entry)
                 continue
-            wght = weight_sum[entry] / lgt
+            wght = weight_sum[entry]
             if entry in word_set and len(word_set[entry]) >= sz - delta:
                 print("{} ; ! {:.2f} {}".
                       format(entry,

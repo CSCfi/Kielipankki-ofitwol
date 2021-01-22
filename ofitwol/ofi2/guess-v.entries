@@ -125,8 +125,12 @@ LEXICON VerbGuess
 !        === o | u | ö | y === V01: PUNOA ===
 !
 < Cini
-  [ SylStarVoY [ NonGs | Grad ] [ o | u ]         ! puno- kuto-
-  | SylStarVoF [ NonGs | Grad ] [ ö | y ]         ! käänty-
+  [ VoB [ NonGs | GradNZ | [l|r] {kØ} ] [ o | u ]      ! puno- kuto- kirku-
+  | VVB [ NonGs | GradNZ | {kØ} ] [ o | u ]            ! vaino- nauku- raakku-
+  | SylPlusVoY [ NonGs | GradNZ ] [ o | u ]            ! kummaksu- tikahtu-
+  | VoF [ NonGs | GradNZ | [l|r] {kØ} ] [ ö | y ]      ! kysy- särky-
+  | VVF [ NonGs | GradNZ | {kØ} ] [ ö | y ]            ! säihk- määky-
+  | SylPlusVoF [ NonGs | GradNZ ] [ ö | y ]            ! väheksy- lykkäänty-
   ]
 > /v 10 PUNO ;
 !
@@ -134,20 +138,56 @@ hio /v  ; ! HIOA
 loh{kØ}o /v ; ! LOHKOA
 nah{kØ}o /v ; ! NAHKOA
 nio /v  ; ! NIOA
+nä{kØ}y /v ; ! NÄKYÄ - nähdä nähty
 tutu /v  ; ! TUTUA (*tudu-n)
 !
 !        === a-Ø-a-a-e | ta-si-taisi-tanut-dettu ===
 !
-< IniFiCo
-  [ [ e u | i | i i | i u | o | o i | o o | o u | u | u i | u o | u u ]
-    [ NonGs | Grad ]
+<
+  [ IniFiCo
+    [ e u | i | i i | i u
+    | o | o i | o o | o u
+    | u | u i | u o | u u
+    ]
+    [ NonGs | GradNZ ]
     {aØaae}                             ! V02: muista-
-  | [ e | e e | e i | e y | i e | i | i i | y | y i | y y | y ö |
-      ä | ä i | ä y | ä ä | ö | ö y ]
-    [ NonGs | Grad ]                    ! V02: elä- pitä-
-    {äØääe}
+  | IniFiCo
+    [ e | e e | e i | e y | i e | i | i i
+    | y | y i | y y | y ö
+    | ä | ä i | ä y | ä ä | ö | ö y
+    ]
+    [ NonGs | GradNZ ]
+    {äØääe}                             ! V02: elä- pitä-
+  | Cini
+    SylPlusVoB
+    h {td} | (n) s t | t {tØ}
+    {aØaae}                             ! V02: tuhahta- aseista- johdatta-
+  | Cini
+    SylPlusVoF
+    h {td} | s t | t {tØ}
+    {äØääe}                             ! V02 pöllähtä- virkistä- ylettä-
   ]
-> /v 10 MUISTA ; ! bisyllabic
+> /v 10 MUISTAA ; ! bisyllabic
+!
+loi{kØ}{aØaae} /v ; ! V02: LOIKAA
+moi{kØ}{aØaae} /v ; ! V02: MOIKAA
+mäi{kØ}{äØääe} /v ; ! V02: MÄIKÄÄ
+!
+huu{tdst}{aØaae} /v  ; ! V03: HUUTAA
+kaa{tdst}{aØaae} /v  ; ! V03: KAATAA
+löy{tdst}{äØääe} /v  ; ! V03: LÖYTÄÄ
+pyy{tdst}{äØääe} /v  ; ! V03: PYTÄÄ
+!
+hoi{tdst}{aØaae} /v  ; ! V04: HOITAA
+hyy{tdst}{äØääe} /v  ; ! V04: HYYTÄÄ
+hyö{tdst}{äØääe} /v  ; ! V04: HYÖTÄÄ
+hää{tdst}{äØääe} /v  ; ! V04: HÄÄTÄÄ
+jou{tdst}{aØaae} /v  ; ! V04: JOUTAA
+kii{tdst}{äØääe} /v  ; ! V04: KIITÄÄ
+lii{tdst}{äØääe} /v  ; ! V04: LIITÄÄ
+sou{tdst}{aØaae} /v  ; ! V04: SOUTAA
+sää{tdst}{äØääe} /v  ; ! V04: SÄÄTÄÄ
+vuo{tdst}{aØaae} /v  ; ! V04: VUOTAA
 !
 < IniFiCo
   [ VnucB ((Co (Co)) VoB)
@@ -161,32 +201,14 @@ tutu /v  ; ! TUTUA (*tudu-n)
 !
 < Cini
   [ SylPlusVoB
-    [ h {td} | (n) s t | t {tØ}         ! V02: tuhahta- aseista- johdatta-
-    | n {tnst} ]                        ! V08: pahenta-
+    n {tnst} ]                          ! V08: pahenta-
     {aØaae}
   | SylPlusVoF
-    [ h {td} | s t | t {tØ}             ! V02 pöllähtä- virkistä- ylettä-
-    | n {tnst} ]                        ! V08: höyhentä-
+    n {tnst} ]                          ! V08: höyhentä-
     {äØääe}
   ]
 > /v 10 TUHAHTA ; ! trisyllabic
 
-
-huu{tdst}{aØaae} /v  ; ! V03: HUUTAA
-kaa{tdst}{aØaae} /v  ; ! V03: KAATAA
-löy{tdst}{äØääe} /v  ; ! V03: LÖYTÄÄ
-pyy{tdst}{äØääe} /v  ; ! V03: PYTÄÄ
-
-hoi{tdst}{aØaae} /v  ; ! V04: HOITAA
-hyy{tdst}{äØääe} /v  ; ! V04: HYYTÄÄ
-hyö{tdst}{äØääe} /v  ; ! V04: HYÖTÄÄ
-hää{tdst}{äØääe} /v  ; ! V04: HÄÄTÄÄ
-jou{tdst}{aØaae} /v  ; ! V04: JOUTAA
-kii{tdst}{äØääe} /v  ; ! V04: KIITÄÄ
-lii{tdst}{äØääe} /v  ; ! V04: LIITÄÄ
-sou{tdst}{aØaae} /v  ; ! V04: SOUTAA
-sää{tdst}{äØääe} /v  ; ! V04: SÄÄTÄÄ
-vuo{tdst}{aØaae} /v  ; ! V04: VUOTAA
 
 sor{trst}{aØaae} /v ; ! V07: SORTAA
 
@@ -331,8 +353,8 @@ tut{iØ} /v ; ! V17: TUTIA tuti-tte
 vih{kØ}{iØ} /v ; ! V17: VIHKIÄ vihi-n
 !  
 < Cini SylPlus
-  ( e | i | u )  [o|ö]                  ! V18: absorboi- emaljoi- smirgelöi- haravoi-
-  {iØ}                                  ! V18: televisioi- kiintiöi-
+  ( e | i | u )  [o|ö]             ! V18: absorboi- emaljoi- smirgelöi- haravoi-
+  {iØ}                             ! V18: televisioi- kiintiöi-
 > tse/v 10 NAIDA ; 
 !
 na{iØ} /v ; ! V18: NAIDA
@@ -503,7 +525,7 @@ vir{tr}a{ØsnØtt}{aØØØØ} /v ; ! V35: VIRRATA
     | n {kg} | [h|l|r] {kj} | k {kØ}
     | m {pm} | (l|r) {pv} | (h) {td}
     ] e {ØsnØtt} {aVØaØØ}                          ! V36: katkea- poikkea-
-  |
+  | VnucF
     [ NonGw - [ [h|l|r] j ]
     | n {kg} | [h|l|r] {kj} | k {kØ}
     | m {pm} | (l|r) {pv} | (h) {td}
@@ -523,13 +545,6 @@ suve{ØsnØtt}{aVØaØØ} /v ; ! V36: SUVETA
 torve{ØsnØtt}{aVØaØØ} /v ; ! V36: TORVETA
 vere{ØsnØtt}{äVØäØØ} /v ; ! V36: VERETÄ
 !
-< Co
-  [ VnucB [ NonGw | Grad ]                        ! V37: patoa- V38: vetoa-
-    [ o | u ] {ØsnØtt} {aVØaØØ}                   ! V39: halua-
-  | VnucF [ NonGw | Grad ]                        ! V38: töllöä-
-    [ y | ö ] {ØsnØtt} {äVØäØØ}                   ! V39: jymyä-
-  ] > /v 10 PADOTA ; 
-
 eri{ØsnØtt}{äØäØØ} /v ; ! V37: ERITÄ
 hel{tl}i{ØsnØtt}{äØäØØ} /v ; ! V37: HELLITÄ
 hirvi{ØsnØtt}{äØäØØ} /v ; ! V37: HIRVITÄ
@@ -555,27 +570,16 @@ solmi{ØsnØtt}{aØaØØ} /v ; ! V37: SOLMITA
 suori{ØsnØtt}{aØaØØ} /v ; ! V37: SUORITA
 syli{ØsnØtt}{äØäØØ} /v ; ! V37: SYLITÄ
 viri{ØsnØtt}{äØäØØ} /v ; ! V37: VIRITÄ
-
-< IniFiCo
-  [ a | o | u | i ]                               ! V41: kumise - kumaja-
-  [ h | k | l | m | n | p | r | t ]
-> aja/v 10 KUMISTA ;
-< IniFiCo
-  [ ä | ö | y | e ]                               ! V41: röhise-  röhäjä-
-  [ h | k | l | m | n | p | r | t ]
-> äjä/v 10 RÖHISTÄ ;
-
-< IniFiCo SylPlusB (a|e|i|o) u {td} u > /v 10 ANTAUTUA ; ! V44: antautu-
-< IniFiCo SylPlusF (ä|e|i|ö) y {td} y > /v 10 KÄYTTÄYTYÄ ; ! V44: käyttäyty-
-
-hiou{td}u /v ; ! V44: hioutua
-
-< Cini
-  [ SylPlusVoB u {ØsØØØ}
-  | SylPlusVoF y {ØsØØØ} ]                        ! V45: pysäytä-pysäysin
-> /v 50 ;
-
+!
+< Co
+  [ VnucB [ NonGw | Grad ]                        ! V38: patoa- V38: vetoa-
+    [ o | u ] {ØsnØtt} {aVØaØØ}                   ! V39: halua-
+  | VnucF [ NonGw | Grad ]                        ! V38: töllöä-
+    [ y | ö ] {ØsnØtt} {äVØäØØ}                   ! V39: jymyä-
+  ] > /v 10 PADOTA ; 
+!
 kuti{ØsnØtt}{aØaØØ} /v  ; ! V39: KUTITA
+!
 ava{ØsnØtt}{aØØØØ} /v  ; ! V40: AVATA
 avaj{aØaØØ} /v02  ; ! AVAJA-
 helä{ØsnØtt}{äØØØØ} /v  ; ! HELÄTÄ 
@@ -599,36 +603,53 @@ kääp{pØ}ä{ØsnØtt}{äØØØØ} /v  ; ! KÄÄPÄTÄ
 kääp{pØ}äj{äØäØØ} /v02  ; ! KÄÄPPÄJÄ-
 le{pv}ä{ØsnØtt}{äØØØØ} /v  ; ! V40:LEVÄTÄ
 le{pv}äj{äØäØØ} /v02  ; ! LEPÄJÄ-
-pala{ØsnØtt}{aØØØØ} /v  ; ! V40: PALATA
-palaj{aØaØØ} /v02  ; ! PALAJA-
 pauha{ØsnØtt}{aØØØØ} /v  ; ! V40,35: PAUHATA
 pauhaj{aØaØØ} /v02  ; ! PAUHAJA-
 vara{ØsnØtt}{aØØØØ} /v  ; ! V40: VARATA
 varaj{aØaØØ} /v02  ; ! VARAJA-
 !
-paran{tnst}{aØaae} /v  ; ! PARANTAA
+< IniFiCo
+  [ a | o | u | i ]                               ! V41: kumise - kumaja-
+  [ h | k | l | m | n | p | r | t ]
+> aja/v 10 KUMISTA ;
+< IniFiCo
+  [ ä | ö | y | e ]                               ! V41: röhise-  röhäjä-
+  [ h | k | l | m | n | p | r | t ]
+> äjä/v 10 RÖHISTÄ ;
+!
+paran{tnst}{aØaae} /v  ; ! V42: PARANTAA
 para{nt} /v3  ; ! PARAT-
-ojen{tnst}{aØaae} /v  ; ! OJENTAA
+ojen{tnst}{aØaae} /v  ; ! V42: OJENTAA
 oje{nt} /v3  ; ! OJET-
 raken{tnst}{aØaae} /v  ; ! V42: RAKENTAA
 rake{nt} /v3  ; ! RAKET-
-lyhen{tnst}{äØääe} /v  ; ! LYHENTÄÄ
+lyhen{tnst}{äØääe} /v  ; ! ! V42: LYHENTÄÄ
 lyhe{nt} /v3  ; ! LYHET-
-rien{tnst}{äØääe} /v  ; ! RIENTÄÄ
+rien{tnst}{äØääe} /v  ; ! ! V42: RIENTÄÄ
 rie{nt} /v3  ; ! RIET-
-kään{tnst}{äØääe} /v  ; ! KÄÄNTÄÄ
+kään{tnst}{äØääe} /v  ; ! ! V42: KÄÄNTÄÄ
 kää{nt} /v3  ; ! KÄÄT-
-vään{tnst}{äØääe} /v  ; ! VÄÄNTÄÄ
+vään{tnst}{äØääe} /v  ; ! ! V42: VÄÄNTÄÄ
 vää{nt} /v3  ; ! VÄÄT-
-tai{tds}{aØaae} /v  ; ! V43: TAITAA
-tie{tds}{äØääe} /v  ; ! TIETAA
+!
+< IniFiCo SylPlusB (a|e|i|o) u {td} u > /v 10 ANTAUTUA ; ! V44: antautu-
+< IniFiCo SylPlusF (ä|e|i|ö) y {td} y > /v 10 KÄYTTÄYTYÄ ; ! V44: käyttäyty-
+
+hiou{td}u /v ; ! V44: hioutua
+
+< Cini
+  [ SylPlusVoB u {ØsØØØ}
+  | SylPlusVoF y {ØsØØØ} ]                        ! V44: pysäytä-pysäysin
+> /v 50 ;
+!
 kaa{dsnttt}{aØaØØ} /v  ; ! V45: KAATA kaannut
+
+tie{tds}{äØääe} /v  ; ! V43: TIETAA
 tai{dsnttt}{aØaØØ} /v  ; ! V43: TAITA  tainnut taittu
-tu{dsnttt}{aØaØØ} /v  ; ! TUTA 
-tie{dsnttt}{äØäØØ} /v  ; ! TIETÄ tietty
-löy{dsnttt}{äØäØØ} /v  ; ! LÖYTÄ löytty
-sää{dsnttt}{äØäØØ} /v  ; ! SÄÄTÄ säätty
-pyy{dsnttt}{äØäØØ} /v  ; ! PYYTÄ pyytty
+tie{dsnttt}{äØäØØ} /v  ; ! V45: TIETÄ tietty
+löy{dsnttt}{äØäØØ} /v  ; ! V45: LÖYTÄ löytty
+sää{dsnttt}{äØäØØ} /v  ; ! V45: SÄÄTÄ säätty
+pyy{dsnttt}{äØäØØ} /v  ; ! V45: PYYTÄ pyytty
 
 rankais{eØØØØi} /v  ; ! RANKAISTA
 rangais{eØØØØi} /v3  ; ! RANGAISTA
