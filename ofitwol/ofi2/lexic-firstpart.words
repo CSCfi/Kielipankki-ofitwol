@@ -862,7 +862,7 @@ alanko
 alanne
 alanteen
 alantehen
-alas /more 30 ! varottava yligenerointia
+alas More 30 ! varottava yligenerointia
 alasimen
 alasin
 alastomuuden
@@ -2193,7 +2193,7 @@ asioitsija
 asioitsijan
 asistentin
 asistentti
-askar
+! askar
 askare
 askareen
 askarehen
@@ -23321,7 +23321,7 @@ kyvykkyys
 kyvyn
 kyvyttömyyden
 kyvyttömyys
-kyy /more 50
+kyy More 50
 kyydin
 kyyditsijä
 kyyditsijän

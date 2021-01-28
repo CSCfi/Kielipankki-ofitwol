@@ -1,0 +1,54 @@
+ID,NEXT,MPHON,FEAT,BASEF,WEIGHT,FLAG,COMMENT
+,!,,,,,,"This root lexicon uses explicit lexicons and it provides neither guessing nor dynamic compounding. With it you can produce morphophonemic representations as the result of the lookup."
+Root,"Nouns Verbs",,,,,,"This is where everything starts. Not all sub-lexicons need to be present when compiled with hfst-lexc."
+,"Adjectives Pronouns",,,,,,
+,"Numerals Particles",,,,,,
+,Special,,,,,,"Entries which are not allowed to occur as a second part of a compound word."
+,Compounds,,,,,,"Established compounds which are given as full entries."
+,FirstPart,,,,,,"Common first parts of compound nouns."
+More,Nouns,{§},,{§},20,,
+,Adjectives,{§},,{§},60,,
+,!,,,,,,
+/s,s0123,,N,,,,"Normal noun entries"
+,"! More",,,,20,,"Uncomment if dynamic compounding is desired"
+,"! More",n,,,20,,"Uncomment if dynamic compounding is desired"
+/s12,"s1 s2",,N,,,,"Noun entries with only singular and plural stems"
+/s2,s2,,N,,,,"Noun entries with only plural stems"
+/s3,s3,,N,,,,"Noun entries with only consonant stems"
+/a,s0123,,"A POS",,,,"Normal adjective entries which have comparative and superlative"
+,s012,m{pm}{iaäØ},"A CMP",,,,"Comparative forms"
+,s0123,i{nm}{ØpmØ}{aäØ},"A SUP",,,,"Superlative forms"
+,Clit,sti,"A MAN",,,,"Derived -sti adverb"
+,/a,hk{oö},,hk{oö},,,
+/apos,s0123,,"A POS",,,,"Adjectives which do not produce comparatives"
+/acomp,s012,,"A CMP",,,,"Adjectives which are already in comparative"
+/asup,s0123,,"A SUP",,,,"Adjectives which are already in superlative"
+/r,s0123,,PRON,,,,Pronouns
+/n,s0123,,NUM,,,,Numerals
+/n0,s0,,NUM,,,,
+/n01,"s0 s1",,NUM,,,,
+/n02,"s0 s2",,NUM,,,,
+/n12,"s1 s2",,NUM,,,,
+/n123,"s1 s2 s3",,NUM,,,,
+/n13,"s1 s3",,NUM,,,,
+/n3,s3,,NUM,,,,
+/v,"v0 v1 v2 v3",,V,{dlnrtØ}{aä},,,"Verbs. The INF1 ending is attached in order to produce the conventional base form."
+,/v0der,,,,,,
+tse/v,"v0 v1 v2 v3",,V,{dlnrtØ}{aä},,,haravoi-haravoitsevat
+,"v0 v1 v2 v3",{tnt}{sØ}{eØØØei},V,{dlnrtØ}{aä},,,
+aja/v,"v0 v1 v2 v3",is{eØØØØi},V,is{eØØØØi}{dlnrtØ}{aä},,,kihisevät-kihajavat
+,"v0 v1 v2",aj{aØaae},V,is{eØØØØi}{dlnrtØ}{aä},,,
+äjä/v,"v0 v1 v2 v3",is{eØØØØi},V,is{eØØØØi}{dlnrtØ}{aä},,,värisee-väräjää
+,"v0 v1 v2",äj{äØääe},V,is{eØØØØi}{dlnrtØ}{aä},,,
+/v0der,/s,j{aäoöØ},,j{aäoöØ},,,
+,/a,v{aä}i{ns}{eeØØ}{nØØØ},,v{aä}i{ns}{eeØØ}{nØØØ},,,
+,/a,v{aäØ},,v{aäØ},,,
+/v012,"v0 v1 v2",,V,{dlnrtØ}{aä},,,
+,/v0der,,,,,,
+/v02,"v0 v2",,V,{dlnrtØ}{aä},,,
+,/v0der,,,,,,
+/v3,v3,,V,{dlnrtØ}{aä},,,
+/p,End,,P,,,,
+/pc,Clit,,P,,,,
+/po,"Poss PossV",,P,,,,
+/ps,"PossObl PossV",,P,,,,

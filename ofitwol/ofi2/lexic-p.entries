@@ -199,7 +199,7 @@ alustavasti /pc
 alusvaatteisilla /ps
 alusvaatteisille /ps
 alvaria /pc
-alvariin /po
+alvarii{nØ} /po
 ameebamaisesti /pc
 amen /pc
 amerikkalaisittain /pc
@@ -259,7 +259,7 @@ apaattisesti /pc
 apeasti /pc
 apeissa /ps
 aperiodisesti /pc
-apeuksiin /po
+apeuksii{nØ} /po
 apeuksissa /po
 apinamaisesti /pc
 apodiktisesti /pc
@@ -502,7 +502,7 @@ ekspressionistisesti /pc
 ekstaattisesti /pc
 ekstensiivisesti /pc
 ekstra /pc
-eksyksiin /po
+eksyksii{nØ} /po
 eksyksissä /pc
 eksyksistä /pc
 eksyttävästi /pc
@@ -581,7 +581,7 @@ ennustuksellisesti /pc
 ennätyksellisesti /pc
 ennätysmäisesti /pc
 ensi_hädässä /ps
-ensi_hätään /ps
+ensi_hätää{nØ} /ps
 ensikseen /pc
 ensiksi /pc
 ensimmäiseksi /pc
@@ -659,7 +659,7 @@ esteettisesti /pc
 esteettömästi /pc
 estottomasti /pc
 estävästi /pc
-eteen /po
+etee{nØ} /po
 eteerisesti /pc
 etelämmäksi /pc
 etelämmäs /pc
@@ -816,13 +816,13 @@ hallussa /po
 hallusta /po
 haloo /pc
 halpamaisesti /pc
-haltioihin /po
+haltioihi{nØ} /po
 haltioissa /po
 haltioituneesti /pc
 haltiokkaasti /pc
-halttuun /po
+halttuu{nØ} /po
 haltussa /po
-haltuun /po
+haltuu{nØ} /po
 haluisasti /pc
 haluisesti /pc
 halukkaasti /pc
@@ -1018,9 +1018,9 @@ hengettömästi /pc
 hengiltä /pc
 hengissä /pc
 hengityksellisesti /pc
-hengähdyksiin /po
+hengähdyksii{nØ} /po
 hengähdyksissä /po
-hengästyksiin /po
+hengästyksii{nØ} /po
 hengästyksissä /po
 hengästyneesti /pc
 henkevästi /pc
@@ -1030,7 +1030,7 @@ henkilöllisesti /pc
 henkimeneissä /pc
 henkimenossa /pc
 henkisesti /pc
-henkitoreihin /po
+henkitoreihi{nØ} /po
 hennosti /pc
 hentoisesti /pc
 hep /p
@@ -1240,7 +1240,7 @@ horjumattomasti /pc
 horjuttavasti /pc
 horjuvasti /pc
 hornamaisesti /pc
-horroksiin /po
+horroksii{nØ} /po
 horroksissa /po
 horroksista /po
 hortatiivisesti /pc
@@ -1412,17 +1412,17 @@ häikäisevästi /pc
 häilyvästi /pc
 häiritsevästi /pc
 häiriöttömästi /pc
-häkellyksiin /po
+häkellyksii{nØ} /po
 häkellyksissä /po
 häkellyttävästi /pc
 hälyttävästi /pc
 hämille /po
 hämillä /po
-hämmennyksiin /po
+hämmennyksii{nØ} /po
 hämmennyksissä /po
 hämmentyneesti /pc
 hämmentävästi /pc
-hämmästyksiin /po
+hämmästyksii{nØ} /po
 hämmästyksissä /po
 hämmästyneesti /pc
 hämmästyttävästi /pc
@@ -1430,7 +1430,7 @@ hämäläisittäin /pc
 hämäriin /pc
 hämärissä /pc
 hämärästi /pc
-hämäännyksiin /po
+hämäännyksii{nØ} /po
 hämäännyksissä /po
 hämäännyttävästi /pc
 häpeilevästi /pc
@@ -1530,7 +1530,7 @@ ihmeesti /pc
 ihmeisesti /pc
 ihmeissä /ps
 ihmettelevästi /pc
-ihmetyksiin /po
+ihmetyksii{nØ} /po
 ihmetyksissä /po
 ihmisellisesti /pc
 ihmisiksi /pc
@@ -1773,7 +1773,7 @@ jouduttavasti /pc
 jouheasti /pc
 jouhevasti /pc
 joukeasti /pc
-joukkoon /po
+joukkoo{nØ} /po
 joukkueittain /pc
 joukoittain /pc
 joukolla /pc
@@ -1902,7 +1902,7 @@ jäljillä /pc
 jäljiltä /pc
 jäljissä /po
 jäljittelevästi /pc
-jälkeen /po
+jälkee{nØ} /po
 jälkeenpäin /pc
 jälkiin /pc
 jälkivietteessä /pc
@@ -2299,7 +2299,7 @@ kesemmäksi /pc
 kesemmälle /pc
 kesemmällä /pc
 kesempänä /pc
-keskeen /po
+keskee{nØ} /po
 keskeisesti /pc
 keskelle /po
 keskellä /po
@@ -2313,7 +2313,7 @@ keskemmäs /pc
 keskempänä /pc
 keskempää /pc
 keskeneräisesti /pc
-kesken /po
+keske{nØ} /po
 keskenäisesti /pc
 keskenä /ps
 keskessä /po
@@ -2334,7 +2334,7 @@ keskiviikkoisin /pc
 keskulaisesti /pc
 keskuudessa /po
 keskuudesta /po
-keskuuteen /po
+keskuutee{nØ} /po
 kestämättömästi /pc
 kestäväisesti /pc
 kestävästi /pc
@@ -2385,7 +2385,7 @@ kiesauta /pc
 kiesavita /pc
 kihloihin /pc
 kihloissa /pc
-kiihdyksiin /po
+kiihdyksii{nØ} /po
 kiihdyksissä /po
 kiihdyttävästi /pc
 kiihkeästi /pc
@@ -2462,7 +2462,7 @@ kimmoisasti /pc
 kimmoisesti /pc
 kimpeästi /pc
 kimppumaisesti /pc
-kimppuun /po
+kimppuu{nØ} /po
 kimpussa /pc
 kimpusta /pc
 kinoksittain /pc
@@ -2545,7 +2545,7 @@ koholla /po
 koholle /po
 kohona /pc
 kohottavasti /pc
-kohtaan /po
+kohtaa{nØ} /po
 kohtaisesti /pc
 kohtalaisesti /pc
 kohtalokkaasti /pc
@@ -2846,11 +2846,11 @@ kummannekin /pc
 kummanne /pc
 kumman /pc
 kummasti /pc
-kummastuksiin /po
+kummastuksii{nØ} /po
 kummastuksiinsa /pc
 kummastuksissa /po
 kummastuneesti /pc
-kummiin /ps
+! kummiin /ps
 kumminkin /pc
 kummin /pc
 kummissa /ps
@@ -2893,7 +2893,7 @@ kunpa /pc
 kuntoon /pc
 kuohkeuttavasti /pc
 kuohuissa /ps
-kuohuksiin /po
+kuohuksii{nØ} /po
 kuohuksissa /po
 kuohuttomasti /pc
 kuohuvasti /pc
@@ -2905,7 +2905,7 @@ kuoliaana /pc
 kuollakseen /pc
 kuolleesti /pc
 kuolleista /pc
-kuolluksiin /po
+kuolluksii{nØ} /po
 kuolluksissa /po
 kuonomaisesti /pc
 kuopalla /pc
@@ -3038,7 +3038,7 @@ kyllästyksissä /ps
 kyllästyneesti /pc
 kylmentävästi /pc
 kylmetyksissä /po
-kylmiin /po
+kylmii{nØ} /po
 kylmille /po
 kylmillä /po
 kylmiltä /ps
@@ -3091,7 +3091,7 @@ kyyryksissä /pc
 kyyrylle /ps
 kyyryllä /ps
 kyyryltä /ps
-kyyrysiin /po
+kyyrysii{nØ} /po
 kyyrysille /po
 kyyrysillä /po
 kyyrysiltä /po
@@ -3112,7 +3112,7 @@ käppyrään /pc
 käreästi /pc
 kärjekkäästi /pc
 kärjitse /pc
-kärkeen /po
+kärkee{nØ} /po
 kärkevästi /pc
 kärkimäisesti /pc
 kärkkäästi /pc
@@ -3154,7 +3154,7 @@ käänteisesti /pc
 käärmeissä /ps
 käärmemäisesti /pc
 kömpelösti /pc
-köniin /po
+könii{nØ} /po
 köntälle /ps
 könöllä /ps
 körisevästi /pc
@@ -3687,7 +3687,7 @@ läjittäin /pc
 läjässä /pc
 läjään /pc
 läksiäisiksi /pc
-läkähdyksiin /po
+läkähdyksii{nØ} /po
 läkähdyksissä /po
 lämmittävästi /pc
 lämpimikse /ps
@@ -3856,7 +3856,7 @@ matkaan /pc
 matkailullisesti /pc
 matkassa /po
 matkasta /pc
-matkoihin /po
+matkoihi{nØ} /po
 matkoissa /pc
 matkoista /pc
 matomaisesti /pc
@@ -3884,7 +3884,7 @@ meluavasti /pc
 meluisasti /pc
 meluisesti /pc
 meluttomasti /pc
-menehdyksiin /po
+menehdyksii{nØ} /po
 menehdyksissä /po
 meneille /po
 meneillä /po
@@ -4080,7 +4080,7 @@ muistissa /pc
 muistista /pc
 muistolle /pc
 muistuttavasti /pc
-mukaan /po
+mukaa{nØ} /po
 mukaansatempaavasti /pc
 mukaa /pc
 mukaisesti /pc
@@ -4168,7 +4168,7 @@ mynkään /pc
 myriadeittain /pc
 myrkyllisesti /pc
 myrkyttävästi /pc
-myrryksiin /po
+myrryksii{nØ} /po
 myrryksissä /po
 myrskyisesti /pc
 myrskyisästi /pc
@@ -4205,7 +4205,7 @@ myötämöisin /pc
 myötämöisiään /pc
 myötänään /pc
 myötä /po
-myötään /po
+myötää{nØ} /po
 mäiskis /pc
 märkäisesti /pc
 mäskiksi /pc
@@ -4396,7 +4396,7 @@ nuhtelevaisesti /pc
 nuhtelevasti /pc
 nuijamaisesti /pc
 nuivasti /pc
-nukuksiin /po
+nukuksii{nØ} /po
 nukuksissa /po
 nukuttavasti /pc
 nulikkamaisesti /pc
@@ -4482,7 +4482,7 @@ näkemyksellisesti /pc
 näkymättömiin /pc
 näkymättömissä /pc
 näkymättömästi /pc
-näkyviin /po
+näkyvii{nØ} /po
 näkyville /po
 näkyvillä /po
 näkyviltä /po
@@ -4782,7 +4782,7 @@ paitasille /ps
 pait /pc
 paitse /pc
 paitsi /pc
-pakahduksiin /po
+pakahduksii{nØ} /po
 pakahduksissa /po
 pakanallisesti /pc
 pakanasti /pc
@@ -4864,7 +4864,7 @@ parhaimmilla /ps
 parhaimmille /ps
 parhaimmin /pc
 parhain /pc
-pariin /po
+parii{nØ} /po
 pariisilaisesti /pc
 pariisilaisittain /pc
 parikkain /pc
@@ -4998,7 +4998,7 @@ perättäisesti /pc
 perättömästi /pc
 perätyksin /pc
 perätysten /pc
-perään /po
+perää{nØ} /po
 pessimistisesti /pc
 petoksellisesti /pc
 petollisesti /pc
@@ -5340,7 +5340,7 @@ puneilla /pc
 puneille /pc
 punteittain /pc
 puohteella /pc
-puoleen /po
+puolee{nØ} /po
 puoleisesti /pc
 puolekkain /pc
 puoleksi /pc
@@ -5437,7 +5437,7 @@ puuttumattomasti /pc
 pyhisin /pc
 pyh /p
 pyhäisin /pc
-pyhäpukeisiin /po
+pyhäpukeisii{nØ} /po
 pyhästi /pc
 pyjamaisilla /ps
 pykälittäin /pc
@@ -5472,7 +5472,7 @@ pyörryttävästi /pc
 pyörällä /pc
 päihdyksiin /pc
 päihdyksissä /pc
-päihin /ps
+päihi{nØ} /ps
 päihtyneesti /pc
 päikkäin /pc
 päin /pc
@@ -5557,7 +5557,7 @@ pöhkömäisesti /pc
 pöhkösti /pc
 pöh /p
 pöhötyksissä /pc
-pökerryksiin /po
+pökerryksii{nØ} /po
 pökerryksissä /po
 pökerryksistä /po
 pöllöllään /pc
@@ -5742,7 +5742,7 @@ reunempana /pc
 reunoitse /pc
 riehakasti /pc
 riehakkaasti /pc
-riemastuksiin /po
+riemastuksii{nØ} /po
 riemastuksissa /po
 riemastuttavasti /pc
 riemuisasti /pc
@@ -5814,7 +5814,7 @@ ristittäin /pc
 ritardando /pc
 ritarillisesti /pc
 rits /pc
-riuduksiin /po
+riuduksii{nØ} /po
 riuduksissa /po
 riuskasti /pc
 riuskeasti /pc
@@ -5911,7 +5911,7 @@ ryttyyn /pc
 rytyssä /pc
 ryypyissä /ps
 ryypyittäin /pc
-ryypyksiin /po
+ryypyksii{nØ} /po
 ryypyksissä /po
 ryypyssä /po
 ryömille /ps
@@ -5937,7 +5937,7 @@ räts /pc
 rävähtämättömästi /pc
 räävittömästi /pc
 röh /p
-rökkiin /po
+rökkii{nØ} /po
 römeästi /pc
 römäkästi /pc
 röntgenologisesti /pc
@@ -6141,7 +6141,7 @@ sepposen /pc
 seremoniallisesti /pc
 sesonkimaisesti /pc
 setämäisesti /pc
-seuraan /po
+seuraa{nØ} /po
 seuraavaisesti /pc
 seuraavasti /pc
 seurallisesti /pc
@@ -6296,7 +6296,7 @@ sisästä /po
 sisättäin /pc
 sisätyksin /pc
 sisätysten /pc
-sisään /po
+sisää{nØ} /po
 siteeksi /pc
 sitkaan /pc
 sitkeästi /pc
@@ -6600,7 +6600,7 @@ suutaristi /pc
 suutatuksin /pc
 suutatusten /pc
 suuttuneesti /pc
-suutuksiin /po
+suutuksii{nØ} /po
 suutuksissa /po
 suvaitsemattomasti /pc
 suvaitsevaisesti /pc
@@ -6712,9 +6712,9 @@ säestyksettömästi /pc
 sähkeitse /pc
 sähköisesti /pc
 sähköllisesti /pc
-säikyksiin /po
+säikyksii{nØ} /po
 säikyksissä /po
-säikähdyksiin /po
+säikähdyksii{nØ} /po
 säikähdyksissä /po
 säikähtyneesti /pc
 säikähtäneesti /pc
@@ -6819,10 +6819,10 @@ taimo /pc
 taimpaa /pc
 taimpana /pc
 tainaan /pc
-tainnoksiin /po
+tainnoksii{nØ} /po
 tainnoksissa /po
 tainnoksista /po
-tainnuksiin /po
+tainnuksii{nØ} /po
 tainnuksissa /po
 tainnuksista /po
 tainnuttavasti /pc
@@ -7059,7 +7059,7 @@ tiedoksi /pc
 tiedollisesti /pc
 tiedossa /pc
 tiedottomasti /pc
-tiehen /ps
+tiehe{nØ} /ps
 tielle /po
 tiellä /po
 tieltä /po
@@ -7077,7 +7077,7 @@ tietoon /pc
 tiettävästi /pc
 tietymättömästi /pc
 tietysti /pc
-tietyviin /po
+tietyvii{nØ} /po
 tietyvillä /po
 tietyviltä /po
 tietyvissä /po
@@ -7102,7 +7102,7 @@ tiistaisin /pc
 tiitterästi /pc
 tiiviisti /pc
 tiivistävästi /pc
-tikahduksiin /po
+tikahduksii{nØ} /po
 tik /p
 tilaan /pc
 tilalla /pc
@@ -7216,11 +7216,11 @@ top /p
 toraisesti /pc
 toreissa /po
 torjuvasti /pc
-torkuksiin /po
+torkuksii{nØ} /po
 torkuksissa /po
 torkuksista /po
 tornimaisesti /pc
-torroksiin /po
+torroksii{nØ} /po
 torroksissa /po
 torstaisin /pc
 toruvasti /pc
@@ -7355,7 +7355,7 @@ tuntumattomissa /pc
 tuntuvasti /pc
 tuntuviin /pc
 tuntuvissa /pc
-tuohduksiin /po
+tuohduksii{nØ} /po
 tuohduksissa /po
 tuohkeissa /po
 tuohon /pc
@@ -7485,7 +7485,7 @@ tympeästi /pc
 tynnyreittäin /pc
 tynnyrimäisesti /pc
 tynnyrittäin /pc
-typerryksiin /po
+typerryksii{nØ} /po
 typerryksissä /po
 typerryksistä /po
 typerästi /pc
@@ -7497,10 +7497,10 @@ tyrannimaisesti /pc
 tyrehdyksiin /pc
 tyrehdyksissä /pc
 tyrehdyttävästi /pc
-tyrmetyksiin /po
+tyrmetyksii{nØ} /po
 tyrmetyksissä /po
 tyrmeästi /pc
-tyrmistyksiin /po
+tyrmistyksii{nØ} /po
 tyrmistyksissä /po
 tyrmistyksistä /po
 tyrmistyttävästi /pc
@@ -7606,7 +7606,7 @@ tökerösti /pc
 töksis /pc
 töksähtelevästi /pc
 tönkeästi /pc
-töperryksiin /po
+töperryksii{nØ} /po
 töperryksissä /po
 töperryksistä /po
 töppösilleen /pc
@@ -7700,7 +7700,7 @@ ulottumille /pc
 ulottumilta /po
 ulottumissa /pc
 ulottumista /pc
-ulottuviin /po
+ulottuvii{nØ} /po
 ulottuvilla /po
 ulottuville /po
 ulottuvilta /po
@@ -7795,7 +7795,7 @@ uupumattomasti /pc
 uuraasti /pc
 uuteliaasti /pc
 uutterasti /pc
-uuvuksiin /po
+uuvuksii{nØ} /po
 uuvuksissa /po
 uuvuttavasti /pc
 vaak /pc
@@ -7909,7 +7909,7 @@ valmistelevasti /pc
 valoisasti /pc
 valoisesti /pc
 valppaasti /pc
-valtaan /po
+valtaa{nØ} /po
 valtaavasti /pc
 valtaisasti /pc
 valtaisesti /pc
@@ -7948,7 +7948,7 @@ vankkumatta /pc
 vankkumattomasti /pc
 vapaasti /pc
 vapautuneesti /pc
-varaan /po
+varaa{nØ} /po
 varahin /pc
 varaisesti /pc
 varakkaasti /pc
@@ -8019,7 +8019,7 @@ vasitenkin /pc
 vasite /pc
 vasituisesti /pc
 vastaamattomasti /pc
-vastaan /po
+vastaa{nØ} /po
 vastaavanlaisesti /pc
 vastaavasti /pc
 vastahakaan /pc
@@ -8083,7 +8083,7 @@ verettömästi /pc
 verevästi /pc
 verhomaisesti /pc
 verhottomasti /pc
-veriin /po
+verii{nØ} /po
 verille /pc
 verillä /pc
 verisesti /pc
@@ -8138,7 +8138,7 @@ vieraisille /pc
 vieraisilta /pc
 vieraissa /pc
 vierastavasti /pc
-viereen /po
+vieree{nØ} /po
 vierekkäin /pc
 vierelle /po
 vierellä /po
@@ -8158,7 +8158,7 @@ viettelevästi /pc
 vietävästi /pc
 vihaisesti /pc
 vihakasti /pc
-vihastuksiin /po
+vihastuksii{nØ} /po
 vihastuksissa /po
 vihastuneesti /pc
 vihdoin /pc
@@ -8170,7 +8170,7 @@ vihkaa /pc
 vihkoittain /pc
 vihlaisevasti /pc
 vihlovasti /pc
-vihoihin /po
+vihoihi{nØ} /po
 vihoissa /po
 vihoittain /pc
 vihon /pc
@@ -8337,7 +8337,7 @@ voitolle /pc
 voitollisesti /pc
 voittoisasti /pc
 voittoisesti /pc
-voivuksiin /po
+voivuksii{nØ} /po
 voivuksissa /po
 vot /p
 vou /p
@@ -8451,7 +8451,7 @@ värittävästi /pc
 värittömästi /pc
 värähdyttävästi /pc
 värähtävästi /pc
-väsyksiin /po
+väsyksii{nØ} /po
 väsyksissä /po
 väsymättömästi /pc
 väsyneesti /pc
@@ -8538,7 +8538,7 @@ ylenpalttisesti /pc
 ylen /pc
 ylentävästi /pc
 ylenänkensä /pc
-ylettyviin /po
+ylettyvii{nØ} /po
 ylettyville /po
 ylettyvillä /po
 ylettyviltä /po
@@ -8551,7 +8551,7 @@ ylhästi /pc
 ylhäälle /pc
 ylhäällä /pc
 ylhäältä /pc
-ylikanteen /po
+ylikantee{nØ} /po
 ylimalkaan /pc
 ylimalkaisesti /pc
 ylimmilleen /pc
@@ -8668,7 +8668,7 @@ zoologisesti /pc
 äkäisesti /pc
 äkämyksissä /po
 äleästi /pc
-ällistyksiin /po
+ällistyksii{nØ} /po
 ällistyksissä /po
 ällistyttävästi /pc
 älyisesti /pc
@@ -8699,7 +8699,7 @@ zoologisesti /pc
 äts /p
 ääh /p
 ääliömäisesti /pc
-ääneen /po
+äänee{nØ} /po
 äänekkäästi /pc
 äänellisesti /pc
 ääneti /pc
