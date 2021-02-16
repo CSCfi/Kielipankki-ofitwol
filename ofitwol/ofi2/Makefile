@@ -5,25 +5,27 @@
 ID=sktp
 MODE=mphon
 ANALYSER=ofi$(MODE).ofst
-RULEFST=ofi-rules-in.fst
+RULEVAR=../rules/rules-var.fst
+RULENORM=../rules/rules-norm.fst
 AFF=analy
 DATA=../../data
 
 LEX=lexic-s.lexc lexic-a.lexc lexic-v.lexc lexic-p.lexc \
     lexic-special.lexc lexic-n.lexc
 
-LEXM=$(LEX) lexic-r.lexc lexic-firstpart.lexc
+LEXM=$(LEX) lexic-r.lexc lexic-firstpart.lexc endings.lexc
 
-LEXE=$(LEX) lexic-r.lexc lexic-firstpart.lexc
+LEXE=$(LEX) lexic-r.lexc lexic-firstpart.lexc endings.lexc
 
 #LEXG=guess-s.lexc guess-a.lexc guess-v.lexc lexic-firstpart.lexc \
 #     lexic-special.lexc lexic-p.lexc lexic-r.lexc
 #LEXG=guess-s.lexc guess-a.lexc lexic-r.lexc
-LEXG=guess-s.lexc guess-a.lexc guess-v.lexc lexic-r.lexc lexic-special.lexc
+LEXG=guess-s.lexc guess-a.lexc guess-v.lexc \
+      lexic-firstpart.lexc endings.lexc \
+      lexic-r.lexc lexic-special.lexc lexic-n.lexc lexic-p.lexc \
+      # lexic-a.lexc lexic-v.lexc lexic-s.lexc
 
 ANALYSES=$(ID)-corpus-$(MODE).big.analyses
-
-rules : ofi-rules-in.fst ofi-rules-out.fst
 
 build : $(ANALYSER)
 
@@ -35,106 +37,94 @@ analyse : $(ANALYSES)
 
 rejected-guesses : $(ID)-rejected-guessed.entries
 
-ofitwol.ofst : ofimphon.fst ofi-rules-out.fst bound.fst ofimphon.ofst Makefile
+ofitwol.ofst : ofimphon.fst $(RULENORM) bound-remove.fst ofimphon.ofst # Makefile
 	hfst-project -p out -i $< -o ofimphon-out.fst
-	hfst-compose-intersect -1 ofimphon-out.fst -2 ofi-rules-out.fst -o ofitwol-tmp.fst
+	hfst-compose-intersect -1 ofimphon-out.fst \
+			       -2 $(RULENORM) -o ofitwol-tmp.fst
 	hfst-compose -1 ofitwol-tmp.fst -2 delete.fst |\
-	hfst-compose -2 bound.fst -o ofitwol-aux.fst
+	hfst-compose -2 bound-remove.fst -o ofitwol-aux.fst
 	hfst-compose -1 ofimphon.fst -2 ofitwol-aux.fst -o ofitwol-cps.fst
 	hfst-minimize -i ofitwol-cps.fst -o ofitwol.fst
 	hfst-fst2fst -w -i ofitwol.fst -o $@
 
-ofimphon.ofst : mphon-lex.fst $(RULEFST) delete.fst Makefile
-	hfst-compose-intersect -a -1 $< -2 $(RULEFST) |\
+ofimphon.ofst : mphon-lex.fst $(RULEVAR) delete.fst # Makefile
+	hfst-compose-intersect -a -1 $< -2 $(RULEVAR) |\
 	hfst-minimize |\
 	hfst-compose -2 delete.fst |\
 	hfst-invert |\
 	hfst-minimize > ofimphon.fst
-	hfst-fst2fst -w -i ofimphon.fst -o $@
+	hfst-compose -1 ofimphon.fst -2 bound-remove.fst |\
+	hfst-fst2fst -w -o $@
 
-ofiguess.ofst : guess-lex.fst $(RULEFST) delete.fst Makefile weight.fst
-	hfst-compose-intersect -a -1 $< -2 $(RULEFST) |\
+ofiguess.ofst : guess-lex.fst cleanlex.fst $(RULEVAR) delete.fst #Makefile
+	hfst-compose-intersect -a -1 $< -2 $(RULEVAR) |\
 	hfst-compose -2 delete.fst |\
 	hfst-invert |\
+	hfst-minimize -o guess.fst
+	hfst-fst2fst -i guess.fst -w -o guess.ofst
+	hfst-compose -1 guess.fst -2 cleanlex.fst |\
 	hfst-minimize -o ofiguess.fst
-	hfst-fst2fst -i ofiguess.fst -w -o guess.ofst
-	hfst-compose -1 ofiguess.fst -2 cleanlex.fst |\
-	hfst-minimize |\
-	hfst-fst2fst -w -o $@
+	hfst-fst2fst -w -i ofiguess.fst -o $@
 
-ofientry.ofst : entry-lex.fst $(RULEFST) delete.fst Makefile
-	hfst-compose-intersect -a -1 $< -2 $(RULEFST) |\
+ofientry.ofst : entry-lex.fst $(RULEVAR) delete.fst # Makefile
+	hfst-compose-intersect -a -1 $< -2 $(RULEVAR) |\
 	hfst-compose -2 delete.fst |\
 	hfst-invert |\
-	hfst-minimize |\
-	hfst-fst2fst -w -o $@
+	hfst-minimize -o ofientry.fst
+	hfst-fst2fst -w -i ofientry.fst -o $@
 
-mphon-lex.fst : mphon-aff.lexc $(LEXM) Makefile
+mphon-lex.fst : root-mphon.lexc $(LEXM) # Makefile
 	hfst-lexc -E -f openfst-tropical -o $@ $< $(LEXM)
 
-guess-lex.fst : guess-aff.lexc $(LEXG) # Makefile
+guess-lex.fst : root-guess.lexc $(LEXG) # Makefile
 	hfst-lexc -E -f openfst-tropical -o $@ $< $(LEXG)
 	python3 cleanlex.py < $@ > cleanlex.fst
 
-entry-lex.fst : entry-aff.lexc $(LEXE) Makefile
+entry-lex.fst : root-entry.lexc $(LEXE) # Makefile
 	hfst-lexc -E -f openfst-tropical -o $@ $< $(LEXE)
 
-mphon-aff.lexc : ofi-affixes.csv affixes2lexc.py
-	python3 affixes2lexc.py -m M < $< > $@
+root-mphon.lexc : ofi-root-mphon.csv root2lexc.py # Makefile
+	python3 root2lexc.py  < $< > $@
 
-guess-aff.lexc : ofi-affixes.csv affixes2lexc.py
-	python3 affixes2lexc.py -m G+ < $< > $@
+root-entry.lexc : ofi-root-entry.csv root2lexc.py # Makefile
+	python3 root2lexc.py -e  < $< > $@
 
-entry-aff.lexc : ofi-affixes.csv affixes2lexc.py
-	python3 affixes2lexc.py -m E < $< > $@
+root-guess.lexc : root-guess.csv root2lexc.py # Makefile
+	python3 root2lexc.py -e  < $< > $@
 
-guess-s.lexc : guess-s.entries entries2lexc.py
-	python3 entries2lexc.py -p < $< > $@
+endings.lexc : ofi-endings.csv endings2lexc.py # Makefile
+	python3 endings2lexc.py -z < $< > $@
 
-guess-a.lexc : guess-a.entries entries2lexc.py
-	python3 entries2lexc.py -p < $< > $@
+guess-s.lexc : guess-s.entries guess-def.entries entries2lexc.py # Makefile
+	python3 entries2lexc.py -p -i guess-def.entries $< > $@
 
-guess-v.lexc : guess-v.entries entries2lexc.py
-	python3 entries2lexc.py -p < $< > $@
+guess-a.lexc : guess-a.entries guess-def.entries entries2lexc.py # Makefile
+	python3 entries2lexc.py -p -i guess-def.entries $< > $@
 
-lexic-firstpart.lexc : lexic-firstpart.words entries2lexc.py
-	python3 entries2lexc.py -n FirstPart -c /more < $< > $@
+guess-v.lexc : guess-v.entries guess-def.entries entries2lexc.py # Makefile
+	python3 entries2lexc.py -p -i guess-def.entries $< > $@
+
+lexic-firstpart.lexc : lexic-firstpart.words entries2lexc.py # Makefile
+	python3 entries2lexc.py -n FirstPart -c More -i $< > $@
 
 lexic-r.lexc : lexic-r.entries entries2lexc.py
-	python3 entries2lexc.py -c End < $< > $@
+	python3 entries2lexc.py -c End -i $< > $@
 
 $(LEX) : lexic-%.lexc : lexic-%.entries entries2lexc.py
-	python3 entries2lexc.py < $< > $@
+	python3 entries2lexc.py -i $< > $@
 
 $(ANALYSES) : $(DATA)/$(ID)-corpus.words $(ANALYSER)
 	hfst-lookup -b 15 -i $(ANALYSER) -I $< | \
 		egrep '..' > $@
 
-ofi-rules-in.fst : ofi-examples-in.pstr ofi-rules-in.twol
-	twol-comp -t 2 -w ofi-wrong-in.fst -l ofi-lost.fst -o $@ \
-		$+ > ofi-rules-in.log
-
-ofi-rules-out.fst : ofi-examples-out.pstr ofi-rules-out.twol
-	twol-comp -t 2 -w ofi-wrong-out.fst -l ofi-lost-out.fst -o $@ \
-		$+ > ofi-rules-out.log
-
-ofi-rules-in.twol : ofi-rules.twol ofi-rules-extra-in.twol
-	cat $+ > $@
-
-ofi-rules-out.twol : ofi-rules.twol ofi-rules-extra-out.twol
-	cat $+ > $@
-
-ofi-examples-in.pstr : ofi-examples.pstr ofi-examples-extra-in.pstr
-	cat $+ > $@
-
-ofi-examples-out.pstr : ofi-examples.pstr ofi-examples-extra-out.pstr
-	cat $+ > $@
-
 delete.fst :
 	echo "Ø -> 0" | hfst-regexp2fst -o $@
 
-bound.fst : Makefile
-	echo '[§+ -> 0 || _ [%+N | %+A | %+V | %+P | %+PRON | %+NUM]] .o. [%§ -> %_]' | hfst-regexp2fst -o $@
+#bound-intro.fst : Makefile
+#	echo '0 -> %{§%} || \§ _ [%+N | %+A | %+V | %+P | %+PRON | %+NUM]' | hfst-regexp2fst -o $@
+
+bound-remove.fst : Makefile
+	echo '[%{§%}+ -> 0 || _ [%+N | %+A | %+V | %+P | %+PRON | %+NUM]] .o. [%{§%} | § -> %_]' | hfst-regexp2fst -o $@
 
 guesses : sktp-corpus-base.big.analyses
 	egrep 'inf$$' sktp-corpus-base.big.analyses | \
