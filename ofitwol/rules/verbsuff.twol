@@ -1,0 +1,44 @@
+! VERB SUFFIX ALTERNATIONS
+! ========================
+
+{nlrs}:l <=> :l VoØ _ ;
+    ! kuol<l>ee
+{nlrs}:r <=> :r VoØ _ ;
+    ! pur<r>ee
+{nlrs}:s => :s VoØ _ ;
+    ! juos<s>ee
+{nlrs}:n => VoS _ ,
+            [:n|:h] :Ø* _ ,
+	    VVo :Ø* (:s) (VoØ) _ ;
+    ! kuto<n>ee men<n>nee antautu<n>ee huuta<n>ut
+    ! saa<n>ee saa<n>ut vie<n>ee vie<n>yt käØy<n>ee
+    ! aidan<n>ee kaan<n>ee kaan<n>ut näh<n>ee näh<n>yt
+    ! juos<n>ee juos<n>nut myy<n>ee myy<n>yt nai<n>ee nai<n>ut
+
+{dlnrtØ}:d <=> VVo ({tttØ}:Ø) _ [{aä}: | {C}: | CLOSED] ,
+    ! atrioi<d>a haravoi<d>aan juo<d>akseni
+    ! saa<d>aan juo<d>aan näh<d>ään juo<d>aksemme
+    ! käØy<d>ään käØy<d>yn
+               VoS :h :Ø* _ [{aä}: | {C}: | CLOSED] ;
+    ! näh<d>äkseni
+{dlnrtØ}:l <=> :l :Ø* _ [{aä}: | {C}: | CLOSED] ;
+    ! tul<l>aan katsel<l>aan arvail<l>aan tul<l>aksemme katsel<l>akseen
+{dlnrtØ}:n <=> :n :Ø* _ [{aä}: | {C}: | CLOSED] ;
+    ! men<n>ään men<n>äksemme
+{dlnrtØ}:r <=> :r :Ø* _ [{aä}: | {C}: | CLOSED] ;
+    ! pur<r>aan pur<r>aksesi
+{dlnrtØ}:Ø <=> :t :Ø* _ [{aä}: | {C}: | CLOSED | {uy}: {ij}: {Øt}:t] ,
+    ! alet<>aan aidat<>aan selvit<>ään hylät<>ään
+               [CoS VoS|VbV] _ [{aä}: | e] ;
+    ! aja<>akseni puno<>akseen aja<>akseni salli<>akseni koke<>akseen
+    ! puno<>a punot<>un onki<>a ongit<>un
+    ! hio<>a hiot<>un laske<>a lasket<>un
+
+{tttØ}:Ø <=> CoS :Ø* _ ,
+             VVo _ ;
+    ! huomat<>tiin huomat<>tu hakat<>tiin hakat<>tu
+    ! raket<>tiin raket<>tu raket<>un
+    ! juo<>tiin nai<>tiin myy<>tiin
+    ! käØy<>tiin käØy<>ty näh<>tiin
+    ! au*o<t>tiin
+

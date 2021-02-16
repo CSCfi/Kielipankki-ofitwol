@@ -1,0 +1,140 @@
+!
+! These rules allow some alternative surface realisations
+! which are not desired in the generated base forms
+!
+! HYPHEN IN COMPOUNDS
+!
+{§}: - {§}:Ø <=>                       ! in effect: {§}:- <=> ...
+    :a _ :a , :e _ :e , :i _ :i ,
+    :o _ :o , :u _ :u , :y _ :y ,
+    :ä _ :ä , :ö _ :ö ;
+                    ! kuorma<->auto henkilö<>auto
+
+!
+! LESS COMMON ALTERNATIVES IN STEM FINAL VOWELS
+!
+                    ! katke<a>vat halu<a>n halu<a>isi
+		    ! kimpo<a>n höyry<ä>mme töllö<ä>vät
+{aVØaØØ}:Ø | {äVØäØØ}:Ø =>
+    _ {i}: | {nlrs}: | k | {dlnrtØ}: | {tttØ}: | i s i ;
+                    ! katkes<>i katke<a>isi katken<>nee
+                    ! katket<>koon katket<>aan katket<>tiin
+                    ! halu<>si halu<>nnee
+
+{aVØaØØ}:a | {aVØaØØ}:o | {aVØaØØ}:u | {äVØäØØ}:ä |
+{äVØäØØ}:ö | {äVØäØØ}:y /<=
+    _ {i}: | {nlrs}: | k | {dlnrtØ}: | {tttØ}: ;
+
+{aVØaØØ}:e | {äVØäØØ}:e =>
+    :e :Ø* _ ;      ! katke<e>n
+
+{aVØaØØ}:i | {äVØäØØ}:i =>
+    :i :Ø* _ ;      ! katke<e>n
+
+{aVØaØØ}:o =>
+    :o :Ø* _ ;	    ! kimpo<o>n
+
+{aVØaØØ}:u =>
+    :u :Ø* _ ;      ! kimpo<o>n
+
+{äVØäØØ}:y =>
+    :y :Ø* _ ;      ! höyry<y>n
+
+{äVØäØØ}:ö =>
+    :ö :Ø* _ ;      ! töllö<ö>n
+
+{aØo}:o | {aeØo}:o | {äeØö}:ö => _ [{ij}:j | {ij}:i :Ø* CoS] ;
+    ! perun<o>ita matal<o>ja *perun<o>ia korke<o>ita leve<ö>itä
+
+{aeØo}:e | {äeØö}:e /<=
+     _ {ij}: ;      ! *korke<e>ita virke<e>issä
+
+{aØo}:o | {aeØo}:o | {äeØö}:ö =>
+    _ {ij}: ,       ! perun<o>ita perun<o>itten
+!   _ i {nm}: ,     ! kihar<o>immassa kihar<o>inta
+    VoS _ {ij}: ;   ! korke<o>issa korke<o>iden korke<o>ita
+
+!
+! NOUN-INTERNAL VARIATION
+!
+{ØØh}:h =>
+     _ (CoØ)
+       [ VoS [ :n | :s ]
+       | VoØ {ij}: [ :s | :t | VoS CoS | {Øt}:Ø :a ] ] ;
+    			      ! tieno<h>on tieno<h>isin
+	                      ! leve<h>ien leve<h>itten
+    			      ! koira<h>an vapa<h>an vapa<h>isin
+    			      ! NOTE: some overgenerated forms remain
+
+{Øth}:h =>
+     _ [ :e | :i | :u ] [ {nØ}: | :n | :s | :l | :k ],
+                    ! aarte<h>ena aine<h>essa ori<h>iksi
+                    ! aarte<h>esi ori<h>ini
+     _ VoØ {ij}:i [ e | s | :l | :k | :t | {Øt}: {aä}: ] ;
+                    ! aarte<h>issa ori<h>ien
+
+{ØhØtØØ}:h => _ {ØeØeØ}:e {nØ}: ;
+                    ! askele<h>en
+
+{ØhØtØØ}:t => _ {ØeØeØ}:Ø {Øt}:t {aä}: ;
+                    ! askele<t>ta
+
+
+                    ! onneto<>n onneto<>nta
+{ØiØ}:i => _ :n VoØ [ {nrs}: | :t | EOW ] ;
+                    ! onneto<i>n onneto<i>nta onneto<i>nna
+
+
+                              ! nuore<n>a nuor<n>a
+{nrs}:r => :r VoØ _ ; 
+                              ! nuor<r>a
+
+
+{nrs}:s => :s VoØ ({nØØØ}:Ø) _ ;
+                              ! las<s>sa
+
+
+                              ! korke<>e tieno<>o vapa<>a
+{tØthn}:h =>
+     _ VoØ
+       {ij}:i
+       [ e {nØ}: | :t :t | l | s | {Øt}:Ø {aä}: ] ,
+                              ! kuolle<h>isin (kevä<h>itten)
+                              ! airu<h>itten airu<h>ien (airu<h>isin
+                              ! äity<h>itten äity<h>ien (äity<h>isin)
+     :e _ :e ,
+                              ! kuolle<h>en kuolle<h>en terve<h>en
+     :ä _ :ä ;
+                              ! kevä<h>än kevä<h>änä
+{ØØthn}:h =>
+     e _ :e |
+         VoØ {ij}:i [ e {nØ}: | :t :t | l | s | {Øt}:Ø {aä}: ] ;
+                              ! (terve<h>en)
+{ØØthn}:n => _ VoØ {nrs}: ;
+                              ! (terve<n>nä)
+
+!
+! NOUN SUFFIX SELECTION
+!
+{ij}: e n /<= VVØ _ ;
+                    ! valo<jen> *tie<jen> *maa<jen> käs<ien> arvelu<jen>
+
+                              ! käsØ<ien> velj<ien>
+{ij}: e n /<= VoS :Ø* VoØ _ ;
+                              ! *korkeØ<jen> *tØe<jen> maØ<jen>
+
+{ij}: {dt}: /<= [CoM - :h.m] :Ø* _ ;
+                              ! *käs<iden> *koir<iden>
+
+{ij}: {dt}: /<= BOW CoS* VoS+ [CoS|CoØ]+ VoS _ ;
+                              ! *valo<iden> *valo<itten> *kisso<iden>
+
+{dt}:t <=> _ [:t {aä}: | :t e] ;
+                              ! mai<d>en mai<t>ten
+
+                              ! vapaase<e>n
+{Øe}:Ø <=> :h (:Ø) VoS s e _ {nØ}: ;
+                              ! ainehese<>n
+                              ! kaunihise<>n vaatteese<e>n
+			      ! vaattehese<>n vaattehisi<>n 
+

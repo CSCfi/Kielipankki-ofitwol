@@ -1,0 +1,103 @@
+
+! STEM INTERNAL CONSONANT ALTERNATIONS IN NOUNS
+! =============================================
+
+{Øth}:t <=> _ VoØ [{Øt}:|:t] ;
+                    ! vaatte<h>en vaatte<h>esen vaatte<h>ia vaatte<h>isin
+    		    ! lähte<h>ellä lähte<h>eksi lähte<h>illä lähte<h>iksi
+    		    ! ori<h>in ori<h>isen
+    		    ! kiiru<t>ta kiiru<h>un kiiru<h>isin
+    		    ! vaate<t>ta ori<t>ta
+    		    ! askele<> askele<t>ta
+
+{Øj}:j <=> _ [:e | VoØ {ij}:i] ;
+    ! vel<>i vel<j>en
+
+{ØØØØk}:k <=> _ :s VoØ {ij}: ;
+    ! kalleu<>s kalleu<>den kalleu<>tta kalleu<k>sia
+
+{ØkØkk}:Ø <=> _ s VoØ [:t e | {Øt}: | {nrs}: | EOW];
+    ! vastau<>s vastau<k>sen vastau<>sta vastau<k>sena vastau<k>sia
+    ! koira<>s koira<k>sen koira<>an koira<s>ta koira<k>sena koira<k>sia
+    !(koira<>sna)
+
+{mn}:n <=> _ VoØ [:t e | {Øt}:t | {nrs}: | EOW] ;
+    ! lu<m>i lu<m>en lu<n>ta lu<m>ena lu<m>ia
+    ! tuo<m>i tuo<m>en tuo<m>ea (tuo<n>ta) tuo<m>ia
+    ! nie<m>i nie<m>en nie<m>eä nie<n>tä
+    ! uisti<n> uisti<m>en uisti<n>ta
+    ! onneto<n> onnetto<m>an onneto<n>ta onneto<n>na
+    ! lämmi<n> lämpi<m>än lämmi<n>tä lämpi<m>änä lämpi<m>iä
+    ! pahi<n> pahi<m>man vase<m>man seitse<m>än
+
+{nm}:n <=> _ :Ø* [EOW | {Øt}:t | t e | {nrs}:] ;
+    ! eni<n> eni<n>tä eni<m>mässä eni<m>missä 
+
+{ns}:n <=> _ :e :n ;
+    ! hevo<n>en hevo<s>en hevo<s>ta hevo<s>ena hevo<s>na hevo<s>ia
+
+{nØØØ}:n <=> _ NonSeg* .#. | {CL}: ;
+    ! hevone<n> hevose<>n hevos<>ta hevos<>ia
+    ! hevos<>ajoneuvo
+
+! START
+
+{ØnØnn}:Ø <=> _ [{ttns}:|{snt}:] VoØ [EOW | {Øt}:t | t e | {nrs}:] ;
+    ! tuha<>t tuha<n>nen tuha<>tta tuha<n>tena tuha<n>sia
+    ! kahdeksa<>s kahdeksa<n>tena kahdeksa<n>sia kahdeksa<>nna
+    ! k a h d e k s a {ØnØnn}:Ø {snt}:n {ØeØØØ}:Ø {nrs}:n {aä}:a
+
+! STOP
+
+{shs}:s => _ VoØ [{nrs}:|{Øt}:|:t e|EOW] ;
+{shs}:h /<= _ VoØ [{Øt}:|:t e|EOW] ;
+    ! mie<s> mie<h>en mie<s>tä mie<h>enä mie<h>iä
+
+{snt}:s <=> _ VoØ [{ij}: | EOW] ;
+{snt}:n => _ CLOSED ,
+        _ VoØ {nrs}: ;
+{snt}:t => _ OPEN | VoØ [:t e| {Øt}:] ;
+    ! kahdeksa<s> kahdeksan<s>ia
+    ! kahdeksan<n>en kahdeksan<n>essa
+    ! kahdeksan<t>ena kahdeksa<t>ta
+
+    ! (viera<h>an) (viera<h>ana) (viera<h>isin) uro<h>on uro<h>osen
+{sØh}:s <=> _ VoØ [:t e | {Øt}:t | {nrs}: | EOW] ;
+    ! viera<s> (viera<h>an) viera<s>ta (viera<s>na)
+    ! uro<s> uro<>on uro<s>ta uro<s>ten
+!!!{sØh}:h|{sØh}:Ø <=> _ Vok | VoØ {ij}:i | VoØ i {nm}: ;
+    ! viera<>an viera<>ana uro<>on uro<>oseen uro<s>ten
+
+                              ! terve<>
+{ØØthn}:t <=> _ VoØ :t ;
+                              ! terve<t>ä (terve<t>ten)
+
+{tØthn}:t <=> _ VoØ [:t | EOW] ;
+                              ! kuollu<t> kevä<t> airu<t>
+                              ! kuollu<t>ta (kuollu<t>ten) kevä<t>tä airu<t>ta
+{tØthn}:n =>
+     _ VoØ {nrs}: ;
+{tØthn}:Ø => _ [:e|:ä] ,
+             _ VoØ [{ij}:i | i {nm}:] ;
+    ! kuolle<>en kuolle<>ena kuolle<>ita kuolle<>isiin
+    ! kevä<>än kevä<>änä (kevä<n>nä) kevä<>itä kevä<>isiin
+    ! airu<>en airu<>ena airu<>ita airu<>isiin)
+    ! kevy<>immissä kevy<>in
+
+{tØt}:Ø <=> _ s VoØ [:t | {Øt}:] ;
+    ! pei<t>si pei<>stä pei<t>sillä pei<>sten
+
+{nmt}:n => _ VoØ [EOW | {nrs}:] ;
+{nmt}:t => _ VoØ {Øt}:t ;
+{nmt}:m /<= _ VoØ [EOW | {Øt}:t | :n] ;
+    ! muua<n> muua<n>na muuda<n>na muua<t>ta muuta<m>an muuta<m>ia
+
+! START
+
+{Ødt}:Ø|{Ødt}:d => _  a [{nmt}:n|{nmt}:t] VoØ EOW ,
+        _  a [{nmt}:n|{nmt}:t] VoØ [{Øt}:t|{nrs}:];
+    ! muu<>an muu<>atta muu<>anna
+    ! muu<d>an muu<d>atta muu<d>anna
+{Ødt}:t => _ a {nmt}:m ;
+    ! muu<t>amissa
+

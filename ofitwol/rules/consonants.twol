@@ -1,0 +1,129 @@
+! GENERAL CONSONANT ALTERNATIONS
+! ==============================
+
+{nØ}:Ø <=> _ {PS}: ;
+                    ! talo<n> talo<>mme taloo<n> taloo<>nne
+
+{kkkØØ}:k <=> _ s :Ø* VoS ;
+                    ! juo<k>sen juo<k>sisi juo<>ssee juo<>staan
+
+{kØ}:Ø | {k'}:' | {k'Ø}:' | {k'Ø}:Ø <=> _ CLOSED ;
+                    ! ark<k>u ark<>un ark<>ussa ra<k>o ra<>ossa
+		    ! riu<k>u riu<'>un vaa<'>ata vaa<k>aat
+		    ! raa<k>a raa<'>an raa<>oissa raa<>in
+
+{kg}:g | {kj}:j | {kv}:v <=> _ CLOSED ;
+                    ! lan<g>an ar<j>en
+                    ! lu<k>u lu<v>un ky<k>y ky<v>yn
+
+{k'}:' | {k'Ø}:' =>
+     VoS :a _ :a , VoS :e _ :e , VoS :i _ :i ,
+     VoS :o _ :o , VoS :u _ :u , VoS :y _ :y ,
+     VoS :ä _ :ä , VoS :ö _ :ö ;
+                    ! vaa<'>ata rei<'>ittää
+{kØ}:Ø | {k'Ø}:Ø /<=
+     VoS :a _ :a , VoS :e _ :e , VoS :i _ :i ,
+     VoS :o _ :o , VoS :u _ :u , VoS :y _ :y ,
+     VoS :ä _ :ä , VoS :ö _ :ö ;
+                    ! ruo<k>o ruo<'>on liu<k>u liu<'>un
+
+{kØØ}:Ø | {tØØ}:Ø =>
+     _ CLOSED ,
+     _ [ :e | :o | :u | :y | :ö ] {ij}:i [ :t | :h ] ;
+{kØØ}:k | {tØØ}:t /<=
+     _ CLOSED ,
+     _ [ :e | :o | :u | :y | :ö ] {ij}:i :t ;
+                    ! mansik<k>a mansik<>an mansik<>oita
+		    ! mansik<k>oja mansik<>oihin mansik<k>oihin
+                    ! mansik<k>oja mansik<>oita *mansik<k>oita
+                    ! ilmet<t>ty ilmet<t>yjä ilmet<>yitä *ilmet<t>yitä
+                    ! sisäk<k>kö sisäk<>öihin sisäk<k>öihin
+
+{kØk}:Ø <=> _ s VoØ [{Øt}:t | t e] ;
+                    ! su<k>si su<>sta su<k>sena  su<k>sia
+                    ! u<k>si u<>sta u<k>sena u<k>sia
+                    ! haa<k>si haa<>sta haa<k>sena haa<k>sia
+
+{Økhkhh}:Ø => _ CLOSED ;
+{Økhkhh}:k => _ OPEN ;
+{Økhkhh}:h <=> _ VoØ [{nlrs}:|k|{dlnrtØ}:|{tttØ}:] ;
+                    ! nä<>en nä<k>ee nä<k>i nä<k>isi nä<h>nee
+		    ! nä<h>köön nä<h>dään nä<h>ty
+
+{pØ}:Ø|{pm}:m | {pv}:v <=> _ CLOSED ;
+                    ! tup<p>i tup<>en saap<>as saap<p>aan
+                    ! läm<m>in läm<p>imän läm<m>intä
+                    ! la<p>a la<v>an pöljem<m>än pöljem<p>änä
+
+{pØp}:Ø <=> _ s VoØ [{nrs}: | :t {aä}: | :t e] ;
+                    ! la<p>si la<>sta la<p>sena la<>sna la<>ssa la<p>sia
+                    ! ha<p>si ha<>sta ha<p>sena ha<>sna ha<>ssa ha<p>sia
+
+{ØpmØ}:Ø <=> _ (VoØ) [:t | {nrs}: | EOW] ;
+{ØpmØ}:m <=> _ CLOSED ;
+                    ! pahin<> pahin<>ta (pahin<>na) pahim<p>ana pahim<p>ia
+                    ! pahim<m>an pahim<m>issa enim<m>än enim<p>iä
+
+{tØ}:Ø | {td}:d | {tn}:n | {tl}:l | {tr}:r <=> _ CLOSED ;
+                    ! pat<t>i pat<>in  va<t>i va<d>in
+		    ! kiil<t>o kiil<l>on par<t>a par<r>asta
+
+{kh}:k <=> _ :s ;
+                    ! ka<k>si ka<h>den ka<h>ta
+                    ! lä<h>den lä<k>si 
+
+{tds}:d | {tls}:l | {trs}:r | {tns}:n |
+{tdst}:d|{tlst}:l|{trst}:r|{tnst}:n => _ CLOSED ;
+                    ! kä<d>en jäl<l>en kan<n>en kan<n>essa
+    		    ! sou<d>an po<d>en läh<d>et huu<d>an huu<d>etaan
+    		    ! saar<r>an saar<r>etaan tun<t>ee tun<n>en
+		    ! tun<t>ien tun<t>iessa
+
+{tds}:t | {tls}:t | {trs}:t | {tns}:t |
+{tdst}:t | {tlst}:t | {trst}:t | {tnst}:t => _ OPEN ;
+                    ! kan<t>ta kan<t>ten
+    		    ! huu<t>aa huu<t>avat huu<t>i huu<t>aisi
+    		    ! sou<t>i sou<t>avat läh<t>evät läh<t>isi
+    		    ! läh<t>i läh<t>enee läh<t>isi läh<t>eköön
+    		    ! sou<t>aa sou<t>i sou<t>aisi
+    		    ! saar<t>avat saar<t>aa saar<t>oi
+
+{tds}:s|{tls}:s|{trs}:s|{tns}:s <=>
+     _ [VoØ {ij}: | VoØ i {nm}: | :i EOW | VoØ {i}:] ;
+                    ! kä<s>i kä<t>enä kä<t>tä kä<s>iä
+    		    ! to<s>i kä<s>i kä<s>iä kak<s>i jäl<s>i kan<s>i
+		    ! kahdeksa<s>
+    		    ! kan<s>i kan<s>ia kan<s>ia
+    		    ! hir<s>i hir<t>enä hir<r>essä hir<s>iä
+    		    ! hir<s>i hir<r>en hir<t>tä hir<s>iä
+
+{tlst}:s|{trst}:s|{tnst}:s => _ VoØ {i}: ;
+                    ! huu<s>i sou<s>i po<s>i läk<s>i läk<s>isi saar<s>i
+                    ! sou<s>i huu<t>avat huu<s>i huu<t>i huu<t>aisi
+		    ! huu<d>etaan
+{tdst}:s =>
+     _ VoØ {i}: ,
+     :k _ VoØ i s i ;
+                    ! läk<s>i läk<s>isi läh<t>eköön
+
+{tdsØ}:t|{stds}:t => _ OPEN ;
+{tdsØ}:d|{stds}:d => _ CLOSED ;
+{tdsØ}:Ø <=> _ VoØ [:t {aä}: | :t e] ;
+{tdsØ}:s <=> _ (VoØ) :i ; 
+                    ! kak<s>i kah<d>en kah<>ta kah<t>ena kak<s>issa
+
+{stds}:s <=> _ VoØ [EOW | {ij}:] ;
+                    ! kalleu<s> kalleu<t>ta kalleu<d>en kalleuk<s>ia
+
+{ttns}:t =>
+     _ OPEN ,
+     _ VoØ EOW ,
+     _ VoØ {Øt}:t ;
+{ttns}:n =>
+     _ CLOSED ,
+     _ VoØ t e ;
+{ttns}:s <=> _ VoØ :i ;
+                    ! tuha<t> tuha<t>ta tuhan<t>ena
+    		    ! tuhan<n>en tuha<n>ten
+    		    ! tuhan<s>ia tuhan<s>issa
+

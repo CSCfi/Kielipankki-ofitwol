@@ -1,0 +1,38 @@
+
+! STEM INTERNAL CONSONANTS IN VERBS
+! =================================
+
+{nt}:t <=> _ (VoØ) [k | {dlnrtØ}: | {tttØ}:] ;
+    ! ale<n>en ale<n>i ale<n>ne ale<n>isi ale<t>koon ale<t>aan ale<n>nut 
+
+{sØ}:Ø <=> _ VoØ [{nlrs}: | k | {dlnrtØ}: | {tttØ}:] ;
+    ! valit<s>en valit<s>i valin<>nee valit<s>isi valit<s>eisi valit<>koon
+    ! haravoit<s>en haravoit<s>i haravoit<s>isi haravoit<>koon
+    ! haravoin<>nut haravoit<>tu haravoit<>tiin
+
+{ØsØØØØ}:s <=> _ {i}: ;
+    ! antau<>n antau<s>i antau<>isi antau<>ttu
+
+{ØsnØtt}:s <=> _ (VoØ) {i}: ;
+    ! sala<s>i
+{ØsnØtt}:n <=> _ (VoØ) {nlrs}:n ;
+    ! sala<n>nee
+{ØsnØtt}:t <=> _ (VoØ) [k | {dlnrtØ}: | {tttØ}:] ;
+    ! sala<t>koon sala<t>aan sala<t>tu
+
+{tnt}:n <=> _ :Ø VoØ {nlrs}: ;
+    ! vali<t>sen vali<n>nee vali<t>koon vali<n>nut
+
+{dsnttt}:s <=> _ VoØ {i}: ;
+{dsnttt}:n <=> _ VoØ {nlrs}: ;
+{dsnttt}:t => _ OPEN ,
+              _ VoØ [k | {dlnrtØ}: | {tttØ}:] ;
+{dsnttt}:d => _ CLOSED;
+{dsnttt}:d /<= _ VoØ [k | {dlnrtØ}: | {tttØ}:] ;
+    ! kaa<d>an kaa<s>i kaa<n>nee kaa<t>aisi kaa<t>koon kan<n>nut
+    ! kaa<t>tiin kaa<t>tu
+
+{ØvØvØØ}:v <=> _ (VoØ) :i ;
+    ! kä<>yn kä<v>i kä<>ynee kä<v>isi kä<>yköön
+
+

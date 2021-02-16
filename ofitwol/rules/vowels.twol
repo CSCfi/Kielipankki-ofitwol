@@ -1,0 +1,77 @@
+
+! GENERAL VOWEL ATERNATIONS
+! =========================
+
+{V}:a <=> :a :Ø* ({Øh}:) _ ; ! maah<a>n
+{V}:e <=> :e :Ø* ({Øh}:) _ ; ! nalle<e>n
+{V}:i <=> :i :Ø* ({Øh}:) _ ; ! risti<i>n
+{V}:o <=> :o :Ø* ({Øh}:) _ ; ! valo<o>n
+{V}:u <=> :u :Ø* ({Øh}:) _ ; ! parru<u>n
+{V}:y <=> :y :Ø* ({Øh}:) _ ; ! kyky<y>n
+{V}:ä <=> :ä :Ø* ({Øh}:) _ ; ! pääh<ä>n
+{V}:ö <=> :ö :Ø* ({Øh}:) _ ; ! yöh<ö>n
+
+{VØ}:Ø <=>
+     [ {i}: | i s i ] _ ,
+                              ! nai<> haravoi<> muisti<> muistaisi<>
+     VVo _  ;
+                              ! saa<> juo<>
+
+{VØ}:a => :a _ ;
+                              ! sala<a>
+{VØ}:e => :e _ ;
+			      ! tule<e> punone<e>
+{VØ}:i => :i _ ;
+			      ! sopi<i>
+{VØ}:o => :o _ ;
+			      ! kuto<o>
+{VØ}:u => :u _ ;
+                              ! katu<u>
+{VØ}:y => :y _ ;
+			      ! väsy<y>
+{VØ}:ä => :ä _ ;
+			      ! härnä<ä>
+{VØ}:ö => :ö _ ;
+			      ! säilö<ö>
+
+!!! lisää muut vokaalit, kun niitä tulee esimerkkeihin !!!
+
+{eØ}:Ø | {oØ}:Ø | {öØ}:Ø  <=> _ {ij}: ;
+                              ! leve<e> leve<e>tä leve<>itä
+                              ! kame<e> kame<e>ta kame<>ita
+                              ! tieno<o> tieno<o>ta tieno<>ita aino<o>
+
+                              ! t<i>e vapaisi<i>in v<i>en v<i>enyt
+			      ! sall<i>n sall<i>nee sall<i>ttu
+			      ! na<i>nee na<i>tu
+{iØ}:Ø <=>
+     _ (e) [ {ij}: | {i}: | i s i ] ,
+                              ! t<>eitä pi<>iden v<>eivät v<>eisi
+                              ! sall<>i sall<>isi
+                              ! na<i> na<>i na<>isi
+     :h (:Ø) VoØ {ij}:i s i _ ;
+                              ! vapahisi<>n 
+
+{uØ}:Ø <=> _ (:o) :i ;
+                              ! s<u>o s<>oita tenkkapo<o> tenkkapo<>ita
+                              ! j<u>on j<>oi j<u>onee j<>oisi j<u>onut
+
+{yØ}:Ø | {yØi}:Ø <=> _ (:ö) :i ;
+                              ! s<y>ön s<>öi s<y>onee s<>öisi s<y>ököön
+                              ! <y>ö <>öitä sy<>itä käv<>isi
+
+{aä}:a | {oö}:o | {uy}:u <=>
+     [ :a | :o | :u ] [ \{§}: ]* _ ;
+                              ! maass<a> piiss<ä> juot<u> syöt<y> tulk<o><o>n syök<ö><ö>n
+
+{ij}:i =>
+     CoS :Ø* _ ,
+     _ :Ø* CoS ;
+                              ! a<i>ka a<i>koina po<i>ka po<i>kien
+		              ! talo<i>ssa
+{ij}:j =>
+     VoS _ :Ø* VoS ;
+                              ! talo<j>a
+                              ! a<j>an a<j>oissa po<j>an po<j>ille
+
+

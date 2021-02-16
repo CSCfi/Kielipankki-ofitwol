@@ -39,6 +39,11 @@ def main():
         either be enclosed in curly brackets '{', '}' or be capital
         letter feature names preceded by a plus sign (e.g. '+GEN')""")
     argparser.add_argument(
+        "-i", "--input_files", nargs="+",
+        help="""One or more names of entry files.  The first can be
+        definitions for patterns and the second a file containing
+        the patterns themselves.""")
+    argparser.add_argument(
         "-n", "--lexname",
         help="""Name of the lexicon to be made out of the input
         entries if not given by a LEXICON line in the input file.""",
@@ -78,8 +83,6 @@ def main():
     else:
         suffix_dict = {}
 
-    import sys
-
     ent_pat = re.compile(
         r"""
         (?P<entry> \S +)
@@ -102,10 +105,13 @@ def main():
         """, re.X)
     defi_pat = re.compile(r"^\s*[A-ZÅÄÖa-zåäö][A-ZÅÄÖa-zåäö0-9]+\s*=")
 
+    import fileinput
+    allfiles = fileinput.input(args.input_files)
+
     defi_line_lst = []
     rege_line_lst = []
 
-    for line_nl in sys.stdin:
+    for line_nl in allfiles:
         line, exclam, comment = line_nl.partition("!")
         line = re.sub(r"\s+", " ", line)
         line = line.strip()

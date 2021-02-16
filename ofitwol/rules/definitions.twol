@@ -1,0 +1,75 @@
+CoS = [ :b | :c | :d | :f | :g | :h | :j | :k
+      | :l | :m | :n | :p | :q | :r | :s | :š
+      | :t | :v | :w | :x | :z | :ž | :j ] - {ij}: ;
+                    ! any surface consonant (except {ij}:j) 
+
+CoM = CoS.m|{C}: ;
+                    ! any morphophonemic consonant
+                    ! any X:Y where for some Z : X:Z is in CoS
+
+CoØ = CoM - CoS ;
+                    ! a deleted consonant
+
+VoS = :a | :e | :i | :o | :u | :y | :ä | :ö ;
+                    ! any surface vowels
+
+Vok = VoS - {ij}: ;
+                    ! any vowel except {ij}:i
+
+VoM = Vok.m ;
+                    ! a morphophonemic vowel
+
+VoØ = VoM - VoS ;
+                    ! a deleted vowel
+
+Seg = CoM | :' | VoM ;
+
+NonSeg = : - Seg ;
+
+MeSØ = :e.m & :Ø ;
+                    ! all X:Ø where X:e in :
+
+Z = :Ø* | :' ;
+
+VzV = [:a Z :a|:e Z :e|:i Z :i|:o Z :o|:u Z :u|
+       :y Z :y|:ä Z :ä|:ö Z :ö] ;
+
+VV = :a :a | :e :e | :i :i | :o :o |
+     :u :u | :y :y | :ä :ä | :ö :ö ;
+                    ! a long vowel
+
+VVØ = [ :a :Ø* [ :a.m & :Ø ]
+      | :e :Ø* [ :e.m & :Ø ]
+      | :i :Ø* [ :i.m & :Ø ]
+      | :o :Ø* [ :o.m & :Ø ]
+      | :u :Ø* [ :u.m & :Ø ]
+      | :y :Ø* [ :y.m & :Ø ]
+      | :ä :Ø* [ :ä.m & :Ø ]
+      | :ö :Ø* [ :ö.m & :Ø ]
+      ];
+                    ! a shortened long vowel
+
+VVo = VV | VoS :i | :a :u | :e :u | :e :y | :i :e | :u :o |
+      :y :ö | :ä ({ØvØvØØ}:Ø) :y ;
+                    ! a diphthong
+
+VbV = :e :a | :e :ä | :i :a | :i :o | :i :ö |
+      :o :a | :u :a | :u (:Ø) :e | :y (:Ø) :e ;
+                    ! a non-diphthong, non-long double vowel
+
+EOW = .#. | {§}: | {CL}:Ø  ;
+                    ! End of stem and inflection
+		    ! (but clitics may follow)
+
+BOW = .#. | {§}: ;
+                    ! beginning of a stem either at the very beginning
+		    ! or as a second part of a compound
+
+CLOSED = VoM ( [:i - {ii}:] | VoØ | {ØiØ}:Ø )
+         [ CoM - {Øt}:Ø ] ( VoØ )
+	 [ CoM | EOW | {nØ}: {PS}: ] ;
+
+OPEN = VoM [ (CoM) [ VoS | (VoØ) :i]
+           | EOW
+	   ] ;
+

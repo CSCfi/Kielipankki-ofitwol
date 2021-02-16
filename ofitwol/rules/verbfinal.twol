@@ -1,0 +1,80 @@
+! STEM FINAL VOWELS IN VERBS
+! ==========================
+
+            ! kaiv<a>n haast<a>n haast<a>isi 
+{aoaae}:o | {aoØaae}:o | {aoØaae}:Ø <=>
+    _ {i}: ;
+            ! kaiv<o>i haast<o>i haast<>i saart<o>i saars<i>
+{aoaae}:e | {aoØaae}:e <=>
+    _ [{dlnrtØ}:t | {tttØ}:t] ;
+            ! kaiv<e>taan haast<e>ttu saarr<e>taan
+
+
+            ! muist<a>vat muist<a>isi muist<a>nee
+            ! sout<a>vat sout<a>isi sout<a>nee sout<a>koon
+            ! hätkähd<ä>n hätkäht<ä>isi hätkäht<ä>nee
+{aØaae}:Ø | {äØääe}:Ø <=>
+    _ {i}: ;
+            ! muist<>i sout<>i hätkäht<>i
+{aØaae}:e | {äØääe}:e <=>
+    _ [{dlnrtØ}: [{tØ}:|{C}:]|{tttØ}:] ;
+            ! muist<e>ttu soud<e>ttiin hätkähd<e>ttiin
+
+
+            ! sa<a>n sa<a>tiin sa<a>tu sa<a>tiin
+	    ! jä<ä>vät jä<ä>nee jä<ä>köön jä<ä>tiin
+{aØØaa}:Ø | {äØØää}:Ø <=>
+    _ :i ;
+            ! sa<>i sa<>isi jä<>i jä<>isi
+
+
+            ! katke<a>vat halu<a>n halu<a>isi
+{aØaØØ}:Ø | {äØäØØ}:Ø <=>
+    _ {i}: | {nlrs}: | k | {dlnrtØ}: | {tttØ}: ;
+            ! katkes<>i katke<a>isi katken<>nee
+            ! katket<>koon katket<>aan katket<>tiin
+            ! halu<>si halu<>nnee
+
+            ! sala<a>n
+{aØØØØ}:Ø | {äØØØØ}:Ø <=>
+    _ {i}: | i s i | {nlrs}: | k | {dlnrtØ}: | {tttØ}: ;
+            ! salas<>i sala<>isi salat<>koon salat<>tu
+
+
+            ! rankais<e>vat läht<e>nee läht<e>köön läht<e>nyt
+            ! lu<e>n luk<e>nee luk<e>nut lask<e>n lask<e>nee lask<e>ttu lähd<e>n
+{eØØeei}:Ø <=>
+    _ {i}: | i s i ;
+            ! lask<>i lask<>isi läht<>i läht<>isi
+            ! rankais<>isi rankais<>see rangais<>sut
+	    ! lu<>in luk<>isi
+{eØØeei}:i <=>
+    _ [{dlnrtØ}: e s s | {dlnrtØ}: e n | j {aäoöØ}:] ;
+            ! luk<i>essa luk<i>en
+            ! pot<i>essa pot<i>en läht<i>en tunt<i>essa
+            ! tul<i>ja tul<i>joita
+
+
+            ! tul<e>n katsel<e>n
+{eØØØØi}:Ø <=>
+    _ {i}: | i s i | {nlrs}: | k | {dlnrtØ}: | {tttØ}: ;
+            ! katsel<>in katsel<>isi katsel<>lee katsel<>lut
+            ! tul<>i tul<>isi tul<>lee tul<>koon rankais<>i
+{eØØØØi}:i <=> _ j {aäoöØ}: ;
+            ! näk<i>jä näk<i>jöitä
+
+
+            ! katsel<e>n katsel<e>isi
+{eØØØei}:Ø =>
+    _ {i}: | {nlrs}: | k | {dlnrtØ}: | {tttØ}: | i s i ;
+            ! katsel<>isin katsel<>in katsel<>lut
+{eØØØei}:e /<=
+    _ {i}: | {nlrs}: | k | {dlnrtØ}: | {tttØ}: ;
+{eØØØei}:i <=>
+    _ j {aäoöØ}: ;
+            ! katsel<i>ja katsel<i>joita
+
+
+            ! arva<i>len arva<i>li arva<i>lisi arva<i>llut
+{iiiieii}:e <=> _ l :e i s i ;
+            ! arva<e>lisi arva<e>lla

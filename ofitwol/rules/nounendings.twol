@@ -1,0 +1,120 @@
+
+! NOUN SUFFIX ALTERNATIONS
+! ========================
+
+{Øh}:Ø =>
+     CoS VoS ({nØØØ}:Ø) _ ,
+                              ! talo<>on velje<>en hevose<>en
+     VbV _ ,
+                              ! valtio<>on makea<>an
+     CoS VoØ ({nØØØ}:Ø) {ij}:i _ ;
+                              ! hevosi<>in
+
+{Øt}:t =>
+     Vok CoØ* VoØ {ij}:i _ ,
+			      ! ainoi<t>a autio<t>a autioi<t>a
+                              ! soi<t>a töi<t>ä tei<t>ä
+     Vok CoØ* Vok ({ij}:i) _ ,
+                              ! maa<t>a mai<t>a ainoo<t>a
+     VoØ Vok {ij}:i _ ,
+                              ! hakatui<t>a ostetui<t>a
+     VoØ CoØ* _ ,
+                              ! tuoh<t>a loh<t>a lun<t>a
+			      ! nien<t>tä pien<t>ä nuor<t>ta
+                              ! kät<t>ä tot<t>a hirt<t>tä
+			      ! jält<t>ä kant<t>ta
+                              ! las<>ta has<t>a veis<t>ä
+			      ! peis<t>ä sus<t>ta us<t>a
+                              ! sisar<t>a uistin<t>a lämmin<t>ä vasen<t>ta
+                              ! hevos<t>a vastaus<t>a
+                              ! vieras<t>a saapas<t>a
+     {dt}:t _ ,
+                              ! mait<t>en terveit<t>en
+     BOW CoM* [Vok+ CoM+]+ Vok+ CoM+ [:a|:ä] (CoØ) _ ,
+			      ! kantaja<t>a pasuuna<t>a
+     BOW CoM* [Vok+ CoM+]+ Vok+ CoM+ :Ø* Vok {ij}:i _ ;
+                              ! arvelui<t>a ilmetyi<t>ä
+                              ! hakØatØØØui<t>a
+
+{Øt}:Ø =>
+     CoS VoS (CoØ) ({ij}:j) _ ,
+                              ! sisäkkö<>ä sisäkköj<>ä
+                              ! arkku<>a arkkuj<>a patoj<>a seitsemä<>ä
+			      ! ilmettyj<>ä arvelu<>a arveluj<>a ilmetty<>ä
+     CoS (CoØ) VoØ (CoØ) {ij}:i _ ,
+                              ! ahven<>ia suksi<>a hevosi<>a
+     :e :a | :e :ä | :i :a | :i :ä | :i :o | :i :ö | :o :a | :u :a _ ,
+                              ! historia<>a makea<>a hipiä<>ä
+     {dt}:d _ ;
+                              ! maid<>en arveluid<>en
+
+
+                              ! maa<t>a ainoo<t>a autioi<t>a
+{Øt}:Ø /<=
+     [ VV | VVØ {ij}: | VoS VoS {ij}: ] _ ;
+                              ! *maa<>a *ainoo<>a *autioj<>a
+{Øt}:Ø /<=
+     [ {uØ}: o | {iØ}: e ] ({ij}:) _ ;
+                              ! *suo<>a *soi<>a
+{Øt}:t /<=
+     CoS [ :o | :u | :y | :ö | {iieØ}: | {ØieØ}: | {iieØ}: | :e ] _ ;
+                              ! *talo<t>a *risti<t>ä kalsiumi<t>a
+			      ! valo<>a valoj<>a *arvelu<t>a
+                              ! lovi<>a hevosi<>a, (autio<>a) herttua<>a 
+{Øt}:t /<=
+     BOW CoS* VoS+ [ CoS | CoØ ]+ [ {aØ}:a | {ao}:a ] _ ;
+                              ! *koira<t>a *kissa<t>a 
+{Øt}:t /<=
+     BOW CoS* VoS+ [ CoS | CoØ ]+ [ VoS | VoØ ] {ij}: _ ;
+                              ! *arkkui<t>a arkku<>ja *vatei<t>a
+			      ! vatej<>a *käsi<t>ä käsi<>ä
+                              ! (kantaji<t>a) *valoi<t>a valoj<>a 
+{Øt}:t /<=
+     CoS VoØ ({nØØØ}:Ø) {ij}: _ ;
+                              ! *hevosi<t>a *käsi<t>ä
+
+{ij}: e {nØ}: /<= VVØ _ ;
+                              ! *tie<jen> *ma<jen> *kape<jen>
+
+{ij}: e {nØ}: /<= VoS :Ø* VoØ _ ;
+                              ! valo<jen> käs<ien> *te<jen> ma<jen>
+                              ! velj<ien>
+
+{ij}: {dt}: /<= [CoS - :h] :Ø* _ ;
+                              ! *käs<iden> *koir<iden>
+
+{ij}: {dt}:
+     /<= BOW CoS* VoS+ [ CoS | CoØ ]+ VoS _ ;
+                              ! *valo<iden> *kisso<iden>
+
+t e {nØ}: /<= VoS :Ø* _ :Ø* EOW ;
+                              ! *arvelu<ten> *risti<ten> *ma<ten> *tie<ten>
+
+                              ! valo<in> autio<in> vate<in> valo<iØ>si
+i {nØ}: /<= VV _ :Ø* EOW ;
+                              ! *maa<in> *tie<in> *suo<in>
+
+s e {Øe}:e {nØ}: => VzV _ ;
+                              ! ainee<seen> ainee<see>si
+			      ! vapaa<seen> koiraa<seen>
+                              ! ainoo<seen> vapaa<seen> korkee<seen>
+
+s e {Øe}:Ø {nØ}: =>
+     [ :a :h (:Ø) :a | :e :h (:Ø) :e |
+       :i :h (:Ø) :i | :o :h (:Ø) :o |
+       :u :h (:Ø) :u | :y :h (:Ø) :y |
+       :ä :h (:Ø) :ä | :ö :h (:Ø) :ö ] _ ;
+                              ! vapaha<sen> koiraha<sen>
+			      ! kevähä<se>n
+
+{ij}:i s i {iØ}:i {nØ}: =>
+     VoS (:Ø) (:Ø) VoØ _ ;
+                              ! vapa<isiin> aino<isiin>
+			      ! saappa<isiin> koira<isiin>
+
+{ij}:i s i {iØ}:Ø {nØ}: =>
+     VoS :h (:Ø) VoØ _ ;
+                              ! ainoh<isin> saappah<isin> koirah<isin>
+			      ! aineh<isin>
+
+
