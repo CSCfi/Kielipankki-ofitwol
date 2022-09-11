@@ -136,6 +136,10 @@ olla+V+PRES+PSS+4PE:ollaan Clit
 olla+V:ol{eØØeei} v1
 olla+V:ol{eØØeei} v2
 !
+tuntea+V+INF1+NOM:tuta End
+tuntea+V+INF2+ACT+MAN:tuten End
+tuntea+V+PRES+PSS+4PE:tutaan End
+!
 ! yhdyssanojen jälkiosaksi sopimattomia
 !
 ais{ØieØ} /s
@@ -1999,3 +2003,10 @@ huopa_vuor{iieØ} /s
 kangas_vuor{iieØ} /s
 silkki_vuor{iieØ} /s
 väli_vuor{iieØ} /s
+!
+! Adjektiivin etuliitteeksi kelpaavia
+! ===================================
+!
+heikko_ Adjectives
+kokoon_ Adjectives
+vahva_ Adjectives

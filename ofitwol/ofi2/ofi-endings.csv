@@ -1,56 +1,49 @@
 ID,NEXT,MPHON,FEAT,WEIGHT,COMMENT
-s0,SgNom,,,,"s0 is the nominative stem"
-s1,"SgCase SgPtv SgIll PlNom",,,,"s1 is the singular vowel stem in non-nominative stem"
-s2,"PlCase PlGen PlPtv PlIll",,,,"s2 is the plural stem"
-s3,"SgPtv PlGenTen PlPtv",,,,"s3 is the consonant stem"
+,"! s0: nominative stem",,,,
+s0,Clit,,"SG NOM",,"s0 is the nominative stem"
+,"! s1: singular stem",,,,"vowel stem for singular cases and pl nom (excl sg nom)"
+s1,Poss,{nØ},"SG GEN",2,"singular genitive case wit or without a possessive suffix"
+,"Poss PossV",{Øt}{aä},"SG PTV",3,
+,Clit,ksi,"SG TRA",6,
+,"PossObl PossV",kse,"SG TRA",6,
+,"Poss PossV",{nrs}{aä},"SG ESS",6,
+,"Poss PossV",ss{aä},"SG INE",4,
+,"Poss PossV",st{aä},"SG ELA",4,
+,Poss,{Øh}{V}{nØ},"SG ILL",4,
+,Poss,se{Øe}{nØ},"SG ILL",4,
+,"Poss PossV",ll{aä},"SG ADE",5,
+,"Poss PossV",lt{aä},"SG ABL",7,
+,"Poss PossV",lle,"SG ALL",6,
+,"Poss PossV",tt{aä},"SG ABE",9,
+,Clit,t,"PL NOM",2,
+,"! s2: plural stem",,,,
+s2,Poss,{ij}{dt}{Øt}e{nØ},"PL GEN",4,"arvelu-iden ma-itten"
+,Poss,{ij}e{nØ},"PL GEN",4,"koir-ien rist-ien"
+,Poss,{ii}{nØ},"PL GEN",4,"koira-in riste-in"
+,Poss,te{nØ},"PL GEN",4,mies-ten
+,"Poss PossV",{ij}{Øt}{aä},"PL PTV",5,"ma-ita valo-ja"
+,Clit,{ij}ksi,"PL TRA",8,
+,"PossObl PossV",{ij}kse,"PL TRA",8,
+,"Poss PossV",{ij}n{aä},"PL ESS",8,
+,"Poss PossV",{ij}ss{aä},"PL INE",6,
+,"Poss PossV",{ij}st{aä},"PL ELA",6,
+,Poss,{ij}si{iØ}{nØ},"PL ILL",6,
+,Poss,{ij}{Øh}{V}{nØ},"PL ILL",6,
+,"Poss PossV",{ij}ll{aä},"PL ADE",7,
+,"Poss PossV",{ij}lt{aä},"PL ABL",9,
+,"Poss PossV",{ij}lle,"PL ALL",8,
+,"Poss PossV",{ij}tt{aä},"PL ABE",11,
+,"Poss PossV",{ij}ne,"PL CMT",15,
+,Clit,{ij}n,"PL INS",15,"weight 9?"
+,"! s3: consonant stem",,,,
+s3,"Poss PossV",{Øt}{aä},"SG PTV",3,
+,Poss,te{nØ},"PL GEN",4,mies-ten
+,"Poss PossV",{ij}{Øt}{aä},"PL PTV",5,"ma-ita valo-ja"
+,,,,,
 s0123,"s0 s1 s2 s3",,,,
 s012,"s0 s1 s2",,,,
-s03,"s0 s3",,,,
 s12,"s1 s2",,,,
-Compar,"s0 s1 s2",m{pm}{iaäØ},,,"Comparative ending"
-Superl,s0123,i{nm}{ØpmØ}{aäØ},,,"Superlative ending"
 ,!,,,,
-SgCase,"SgGen SgEss SgTra",,,,
-,"SgIne SgEla SgAde",,,,
-,"SgAbl SgAll SgAbe",,,,
-SgNom,Clit,,"SG NOM",,"singular nominative case"
-SgGen,Poss,{nØ},"SG GEN",2,"singular genitive case wit or without a possessive suffix"
-SgPtv,"Poss PossV",{Øt}{aä},"SG PTV",3,
-SgTra,Clit,ksi,"SG TRA",6,
-SgTra,"PossObl PossV",kse,"SG TRA",6,
-SgEss,"Poss PossV",{nrs}{aä},"SG ESS",6,
-SgIne,"Poss PossV",ss{aä},"SG INE",4,
-SgEla,"Poss PossV",st{aä},"SG ELA",4,
-SgIll,Poss,{Øh}{V}{nØ},"SG ILL",4,
-,Poss,se{Øe}{nØ},"SG ILL",4,
-SgAde,"Poss PossV",ll{aä},"SG ADE",5,
-SgAbl,"Poss PossV",lt{aä},"SG ABL",7,
-SgAll,"Poss PossV",lle,"SG ALL",6,
-SgAbe,"Poss PossV",tt{aä},"SG ABE",9,
-,!,,,,
-PlCase,"PlEss PlTra PlIne PlEla",,,,
-,"PlAde PlAbl PlAll",,,,
-,"PlAbe PlCmt PlIns",,,,
-PlNom,Clit,t,"PL NOM",2,
-PlGen,Poss,{ij}{dt}{Øt}e{nØ},"PL GEN",4,
-,Poss,{ij}e{nØ},"PL GEN",4,
-,Poss,{ii}{nØ},"PL GEN",4,
-PlGenTen,Clit,ten,"PL GEN",4,
-,PossObl,te,"PL GEN",4,
-PlPtv,"Poss PossV",{ij}{Øt}{aä},"PL PTV",5,
-PlTra,Clit,{ij}ksi,"PL TRA",8,
-,"PossObl PossV",{ij}kse,"PL TRA",8,
-PlEss,"Poss PossV",{ij}n{aä},"PL ESS",8,
-PlIne,"Poss PossV",{ij}ss{aä},"PL INE",6,
-PlEla,"Poss PossV",{ij}st{aä},"PL ELA",6,
-PlIll,Poss,{ij}si{iØ}{nØ},"PL ILL",6,
-,Poss,{ij}{Øh}{V}{nØ},"PL ILL",6,
-PlAde,"Poss PossV",{ij}ll{aä},"PL ADE",7,
-PlAbl,"Poss PossV",{ij}lt{aä},"PL ABL",9,
-PlAll,"Poss PossV",{ij}lle,"PL ALL",8,
-PlAbe,"Poss PossV",{ij}tt{aä},"PL ABE",11,
-PlCmt,"Poss PossV",{ij}ne,"PL CMT",15,
-PlIns,Clit,{ij}n,"PL INS",15,"weight 9?"
 Poss,Clit,,,,
 ,PossObl,,,,
 PossObl,Clit,{PS}ni,SG1,7,
@@ -70,17 +63,21 @@ Clit,End,,,,
 ,End,{CL}p{aä}s,PAS,11,
 ClitS,End,{CL}s,S,18,
 ,,{CL}{oö}s,OS,,
+,"! v0: present tense stem",,,,
 v0,"Person neg",,"PRES ACT",0,
 ,End,vi,"PRES ACT 3SG",10,dialect
 ,End,{VØ}pi,"PRES ACT 3SG",10,dialect
 ,"Clit ClitS",{C},"IMPV ACT 2SG",7,
-,s0123,mi{ns}{eeØØ}{nØØØ},DVMI,4,
-,s0123,m{aäØ},"DVMA ACT",4,
-,"PossObl PossV",m{aä}isill{aä},MAISILLA,,
-,s0123,v{aäØ},"PCP1 ACT",,
-,s0123,m{aä}t{tØ}{oö}{ØiØ}{mn}{aäØ},PCP3,,
+,s0123,mi{ns}{eeØØ}{nØØØ},DVMI,4,onnistu-minen
+,s0123,m{aäØ},"DVMA ACT",4,saavutta-ma
+,"PossObl PossV",m{aä}isill{aä},MAISILLA,,kaatu-maisilla-ni
+,s0123,v{aäØ},"PCP1 ACT",,istu-va
+,s0123,m{aä}t{tØ}{oö}{ØiØ}{mn}{aäØ},PCP3,,voitta-maton
+,"! v1: past tense stem",,,,
 v1,Person,{i},"PAST ACT",3,
+,"! v2: conditional stem",,,,
 v2,"Person neg",isi,"COND ACT",4,
+,"! v3: participial stem",,,,
 v3,"Person neg",{nlrs}e,"POTN ACT",10,
 ,Clit,k{oö}{oö}n,"IMPV ACT 3SG",7,
 ,End,k{oö}h{oö}n,"IMPV ACT 3SG",7,dialect
@@ -91,11 +88,11 @@ v3,"Person neg",{nlrs}e,"POTN ACT",10,
 ,End,k{oö},"IMPV ACT 2PL KO",7,dialect
 ,Clit,k{oö}{oö}t,"IMPV ACT 3PL",7,
 ,End,k{oö}h{oö}t,"IMPV ACT 3PL",7,dialect
-,neg4pe,{dlnrtØ}{C}{aä},"PRES PSS",3,
+,"neg 4pe",{dlnrtØ}{C}{aä},"PRES PSS",3,
 ,Clit,{tttØ}tiin,"PAST PSS 4PE",5,
-,neg4pe,{tttØ}t{aä}isi,"COND PSS",6,
-,neg4pe,{tttØ}t{aä}ne,"POTN PSS",12,
-,neg4pe,{tttØ}t{aä}k{oö},"IMPV PSS",9,
+,"neg 4pe",{tttØ}t{aä}isi,"COND PSS",6,
+,"neg 4pe",{tttØ}t{aä}ne,"POTN PSS",12,
+,"neg 4pe",{tttØ}t{aä}k{oö},"IMPV PSS",9,
 ,Clit,{dlnrtØ}{aä},"INF1 NOM",1,
 ,"PossObl PossV",{dlnrtØ}{aä}kse,"INF1 TRA",3,
 ,"Poss PossV",{dlnrtØ}ess{aä},"INF2 ACT INE",3,
@@ -106,9 +103,9 @@ v3,"Person neg",{nlrs}e,"POTN ACT",10,
 ,s0123,{nlrs}{uye}{tØthn}{ØeØØØ},"PCP2 ACT",1,
 ,s0123,{tttØ}{dlnrtØ}{uy},"PCP2 PSS",3,
 ,,,,,
-neg4pe,"neg 4pe",,,,
 neg,Clit,{C},NEG,5,
 4pe,Clit,{V}n,4PE,,
+neg4pe,"neg 4pe",,,,
 Person,Clit,n,1SG,,
 ,Clit,t,2SG,,
 ,Clit,{VØ},3SG,,

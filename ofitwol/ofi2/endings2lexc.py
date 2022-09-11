@@ -1,7 +1,7 @@
 # affix2analylexc.py:
 # builds a lexc file for analysis out of a csv file of affixes
 
-copyright = """Copyright © 2017, Kimmo Koskenniemi
+copyright = """Copyright © 2017-2021, Kimmo Koskenniemi
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -38,7 +38,7 @@ def main():
         help="CSV field delimiter (default is ',')",
         default=",")
     argparser.add_argument(
-        "-z", "--zero-weights",
+        "-z", "--zero_weights",
         help="Ignore any weights assigned to individual endings",
         action="store_true", default=False)
     argparser.add_argument(

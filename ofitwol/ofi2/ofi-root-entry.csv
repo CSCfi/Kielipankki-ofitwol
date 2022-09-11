@@ -8,20 +8,22 @@ Root,Nouns,,,,,
 ,Particles,,,,,
 ,Special,,,,,
 ,FirstPart,,,,,"A set of common first parts in compounds"
-,NounGuess,,,,,"Guess pattern lexicon for nouns"
-,AdjGuess,,,,,
-,VerbGuess,,,,,
-More,"NounGuess Nouns",{§},,_,10,
+,NounGuess,,,,60,"Guess pattern lexicon for nouns"
+,AdjGuess,,,,80,
+,VerbGuess,,,,60,
+More,Nouns,{§},,_,20,
+,Adjectives,{§},,_,40,
+,NounGuess,{§},,_,60,
 ,"! AdjGuess",{§},,_,50,
 ,!,,,,,
 /s,s0123,,N,,,"Normal noun entries"
-,,,,,,
+,More,,,,20,"Uncomment if dynamic compounding is desired"
+,More,n,,n,20,"Uncomment if dynamic compounding is desired"
 /s12,"s1 s2",,N,,,"Noun entries with only singular and plural stems"
-/s2,s2,,N,,,"Noun entries with only plural stems"
-/s3,s3,,N,,,"Noun entries with only consonant stems"
 /a,s0123,,"A POS",,,"Normal adjectives which have comparative and superlative"
 ,s012,m{pm}{iaäØ},"A CMP",,,
 ,s0123,i{nm}{ØpmØ}{aäØ},"A SUP",,,
+,More,n,,n,40,"Uncomment if dynamic compounding is desired"
 /apos,s0123,,"A POS",,,"Adjectives which do not produce comparatives"
 /acomp,s012,,"A CMP",,,"Adjectives which are already in comparative"
 /asup,s0123,,"A SUP",,,"Adjectives which are already in superlative"

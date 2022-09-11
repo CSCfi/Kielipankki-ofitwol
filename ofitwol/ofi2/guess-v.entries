@@ -201,10 +201,10 @@ vuo{tdst}{aØaae} /v  ; ! V04: VUOTAA
 !
 < Cini
   [ SylPlusVoB
-    n {tnst} ]                          ! V08: pahenta-
+    n {tnst}                            ! V08: pahenta-
     {aØaae}
   | SylPlusVoF
-    n {tnst} ]                          ! V08: höyhentä-
+    n {tnst}                            ! V08: höyhentä-
     {äØääe}
   ]
 > /v 10 TUHAHTA ; ! trisyllabic
@@ -353,9 +353,11 @@ tut{iØ} /v ; ! V17: TUTIA tuti-tte
 vih{kØ}{iØ} /v ; ! V17: VIHKIÄ vihi-n
 !  
 < Cini SylPlus
-  ( e | i | u )  [o|ö]             ! V18: absorboi- emaljoi- smirgelöi- haravoi-
+  ( e | i | u )  [o|ö]             ! V18: absorboi- emaljoi- smirgelöi-
   {iØ}                             ! V18: televisioi- kiintiöi-
-> tse/v 10 NAIDA ; 
+> tse/v 10 NAIDA ;                 ! V30: arvioi- haravoi-
+                                   ! Both V18 and V30 go here. foreign-looking
+				   ! should be /v and domestic tse/v
 !
 na{iØ} /v ; ! V18: NAIDA
 pu{iØ} /v ; ! V18: PUIDA
@@ -396,7 +398,6 @@ pes{eØØØØi} /v ; ! V24: PESTÄ
 pääs{eØØØØi} /v ; ! V24: PÄÄSTÄ
 ravis{eØØØØi} /v ; ! V24: RAVISTA
 ra{pv}is{eØØØØi} /v ; ! V24: RAVISTA rapise-
-! seis{eØØØØi} /v ; ! V24: SEISTA ** harmony
 seis{eØØØØi} /v ; ! V24: SEISTÄ
 so{kØ}ais{eØØØØi} /v ; ! V24: SOAISTA
 !

@@ -1,4 +1,5 @@
 import re
+import sys
 
 multichar_set = set()
 weight_fmt = "¤{}"
@@ -10,6 +11,16 @@ def collect_mphons(expr_str):
     mch_lst = re.findall(r"\{[^}]+\}|\+[A-Z0-9]+", expr_str)
     for mch in mch_lst:
         multichar_set.add(mch)
+
+defi_name_set = set()
+
+def check_defi_names(expr, line):
+    #global defi_name_set
+    defi_name_lst = re.findall(r"[A-ZÅÄÖ][a-zåäöA-ZÅÄÖ0-9]+", expr)
+    for defi_name in defi_name_lst:
+        if defi_name not in defi_name_set:
+            print("***", line)
+            exit("<<" + defi_name + ">> not defined")
 
 def generated_base(mphon, cont):
     if cont in suffix_dict:
@@ -26,6 +37,7 @@ def generated_base(mphon, cont):
     return base_str
 
 def main():
+    #global defi_name_set
     import argparse
 
     argparser = argparse.ArgumentParser(
@@ -133,6 +145,9 @@ def main():
                 line_str = " ".join(defi_line_lst)
                 line_str = line_str.strip(" \t\n;")
                 collect_mphons(line_str)
+                defi_name, equal, expr = line_str.partition("=")
+                check_defi_names(expr, line_str)
+                defi_name_set.add(defi_name.strip())
                 line_str = re.sub(r"([{}])", r"%\1", line_str)
                 definition_lst.append(line_str)
                 defi_line_lst = []
@@ -141,13 +156,14 @@ def main():
             rege_line_lst.append(line)
             if line.endswith(";"):
                 line_str = " ".join(rege_line_lst)
-                line_str = line_str.strip(" \t\n;")
-                collect_mphons(line_str)
-                line_str = re.sub(r"([{}])", r"%\1", line_str)
+                orig_line_str = line_str.strip(" \t\n;")
+                collect_mphons(orig_line_str)
+                line_str = re.sub(r"([{}])", r"%\1", orig_line_str)
                 rege_mat = m_regent = rege_pat.fullmatch(line_str)
                 if not rege_mat:
                     exit(line_str)
                 r = rege_mat.group("re_entry").strip()
+                check_defi_names(r, orig_line_str)
                 c = rege_mat.group("cont")
                 w = rege_mat.group("weight")
                 if w:
@@ -160,10 +176,8 @@ def main():
                     patnam_set.add(n)
                     multichar_set.add(n)
                 if w and n:
-                    ## entry_lst.append("< {} {}:0::{} > {} ;".format(r, n, w, c))
                     entry_lst.append("< {} {}:0 {}:0 > {} ;".format(r, n, w, c))
                 elif w:
-                    ## entry_lst.append("< {} 0::{} > {} ;".format(r, w, c))
                     entry_lst.append("< {} {}:0 > {} ;".format(r, w, c))
                 elif n:
                     entry_lst.append("< {} {}:0 > {} ;".format(r, n, c))

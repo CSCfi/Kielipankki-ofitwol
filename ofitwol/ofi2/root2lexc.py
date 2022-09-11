@@ -85,7 +85,7 @@ def main():
         entry_str = "% " + ide + "%;" if args.entries else ""
         boundary = "" if args.entries else "{§}"
         for nxt in next_lst:
-            if ("/" in ide) and (not "/" in nxt) and (ide != "More"):
+            if ("/" in ide) and (not "/" in nxt) and (nxt != "More"):
                 feat_str = entry_str + boundary + feature_str
             else:
                 feat_str = feature_str

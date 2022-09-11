@@ -13,8 +13,6 @@ More,Nouns,{§},,{§},20,,
 ,"! More",,,,20,,"Uncomment if dynamic compounding is desired"
 ,"! More",n,,,20,,"Uncomment if dynamic compounding is desired"
 /s12,"s1 s2",,N,,,,"Noun entries with only singular and plural stems"
-/s2,s2,,N,,,,"Noun entries with only plural stems"
-/s3,s3,,N,,,,"Noun entries with only consonant stems"
 /a,s0123,,"A POS",,,,"Normal adjective entries which have comparative and superlative"
 ,s012,m{pm}{iaäØ},"A CMP",,,,"Comparative forms"
 ,s0123,i{nm}{ØpmØ}{aäØ},"A SUP",,,,"Superlative forms"

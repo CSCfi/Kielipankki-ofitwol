@@ -2901,6 +2901,7 @@ epä_selvyy{ØØØØk}{stds}{ØeØeØ} /s
 epä_selv{äØ} /s
 epä_tasa_paino /s
 epä_toivo /s
+epä_varmuu{ØØØØk}{stds}{ØeØeØ} /s
 epäilemättömyy{ØØØØk}{stds}{ØeØeØ} /s
 epäilij{äö} /s
 epäily /s
@@ -4364,7 +4365,7 @@ hartau{ØØØØk}{stds}{ØeØeØ} /s
 harteu{ØkØkk}s{ØeØeØ} /s
 hartevalai{ns}{eeØØ}{nØØØ} /s
 hartevuu{ØØØØk}{stds}{ØeØeØ} /s
-harte{eØ} /s12
+harte{eØ} /s12 ! hartia -- murt.
 hartiakkuu{ØØØØk}{stds}{ØeØeØ} /s
 hartikai{ns}{eeØØ}{nØØØ} /s
 hartio /s
@@ -21753,6 +21754,7 @@ porskutu{ØkØkk}s{ØeØeØ} /s
 porsliin{iieØ} /s
 porstuv{aØ} /s
 porst{aØ} /s
+porstu{aØo} /s
 porsue{Øth}{ØeØeØ} /s
 portaal{iieØ} /s
 portaik{kØØ}o /s
@@ -22302,6 +22304,7 @@ pukine{Øth}{ØeØeØ} /s
 pukkau{ØkØkk}s{ØeØeØ} /s
 pukkel{iieØ} /s
 pukseer{iieØ} /s
+puksprööt{tØ}{iieØ} /s ! kokkapuomi bogspröt
 puksu /s
 puksutu{ØkØkk}s{ØeØeØ} /s
 puk{kØ}{iieØ} /s
@@ -31308,7 +31311,7 @@ tähysty{ØkØkk}s{ØeØeØ} /s
 tähystäj{äØö} /s
 tähystämö /s
 tähy{ØkØkk}s{ØeØeØ} /s
-täh{kØ}{äØ} /s
+! täh{kØ}{äØ} /s
 täh{td}e{Øth}{ØeØeØ} /s
 täh{td}y{tØthn}{ØeØØØ} /s
 täh{td}{ieeeØ} /s

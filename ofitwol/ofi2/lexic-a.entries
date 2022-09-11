@@ -901,6 +901,7 @@ epä_loogi{ns}{eeØØ}{nØØØ} /a
 epä_luuloi{ns}{eeØØ}{nØØØ} /a
 epä_miellyttäv{äØ} /a
 epä_mieluis{aØeØ} /a
+epä_mukav{aØ} /a
 epä_määräi{ns}{eeØØ}{nØØØ} /a
 epä_normaal{iieØ} /a
 epä_oikeuden_mukai{ns}{eeØØ}{nØØØ} /a
@@ -934,6 +935,7 @@ epä_täydelli{ns}{eeØØ}{nØØØ} /a
 epä_urheilijamai{ns}{eeØØ}{nØØØ} /a
 epä_uskoi{ns}{eeØØ}{nØØØ} /a
 epä_vakai{ns}{eeØØ}{nØØØ} /a
+epä_valm{iiiie}{sØh}{ØiØiØ} /a
 epä_varm{aoeØ} /a
 epä_varm{ao} /a
 epä_virei{ns}{eeØØ}{nØØØ} /a
@@ -3790,7 +3792,7 @@ koristelemat{tØ}o{nm}{aäØ} /a
 korit{tØ}o{nm}{aäØ} /a
 korjaamat{tØ}o{nm}{aäØ} /a
 korj{aØeØ} /a
-korkea:korke{eØ} /a
+! korkea:korke{eØ} /a
 korkea_korkoi{ns}{eeØØ}{nØØØ} /a
 korkea_laatui{ns}{eeØØ}{nØØØ} /a
 korkea_lentoi{ns}{eeØØ}{nØØØ} /a
@@ -3840,7 +3842,7 @@ korviin_pistäv{äØ} /a
 korvin_kuultav{aØ} /a
 koseeri{ns}{eeØØ}{nØØØ} /a
 koskemat{tØ}o{nm}{aäØ} /a
-kosketeltav{aØ} /v
+kosketeltav{aØ} /a
 koskettamat{tØ}o{nm}{aäØ} /a
 koskettav{aØ} /a
 koskettelemat{tØ}o{nm}{aäØ} /a
