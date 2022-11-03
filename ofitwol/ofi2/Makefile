@@ -47,7 +47,7 @@ ofitwol.ofst : ofimphon.fst $(RULENORM) bound-remove.fst ofimphon.ofst # Makefil
 	hfst-minimize -i ofitwol-cps.fst -o ofitwol.fst
 	hfst-fst2fst -w -i ofitwol.fst -o $@
 
-ofimphon.ofst : mphon-lex.fst $(RULEVAR) delete.fst # Makefile
+ofimphon.ofst : mphon-lex.fst $(RULEVAR) bound-remove.fst delete.fst # Makefile
 	hfst-compose-intersect -a -1 $< -2 $(RULEVAR) |\
 	hfst-minimize |\
 	hfst-compose -2 delete.fst |\
