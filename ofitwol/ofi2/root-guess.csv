@@ -1,0 +1,53 @@
+ID,NEXT,MPHON,FEAT,BASEF,WEIGHT,COMMENT
+,!,,,,,"This root lexicon is for producing entries where the lookup produces lexicon entries.  It suits for guessing and other ways of collecting new entries from data."
+Root,Pronouns,,,,,
+,Numerals,,,,,
+,Particles,,,,,
+,Special,,,,,
+,FirstPart,,,,,"A set of common first parts in compounds"
+,NounGuess,,,,60,"Guess pattern lexicon for nouns"
+,AdjGuess,,,,80,"Guess pattern lexicon for adjectives"
+,VerbGuess,,,,60,"Guess pattern lexicon for verbs"
+More,NounGuess,{§},,_,60,
+,"! AdjGuess",{§},,_,50,
+,!,,,,,
+/s,s0123,,N,,,"Normal noun entries"
+,"! More",,,,20,"Uncomment if dynamic compounding is desired"
+,"! More",n,,n,20,"Uncomment if dynamic compounding is desired"
+/s12,"s1 s2",,N,,,"Noun entries with only singular and plural stems"
+/s2,s2,,N,,,"Noun entries with only plural stems"
+/s3,s3,,N,,,"Noun entries with only consonant stems"
+/a,s0123,,"A POS",,,"Normal adjectives which have comparative and superlative"
+,s012,m{pm}{iaäØ},"A CMP",,,
+,s0123,i{nm}{ØpmØ}{aäØ},"A SUP",,,
+,"! More",n,,n,40,"Uncomment if dynamic compounding is desired"
+/apos,s0123,,"A POS",,,"Adjectives which do not produce comparatives"
+/acomp,s012,,"A CMP",,,"Adjectives which are already in comparative"
+/asup,s0123,,"A SUP",,,"Adjectives which are already in superlative"
+/r,s0123,,PRON,,,Pronouns
+/n,s0123,,NUM,,,Numerals
+/n0,s0,,NUM,,,
+/n01,"s0 s1",,NUM,,,
+/n02,"s0 s2",,NUM,,,
+/n12,"s1 s2",,NUM,,,
+/n123,"s1 s2 s3",,NUM,,,
+/n13,"s1 s3",,NUM,,,
+/n3,s3,,NUM,,,
+/v,"v0 v1 v2 v3",,V,,,Verbs
+,/v0der,,,,,
+tse/v,"v0 v1 v2 v3",,V,,,haravoi-haravoitsevat
+tse/v,"v0 v1 v2 v3",{tnt}{sØ}{eØØØei},V,,,
+aja/v,"v0 v1 v2 v3",is{eØØØØi},V,,,kihisevät-kihajavat
+aja/v,"v0 v1 v2",aj{aØaae},V,,,
+äjä/v,"v0 v1 v2 v3",is{eØØØØi},V,,,värisee-väräjää
+äjä/v,"v0 v1 v2",äj{äØääe},V,,,
+/v0der,/s,j{aäoöØ},,j{aäoöØ},,
+/v012,"v0 v1 v2",,V,,,
+,/v0der,,,,,
+/v02,"v0 v2",,V,,,
+,/v0der,,,,,
+/v3,v3,,,,,
+/p,End,,P,,,"Particles which take neither poss suff nor clitics"
+/pc,Clit,,P,,,"Particle which may take clitics but not poss suffixes"
+/po,"Poss PossV",,P,,,"Adverbs which may take a poss suff"
+/ps,"PossObl PossV",,P,,,"Adverbs which must take a poss suff"
