@@ -5,24 +5,24 @@ LEXICON NounGuess
 !
 !                                                 --- bisyllabic ---
 < Cini [ VnucB [ NonGs | Grad ] [ o | u ]         ! S01: valo puru happo
-       | VnucF [ NonGs | Grad ] [ö|y]             ! S01: säilö pääty
+       | VnucF [ NonGs | Grad ] [ ö | y ]         ! S01: säilö pääty
   ]
 > /s 10 VALO ;
 !
-< Cini [ [Vnuc - VnucB] Cocl [o|u]                ! S01:  
-       | [Vnuc - VnucF] Cocl [y|ö]                ! S01: bandy platy
+< Cini [ [Vnuc - VnucB] Cocl [ o | u ]            ! S01:  
+       | [Vnuc - VnucF] Cocl [ y | ö ]            ! S01: bandy platy
        ]
 > /s 50 PLATY ;
 !                                                 --- trisyllabic ---
 < Cini
-  [ Syl123VoY NonGs [o|u]                         ! S02: arvelu
-  | Syl123VoF NonGs [ö|y]                         ! S02: viljely
+  [ Syl123VoY NonGs [ o | u ]                     ! S02: arvelu
+  | Syl123VoF NonGs [ ö | y ]                     ! S02: viljely
   | Syl123VoY
     [k {kØØ} | n {kg} | n {tn} | (l|r|n) t {tØ}]  ! S02: sammakko aurinko
-    [o|u]                                         ! S02: poljento pihatto 
+    [ o | u ]                                     ! S02: poljento pihatto 
   | Syl123VoF
     [k {kØØ} | n {kg} | n {tn} | (l|r|n) t {tØ}]  ! S02: ryteikkö lätäkkö
-    [ö|y]                                         ! S02: pyhättö
+    [ ö | y ]                                     ! S02: pyhättö
   ]
 > /s 10 ARVELU ;
 
@@ -796,7 +796,7 @@ koje{Øth}{ØeØeØ} /s ; ! KOJE
 kolleh{td}{ao} /s ; ! KOLLEHTA
 kollo{sØh}{ØoØoØ} /s ; ! KOLLOS
 kolonn{aØ} /s ; ! KOLONNA
-komesroot{iieØ} /s ; ! KOMESROOTI
+komes{§}root{iieØ} /s ; ! KOMESROOTI
 komisariu{ØkØkk}s{ØeØeØ} /s ; ! KOMISARIUS
 korju{uØ} /s ; ! KORJUU
 kor{trs}{ieØeØ} /s ; ! KORSI
@@ -818,7 +818,7 @@ kurre /s ; ! KURRE
 kursoj{aØ} /s ; ! KURSOJA
 kus{ieØeØ} /s ; ! KUSI
 kuterviti{iieØ} /s ; ! KUTERVITI
-kutta{§}perk{kØ}{ao} /s ; ! kUTTAPERKKA
+kutta{§}perk{kØ}{ao} /s ; ! KUTTAPERKKA
 kuusam{aØo} /s ; ! KUUSAMA
 kuus{ieØeØ} /s ; ! KUUSI
 ku{pv}e{Øth}{ØeØeØ} /s ; ! KUVE

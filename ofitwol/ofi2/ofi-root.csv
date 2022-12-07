@@ -1,0 +1,49 @@
+ID,NEXT,MPHON,FEAT,BASEF,WEIGHT,COMMENT
+Root,"Nouns Verbs Adjectives Pronouns",,,,,"This is where everything starts. Not all sub-lexicons need to be present when compiled with hfst-lexc. This root lexicon is for using the explicit noun, adjective and verb lexicons.  No guessing is intended nor active compounding. The lookup produces morphophonemic forms of the base forms of retrieved lexemes."
+,"Numerals Particles Special Compounds",,,,,
+,FirstPart,,,,,
+/more,Nouns,{§},,{§},20,
+,Adjectives,{§},,{§},40,
+,!,,,,,
+/s,s0123,,N,,,"Normal noun entries"
+,,,,,,
+/s12,"s1 s2",,N,,,"Noun entries with only singular and plural stems"
+/s2,s2,,N,,,"Noun entries with only plural stems"
+/s3,s3,,N,,,"Noun entries with only consonant stems"
+/a,s0123,,"A POS",,,"Normal adjectives which have comparative and superlative"
+,s012,m{pm}{iaäØ},"A CMP",,5,
+,s0123,i{nm}{ØpmØ}{aäØ},"A SUP",,6,
+,Clit,sti,"A MAN",,,
+,/a,hk{oö},,hk{oö},,
+/apos,s0123,,"A POS",,,"Adjective entries which do not form regular comparatives nor superlatives"
+/acomp,s012,,"A CMP",,,"Adj entries which are already in comparative form"
+/asup,s0123,,"A SUP",,,"Adj entries which are already in superlative form"
+/r,s0123,,PRON,,,Pronouns
+/n,s0123,,NUM,,,Numerals
+/n0,s0,,NUM,,,
+/n01,"s0 s1",,NUM,,,
+/n02,"s0 s2",,NUM,,,
+/n12,"s1 s2",,NUM,,,
+/n123,"s1 s2 s3",,NUM,,,
+/n13,"s1 s3",,NUM,,,
+/n3,s3,,NUM,,,
+/v,"v0 v1 v2 v3",,V,{dlnrtØ}{aä},,Verbs
+/v,/v0der,,,,,
+tse/v,"v0 v1 v2 v3",,V,{dlnrtØ}{aä},,haravoi-haravoitsevat
+tse/v,"v0 v1 v2 v3",{tnt}{sØ}{eØØØei},V,{dlnrtØ}{aä},,
+aja/v,"v0 v1 v2 v3",is{eØØØØi},V,is{eØØØØi}{dlnrtØ}{aä},,kihisevät-kihajavat
+aja/v,"v0 v1 v2",aj{aØaae},V,is{eØØØØi}{dlnrtØ}{aä},,
+äjä/v,"v0 v1 v2 v3",is{eØØØØi},V,is{eØØØØi}{dlnrtØ}{aä},,värisee-väräjää
+äjä/v,"v0 v1 v2",äj{äØääe},V,is{eØØØØi}{dlnrtØ}{aä},,
+/v0der,/s,j{aäoöØ},,j{aäoöØ},,
+,/a,v{aä}i{ns}{eeØØ}{nØØØ},,v{aä}i{ns}{eeØØ}{nØØØ},,
+,/a,v{aäØ},,v{aäØ},,
+/v012,"v0 v1 v2",,V,{dlnrtØ}{aä},,
+,/v0der,,,,,
+/v02,"v0 v2",,V,{dlnrtØ}{aä},,
+,/v0der,,,,,
+/v3,v3,,V,{dlnrtØ}{aä},,
+/p,End,,P,,,"Particles which do not take any poss suff or clitics"
+/pc,Clit,,P,,,"Particle which may take a clitic"
+/po,"Poss PossV",,P,,,"Adverbs which may take a poss suff"
+/ps,"PossObl PossV",,P,,,"Adverbs which must have a poss suff"

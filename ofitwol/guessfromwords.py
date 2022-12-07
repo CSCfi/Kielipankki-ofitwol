@@ -40,7 +40,7 @@ def redundant_entry(entry):
         e_set = entry_set[word]
         u_set = u_set & e_set
     for e in u_set:
-        if word_set[e] > word_set[entry]:
+        if (word_set[e] > word_set[entry]) and (weight_sum[entry] > 0):
             ###print("***", e, weight_sum[e],
             ###      "superset of", entry, weight_sum[entry])
             ###if weight_sum[e] < weight_sum[entry]:
@@ -109,7 +109,7 @@ def main():
         nw = len(word_set[entry])
         weight_sum[entry] = weight_sum[entry] / nw if nw > 0 else float("inf")
             #
-    # Second pass: Delete inferior enty candidates
+    # Second pass: Delete inferior entry candidates
     #
     for entry in word_set.keys():
         if redundant_entry(entry):
@@ -117,15 +117,17 @@ def main():
     for entry in sorted(word_set.keys(),
                         key=lambda en: len(en),
                         reverse=True):
-        if len(word_set[entry]) < args.minimum:
+        if (len(word_set[entry]) < args.minimum) and (weight_sum[entry] > 0):
             delete_entry(entry)
             continue
         for word in word_set[entry]:
             for e in entry_set[word]:
-                if word_set[entry] < word_set[e]:
+                if (word_set[entry] < word_set[e]) and (weight_sum[entry] > 0):
                     delete_entry(entry)
                     #print("deleting", entry, "which is inferior to", e)###
                     break # the innermost loop
+                if (weight_sum[entry] == 0) and (weight_sum[e] > 0):
+                    word_set[e].discard(word)
             else:
                 continue # the middle loop
             break # the middle loop

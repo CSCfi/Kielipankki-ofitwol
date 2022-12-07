@@ -47,7 +47,7 @@ ofitwol.ofst : ofimphon.fst $(RULENORM) bound-remove.fst ofimphon.ofst # Makefil
 	hfst-minimize -i ofitwol-cps.fst -o ofitwol.fst
 	hfst-fst2fst -w -i ofitwol.fst -o $@
 
-ofimphon.ofst : mphon-lex.fst $(RULEVAR) delete.fst # Makefile
+ofimphon.ofst : mphon-lex.fst $(RULEVAR) delete.fst bound-remove.fst # Makefile
 	hfst-compose-intersect -a -1 $< -2 $(RULEVAR) |\
 	hfst-minimize |\
 	hfst-compose -2 delete.fst |\
@@ -55,6 +55,18 @@ ofimphon.ofst : mphon-lex.fst $(RULEVAR) delete.fst # Makefile
 	hfst-minimize > ofimphon.fst
 	hfst-compose -1 ofimphon.fst -2 bound-remove.fst |\
 	hfst-fst2fst -w -o $@
+
+ofimphonemic.ofst : mphon-lex-out.fst $(RULEVAR) delete.fst # Makefile
+	hfst-compose-intersect -a -1 $< -2 $(RULEVAR) |\
+	hfst-minimize |\
+	hfst-compose -2 delete.fst |\
+	hfst-invert |\
+	hfst-minimize |\
+	hfst-fst2fst -w -o $@
+
+ofientgues.ofst : ofientry.fst ofiguess.fst
+	hfst-union -1 ofientry.fst -2 ofiguess.fst -o ofientgues.fst
+	hfst-fst2fst -w -i ofientgues.fst -o $@
 
 ofiguess.ofst : guess-lex.fst cleanlex.fst $(RULEVAR) delete.fst #Makefile
 	hfst-compose-intersect -a -1 $< -2 $(RULEVAR) |\
@@ -72,6 +84,9 @@ ofientry.ofst : entry-lex.fst $(RULEVAR) delete.fst # Makefile
 	hfst-invert |\
 	hfst-minimize -o ofientry.fst
 	hfst-fst2fst -w -i ofientry.fst -o $@
+
+mphon-lex-out.fst: mphon-lex.fst
+	hfst-project -i $< -o $@ -p output
 
 mphon-lex.fst : root-mphon.lexc $(LEXM) # Makefile
 	hfst-lexc -E -f openfst-tropical -o $@ $< $(LEXM)

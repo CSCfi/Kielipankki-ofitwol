@@ -1,0 +1,34 @@
+ID,NEXT,MPHON,FEAT,BASEF,WEIGHT,COMMENT
+Root,"FirstPart NounGuess AdjGuess VerbGuess",,,,,"This root lexicon uses the guess pattern lexicons but it provides for no compounding. The results are guessed lexicon entries."
+,"Special Particles Pronouns",,,,,
+More,"NounGuess Nouns",{§},,{§},10,
+,"! AdjGuess",{§},,{§},50,
+,!,,,,,
+/s,s0123,,N,,,"Normal noun entries"
+,,,,,,
+/s12,"s1 s2",,N,,,"Noun entries with only singular and plural stems"
+/s2,s2,,N,,,"Noun entries with only plural stems"
+/s3,s3,,N,,,"Noun entries with only consonant stems"
+/a,s0123,,"A POS",,,"Normal adjectives which have comparative and superlative"
+,s012,m{pm}{iaäØ},"A CMP",,5,
+,s0123,i{nm}{ØpmØ}{aäØ},"A SUP",,6,
+/apos,s0123,,"A POS",,,
+/acomp,s012,,"A CMP",,,
+/asup,s0123,,"A SUP",,,
+/r,s0123,,PRON,,,Pronouns
+/n,s0123,,NUM,,,Numerals
+/v,"v0 v1 v2 v3",,V,,,Verbs
+tse/v,"v0 v1 v2 v3",,V,,,
+tse/v,"v0 v1 v2 v3",{tnt}{sØ}{eØØØei},V,,,
+aja/v,"v0 v1 v2 v3",is{eØØØØi},V,,,
+aja/v,"v0 v1 v2",aj{aØaae},V,,,
+äjä/v,"v0 v1 v2 v3",is{eØØØØi},V,,,
+äjä/v,"v0 v1 v2",äj{äØääe},V,,,
+/v0der,/s,j{aäoöØ},,j{aäoöØ},,
+/v012,"v0 v1 v2",,V,,,
+/v02,"v0 v2",,V,{dlnrtØ}{aä},,
+/v3,v3,,,,,
+/p,End,,P,,,"Particles which take neither poss suff nor clitics"
+/pc,Clit,,P,,,"Particle which may take clitics but not poss suffixes"
+/po,"Poss PossV",,P,,,"Adverbs which may take a poss suff"
+/ps,"PossObl PossV",,P,,,"Adverbs which must take a poss suff"

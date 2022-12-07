@@ -103,7 +103,8 @@ for r in rdr:
     if (not feature_lst) and (not basef_str):
         basef_str = mphon_str
     weight_str = (' "weight: {}"'.format(r["WEIGHT"])
-                  if r["WEIGHT"] else "" )
+                  if r["WEIGHT"] and mode != "G" ### temporary trial ###
+                  else "" )
     for nxt in next_lst:
         if mode == "M":
             if ("/" in ide) and (not "/" in nxt) and (ide != "/more"):

@@ -7,7 +7,7 @@ LEXICON AdjGuess
   [ VnucB [ NonGs | GradNZ ] [ o | u ]
   | VnucF [ NonGs | GradNZ ] [ ö | y ]
   ]
-> /a 10 JURO ; ! A01: VALO
+> /a 30 JURO ; ! A01: VALO
 !            aito viisto tuttu kesy pölhö tönkkö
 !
 !        --- tri+syllabic ---
@@ -15,7 +15,7 @@ LEXICON AdjGuess
   [ SylPlusVoB [ l | r | h k | [ k | l ] {kØ} ] [ o | u ] 
   | SylPlusVoF [ l | r | h k | [ k | l ] {kØ} ] [ ö | y ]
   ] 
-> /a 10 KAPEAHKO ; ! A02: ARVELU
+> /a 30 KAPEAHKO ; ! A02: ARVELU
 !            ruipelo hiirakko löperö lyhyehkö
 < Cini
   [ SylPlusVoB [ s t | Gt ] u
@@ -35,7 +35,7 @@ LEXICON AdjGuess
   [ VnucB | VnucF ]
   [ NonGs | GradNZ ]
   {iieØ}
-> /a 10 KARSKI ; ! A04: RISTI
+> /a 30 KARSKI ; ! A04: RISTI
 !            nami rehti höyli fiini
 !
 !        --- tri+syllabic --- A05: PAPERI
@@ -44,7 +44,7 @@ LEXICON AdjGuess
   [ (r) d | s k | (l) l | (r) r | m | (g|r) n | (k|s) s
   | k t | s t | v | (n) t {tØ}
   ] {iieØ}
-> /a 10 KOKETTI ;
+> /a 30 KOKETTI ;
 !            makaaberi kommensuraabeli pompöösi reaktionääri
 !            intiimi bisarri  perverssi eksakti robusti
 !
@@ -57,7 +57,7 @@ LEXICON AdjGuess
   | VnucF [ NonGs | Grad ] {äØeØ}        ! A11: nöyrä sievä
   | SylB a {ØØh} {aØ}                    ! A23: VAPAA
   ]
-> /a 10 KUIVA ;
+> /a 30 KUIVA ;
 !
 !        --- tri+syllabic ---
 < Cini
@@ -72,7 +72,7 @@ LEXICON AdjGuess
   | SylB e {aeØo}              ! A21: KORKEA
   | SylF e {äeØö}              ! A21: ilkeä
   ]
-> /a 10 NAPSAKKA ; ! A10,11,12,13,14,15,16,18,21,23
+> /a 30 NAPSAKKA ; ! A10,11,12,13,14,15,16,18,21,23
 !
 !         === nen-se-s === A63 HEVONEN ===
 !
@@ -81,7 +81,7 @@ LEXICON AdjGuess
   | SylPlus (i)               ! rukiinen amfibinen graafinen
   ]
   i {ns} {eeØØ} {nØØØ}
-> /a 10 ILOINEN ;
+> /a 30 ILOINEN ;
 !
 !         === on-oma-om | ön-ömä|öm ===
 !
@@ -89,7 +89,7 @@ LEXICON AdjGuess
   [ SylStarVoB t {tØ} o {nm} {aäØ}      ! A57: onneton
   | SylStarVoF t {tØ} ö {nm} {aäØ}      ! työtön
   ]
-> /a 10 ONNETON ;
+> /a 30 ONNETON ;
 !
 !         === as-aa-a === A66: VIERAS
 !
@@ -99,7 +99,7 @@ LEXICON AdjGuess
   | SylStarVoB [ NonGw | GradNZ ] a {sØh} {aäØ}       ! vieras hidas
   | SylStarVoF [ NonGw | GradNZ ] ä {sØh} {aäØ}       ! työläs kyvykäs
   ]
-> /a 10 LAUPIAS ;
+> /a 30 LAUPIAS ;
 !
 !         === ut-ee-t  === A77: KUOLLUT
 !
@@ -116,7 +116,7 @@ LEXICON AdjGuess
   [ NonGw | h j | h k | v                         ! ahne tiine kiire 
   | Grad | Gj                                     ! kade helle
   ] e {Øth} {ØeØeØ}
-> /a 10 KIIRE ;
+> /a 30 KIIRE ;
 
 !
 ! --- exceptions ---

@@ -66,10 +66,10 @@ BOW = .#. | {§}: ;
 		    ! or as a second part of a compound
 
 CLOSED = VoM ( [:i - {ii}:] | VoØ | {ØiØ}:Ø )
-         [ CoM - {Øt}:Ø ] ( VoØ )
-	 [ CoM | EOW | {nØ}: {PS}: ] ;
+!!!!         [ CoM - {Øt}:Ø ] ( VoØ ) [ CoM | EOW | {nØ}: {PS}: ] ;
+             [ CoM - {Øt}:Ø ] ( VoØ ) [ CoM | EOW ] ;
 
 OPEN = VoM [ (CoM) [ VoS | (VoØ) :i]
-           | EOW
+           | [ EOW | {nØ}: {PS}: ]
 	   ] ;
 

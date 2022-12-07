@@ -160,11 +160,11 @@ tutu /v  ; ! TUTUA (*tudu-n)
     {äØääe}                             ! V02: elä- pitä-
   | Cini
     SylPlusVoB
-    h {td} | (n) s t | t {tØ}
+    [ h {td} | (n) s t | t {tØ} ]
     {aØaae}                             ! V02: tuhahta- aseista- johdatta-
   | Cini
     SylPlusVoF
-    h {td} | s t | t {tØ}
+    [h {td} | s t | t {tØ} ]
     {äØääe}                             ! V02 pöllähtä- virkistä- ylettä-
   ]
 > /v 10 MUISTAA ; ! bisyllabic
