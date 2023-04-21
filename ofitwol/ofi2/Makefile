@@ -37,7 +37,7 @@ analyse : $(ANALYSES)
 
 rejected-guesses : $(ID)-rejected-guessed.entries
 
-ofitwol.ofst : ofimphon.fst $(RULENORM) bound-remove.fst ofimphon.ofst # Makefile
+ofitwol.ofst : ofimphon.fst $(RULENORM) bound-remove.fst # Makefile
 	hfst-project -p out -i $< -o ofimphon-out.fst
 	hfst-compose-intersect -1 ofimphon-out.fst \
 			       -2 $(RULENORM) -o ofitwol-tmp.fst
@@ -47,22 +47,26 @@ ofitwol.ofst : ofimphon.fst $(RULENORM) bound-remove.fst ofimphon.ofst # Makefil
 	hfst-minimize -i ofitwol-cps.fst -o ofitwol.fst
 	hfst-fst2fst -w -i ofitwol.fst -o $@
 
-ofimphon.ofst : mphon-lex.fst $(RULEVAR) bound-remove.fst delete.fst # Makefile
+ofimphon.fst : mphon-lex.fst $(RULEVAR) bound-remove.fst delete.fst # Makefile
 	hfst-compose-intersect -a -1 $< -2 $(RULEVAR) |\
 	hfst-minimize |\
 	hfst-compose -2 delete.fst |\
 	hfst-invert |\
 	hfst-minimize > ofimphon.fst
+
+ofimphon.ofst : ofimphon.fst
 	hfst-compose -1 ofimphon.fst -2 bound-remove.fst |\
 	hfst-fst2fst -w -o $@
 
-ofimphonemic.ofst : mphon-lex-out.fst $(RULEVAR) delete.fst # Makefile
+ofimphonemic.fst : mphon-lex-out.fst $(RULEVAR) delete.fst # Makefile
 	hfst-compose-intersect -a -1 $< -2 $(RULEVAR) |\
 	hfst-minimize |\
 	hfst-compose -2 delete.fst |\
 	hfst-invert |\
-	hfst-minimize |\
-	hfst-fst2fst -w -o $@
+	hfst-minimize -o $@
+
+ofimphonemic.ofst : ofimphonemic.fst
+	hfst-fst2fst -w -i $< -o $@
 
 ofientgues.ofst : ofientry.fst ofiguess.fst
 	hfst-union -1 ofientry.fst -2 ofiguess.fst -o ofientgues.fst
@@ -139,7 +143,7 @@ delete.fst :
 #	echo '0 -> %{§%} || \§ _ [%+N | %+A | %+V | %+P | %+PRON | %+NUM]' | hfst-regexp2fst -o $@
 
 bound-remove.fst : Makefile
-	echo '[%{§%}+ -> 0 || _ [%+N | %+A | %+V | %+P | %+PRON | %+NUM]] .o. [%{§%} | § -> %_]' | hfst-regexp2fst -o $@
+	echo '[%{§%}+ | § -> 0 || _ [%+N | %+A | %+V | %+P | %+PRON | %+NUM]] .o. [%{§%} | § -> %_]' | hfst-regexp2fst -o $@
 
 guesses : sktp-corpus-base.big.analyses
 	egrep 'inf$$' sktp-corpus-base.big.analyses | \

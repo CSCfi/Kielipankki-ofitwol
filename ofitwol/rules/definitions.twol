@@ -29,10 +29,10 @@ NonSeg = : - Seg ;
 MeSØ = :e.m & :Ø ;
                     ! all X:Ø where X:e in :
 
-Z = :Ø* | :' ;
+ZerApo = :Ø* | :' ;
 
-VzV = [:a Z :a|:e Z :e|:i Z :i|:o Z :o|:u Z :u|
-       :y Z :y|:ä Z :ä|:ö Z :ö] ;
+VzV = [:a ZerApo :a | :e ZerApo :e | :i ZerApo :i | :o ZerApo :o |
+       :u ZerApo :u| :y ZerApo :y|:ä ZerApo :ä|:ö ZerApo :ö] ;
 
 VV = :a :a | :e :e | :i :i | :o :o |
      :u :u | :y :y | :ä :ä | :ö :ö ;
