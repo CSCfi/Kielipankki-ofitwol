@@ -1,0 +1,24 @@
+Suff = {Øh}: | {ii}: | {ij}: | {nrs}: | {Øt}: |
+       {C}: | {dlnrtØ}: | {i}: | {nlrs}: | {tttØ}: |
+       {CL}: | {PS}: ;
+
+VowSF = :ä | :ö | :y ;
+VowSB = :a | :o | :u ;
+VowSN = :e | :i ;
+VowS = VowSF | VowSB | VowSN ;
+VowM = VowS.m ;
+VowØ = VowM - VowS ;
+VoS = VowS - Suff ;
+VoM = VowS.m - Suff ;
+VoØ = VoM - VowS ;
+
+ConS = :b | :d | :h | :k | :l | :m | :n |
+      :p | :r | :s | :t | :v | j ;
+ConM = ConS.m ;
+ConØ = ConM - ConS ;
+CoM = ConS.m - Suff ;
+CoØ = CoM - ConS ;
+
+VoCoS = VowS | ConS ;
+
+SuffI = {ij}: ;

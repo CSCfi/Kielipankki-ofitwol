@@ -55,3 +55,13 @@ test : errors
 	twol-tester -e examples-var.fst -r rules-var.fst -l lost-var.log -w wrong-var.log
 	twol-tester -e examples-norm.fst -r rules-norm.fst -l lost-norm.log -w wrong-norm.log
 
+rules-var-discov.fst: rules-var-discov.twol
+	twol-comp -r rules-var-discov.twol \
+		-e $< -o $@ --recursion 9999999 \
+		> rules-var-discov.log
+
+rules-var-discov.twol: examples-discov.pstr
+	# rm $@
+	twol-discover.py $< \
+		-d setdefs.twol \
+		-r recips.json -m 3 -v 1 -s '' > $@
