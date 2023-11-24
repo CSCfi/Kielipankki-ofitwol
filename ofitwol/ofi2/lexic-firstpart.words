@@ -7949,7 +7949,7 @@ heikotuksen
 heikotus
 heikäläis
 heikäläisen
-heila
+! heila
 heilahduksen
 heilahdus
 heilahtelu
@@ -9540,7 +9540,7 @@ homileetin
 homileetti
 homiletiikan
 homiletiikka
-homma
+! homma
 hommailu
 hommailun
 hommakkuuden
@@ -16756,7 +16756,7 @@ kehnouden
 kehnous
 kehnä
 kehnän
-keho
+! keho
 kehon
 kehotin
 kehottelu
@@ -23354,8 +23354,10 @@ kyynillisyyden
 kyynillisyys
 kyynisyyden
 kyynisyys
+kyynär
 kyynärä
 kyynärän
+kyynäs
 kyypin
 kyyppari
 kyypparin
@@ -33030,6 +33032,7 @@ nelikäs
 nelilö
 nelilön
 nelin
+nelis
 nelistyksen
 nelistys
 neliö
@@ -38624,7 +38627,7 @@ pihtan
 pihti
 pihvi
 pihvin
-pii
+! pii
 piian
 piika
 piikais
@@ -38883,7 +38886,7 @@ pikkumaisuuden
 pikkumaisuus
 pikkuruis
 pikkuruisen
-pikkus
+pikku
 pikkusen
 piklauksen
 piklaus
@@ -39364,6 +39367,7 @@ pitkityksen
 pitkitys
 pitko
 pitkon
+pitkos
 pitkäis
 pitkäisen
 pitkäs
@@ -43535,7 +43539,7 @@ rantalais
 rantalaisen
 rantama
 rantaman
-rantas
+! rantas
 rantasen
 rante
 ranteen
@@ -47223,6 +47227,7 @@ saariston
 saarisuuden
 saarisuus
 saarna
+saarnas
 saarnaaja
 saarnaajan
 saarnan
@@ -48085,7 +48090,7 @@ satanismi
 satanismin
 satanisti
 satanistin
-satas
+sata
 satasen
 sateen
 sateettomuuden
@@ -48615,7 +48620,7 @@ selkkaus
 selko
 selkoimen
 selkoin
-selkos
+! selkos
 selkosen
 selkosimen
 selkosin
@@ -57970,6 +57975,7 @@ tuuma
 tuumailu
 tuumailun
 tuuman
+tuumas
 tuumauksen
 tuumaus
 tuumen

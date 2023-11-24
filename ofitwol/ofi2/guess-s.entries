@@ -397,7 +397,7 @@ yö{ns}{eeØØ}{nØØØ} /s ; ! YÖNEN
 ! ha{kØ}u /s ; ! HAKU
 ! hehku /s ; ! HEHKU
 ! heh{kØ}u /s ; ! HEHKU
-! hellunta{iØ} /s ; ! HELLUNTAI
+hellunta{iØ} /s ; ! HELLUNTAI
 ! helmy{tØthn}{ØeØØØ} /s ; ! HELMYT
 ! hepre{ao} /s ; ! HEPREA
 ! herttu{aØo} /s ; ! HERTTUA
@@ -439,7 +439,7 @@ yö{ns}{eeØØ}{nØØØ} /s ; ! YÖNEN
 ! lam{pm}u{tØthn}{ØeØØØ} /s ; ! LAMMUT
 ! lapsu{tØthn}{ØeØØØ} /s ; ! LAPSUT
 ! lastu{aØo} /s ; ! LASTUA
-! lauanta{iØ} /s ; ! LAUANTAI
+lauanta{iØ} /s ; ! LAUANTAI
 ! la{kØ}o /s ; ! LAKO
 ! liettu{aØo} /s ; ! LIETTUA
 ! liikehdin{tn}{äö} /s ; ! LIIKEHDINTÄ
@@ -449,7 +449,7 @@ yö{ns}{eeØØ}{nØØØ} /s ; ! YÖNEN
 ! lusk{ao} /s ; ! LUSKA
 ! luusu{aØo} /s ; ! LUUSUA
 ! lyseo /s ; ! LYSEO
-! maananta{iØ} /s ; ! MAANANTAI
+maananta{iØ} /s ; ! MAANANTAI
 ! malev{aØo} /s ; ! MALEVA
 ! marju{tØthn}{ØeØØØ} /s ; ! MARJUT
 ! ma{kØ}u /s ; ! NÄKY
@@ -476,7 +476,7 @@ yö{ns}{eeØØ}{nØØØ} /s ; ! YÖNEN
 ! patruun{aØo} /s ; ! PATRUUNA
 ! pa{kØ}o /s ; ! PAKO
 ! pehku /s ; ! PEHKU
-! perjanta{iØ} /s ; ! PERJANTAI
+perjanta{iØ} /s ; ! PERJANTAI
 ! pilvy{tØthn}{ØeØØØ} /s ; ! PILVYT
 ! pi{iØ} /s ; ! PII
 ! poi{kØ}u{tØthn}{ØeØØØ} /s ; ! POIUT
@@ -503,7 +503,7 @@ yö{ns}{eeØØ}{nØØØ} /s ; ! YÖNEN
 ! silmy{tØthn}{ØeØØØ} /s ; ! SILMYT
 ! sitruun{aØo} /s ; ! SITRUUNA
 ! suihku /s ; ! SUIHKU
-! sunnunta{iØ} /s ; ! SUNNUNTAI
+sunnunta{iØ} /s ; ! SUNNUNTAI
 ! syndroom{aØ} /s ; ! SYNDROOMA
 ! sähkö /s ; ! SÄHKÖ
 ! säihky /s ; ! SÄIHKY
@@ -513,8 +513,8 @@ yö{ns}{eeØØ}{nØØØ} /s ; ! YÖNEN
 ! te{kØ}o /s ; ! TEKO
 ! tiehy{tØthn}{ØeØØØ} /s ; ! TIEHYT
 ! tihku /s ; ! TIHKU
-! tiista{iØ} /s ; ! TIISTAI
-! torsta{iØ} /s ; ! TORSTAI
+tiista{iØ} /s ; ! TIISTAI
+torsta{iØ} /s ; ! TORSTAI
 ! trake{ao} /s ; ! TRAKEA
 ! trio /s ; ! TRIO
 ! tundr{ao} /s ; ! TUNDRA
