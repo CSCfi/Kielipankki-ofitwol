@@ -27,6 +27,13 @@ LEXG=guess-s.lexc guess-a.lexc guess-v.lexc \
 
 ANALYSES=$(ID)-corpus-$(MODE).big.analyses
 
+# A hack to replace an unsupplied dependency
+../../data/sktp-corpus.words:
+	wget --no-clobber http://kaino.kotus.fi/sanat/taajuuslista/vns_frek.zip
+	unzip -n vns_frek.zip
+	iconv -f LATIN1 -t UTF-8 vns_frek.txt | \
+	cut --delimiter=" " -f3 > ../../data/sktp-corpus.words
+
 build : $(ANALYSER)
 
 ofimphon : ofimphon.ofst 
